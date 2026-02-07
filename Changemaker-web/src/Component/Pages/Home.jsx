@@ -4,8 +4,13 @@ import Featuresindex from "../HomeComponentParts/Featuresindex";
 import waterflow_image from "../../assets/Home-image/Water-flow-image.svg";
 import firstsection from "../../assets/Home-image/first-section-image.png";
 import ChangeMakeraction from "../HomeComponentParts/ChangeMakeraction";
+import { Link } from "react-router-dom";
 
 const Home = ({ theme, settheme }) => {
+  const become_change_btn = () => {
+    window.location.href =
+      "https://reallivesworld.com/reallives-website-main/license.html";
+  };
   //  {Styles.homecontainer}
   return (
     <div className={`${Styles.homecontainer} ${Styles[theme]}`}>
@@ -30,10 +35,13 @@ const Home = ({ theme, settheme }) => {
           </div>
 
           <div className={Styles.container_btn}>
-            <button className={Styles.redirect_btn}>
+            <button className={Styles.redirect_btn} onClick={become_change_btn}>
               Begin Your Journey of Change
             </button>
-            <button className={Styles.How_works}>How this works?</button>
+
+            <Link className={Styles.text_decoration_none} to="/How-RCMI-Works">
+              <button className={Styles.How_works}>How this works?</button>
+            </Link>
           </div>
         </div>
 

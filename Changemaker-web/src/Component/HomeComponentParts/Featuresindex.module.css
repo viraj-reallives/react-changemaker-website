@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.text_decoration_none {
+  text-decoration: none;
+}
+
 .feautures_inner_main {
   background-color: #fff8f0;
   width: 100%;
@@ -17,7 +21,7 @@
 }
 
 .dark .feautures_inner_main {
-  background-color: #1d1b1b;
+  background-color: #222222;
   color: #dccece;
 }
 
@@ -30,7 +34,7 @@
 }
 
 .dark .cards_features_box {
-  background-color: #1d1b1b;
+  background-color: #333333;
 }
 
 .dark .features_description_text {
@@ -206,7 +210,7 @@
 }
 
 .dark .card_info_box {
-  background-color: #171616;
+  background-color: #333333;
 }
 
 .dark .title_university_name {

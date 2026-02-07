@@ -54,13 +54,13 @@
 }
 
 .dark .point_cards_inner {
-  background-color: #2d3328;
+  background-color: #2d3328 !important;
 }
 
 .dark .stage_title_text,
 .dark .stage_title_2,
 .dark .stage_description_text {
-  color: #222222;
+  color: white !important;
 }
 
 .dark .make_decision_container {
@@ -97,7 +97,6 @@
 }
 
 .rcmi_data_left_bar {
-  /* background-color: white; */
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
@@ -105,14 +104,16 @@
 }
 
 .tow_box_rcmi {
-  /* background-color: white; */
   box-shadow: 0px 0px 8px 0px #00000040;
-  /* border-radius: 6px; */
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 1rem;
-  /* padding: 1rem 1rem; */
 }
+
+.dark .tow_box_rcmi {
+  background-color: #333333;
+}
+
 .top_benfit_header {
   gap: 0.5rem;
   background-color: #ffe9cc;
@@ -176,7 +177,7 @@
 
 .changemaker_how_works {
   padding: 1rem 6rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
 .how_to_works_rcmi_container_inner {
@@ -274,6 +275,10 @@
   font-size: 20px;
   color: #333333;
   text-align: center;
+}
+
+.dark .changemaker_devlopment_text {
+  color: white;
 }
 
 .point_cards_container {

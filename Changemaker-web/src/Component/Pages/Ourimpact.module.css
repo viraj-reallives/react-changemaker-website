@@ -11,8 +11,6 @@
 
 .slider_componet {
   width: 100%;
-  /* height: 100vh; */
-  /* height: calc(100vh); */
   padding-top: 3rem;
   box-sizing: border-box;
   display: grid;
@@ -63,7 +61,6 @@
 }
 
 .impact_img_containe {
-  /* width: 100%; */
   height: 100%;
   object-fit: contain;
   margin-top: 2rem;
@@ -307,6 +304,18 @@
   border-radius: 6px;
 }
 
+.dark .individual_slide_inner {
+  background-color: #333333;
+}
+
+.dark .impact_text_slide {
+  color: white;
+}
+
+.dark .impact_description_slide {
+  color: white;
+}
+
 .impact_text_slide {
   font-weight: 500;
   font-size: 80px;
@@ -436,7 +445,7 @@
   }
 
   .impact_section_container {
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .inforamtion_card_container {
@@ -694,7 +703,7 @@
   }
 
   .impact_section_container {
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .inforamtion_card_container {
@@ -900,7 +909,7 @@
   /* New css add  */
 
   .global_title_description_container {
-    padding: 10px 1rem;
+    padding: 10px 0rem;
   }
 
   .container_main_individual {
@@ -987,7 +996,7 @@
   }
 
   .impact_section_container {
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .inforamtion_card_container {
@@ -1193,7 +1202,7 @@
   /* New css add  */
 
   .global_title_description_container {
-    padding: 10px 1rem;
+    padding: 10px 0rem;
   }
 
   .container_main_individual {
@@ -1280,7 +1289,7 @@
   }
 
   .impact_section_container {
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .inforamtion_card_container {
@@ -1446,6 +1455,14 @@
 }
 
 @media (max-width: 610px) {
+  .first_title_global {
+    font-size: 26px;
+  }
+
+  .global_second_description {
+    font-size: 17px;
+  }
+
   .impact_img_containe {
     width: 100%;
     height: 100%;
@@ -1486,7 +1503,7 @@
   /* New css add  */
 
   .global_title_description_container {
-    padding: 10px 1rem;
+    padding: 10px 0rem;
   }
 
   .container_main_individual {
@@ -1573,7 +1590,7 @@
   }
 
   .impact_section_container {
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .inforamtion_card_container {
@@ -1739,6 +1756,14 @@
 }
 
 @media (max-width: 510px) {
+  .first_title_global {
+    font-size: 22px;
+  }
+
+  .global_second_description {
+    font-size: 15px;
+  }
+
   .impact_img_containe {
     width: 100%;
     height: 100%;
@@ -1779,7 +1804,7 @@
   /* New css add  */
 
   .global_title_description_container {
-    padding: 10px 1rem;
+    padding: 10px 0rem;
   }
 
   .container_main_individual {
@@ -1866,7 +1891,7 @@
   }
 
   .impact_section_container {
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .inforamtion_card_container {
@@ -2032,6 +2057,14 @@
 }
 
 @media (max-width: 420px) {
+  .first_title_global {
+    font-size: 22px;
+  }
+
+  .global_second_description {
+    font-size: 16px;
+  }
+
   .impact_img_containe {
     width: 100%;
     height: 100%;
@@ -2072,7 +2105,7 @@
   /* New css add  */
 
   .global_title_description_container {
-    padding: 10px 1rem;
+    padding: 10px 0rem;
   }
 
   .container_main_individual {
@@ -2159,7 +2192,7 @@
   }
 
   .impact_section_container {
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .inforamtion_card_container {
@@ -2325,6 +2358,13 @@
 }
 
 @media (max-width: 375px) {
+  .first_title_global {
+    font-size: 22px;
+  }
+
+  .global_second_description {
+    font-size: 14px;
+  }
   /* New css add  */
 
   .impact_img_containe {
@@ -2367,7 +2407,7 @@
   /* New css add  */
 
   .global_title_description_container {
-    padding: 10px 1rem;
+    padding: 10px 0rem;
   }
 
   .container_main_individual {
@@ -2454,7 +2494,7 @@
   }
 
   .impact_section_container {
-    gap: 0rem;
+    gap: 1rem;
   }
 
   .inforamtion_card_container {

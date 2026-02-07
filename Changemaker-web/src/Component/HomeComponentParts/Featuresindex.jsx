@@ -12,6 +12,7 @@ import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1
 import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
 import first_slide_3 from "../../assets/Home-image/second-workshop-3.png";
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Featuresindex = ({ theme, settheme }) => {
   const become_change_btn = () => {
@@ -142,9 +143,11 @@ const Featuresindex = ({ theme, settheme }) => {
             Explore Workshop Integration
           </button>
 
-          <button className={Styels.inner_btn}>
-            Explore More Impact Stories <FaArrowRight />
-          </button>
+          <Link className={Styels.text_decoration_none} to="/our-impact">
+            <button className={Styels.inner_btn}>
+              Explore More Impact Stories <FaArrowRight />
+            </button>
+          </Link>
         </div>
       </div>
 

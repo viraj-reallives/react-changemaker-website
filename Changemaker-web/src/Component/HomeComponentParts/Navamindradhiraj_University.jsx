@@ -248,7 +248,24 @@ const Navamindradhiraj_University = ({ theme }) => {
           </span>
         </div>
 
-        <div className={Styles.right_impact_image_box}></div>
+        <div className={Styles.right_impact_image_box}>
+          <video
+            width="100%"
+            height="auto"
+            loop
+            muted
+            autoPlay
+            playsInline
+            controls
+            className={Styles.image_cover_class}
+          >
+            <source
+              src="https://reallivesfrontend.s3.us-east-1.amazonaws.com/Student-video-workshop.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
       <div

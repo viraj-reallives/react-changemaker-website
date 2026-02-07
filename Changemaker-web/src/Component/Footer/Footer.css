@@ -9,7 +9,7 @@
 
 /* ===== DARK MODE ===== */
 .footer.dark {
-  background-color: #111;
+  background-color: #171616;
 }
 
 .footer.dark .changemaker-text {
@@ -30,7 +30,7 @@
 
 /* ===== LIGHT MODE ===== */
 .footer.light {
-  background-color: white;
+  background-color: #f7f7f7;
 }
 
 .footer.light .changemaker-text {

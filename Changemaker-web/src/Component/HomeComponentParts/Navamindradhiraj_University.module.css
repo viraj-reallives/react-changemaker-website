@@ -278,8 +278,13 @@
 }
 
 .right_impact_image_box {
-  background-color: red;
-  height: 30vh;
+  /* background-color: red; */
+  /* height: 93vh; */
+}
+
+.image_cover_class {
+  object-fit: cover;
+  height: 100%;
 }
 
 @media (max-width: 1368px) {
