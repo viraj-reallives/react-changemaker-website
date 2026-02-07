@@ -1,0 +1,514 @@
+.rcmimaincontainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dark .rcmimaincontainer {
+  background-color: #121212;
+}
+
+.dark .data_container_rcmi_main {
+  background-color: #1a1a1a;
+}
+
+.dark .top_benfit_header {
+  background-color: #2a2a2a;
+  border-bottom-color: #444;
+}
+
+.dark .header_title_side_text {
+  color: white;
+}
+
+.dark .rcmi_info_data_text,
+.dark .title_description_mid {
+  color: #e0e0e0;
+}
+
+.dark .rcmi_data_right_bar {
+  background-color: #262626;
+}
+
+.dark .how_to_works_rcmi_container_inner {
+  background-color: #2a2a2a;
+}
+
+.dark .first_title_how_to_work {
+  color: white;
+}
+
+.dark .title_game_event,
+.dark .description_game_title {
+  color: white;
+}
+
+.dark .the_ChangeMaker_Journey_container {
+  background-color: #1e1e1e;
+}
+
+.dark .text_changemaker_journey,
+.dark .changemaker_devlopement_text {
+  color: white;
+}
+
+.dark .point_cards_inner {
+  background-color: #2d3328;
+}
+
+.dark .stage_title_text,
+.dark .stage_title_2,
+.dark .stage_description_text {
+  color: #222222;
+}
+
+.dark .make_decision_container {
+  background-color: #252525;
+}
+
+.dark .make_decision_skill_text {
+  color: white;
+}
+
+.dark .becomechanage_maker {
+  background-color: #ffc067;
+  color: #111111;
+}
+
+.competencies_Style_image {
+  width: 100vw;
+  padding-top: 5rem;
+}
+
+.competencies_Style_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.data_container_rcmi_main {
+  background-color: #fff7ec;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem 6rem;
+}
+
+.rcmi_data_left_bar {
+  /* background-color: white; */
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tow_box_rcmi {
+  /* background-color: white; */
+  box-shadow: 0px 0px 8px 0px #00000040;
+  /* border-radius: 6px; */
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  /* padding: 1rem 1rem; */
+}
+.top_benfit_header {
+  gap: 0.5rem;
+  background-color: #ffe9cc;
+  border-bottom: 2px solid #ffb754;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.icon_card {
+  width: 40px;
+  height: 40px;
+}
+
+.image_fit_content {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header_title_side_text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+
+.flex_colume_what_rcmi {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bottom_data_benifit {
+  padding: 10px;
+}
+
+.rcmi_info_data_text {
+  font-weight: 400;
+  font-size: 17px;
+  color: #262626;
+  line-height: 26px;
+}
+
+.title_description_mid {
+  font-weight: 600;
+  font-size: 18px;
+  color: #262626;
+}
+
+.rcmi_data_right_bar {
+  box-shadow: 0px 0px 8px 0px #00000040;
+  background-color: white;
+  border-radius: 6px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+
+.changemaker_how_works {
+  padding: 1rem 6rem;
+  margin-bottom: 4rem;
+}
+
+.how_to_works_rcmi_container_inner {
+  padding: 1.5rem;
+  height: 100%;
+  box-shadow: 0px 0px 8px 0px #00000040;
+  background-color: #dae5ea;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.first_title_how_to_work {
+  font-weight: 600;
+  font-size: 28px;
+  color: #111111;
+  text-align: center;
+}
+
+.container_event_main {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 2rem;
+  padding: 1rem 1rem;
+  height: 100%;
+}
+
+.container_inner_child_left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* background-color: white; */
+}
+
+.container_inner_child_right {
+  border-radius: 6px;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  box-shadow: none !important;
+}
+
+.title_game_event {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+
+.description_game_title {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #262626;
+}
+
+.background_white {
+  background-color: white;
+  border: 2px solid #1a2c33;
+}
+
+.the_ChangeMaker_Journey_container {
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 3rem;
+}
+
+.top_child_changemaker {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.text_changemaker_journey {
+  font-weight: 600;
+  font-size: 28px;
+  color: #111111;
+  text-align: center;
+}
+
+.changemaker_devlopement_text {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #111111;
+}
+
+.changemaker_devlopment_text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+}
+
+.point_cards_container {
+  width: 100%;
+  padding: 0rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.point_cards_inner {
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 1.4rem;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  background-color: #e6f1da;
+  border-radius: 6px;
+}
+
+.stage_title_text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+
+.stage_title_2 {
+  font-weight: 300;
+  font-style: Italic;
+  font-size: 18px;
+  color: #000000;
+}
+
+.stage_description_text {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #333333;
+  line-height: 26px;
+}
+
+.point_cards_container_2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0rem 18rem;
+}
+
+.make_decision_container {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.make_decision_skill_text {
+  font-weight: 600;
+  font-size: 28px;
+  color: #111111;
+  text-align: center;
+}
+
+.becomechanage_maker {
+  padding: 10px;
+  width: max-content;
+  margin-top: 3%;
+  background-color: #ffc067;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #111111;
+  cursor: pointer;
+}
+
+@m (max-width:1130px) {
+}
+
+@media (max-width: 1024px) {
+  .rcmi_data_left_bar {
+    padding: 0rem;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .changemaker_how_works {
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 90vw;
+    gap: 1.5rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 1rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .changemaker_how_works {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+    gap: 1rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 18px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 16px;
+  }
+
+  .point_cards_inner {
+    padding: 1.5rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+}

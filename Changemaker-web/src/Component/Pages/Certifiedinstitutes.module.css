@@ -1,0 +1,2131 @@
+.Maincontainercertifide {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .Maincontainercertifide {
+  color: white;
+}
+
+.inner_content_first {
+  width: 100vw;
+  height: 100vh;
+  background-color: #234168;
+}
+
+.dark .inner_content_first {
+  background-color: black;
+}
+
+.child_inner_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid_class {
+  width: 70%;
+  height: 100%;
+  padding: 5rem 7rem;
+  gap: 3rem;
+  display: grid;
+  grid-template-rows: 30% auto 1fr;
+}
+
+.logo_foundation_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_foundation_box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title_of_foundation {
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.dark .Maincontainercertifide {
+  background-color: #121212;
+  color: white;
+}
+
+.dashboard_content_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 7rem;
+}
+
+.dark.dashboard_content_box {
+  background-color: black;
+  color: white;
+}
+
+.changemaker_dashboard_title_d {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.certifide_institutes_t_dashboard {
+  font-weight: 500;
+  font-size: 28px;
+  color: #111111;
+}
+
+.dark.wrapper_all_data_cards {
+  background-color: rgb(27, 18, 18);
+  color: black;
+}
+
+.certifide_institutes_description {
+  font-weight: 400;
+  font-size: 24px;
+  color: #333333;
+}
+
+.wrapper_all_data_cards {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 3rem 3rem;
+  gap: 1rem;
+}
+
+.left_side_content_i_dashboard {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+.left_side_content_inner_top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background-color: white;
+}
+
+.left_side_content_inner {
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.right_bottom_content_i {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px 0px #00000040;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
+}
+
+.top_cards_dashboard {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px 0px #00000040;
+  border-radius: 12px;
+  padding: 1.3rem;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 1.3rem;
+}
+
+.title_cards_dashboard_in {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 25px;
+}
+
+.title_cards_description_in {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.number_box_container {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.number_title_font {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 25px;
+  color: #00000057;
+}
+
+.second_number_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  color: #00000057;
+}
+
+.right_top_content_i {
+  padding: 2rem 1rem;
+  box-shadow: 0px 0px 8px 0px #00000040;
+  border-radius: 12px;
+  background-color: #d8f7fb;
+  display: grid;
+  grid-template-rows: 20% 1fr;
+  gap: 1rem;
+}
+.image_student_changemaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student_description_changemaker {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: end;
+  align-items: center;
+  gap: 4px;
+}
+
+.orchid_text_title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #565454;
+}
+
+.orchid_text_bottom {
+  font-weight: 600;
+  font-size: 17px;
+  color: #000000;
+}
+
+.image_student_changemaker > img {
+  /* height: 130px; */
+}
+
+.new_bottom_container {
+  display: grid;
+  grid-template-columns: 1fr 32.7%;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.title_bottom_left_container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sdg_title_first {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+}
+
+.title_bottom_left_container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sdg_description_title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.sdg_image_left_bottom_container {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.sdg_img_box {
+  width: 15%;
+}
+.sdg_img_box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.devlopement_goal_box {
+  padding: 1rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.national_education_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+
+.national_education_image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.notional_education_text {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  justify-self: center;
+}
+
+.workshop_still_container {
+  width: 100vw;
+  background-color: #fff4d5;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.dark .workshop_still_container {
+  background-color: #111111;
+}
+
+.dark p {
+  color: white;
+}
+
+.button_container_workshop_still {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workshop_still_btn {
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.foundation_description_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 10rem;
+}
+
+.foundation_description_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: justify;
+  color: #111111;
+}
+
+.container_card_colume {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0rem 10rem;
+}
+
+.card_data_add {
+  overflow: hidden;
+  border-radius: 6px;
+  height: 43vh;
+}
+
+.student_impact_container {
+  width: 100vw;
+  position: relative;
+  background: linear-gradient(360deg, #ffeacc 0%, #ffb959 100%);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.dark .student_impact_container {
+  background: linear-gradient(#111111);
+}
+
+.student_impact_cards_container {
+  padding: 1rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.inner_data_impact {
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0px 0px 12px 0px #00000040;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.quotes_container {
+  display: flex;
+  align-items: center;
+}
+
+.inner_data_description {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 11px;
+}
+
+.grade_student_detail {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.changemaker_certificate_container {
+  width: 100vw;
+  background-color: #ffe9c9;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.dark .changemaker_certificate_container {
+  background-color: #111111;
+}
+
+.changemaker_text_font {
+  font-weight: 600;
+  font-size: 28px;
+  color: #111111;
+  text-align: center;
+}
+
+.changemaker_certificate {
+  padding: 1rem 11rem;
+  height: 100%;
+}
+
+.rallives_foundation_tab_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* background-color: lightgreen; */
+}
+
+.rallives_foundation_tab_box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.inner_content_tab {
+  width: 70%;
+  height: 80%;
+  padding-top: 0rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.title_of_foundation {
+  font-weight: 500;
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+  width: 75%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.logo_foundation_box {
+  width: 19%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: absolute;
+  right: 1%;
+  bottom: 10%;
+}
+
+.changemaker_certificate > img {
+  width: 100%;
+  height: 100%;
+}
+
+.dark .grade_student_detail > p {
+  color: #222222;
+}
+
+.dark .certifide_institutes_t_dashboard {
+  color: white;
+}
+
+.dark .inner_data_description > p {
+  color: #222222;
+}
+
+.dark .title_cards_dashboard_in {
+  color: white;
+}
+.dark .title_cards_description_in {
+  color: white;
+}
+
+.dark .number_title_font {
+  color: white;
+}
+
+.dark .left_side_content_inner_top {
+  background-color: transparent;
+}
+
+.dark .top_cards_dashboard {
+  background-color: #2f2d2d;
+}
+.dark .second_number_title {
+  color: white;
+}
+
+.dark .right_top_content_i {
+  background-color: #2f2d2d;
+}
+
+.dark .left_side_content_inner {
+  background-color: #2f2d2d;
+}
+
+.dark .right_bottom_content_i {
+  background-color: #2f2d2d;
+}
+
+.dark .workshop_still_btn {
+  color: white;
+}
+
+/* #c2bfbf */
+
+@media (max-width: 1024px) and (min-width: 611px) {
+  .grid_class {
+    width: 90%;
+    padding: 3rem 2rem;
+  }
+
+  .wrapper_all_data_cards {
+    padding: 2rem;
+  }
+
+  .dashboard_content_box {
+    padding: 1rem 2rem;
+  }
+
+  .left_side_content_inner_top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .new_bottom_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sdg_image_left_bottom_container {
+    gap: 2rem;
+  }
+
+  .sdg_img_box {
+    width: 20%;
+  }
+
+  .container_card_colume {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0rem 3rem;
+  }
+
+  .student_impact_cards_container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 2rem;
+  }
+
+  .changemaker_certificate {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .notional_education_text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .grade_student_detail {
+    font-size: 14px;
+  }
+
+  .inner_data_description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .workshop_still_btn {
+    font-size: 15px;
+  }
+
+  .foundation_description_text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .sdg_image_left_bottom_container {
+    gap: 2rem;
+  }
+
+  .sdg_img_box {
+    width: 70px;
+  }
+
+  .sdg_title_first {
+    font-size: 17px;
+  }
+
+  .sdg_description_title {
+    font-size: 14px;
+  }
+
+  .number_title_font {
+    font-size: 50px;
+  }
+
+  .title_cards_description_in {
+    font-size: 16px;
+  }
+
+  .title_cards_dashboard_in {
+    font-size: 17px;
+  }
+
+  .certifide_institutes_t_dashboard {
+    font-size: 20px;
+  }
+  .certifide_institutes_description {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .changemaker_dashboard_title_d {
+    padding: 0rem 1rem;
+  }
+
+  .title_of_foundation {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .foundation_description_box {
+    padding: 0rem 0rem;
+  }
+
+  .changemaker_certificate {
+    padding: 0rem 1rem;
+  }
+
+  .changemaker_text_font {
+    font-size: 21px;
+  }
+
+  .changemaker_certificate_container {
+    padding: 1rem;
+  }
+
+  .student_impact_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .container_card_colume {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .workshop_still_container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .left_side_content_inner_top {
+    grid-template-columns: 1fr;
+  }
+
+  .new_bottom_container {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper_all_data_cards {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .dashboard_content_box {
+    padding: 1rem 0rem;
+  }
+
+  .inner_content_tab {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+
+  .rallives_foundation_tab_box {
+    padding-bottom: 0rem;
+    height: 100vh;
+  }
+  .rallives_foundation_tab_box > img {
+    object-fit: cover;
+  }
+
+  /* end css */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 510px) {
+  .notional_education_text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .grade_student_detail {
+    font-size: 18px;
+  }
+
+  .inner_data_description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .workshop_still_btn {
+    font-size: 18px;
+  }
+
+  .foundation_description_text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .sdg_image_left_bottom_container {
+    gap: 2rem;
+  }
+
+  .sdg_img_box {
+    width: 70px;
+  }
+
+  .sdg_title_first {
+    font-size: 18px;
+  }
+
+  .sdg_description_title {
+    font-size: 17px;
+  }
+
+  .number_title_font {
+    font-size: 50px;
+  }
+
+  .title_cards_description_in {
+    font-size: 18px;
+  }
+
+  .title_cards_dashboard_in {
+    font-size: 18px;
+  }
+
+  .certifide_institutes_t_dashboard {
+    font-size: 22px;
+  }
+  .certifide_institutes_description {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .changemaker_dashboard_title_d {
+    padding: 0rem 1rem;
+  }
+
+  .title_of_foundation {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .foundation_description_box {
+    padding: 0rem 0rem;
+  }
+
+  .changemaker_certificate {
+    padding: 0rem 1rem;
+  }
+
+  .changemaker_text_font {
+    font-size: 23px;
+  }
+
+  .changemaker_certificate_container {
+    padding: 1rem;
+  }
+
+  .student_impact_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .container_card_colume {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .workshop_still_container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .left_side_content_inner_top {
+    grid-template-columns: 1fr;
+  }
+
+  .new_bottom_container {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper_all_data_cards {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .dashboard_content_box {
+    padding: 1rem 0rem;
+  }
+
+  .inner_content_tab {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+
+  .rallives_foundation_tab_box {
+    padding-bottom: 0rem;
+    height: 100vh;
+  }
+  .rallives_foundation_tab_box > img {
+    object-fit: cover;
+  }
+
+  /* end css */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 410px) {
+  .notional_education_text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .grade_student_detail {
+    font-size: 14px;
+  }
+
+  .inner_data_description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .workshop_still_btn {
+    font-size: 15px;
+  }
+
+  .foundation_description_text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .sdg_image_left_bottom_container {
+    gap: 2rem;
+  }
+
+  .sdg_img_box {
+    width: 70px;
+  }
+
+  .sdg_title_first {
+    font-size: 17px;
+  }
+
+  .sdg_description_title {
+    font-size: 14px;
+  }
+
+  .number_title_font {
+    font-size: 50px;
+  }
+
+  .title_cards_description_in {
+    font-size: 16px;
+  }
+
+  .title_cards_dashboard_in {
+    font-size: 17px;
+  }
+
+  .certifide_institutes_t_dashboard {
+    font-size: 20px;
+  }
+  .certifide_institutes_description {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .changemaker_dashboard_title_d {
+    padding: 0rem 1rem;
+  }
+
+  .title_of_foundation {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .foundation_description_box {
+    padding: 0rem 0rem;
+  }
+
+  .changemaker_certificate {
+    padding: 0rem 1rem;
+  }
+
+  .changemaker_text_font {
+    font-size: 21px;
+  }
+
+  .changemaker_certificate_container {
+    padding: 1rem;
+  }
+
+  .student_impact_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .container_card_colume {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .workshop_still_container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .left_side_content_inner_top {
+    grid-template-columns: 1fr;
+  }
+
+  .new_bottom_container {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper_all_data_cards {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .dashboard_content_box {
+    padding: 1rem 0rem;
+  }
+
+  .inner_content_tab {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+
+  .rallives_foundation_tab_box {
+    padding-bottom: 0rem;
+    height: 100vh;
+  }
+  .rallives_foundation_tab_box > img {
+    object-fit: cover;
+  }
+
+  /* end css */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 375px) {
+  .notional_education_text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .grade_student_detail {
+    font-size: 14px;
+  }
+
+  .inner_data_description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .workshop_still_btn {
+    font-size: 15px;
+  }
+
+  .foundation_description_text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .sdg_image_left_bottom_container {
+    gap: 2rem;
+  }
+
+  .sdg_img_box {
+    width: 70px;
+  }
+
+  .sdg_title_first {
+    font-size: 17px;
+  }
+
+  .sdg_description_title {
+    font-size: 14px;
+  }
+
+  .number_title_font {
+    font-size: 50px;
+  }
+
+  .title_cards_description_in {
+    font-size: 16px;
+  }
+
+  .title_cards_dashboard_in {
+    font-size: 17px;
+  }
+
+  .certifide_institutes_t_dashboard {
+    font-size: 20px;
+  }
+  .certifide_institutes_description {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .changemaker_dashboard_title_d {
+    padding: 0rem 1rem;
+  }
+
+  .title_of_foundation {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .foundation_description_box {
+    padding: 0rem 0rem;
+  }
+
+  .changemaker_certificate {
+    padding: 0rem 1rem;
+  }
+
+  .changemaker_text_font {
+    font-size: 21px;
+  }
+
+  .changemaker_certificate_container {
+    padding: 1rem;
+  }
+
+  .student_impact_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .container_card_colume {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .workshop_still_container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .left_side_content_inner_top {
+    grid-template-columns: 1fr;
+  }
+
+  .new_bottom_container {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper_all_data_cards {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .dashboard_content_box {
+    padding: 1rem 0rem;
+  }
+
+  .inner_content_tab {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+
+  .rallives_foundation_tab_box {
+    padding-bottom: 0rem;
+    height: 100vh;
+  }
+  .rallives_foundation_tab_box > img {
+    object-fit: cover;
+  }
+
+  /* end css */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}

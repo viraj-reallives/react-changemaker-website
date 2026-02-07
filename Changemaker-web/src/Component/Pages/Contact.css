@@ -1,0 +1,168 @@
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7f6;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+.contact-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-box h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  text-align: center;
+  color: #28a745;
+  padding: 20px;
+  background-color: #e9f7ef;
+  border-radius: 8px;
+}
+
+/* Contact.css mein yeh naya code add karein */
+
+.captcha-group label {
+  font-size: 16px;
+  color: #333;
+}
+
+.captcha-input-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.captcha-input-container input {
+  flex: 1;
+}
+
+.refresh-btn {
+  padding: 10px 15px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.refresh-btn:hover {
+  background-color: #5a6268;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.dark .contact-container {
+  background-color: black;
+}
+
+.dark .form-group label {
+  color: white;
+}
+.dark .contact-box {
+  background-color: #222222;
+}
+
+.dark .contact-box h2 {
+  color: white;
+}
+
+@media (max-width: 700px) {
+}
+
+@media (max-width: 630px) {
+  .contact-container {
+    padding: 1rem;
+    padding-top: 4.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-container {
+    padding: 1rem;
+    padding-top: 4.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-container {
+    padding: 1rem;
+    padding-top: 4.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-container {
+    padding: 1rem;
+    padding-top: 4.5rem;
+  }
+}

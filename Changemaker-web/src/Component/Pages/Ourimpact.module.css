@@ -1,0 +1,2620 @@
+.ourimpactmaincontainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dark.ourimpactmaincontainer {
+  background-color: #111111;
+}
+
+.slider_componet {
+  width: 100%;
+  /* height: 100vh; */
+  /* height: calc(100vh); */
+  padding-top: 3rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+.our_global_impact_component {
+  padding: 1rem;
+  background-color: #eefdff;
+}
+
+.dark .our_global_impact_component {
+  background-color: #1a1a1a;
+}
+
+.dark .global_second_description {
+  color: white;
+}
+
+.global_title_description_container {
+  padding: 10px 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.first_title_global {
+  font-weight: 400;
+  font-size: 28px;
+  color: #0aaec6;
+  text-align: center;
+}
+
+.global_second_description {
+  font-weight: 400;
+  font-size: 18px;
+  color: #222222;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.global_image_section {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.impact_img_containe {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: contain;
+  margin-top: 2rem;
+}
+
+.our_card_section_wrapper {
+  padding: 3rem 13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.workshop_text {
+  color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: start;
+}
+
+.dark .workshop_text {
+  color: white;
+}
+
+.card_box_impact {
+  padding: 2rem 3rem;
+  box-shadow: 0px 0px 6px 0px #00000040;
+  border-radius: 6px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  background-color: white;
+}
+.dark .card_box_impact {
+  background-color: rgb(38 34 34);
+}
+
+.span_imapct_colume {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cards_title_imapct_text {
+  font-weight: 400;
+  font-size: 28px;
+  color: #0aaec6;
+  text-align: start;
+}
+
+.date_of_start_title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+  text-align: start;
+}
+
+.dark .date_of_start_title {
+  color: white;
+}
+
+.bottom_card_imapct_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.impact_image_card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.impact_card_data {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 1.5rem;
+}
+
+.university_text_title {
+  font-weight: 400;
+  font-size: 24px;
+  color: black;
+  text-align: start;
+}
+
+.dark .university_text_title {
+  color: white;
+}
+
+.participants_title_text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #444444;
+  text-align: start;
+}
+
+.dark .participants_title_text {
+  color: white;
+}
+
+.flex_align_start {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.numbers_font {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: start;
+  color: black;
+}
+
+.dark .numbers_font {
+  color: white;
+}
+
+.wapper_show_btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.team_work_btn {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  background-color: #f9c1a5;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1rem;
+}
+
+.integrity_work_btn {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1rem;
+  background-color: #caecf1;
+}
+
+.text_decoration_none {
+  text-decoration: none;
+}
+
+.larne_more_btn {
+  width: max-content;
+  padding: 0.5rem 0.6rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #c0bbbb;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.dark .larne_more_btn {
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slider_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.slider_wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+:global(.swiper),
+:global(.swiper-slide) {
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+  border-radius: 6px !important;
+}
+
+.slider_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+:global(.swiper-button-prev) {
+  left: 20px;
+  display: none !important;
+}
+
+:global(.swiper-button-next) {
+  right: 20px;
+  display: none !important;
+}
+
+:global(.swiper-button-prev::after),
+:global(.swiper-button-next::after) {
+  font-size: 22px;
+  font-weight: bold;
+  display: none !important;
+}
+
+.top_slider_imapct_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.individual_slide_inner {
+  background-color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 6px;
+}
+
+.impact_text_slide {
+  font-weight: 500;
+  font-size: 80px;
+}
+
+.impact_description_slide {
+  font-weight: 400;
+  font-size: 30px;
+  color: #222222;
+}
+
+.bottom_impact_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+
+@media (max-width: 1280px) {
+  .our_card_section_wrapper {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .our_card_section_wrapper {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 1130px) {
+  .our_card_section_wrapper {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our_card_section_wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .our_card_section_wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .impact_img_containe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards_title_imapct_text {
+    font-size: 17px;
+  }
+
+  .team_work_btn {
+    font-size: 14px;
+  }
+
+  .integrity_work_btn {
+    font-size: 14px;
+  }
+
+  .university_text_title {
+    font-size: 17px;
+  }
+
+  .participants_title_text {
+    font-size: 19px;
+  }
+
+  .bottom_card_imapct_section {
+    grid-template-columns: 1fr;
+  }
+
+  .card_box_impact {
+    padding: 1rem 1rem;
+  }
+
+  .our_card_section_wrapper {
+    padding: 3rem 1rem;
+  }
+
+  /* New css add  */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 710px) {
+  .impact_img_containe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards_title_imapct_text {
+    font-size: 17px;
+  }
+
+  .team_work_btn {
+    font-size: 14px;
+  }
+
+  .integrity_work_btn {
+    font-size: 14px;
+  }
+
+  .university_text_title {
+    font-size: 17px;
+  }
+
+  .participants_title_text {
+    font-size: 19px;
+  }
+
+  .bottom_card_imapct_section {
+    grid-template-columns: 1fr;
+  }
+
+  .card_box_impact {
+    padding: 1rem 1rem;
+  }
+
+  .our_card_section_wrapper {
+    padding: 3rem 1rem;
+  }
+
+  /* New css add  */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 610px) {
+  .impact_img_containe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards_title_imapct_text {
+    font-size: 17px;
+  }
+
+  .team_work_btn {
+    font-size: 14px;
+  }
+
+  .integrity_work_btn {
+    font-size: 14px;
+  }
+
+  .university_text_title {
+    font-size: 17px;
+  }
+
+  .participants_title_text {
+    font-size: 19px;
+  }
+
+  .bottom_card_imapct_section {
+    grid-template-columns: 1fr;
+  }
+
+  .card_box_impact {
+    padding: 1rem 1rem;
+  }
+
+  .our_card_section_wrapper {
+    padding: 3rem 1rem;
+  }
+
+  /* New css add  */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 510px) {
+  .impact_img_containe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards_title_imapct_text {
+    font-size: 17px;
+  }
+
+  .team_work_btn {
+    font-size: 14px;
+  }
+
+  .integrity_work_btn {
+    font-size: 14px;
+  }
+
+  .university_text_title {
+    font-size: 17px;
+  }
+
+  .participants_title_text {
+    font-size: 19px;
+  }
+
+  .bottom_card_imapct_section {
+    grid-template-columns: 1fr;
+  }
+
+  .card_box_impact {
+    padding: 1rem 1rem;
+  }
+
+  .our_card_section_wrapper {
+    padding: 3rem 1rem;
+  }
+
+  /* New css add  */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 420px) {
+  .impact_img_containe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards_title_imapct_text {
+    font-size: 17px;
+  }
+
+  .team_work_btn {
+    font-size: 14px;
+  }
+
+  .integrity_work_btn {
+    font-size: 14px;
+  }
+
+  .university_text_title {
+    font-size: 17px;
+  }
+
+  .participants_title_text {
+    font-size: 19px;
+  }
+
+  .bottom_card_imapct_section {
+    grid-template-columns: 1fr;
+  }
+
+  .card_box_impact {
+    padding: 1rem 1rem;
+  }
+
+  .our_card_section_wrapper {
+    padding: 3rem 1rem;
+  }
+
+  /* New css add  */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* New css add  */
+
+  .impact_img_containe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards_title_imapct_text {
+    font-size: 17px;
+  }
+
+  .team_work_btn {
+    font-size: 14px;
+  }
+
+  .integrity_work_btn {
+    font-size: 14px;
+  }
+
+  .university_text_title {
+    font-size: 17px;
+  }
+
+  .participants_title_text {
+    font-size: 19px;
+  }
+
+  .bottom_card_imapct_section {
+    grid-template-columns: 1fr;
+  }
+
+  .card_box_impact {
+    padding: 1rem 1rem;
+  }
+
+  .our_card_section_wrapper {
+    padding: 3rem 1rem;
+  }
+
+  /* New css add  */
+
+  .global_title_description_container {
+    padding: 10px 1rem;
+  }
+
+  .container_main_individual {
+    padding-top: 2rem;
+  }
+
+  .impact_text_slide {
+    font-size: 50px;
+  }
+
+  .top_slider_imapct_container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom_impact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .individual_slide_inner {
+    background-color: #f3f3f3;
+    gap: 1rem;
+  }
+
+  .impact_description_slide {
+    font-size: 24px;
+  }
+
+  .description_water_background {
+    font-size: 17px;
+  }
+
+  .features_text_card {
+    font-size: 20px;
+  }
+
+  .features_description_text {
+    font-size: 15px;
+  }
+
+  .cards_detail_box {
+    grid-template-rows: auto 1fr;
+  }
+
+  .card_index_features_container {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benifits_container_inner {
+    position: relative;
+    padding: 0rem 0rem;
+  }
+
+  .inner_btn {
+    font-size: 14px;
+  }
+
+  .description_smoll_words_title {
+    font-size: 20px;
+  }
+
+  .label_footer_button_box {
+    padding: 0px;
+  }
+
+  .footer_ankar_style {
+    font-size: 14px;
+  }
+
+  .footer_section_1 {
+    gap: 1rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
+  .title_university_name {
+    font-size: 18px;
+  }
+
+  .content_data_text_box {
+    gap: 6px;
+  }
+
+  .impact_section_container {
+    gap: 0rem;
+  }
+
+  .inforamtion_card_container {
+    gap: 0rem;
+  }
+
+  .contact_info {
+    padding: 1rem !important;
+  }
+
+  .contact_grid {
+    grid-template-columns: 1fr !important;
+    gap: 0rem !important;
+  }
+
+  .child_changemaker_container {
+    gap: 1rem;
+  }
+
+  .becomechanage_maker {
+    font-size: 16px;
+  }
+
+  .data_container_rcmi_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .how_to_works_rcmi_container {
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .container_event_main {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+
+  .point_cards_container {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .point_cards_container_2 {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
+  }
+
+  .top_child_changemaker {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .make_decision_skill_text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .how_to_works_rcmi_container_inner {
+    gap: 1rem;
+  }
+
+  .title_game_event {
+    font-size: 17px;
+  }
+
+  .title_tag_rcmi {
+    font-size: 17px;
+  }
+
+  .changemaker_devlopement_text {
+    font-size: 16px;
+  }
+
+  .changemaker_devlopment_text {
+    font-size: 17px;
+  }
+
+  .text_changemaker_journey {
+    font-size: 22px;
+  }
+
+  .icon_menu_mobile {
+    display: block;
+  }
+
+  .dropdown_content {
+    right: -8%;
+  }
+
+  .btn_larne_more {
+    padding: 1rem 0rem 1rem 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right_side_bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    padding: 12px;
+  }
+
+  .section_first_container {
+    height: max-content;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 0rem;
+  }
+
+  .card_info_container {
+    grid-template-columns: 1fr;
+    padding: 10px 0rem;
+    gap: 1rem;
+  }
+
+  .section_second_container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+  }
+
+  .footer_container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .four_grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation_bar {
+    padding: 1rem 1rem;
+  }
+
+  .title_section_1 {
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .become_change_btn,
+  .how_this_works_btn {
+    font-size: 14px;
+  }
+
+  .image_height {
+    height: 17rem !important;
+  }
+
+  .sdg_imapct > img {
+    width: 100px;
+    height: 100px;
+  }
+}
