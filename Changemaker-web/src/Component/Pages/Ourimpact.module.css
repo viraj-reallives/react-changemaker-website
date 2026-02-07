@@ -353,6 +353,10 @@
 }
 
 @media (max-width: 1024px) {
+  .impact_img_containe {
+    width: 100%;
+    height: 100%;
+  }
   .our_card_section_wrapper {
     padding: 3rem 1rem;
   }
@@ -611,6 +615,10 @@
 }
 
 @media (max-width: 991px) {
+  .impact_img_containe {
+    width: 100%;
+    height: 100%;
+  }
   .our_card_section_wrapper {
     padding: 3rem 1rem;
   }
@@ -2494,7 +2502,7 @@
   }
 
   .impact_section_container {
-    gap: 1rem;
+    gap: 0rem;
   }
 
   .inforamtion_card_container {

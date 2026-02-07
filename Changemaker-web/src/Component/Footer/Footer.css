@@ -148,6 +148,29 @@
   height: 100% !important;
 }
 
+@media (max-width: 1280px) {
+  .footer {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .footer {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 2rem 2rem;
+  }
+}
 /* ===== RESPONSIVE ===== */
 @media (max-width: 800px) {
   .footer {

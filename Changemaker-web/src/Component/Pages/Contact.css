@@ -122,14 +122,14 @@
 }
 
 .dark .contact-container {
-  background-color: black;
+  background-color: #222222;
 }
 
 .dark .form-group label {
   color: white;
 }
 .dark .contact-box {
-  background-color: #222222;
+  background-color: #333333;
 }
 
 .dark .contact-box h2 {
