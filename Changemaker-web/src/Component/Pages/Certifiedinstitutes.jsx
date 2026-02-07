@@ -128,15 +128,17 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
 
               <div className={Styles.right_top_content_i}>
                 <div className={Styles.image_student_changemaker}>
-                  <img src={chnagemakerstudent} alt="" />
+                  <img src={logowhite} alt="" />
                 </div>
 
                 <div class={Styles.student_description_changemaker}>
                   <p class={Styles.orchid_text_title}>
-                    The Orchid School Pune is a
+                    Driven by RealLives Simulation
                   </p>
+
                   <p class={Styles.orchid_text_bottom}>
-                    RealLives certified ChangeMaker School
+                    The Orchid School Pune is a RealLives certified ChangeMaker
+                    School
                   </p>
                 </div>
               </div>

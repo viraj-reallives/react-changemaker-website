@@ -53,7 +53,10 @@ const App = () => {
             element={<Ourimpact theme={theme} settheme={settheme} />}
           />
 
-          <Route path="our-impact/university" element={<University theme={theme} />} />
+          <Route
+            path="our-impact/ETH-University"
+            element={<University theme={theme} />}
+          />
           <Route
             path="our-impact/Navamindradhiraj_University"
             element={<Navamindradhiraj_University theme={theme} />}
@@ -64,7 +67,10 @@ const App = () => {
             element={<KyungHee_University theme={theme} />}
           />
 
-          <Route path="our-impact/IIT_Bombay" element={<IIT_Bombay theme={theme} />} />
+          <Route
+            path="our-impact/IIT_Bombay"
+            element={<IIT_Bombay theme={theme} />}
+          />
 
           <Route path="/How-RCMI-Works" element={<Rcmiworks theme={theme} />} />
 

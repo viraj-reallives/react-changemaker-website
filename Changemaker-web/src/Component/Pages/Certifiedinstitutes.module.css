@@ -114,7 +114,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .left_side_content_inner {
@@ -195,19 +195,21 @@
   flex-direction: column-reverse;
   justify-content: end;
   align-items: center;
-  gap: 4px;
+  gap: 1rem;
 }
 
 .orchid_text_title {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 17px;
   color: #565454;
+  text-align: center;
 }
 
 .orchid_text_bottom {
   font-weight: 600;
   font-size: 17px;
   color: #000000;
+  text-align: center;
 }
 
 .image_student_changemaker > img {

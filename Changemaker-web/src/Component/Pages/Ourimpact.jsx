@@ -40,7 +40,7 @@ const Ourimpact = ({ theme }) => {
       intergrity_title: "Integrity and Work Ethics",
       teamwork_bg: "#f9c1a5",
       intergrity_bg: "#caecf1",
-      link: "/our-impact/university",
+      link: "/our-impact/ETH-University",
     },
     {
       id: 2,

@@ -93,7 +93,7 @@ const Contact = () => {
         {submitted ? (
           <div className="success-message">
             <h3 style={{ color: "#28a745" }}>
-              ✅ Response submitted successfully!
+              Response submitted successfully!
             </h3>
             <p>Thank you for reaching out. We will contact you soon.</p>
             <button
