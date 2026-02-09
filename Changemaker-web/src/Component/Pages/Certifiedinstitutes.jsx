@@ -21,7 +21,7 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
   let workshop = [
     {
       id: 1,
-      img: orchid_1,
+      img: orchid_5,
     },
 
     {
@@ -41,7 +41,7 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
 
     {
       id: 5,
-      img: orchid_5,
+      img: orchid_1,
     },
 
     {
