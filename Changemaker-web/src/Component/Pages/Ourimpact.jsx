@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Link, Outlet } from "react-router-dom";
+import React from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Styles from "./Ourimpact.module.css";
@@ -276,91 +277,116 @@ const Ourimpact = ({ theme }) => {
       </div>
 
       {/* Impact Cards Section */}
+
       <div className={Styles.our_card_section_wrapper}>
         <p className={Styles.workshop_text}>Impact Home</p>
+
         {impact_home.map((impactdata, idx) => (
-          <div key={idx} className={Styles.card_box_impact}>
-            <span className={Styles.span_imapct_colume}>
-              <p className={Styles.cards_title_imapct_text}>
-                {impactdata.card_title}
-              </p>
-              <p className={Styles.date_of_start_title}>
-                {impactdata.card_date}
-              </p>
-            </span>
+          <React.Fragment key={idx}>
+            {/* --- NORMAL CARD SECTION --- */}
+            <div className={Styles.card_box_impact}>
+              <span className={Styles.span_imapct_colume}>
+                <p className={Styles.cards_title_imapct_text}>
+                  {impactdata.card_title}
+                </p>
+                <p className={Styles.date_of_start_title}>
+                  {impactdata.card_date}
+                </p>
+              </span>
 
-            <div className={Styles.bottom_card_imapct_section}>
-              <div className={Styles.impact_image_card}>
-                <img src={impactdata.imgURL} alt={impactdata.card_title} />
-              </div>
-
-              <div className={Styles.impact_card_data}>
-                <span className={Styles.span_imapct_colume}>
-                  <p className={Styles.university_text_title}>
-                    {impactdata.university_text}
-                  </p>
-                  <p className={Styles.participants_title_text}>
-                    {impactdata.particepent_title}
-                  </p>
-                </span>
-
-                <span className={Styles.flex_align_start}>
-                  <p className={Styles.participants_title_text}>
-                    {impactdata.collaboration_text}
-                  </p>
-                  <p className={Styles.university_text_title}>
-                    {impactdata.name_card}
-                  </p>
-                </span>
-
-                <span className={Styles.flex_align_start}>
-                  <p className={Styles.participants_title_text}>
-                    Participants:
-                  </p>
-                  <p className={Styles.numbers_font}>
-                    {impactdata.number_title}
-                  </p>
-                </span>
-
-                {impactdata.Used_Tools && (
-                  <p>
-                    Used tool: <strong>{impactdata.Used_Tools}</strong>
-                  </p>
-                )}
-
-                <span className={Styles.span_imapct_colume}>
-                  <p className={Styles.participants_title_text}>
-                    {impactdata.skill_devloped}
-                  </p>
-                </span>
-
-                <div className={Styles.wapper_show_btn}>
-                  <button
-                    className={Styles.team_work_btn}
-                    style={{ backgroundColor: impactdata.teamwork_bg }}
-                  >
-                    {impactdata.teamwork_title}
-                  </button>
-
-                  <button
-                    className={Styles.integrity_work_btn}
-                    style={{ backgroundColor: impactdata.intergrity_bg }}
-                  >
-                    {impactdata.intergrity_title}
-                  </button>
+              <div className={Styles.bottom_card_imapct_section}>
+                <div className={Styles.impact_image_card}>
+                  <img src={impactdata.imgURL} alt={impactdata.card_title} />
                 </div>
 
-                <Link
-                  to={impactdata.link}
-                  className={Styles.text_decoration_none}
-                >
-                  <button className={Styles.larne_more_btn}>
-                    Learn more <FaArrowRight />
-                  </button>
-                </Link>
+                <div className={Styles.impact_card_data}>
+                  <span className={Styles.span_imapct_colume}>
+                    <p className={Styles.university_text_title}>
+                      {impactdata.university_text}
+                    </p>
+                    <p className={Styles.participants_title_text}>
+                      {impactdata.particepent_title}
+                    </p>
+                  </span>
+
+                  <span className={Styles.flex_align_start}>
+                    <p className={Styles.participants_title_text}>
+                      {impactdata.collaboration_text}
+                    </p>
+                    <p className={Styles.university_text_title}>
+                      {impactdata.name_card}
+                    </p>
+                  </span>
+
+                  <span className={Styles.flex_align_start}>
+                    <p className={Styles.participants_title_text}>
+                      Participants:
+                    </p>
+                    <p className={Styles.numbers_font}>
+                      {impactdata.number_title}
+                    </p>
+                  </span>
+
+                  {impactdata.Used_Tools && (
+                    <p>
+                      Used tool: <strong>{impactdata.Used_Tools}</strong>
+                    </p>
+                  )}
+
+                  <span className={Styles.span_imapct_colume}>
+                    <p className={Styles.participants_title_text}>
+                      {impactdata.skill_devloped}
+                    </p>
+                  </span>
+
+                  <div className={Styles.wapper_show_btn}>
+                    <button
+                      className={Styles.team_work_btn}
+                      style={{ backgroundColor: impactdata.teamwork_bg }}
+                    >
+                      {impactdata.teamwork_title}
+                    </button>
+
+                    <button
+                      className={Styles.integrity_work_btn}
+                      style={{ backgroundColor: impactdata.intergrity_bg }}
+                    >
+                      {impactdata.intergrity_title}
+                    </button>
+                  </div>
+
+                  <Link
+                    to={impactdata.link}
+                    className={Styles.text_decoration_none}
+                  >
+                    <button className={Styles.larne_more_btn}>
+                      Learn more <FaArrowRight />
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+
+            {/* --- MIDDLE SECTION (After 2nd Card) --- */}
+            {idx === 1 && (
+              <div className={Styles.wrapper_descision_skills_2}>
+                <div className={Styles.decision_skills_container}>
+                  <p className={Styles.global_student_title}>
+                    Every choice you make shapes your growth. Track your skills,
+                    explore your potential, and see how you can make a
+                    real-world impact
+                  </p>
+
+                  <button
+                    className={Styles.larne_more_btn}
+                    onClick={become_change_btn}
+                  >
+                    Begin Your ChangeMaking Journey <FaArrowRight />
+                  </button>
+                </div>
+              </div>
+            )}
+          </React.Fragment>
         ))}
       </div>
 

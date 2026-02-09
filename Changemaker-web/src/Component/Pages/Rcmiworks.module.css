@@ -106,6 +106,10 @@
   box-shadow: 0px 0px 8px 0px #00000040;
 }
 
+.dark .rcmi_data_left_bar {
+  background-color: #262626;
+}
+
 .tow_box_rcmi {
   box-shadow: 0px 0px 8px 0px #00000040;
   display: grid;
@@ -243,7 +247,7 @@
 }
 
 .the_ChangeMaker_Journey_container {
-  background-color: lightgoldenrodyellow;
+  background-color: #ffe5c5;
   display: flex;
   align-items: center;
   flex-direction: column;

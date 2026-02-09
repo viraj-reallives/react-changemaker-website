@@ -67,7 +67,7 @@ const Benifites = ({ theme, settheme }) => {
                 <div className={Style.icon_card}>
                   <img
                     key={elem.id}
-                    className={Style.image_width}
+                    className={Style.icon_benifit_image}
                     src={elem.imageUrl}
                     alt="img"
                   />
