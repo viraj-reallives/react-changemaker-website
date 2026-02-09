@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .dark.ourimpactmaincontainer {
@@ -67,7 +68,7 @@
 }
 
 .our_card_section_wrapper {
-  padding: 3rem 13rem;
+  padding: 1rem 13rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -228,7 +229,7 @@
 }
 
 .dark .larne_more_btn {
-  color: white;
+  color: black;
 }
 
 .swiper {
@@ -333,16 +334,52 @@
   gap: 1rem;
   padding: 1rem 1rem;
 }
+.wrapper_descision_skills {
+  padding: 1rem 13rem;
+}
 
-@media (max-width: 1280px) {
-  .our_card_section_wrapper {
-    padding: 3rem 4rem;
-  }
+.decision_skills_container {
+  background-color: #feecba;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.global_student_title {
+  font-weight: 400;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+.larne_more_btn {
+  width: max-content;
+  padding: 0.5rem 0.6rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  outline: none;
+  /* border: 1px solid #c0bbbb; */
+  border-radius: 6px;
+  background-color: transparent;
+  background-color: white;
 }
 
 @media (max-width: 1200px) {
   .our_card_section_wrapper {
     padding: 1rem 1rem;
+  }
+
+  .wrapper_descision_skills {
+    padding: 0rem 1rem;
   }
 }
 
@@ -350,15 +387,26 @@
   .our_card_section_wrapper {
     padding: 1rem 1rem;
   }
+  .wrapper_descision_skills {
+    padding: 0rem 1rem;
+  }
 }
 
 @media (max-width: 1024px) {
+  .wrapper_descision_skills {
+    padding: 1rem 1rem;
+  }
+
+  .ourimpactmaincontainer {
+    padding-bottom: 1rem;
+  }
+
   .impact_img_containe {
     width: 100%;
     height: 100%;
   }
   .our_card_section_wrapper {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   .global_title_description_container {
@@ -615,12 +663,28 @@
 }
 
 @media (max-width: 991px) {
+  .ourimpactmaincontainer {
+    padding-bottom: 0rem;
+  }
+
+  .global_student_title {
+    font-size: 24px;
+  }
+
+  .larne_more_btn {
+    font-size: 18px;
+  }
+
+  .wrapper_descision_skills {
+    padding: 1rem 1rem;
+  }
+
   .impact_img_containe {
     width: 100%;
     height: 100%;
   }
   .our_card_section_wrapper {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   .global_title_description_container {
@@ -877,6 +941,22 @@
 }
 
 @media (max-width: 800px) {
+  .ourimpactmaincontainer {
+    padding-bottom: 0rem;
+  }
+
+  .global_student_title {
+    font-size: 22px;
+  }
+
+  .larne_more_btn {
+    font-size: 16px;
+  }
+
+  .wrapper_descision_skills {
+    padding: 1rem 1rem;
+  }
+
   .impact_img_containe {
     width: 100%;
     height: 100%;
@@ -911,7 +991,7 @@
   }
 
   .our_card_section_wrapper {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   /* New css add  */
@@ -1170,6 +1250,22 @@
 }
 
 @media (max-width: 710px) {
+  .ourimpactmaincontainer {
+    padding-bottom: 0rem;
+  }
+
+  .global_student_title {
+    font-size: 22px;
+  }
+
+  .larne_more_btn {
+    font-size: 16px;
+  }
+
+  .wrapper_descision_skills {
+    padding: 1rem 1rem;
+  }
+
   .impact_img_containe {
     width: 100%;
     height: 100%;
@@ -1204,7 +1300,7 @@
   }
 
   .our_card_section_wrapper {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   /* New css add  */
@@ -1463,6 +1559,22 @@
 }
 
 @media (max-width: 610px) {
+  .ourimpactmaincontainer {
+    padding-bottom: 0rem;
+  }
+
+  .global_student_title {
+    font-size: 22px;
+  }
+
+  .larne_more_btn {
+    font-size: 16px;
+  }
+
+  .wrapper_descision_skills {
+    padding: 1rem 1rem;
+  }
+
   .first_title_global {
     font-size: 26px;
   }
@@ -1505,7 +1617,7 @@
   }
 
   .our_card_section_wrapper {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   /* New css add  */
@@ -1764,6 +1876,22 @@
 }
 
 @media (max-width: 510px) {
+  .ourimpactmaincontainer {
+    padding-bottom: 0rem;
+  }
+
+  .global_student_title {
+    font-size: 21px;
+  }
+
+  .larne_more_btn {
+    font-size: 14px;
+  }
+
+  .wrapper_descision_skills {
+    padding: 1rem 1rem;
+  }
+
   .first_title_global {
     font-size: 22px;
   }
@@ -1806,7 +1934,7 @@
   }
 
   .our_card_section_wrapper {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   /* New css add  */
@@ -2065,6 +2193,22 @@
 }
 
 @media (max-width: 420px) {
+  .ourimpactmaincontainer {
+    padding-bottom: 0rem;
+  }
+
+  .global_student_title {
+    font-size: 21px;
+  }
+
+  .larne_more_btn {
+    font-size: 14px;
+  }
+
+  .wrapper_descision_skills {
+    padding: 1rem 1rem;
+  }
+
   .first_title_global {
     font-size: 22px;
   }
@@ -2107,7 +2251,7 @@
   }
 
   .our_card_section_wrapper {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   /* New css add  */
@@ -2366,6 +2510,22 @@
 }
 
 @media (max-width: 375px) {
+  .ourimpactmaincontainer {
+    padding-bottom: 0rem;
+  }
+
+  .global_student_title {
+    font-size: 21px;
+  }
+
+  .larne_more_btn {
+    font-size: 14px;
+  }
+
+  .wrapper_descision_skills {
+    padding: 1rem 1rem;
+  }
+
   .first_title_global {
     font-size: 22px;
   }
@@ -2409,7 +2569,7 @@
   }
 
   .our_card_section_wrapper {
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
   }
 
   /* New css add  */

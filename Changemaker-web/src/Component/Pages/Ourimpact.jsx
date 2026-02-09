@@ -24,6 +24,11 @@ import fourth_slide_3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Ourimpact = ({ theme }) => {
+  const become_change_btn = () => {
+    window.location.href =
+      "https://reallivesworld.com/reallives-website-main/license.html";
+  };
+
   const impact_home = [
     {
       id: 1,
@@ -357,6 +362,18 @@ const Ourimpact = ({ theme }) => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className={Styles.wrapper_descision_skills}>
+        <div className={Styles.decision_skills_container}>
+          <p className={Styles.global_student_title}>
+            Make decisions, grow skills, and see your impact come to life.
+          </p>
+
+          <button className={Styles.larne_more_btn} onClick={become_change_btn}>
+            Begin Your ChangeMaking Journey <FaArrowRight />
+          </button>
+        </div>
       </div>
 
       <Outlet />
