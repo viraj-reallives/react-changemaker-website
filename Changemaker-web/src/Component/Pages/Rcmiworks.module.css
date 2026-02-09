@@ -101,6 +101,9 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 0px 8px 0px #00000040;
 }
 
 .tow_box_rcmi {
