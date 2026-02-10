@@ -112,7 +112,7 @@ const Featuresindex = ({ theme, settheme }) => {
         <div className={Styels.inforamtion_card_container}>
           <div className={Styels.card_info_container}>
             {impactcarddata.map((ourimpactcard, idx) => (
-              <div className={Styels.card_info_box}>
+              <div key={idx} className={Styels.card_info_box}>
                 <div className={Styels.university_image_box}>
                   <img
                     className={Styels.image_fit_cover}
