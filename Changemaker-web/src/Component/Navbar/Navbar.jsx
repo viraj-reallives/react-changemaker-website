@@ -1,8 +1,11 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-import light_logo from "../../assets/day.png";
-import dark_logo from "../../assets/night.png";
+// Material Icons Import
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+
 import Dropdown from "./Dropdown";
 import Path from "./Path";
 import Logo from "./Logo";
@@ -10,26 +13,27 @@ import Logo from "./Logo";
 const Navbar = ({ theme, settheme }) => {
   console.log(theme);
 
-  let togglebtn = () => {
-    theme == "light" ? settheme("dark") : settheme("light");
+  const togglebtn = () => {
+    theme === "light" ? settheme("dark") : settheme("light");
   };
-
-  const logo_decide = theme == "light" ? dark_logo : light_logo;
 
   return (
     <div className="header-fixed">
-      <Logo></Logo>
+      <Logo />
 
       <div className="content-tap-impact">
-        {/* <Dropdown></Dropdown> */}
-        <Path></Path>
+        <Path />
 
-        <div className="light-dark-box">
-          <img
-            className="image-fit-content "
-            onClick={() => togglebtn()}
-            src={logo_decide}
-          />
+        <div
+          className="light-dark-box"
+          onClick={togglebtn}
+          style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
+        >
+          {theme === "light" ? (
+            <DarkModeIcon sx={{ color: "#333", fontSize: 35 }} />
+          ) : (
+            <LightModeIcon sx={{ color: "#ffdb58", fontSize: 35 }} />
+          )}
         </div>
       </div>
     </div>

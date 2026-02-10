@@ -368,6 +368,7 @@ const Ourimpact = ({ theme }) => {
             </div>
 
             {/* --- MIDDLE SECTION (After 2nd Card) --- */}
+
             {idx === 1 && (
               <div className={Styles.wrapper_descision_skills_2}>
                 <div className={Styles.decision_skills_container}>
