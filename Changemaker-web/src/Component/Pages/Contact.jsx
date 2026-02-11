@@ -50,7 +50,7 @@ const Contact = () => {
 
     // 2. Prepare Data for Web3Forms
     const submissionData = new FormData();
-    submissionData.append("access_key", "d7368073-5c61-41f3-bb6d-1ef9cb4ee062"); // Aapki Key
+    submissionData.append("access_key", "66469d30-3566-42fe-a853-2d5a0404a9b5");
     submissionData.append("name", `${formData.firstName} ${formData.lastName}`);
     submissionData.append("email", formData.email);
     submissionData.append("message", formData.message);
