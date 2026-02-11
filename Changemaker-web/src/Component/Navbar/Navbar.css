@@ -180,6 +180,11 @@
   background-color: white;
 }
 
+.theme-toggle-icon {
+  font-size: 35px !important;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
   .header-fixed {
     padding: 14px 1rem;
@@ -191,7 +196,7 @@
   }
 
   .logo-and-title-container p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .line-style {
@@ -251,6 +256,9 @@
 }
 
 @media (max-width: 480px) {
+  .theme-toggle-icon {
+    font-size: 30px !important;
+  }
   .header-fixed {
     padding: 14px 0.75rem;
   }
@@ -265,7 +273,7 @@
   }
 
   .logo-and-title-container p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .line-style {
@@ -305,8 +313,12 @@
 }
 
 @media (max-width: 375px) {
+  .theme-toggle-icon {
+    font-size: 30px !important;
+  }
+
   .logo-and-title-container p {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .image-icon-changemaker {

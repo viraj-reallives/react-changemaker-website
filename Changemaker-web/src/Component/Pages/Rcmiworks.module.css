@@ -431,6 +431,31 @@
 }
 
 @media (max-width: 640px) {
+  .title_description_mid {
+    font-size: 18px;
+  }
+
+  .rcmi_info_data_text {
+    font-size: 17px;
+  }
+
+  .header_title_side_text {
+    font-size: 20px;
+  }
+
+  .first_title_how_to_work {
+    font-size: 25px;
+  }
+
+  .title_game_event {
+    font-size: 21px;
+  }
+
+  .description_game_title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
   .point_cards_container {
     grid-template-columns: 1fr;
     padding: 0rem 0rem;
@@ -442,6 +467,31 @@
 }
 
 @media (max-width: 540px) {
+  .title_description_mid {
+    font-size: 17px;
+  }
+
+  .rcmi_info_data_text {
+    font-size: 16px;
+  }
+
+  .header_title_side_text {
+    font-size: 19px;
+  }
+
+  .first_title_how_to_work {
+    font-size: 24px;
+  }
+
+  .title_game_event {
+    font-size: 19px;
+  }
+
+  .description_game_title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
   .point_cards_container {
     grid-template-columns: 1fr;
     padding: 0rem 0rem;
@@ -453,6 +503,31 @@
 }
 
 @media (max-width: 440px) {
+  .title_description_mid {
+    font-size: 16px;
+  }
+
+  .rcmi_info_data_text {
+    font-size: 15px;
+  }
+
+  .header_title_side_text {
+    font-size: 19px;
+  }
+
+  .first_title_how_to_work {
+    font-size: 21px;
+  }
+
+  .title_game_event {
+    font-size: 18px;
+  }
+
+  .description_game_title {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
   .point_cards_container {
     grid-template-columns: 1fr;
     padding: 0rem 0rem;
@@ -464,6 +539,31 @@
 }
 
 @media (max-width: 375px) {
+  .title_description_mid {
+    font-size: 16px;
+  }
+
+  .rcmi_info_data_text {
+    font-size: 15px;
+  }
+
+  .header_title_side_text {
+    font-size: 19px;
+  }
+
+  .first_title_how_to_work {
+    font-size: 20px;
+  }
+
+  .title_game_event {
+    font-size: 18px;
+  }
+
+  .description_game_title {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
   .point_cards_container {
     grid-template-columns: 1fr;
     padding: 0rem 0rem;

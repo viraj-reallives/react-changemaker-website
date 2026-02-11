@@ -16,7 +16,17 @@ import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
 import "./Component/Global_css/Global.css";
 
 const App = () => {
-  const [theme, settheme] = useState("light");
+  // const [theme, settheme] = useState("light");
+
+  const [theme, settheme] = useState(
+    () => localStorage.getItem("user-theme") || "light",
+  );
+
+  useEffect(() => {
+    localStorage.setItem("user-theme", theme);
+    document.body.className = theme;
+  }, [theme]);
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

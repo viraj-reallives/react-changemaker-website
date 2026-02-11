@@ -377,6 +377,10 @@
 }
 
 @media (max-width: 660px) {
+  .top_heading_container_main {
+    padding: 0rem;
+  }
+
   .benifites_content_container {
     position: relative;
   }
@@ -421,6 +425,14 @@
 }
 
 @media (max-width: 560px) {
+  .top_heading_container_main {
+    padding: 0rem;
+  }
+
+  .description_university_text {
+    font-size: 18px;
+  }
+
   .benifites_content_container {
     position: relative;
   }
@@ -465,6 +477,14 @@
 }
 
 @media (max-width: 460px) {
+  .top_heading_container_main {
+    padding: 0rem;
+  }
+
+  .description_university_text {
+    font-size: 17px;
+  }
+
   .benifites_content_container {
     position: relative;
   }
@@ -509,6 +529,14 @@
 }
 
 @media (max-width: 375px) {
+  .top_heading_container_main {
+    padding: 0rem;
+  }
+
+  .description_university_text {
+    font-size: 16px;
+  }
+
   .benifites_content_container {
     position: relative;
   }
@@ -553,6 +581,10 @@
 }
 
 @media (max-width: 375px) {
+  .description_university_text {
+    font-size: 15px;
+  }
+
   .container_main_individual {
     padding-top: 2rem;
   }
@@ -791,7 +823,7 @@
 
   .title_section_1 {
     font-size: 23px;
-    line-height: 38px;
+    line-height: 30px;
   }
 
   .become_change_btn,

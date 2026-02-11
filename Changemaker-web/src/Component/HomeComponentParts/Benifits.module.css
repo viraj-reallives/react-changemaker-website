@@ -211,6 +211,9 @@
 }
 
 @media (max-width: 680px) {
+  .header_title_side_text {
+    font-size: 19px;
+  }
   .title_text {
     font-size: 21px;
   }
@@ -235,6 +238,9 @@
 }
 
 @media (max-width: 560px) {
+  .header_title_side_text {
+    font-size: 18px;
+  }
   .title_text {
     font-size: 21px;
   }
@@ -259,6 +265,10 @@
 }
 
 @media (max-width: 460px) {
+  .header_title_side_text {
+    font-size: 17px;
+  }
+
   .title_text {
     font-size: 21px;
   }
@@ -283,6 +293,10 @@
 }
 
 @media (max-width: 375px) {
+  .header_title_side_text {
+    font-size: 16px;
+  }
+
   .title_text {
     font-size: 21px;
   }
