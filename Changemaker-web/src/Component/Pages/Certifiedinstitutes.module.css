@@ -597,6 +597,10 @@
 }
 
 @media (max-width: 610px) {
+  .logo_foundation_box {
+    width: 100%;
+  }
+
   .devlopement_goal_box {
     padding: 1rem 0rem;
   }
@@ -990,6 +994,10 @@
 }
 
 @media (max-width: 510px) {
+  .logo_foundation_box {
+    width: 100%;
+  }
+
   .devlopement_goal_box {
     padding: 1rem 0rem;
   }
@@ -1383,6 +1391,10 @@
 }
 
 @media (max-width: 410px) {
+  .logo_foundation_box {
+    width: 100%;
+  }
+
   .devlopement_goal_box {
     padding: 1rem 0rem;
   }
@@ -1777,6 +1789,10 @@
 }
 
 @media (max-width: 375px) {
+  .logo_foundation_box {
+    width: 100%;
+  }
+
   .devlopement_goal_box {
     padding: 1rem 0rem;
   }
