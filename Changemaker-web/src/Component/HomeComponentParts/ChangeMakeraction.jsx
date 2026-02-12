@@ -32,7 +32,8 @@ const ChangeMakeraction = ({ theme, settheme }) => {
                 className="iframe-width width-100"
                 src="https://demo.arcade.software/i527E8HZo4YlXdSC8arb?embed&amp;embed_mobile=tab&amp;embed_desktop=inline&amp;show_copy_link=true"
                 frameborder="0"
-              ></iframe>
+              >
+              </iframe>
 
             </div>
           </div> */}

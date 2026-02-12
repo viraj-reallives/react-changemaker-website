@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./Component/Layout"; // Aapka Layout component
+import Layout from "./Component/Layout";
 import Home from "./Component/Pages/Home";
 import Certifiedinstitutes from "./Component/Pages/Certifiedinstitutes";
 import Ourimpact from "./Component/Pages/Ourimpact";
@@ -16,6 +16,52 @@ import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
 import "./Component/Global_css/Global.css";
 
 const App = () => {
+  // Not copy image video logic
+
+  const [showAlert, setShowAlert] = useState(false);
+
+  const triggerAlert = useCallback(() => {
+    setShowAlert(true);
+
+    setTimeout(() => setShowAlert(false), 2000);
+  }, []);
+
+  useEffect(() => {
+    const handleContextMenu = (e) => {
+      const isMedia =
+        e.target.tagName === "IMG" ||
+        e.target.tagName === "VIDEO" ||
+        e.target.closest("img") ||
+        e.target.closest("video");
+
+      if (isMedia) {
+        e.preventDefault();
+        triggerAlert();
+      }
+    };
+
+    const handleKeyDown = (e) => {
+      if (
+        e.keyCode === 123 ||
+        (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) ||
+        (e.ctrlKey && e.keyCode === 85)
+      ) {
+        e.preventDefault();
+        triggerAlert();
+      }
+    };
+
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [triggerAlert]);
+
+  // Not copy image video logic
+
   // const [theme, settheme] = useState("light");
 
   const [theme, settheme] = useState(
@@ -43,6 +89,14 @@ const App = () => {
 
   return (
     <div className={`container ${theme}`}>
+      {showAlert && (
+        <div className="custom-protection-alert">
+          <div className="alert-content">
+            <span>⚠️ Content is Protected</span>
+          </div>
+        </div>
+      )}
+
       <ScrollTop></ScrollTop>
 
       <Routes>

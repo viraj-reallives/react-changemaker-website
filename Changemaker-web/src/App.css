@@ -38,6 +38,63 @@
   border-top-color: orange;
   animation: loading 1s linear infinite;
 }
+/* Custom Alert Styles */
+.custom-protection-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important;
+  pointer-events: none;
+}
+
+.alert-content {
+  background: #ff4b2b;
+  color: #ffffff;
+  padding: 18px 36px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: popUpAlert 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Pop-up Animation */
+@keyframes popUpAlert {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+img,
+video {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+/* Middle Alert Box Fix */
+
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 25px;
+    opacity: 1;
+  }
+}
+
 @keyframes loading {
   to {
     transform: rotate(360deg);
