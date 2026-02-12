@@ -364,9 +364,6 @@
   cursor: pointer;
 }
 
-@m (max-width:1130px) {
-}
-
 @media (max-width: 1024px) {
   .rcmi_data_left_bar {
     padding: 0rem;
