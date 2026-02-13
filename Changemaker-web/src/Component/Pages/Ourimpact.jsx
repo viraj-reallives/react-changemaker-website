@@ -56,7 +56,7 @@ const Ourimpact = ({ theme }) => {
       university_text: "Navamindradhiraj University, Bangkok",
       particepent_title: "Department - General Education",
       collaboration_text: "In collaboration with:",
-      name_card: "Prof. Dr. Ernst Hafen",
+      name_card: "Prof. Kirttanan (Punch)",
       number_title: 150,
       skill_devloped: "Skills Developed",
       teamwork_title: "21’st Century Skills",
@@ -300,14 +300,18 @@ const Ourimpact = ({ theme }) => {
                 </div>
 
                 <div className={Styles.impact_card_data}>
+
                   <span className={Styles.span_imapct_colume}>
+
                     <p className={Styles.university_text_title}>
                       {impactdata.university_text}
                     </p>
                     <p className={Styles.participants_title_text}>
                       {impactdata.particepent_title}
                     </p>
+
                   </span>
+                  
 
                   <span className={Styles.flex_align_start}>
                     <p className={Styles.participants_title_text}>

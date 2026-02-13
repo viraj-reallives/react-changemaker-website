@@ -91,11 +91,14 @@ const KyungHee_University = ({ theme }) => {
         </Swiper>
       </div>
 
+
       <div className={Styles.content_tab_container_imapct}>
         <div className={Styles.container_logo_box_impact}>
           <img src={therd_logo_slide} alt="" />
         </div>
       </div>
+
+       
 
       <div className={Styles.sdg_container_imapct_tab}>
         <p className={Styles.student_testimonials_title}>

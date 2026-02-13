@@ -7,7 +7,9 @@ import userthreeduotone from "../../assets/Home-image/users-three-duotone 1.svg"
 import arrowup from "../../assets/Home-image/arrow-up.svg";
 
 const Benifites = ({ theme, settheme }) => {
+   
   let carddatachangemaker = [
+
     {
       id: 1,
       title: "Empower Yourself to Grow Beyond Academics",

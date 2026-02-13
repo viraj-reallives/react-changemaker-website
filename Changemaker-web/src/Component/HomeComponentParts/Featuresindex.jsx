@@ -26,6 +26,7 @@ const Featuresindex = ({ theme, settheme }) => {
       image: finalbusiness,
       title: " ETH Zurich, Switzerland",
       description: `Students explored global life scenarios in the RealLives ChangeMaking Workshop, building empathy, ethicalleadership, and sustainable problem-solving skills.`,
+      link: "/our-impact/ETH-University",
     },
 
     {
@@ -33,6 +34,7 @@ const Featuresindex = ({ theme, settheme }) => {
       image: fourth_slide_1,
       title: "IIT Bombay, India",
       description: `Through simulation-based experiences, students connected technology, society, and values, learning how empathy-driven choices can drive social impact.`,
+      link: "/our-impact/IIT_Bombay",
     },
 
     {
@@ -40,6 +42,7 @@ const Featuresindex = ({ theme, settheme }) => {
       image: first_slide_3,
       title: " Navamindradhiraj University, Thailand ",
       description: ` Students participated in an immersive ChangeMaker  program, gaining insights into social responsibility, ethical decision-making, and the impact of choices on communities.`,
+      link: "/our-impact/Navamindradhiraj_University",
     },
   ];
 
@@ -130,6 +133,11 @@ const Featuresindex = ({ theme, settheme }) => {
                     {ourimpactcard.description}
                   </p>
                 </div>
+
+                <Link className={Styels.larne_more_btn} to={ourimpactcard.link}>
+                  {" "}
+                  Learn more <FaArrowRight />{" "}
+                </Link>
               </div>
             ))}
           </div>

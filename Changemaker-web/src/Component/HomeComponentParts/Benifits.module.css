@@ -131,6 +131,25 @@
   object-fit: contain;
 }
 
+@media(max-width:1800px){
+  .benifites_content_container {
+    
+    padding: 1rem 4rem;
+  }
+}
+
+@media(max-width:1668px){
+  .benifites_content_container {
+    padding: 1rem 5rem;
+  }
+}
+
+@media(max-width:1440px){
+  .benifites_content_container {
+    padding: 1rem 4rem;
+  }
+}
+
 @media (max-width: 1368px) {
   .benifites_content_container {
     position: relative;

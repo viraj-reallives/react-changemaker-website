@@ -79,6 +79,22 @@ const IIT_Bombay = ({ theme }) => {
         </div>
       </div>
 
+      <div className={Styles.wrapper_professior_data}>
+        <span className={Styles.span_imapct_colume_2}>
+          <p className={Styles.university_text_title}>IIT Bombay, India</p>
+          <p className={Styles.participants_title_text}>
+            Department - IDC School of Design
+          </p>
+        </span>
+
+        <span className={Styles.flex_align_start}>
+          <p className={Styles.participants_title_text}>
+            In collaboration with:
+          </p>
+          <p className={Styles.university_text_title}>India HCI 2024</p>
+        </span>
+      </div>
+
       <div className={Styles.sdg_container_imapct_tab}>
         <p className={Styles.student_testimonials_title}>
           SDG’s Alligned with this workshop
