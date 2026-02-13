@@ -184,11 +184,15 @@ const Featuresindex = ({ theme, settheme }) => {
                 </p>
               </div>
 
-              <img
+
+             <div className={Styels.image_width_mobile}>
+                  <img
                 className={Styels.image_fit_cover}
                 src={featuresdata.image}
                 alt=""
               />
+             </div>
+             
             </div>
           ))}
         </div>
