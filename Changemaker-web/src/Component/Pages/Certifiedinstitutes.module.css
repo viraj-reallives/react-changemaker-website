@@ -551,7 +551,69 @@
 
 /* #c2bfbf */
 
-@media (max-width: 1024px) and (min-width: 611px) {
+@media(max-width:1368px){
+ .inner_content_tab {
+    width: 100%;
+    height: 74%;
+  }
+
+  .foundation_description_box {
+    padding: 0rem 1rem;
+  }
+
+  .container_card_colume {
+    padding: 0rem 1rem;
+  }
+
+  .dashboard_content_box {
+    padding: 1rem 3rem;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  .inner_content_tab {
+    width: 100%;
+    height: 74%;
+  }
+
+  .foundation_description_box {
+    padding: 0rem 1rem;
+  }
+
+  .container_card_colume {
+    padding: 0rem 1rem;
+  }
+
+  .dashboard_content_box {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .inner_content_tab {
+    width: 100%;
+    height: 74%;
+  }
+
+  .foundation_description_box {
+    padding: 0rem 1rem;
+  }
+
+  .container_card_colume {
+    padding: 0rem 1rem;
+  }
+
+  .dashboard_content_box {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 611px) {
+  .foundation_description_box {
+    padding: 0rem 0rem;
+  }
+
   .grid_class {
     width: 90%;
     padding: 3rem 2rem;
@@ -566,11 +628,11 @@
   }
 
   .left_side_content_inner_top {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .new_bottom_container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .sdg_image_left_bottom_container {
@@ -582,8 +644,8 @@
   }
 
   .container_card_colume {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0rem 3rem;
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem;
   }
 
   .student_impact_cards_container {
@@ -593,6 +655,23 @@
 
   .changemaker_certificate {
     padding: 1rem 4rem;
+  }
+
+  .logo_foundation_box {
+    width: 100%;
+    height: 28%;
+  }
+
+  .title_of_foundation {
+    width: 100%;
+    margin-top: 5%;
+    font-size: 22px;
+  }
+
+  .inner_content_tab {
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 
@@ -727,7 +806,7 @@
   .inner_content_tab {
     width: 100%;
     padding: 0rem 0rem;
-    height: 86%;
+    height: 81%;
   }
 
   .rallives_foundation_tab_box {
@@ -1124,7 +1203,7 @@
   .inner_content_tab {
     width: 100%;
     padding: 0rem 0rem;
-    height: 85%;
+    height: 83%;
   }
 
   .rallives_foundation_tab_box {
