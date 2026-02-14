@@ -135,8 +135,7 @@ const Featuresindex = ({ theme, settheme }) => {
                 </div>
 
                 <Link className={Styels.larne_more_btn} to={ourimpactcard.link}>
-                  {" "}
-                  Learn more <FaArrowRight />{" "}
+                  Learn more <FaArrowRight />
                 </Link>
               </div>
             ))}
@@ -184,15 +183,13 @@ const Featuresindex = ({ theme, settheme }) => {
                 </p>
               </div>
 
-
-             <div className={Styels.image_width_mobile}>
-                  <img
-                className={Styels.image_fit_cover}
-                src={featuresdata.image}
-                alt=""
-              />
-             </div>
-             
+              <div className={Styels.image_width_mobile}>
+                <img
+                  className={Styels.image_fit_cover}
+                  src={featuresdata.image}
+                  alt=""
+                />
+              </div>
             </div>
           ))}
         </div>
