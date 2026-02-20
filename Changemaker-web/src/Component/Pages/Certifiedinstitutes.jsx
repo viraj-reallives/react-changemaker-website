@@ -53,7 +53,7 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
   return (
     <div className={`${Styles.Maincontainercertifide} ${Styles[theme]}`}>
       <div className={Styles.rallives_foundation_tab_box}>
-        <img src={orchid_school_banner} alt="" />
+        <img loading="eager" decoding="async"  src={orchid_school_banner} alt="Changemaker Index image" />
 
         <div className={Styles.inner_content_tab}>
           <h1 className={Styles.title_of_foundation}>
@@ -219,8 +219,8 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
 
         <div className={Styles.container_card_colume}>
           {workshop.map((datawork, idx) => (
-            <div className={Styles.card_data_add}>
-              <img className={Styles.image_fit} src={datawork.img} alt="" />
+            <div key={idx} className={Styles.card_data_add}>
+              <img loading="lazy" decoding="async" className={Styles.image_fit} src={datawork.img} alt="Changemaker Index image" />
             </div>
           ))}
         </div>
@@ -298,9 +298,10 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
         </p>
 
         <div className={Styles.changemaker_certificate}>
-          <img
+
+          <img loading="lazy" decoding="async" 
             src="https://reallivesfrontend.s3.us-east-1.amazonaws.com/certificate.svg"
-            alt=""
+            alt="Changemaker Index image"
           />
         </div>
       </div>

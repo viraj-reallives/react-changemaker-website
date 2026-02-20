@@ -11,6 +11,7 @@ import Comptencies_image from "../../assets/Home-image/Comptencies-ss-image.svg"
 import changemaker_journey from "../../assets/Home-image/changemaker-journey-image.svg";
 
 const Rcmiworks = ({ theme }) => {
+
   const become_change_btn = () => {
     window.location.href =
       "https://reallivesworld.com/reallives-website-main/license.html";
@@ -66,8 +67,11 @@ const Rcmiworks = ({ theme }) => {
   return (
     <>
       <div className={`${Styles.rcmimaincontainer} ${Styles[theme]}`}>
+
         <div className={Styles.competencies_Style_image}>
-          <img src={competencies_image} alt="" />
+
+          <img loading="eager" decoding="async" src={competencies_image} alt="Changemaker Index image" />
+          
         </div>
 
         <div className={Styles.data_container_rcmi_main}>
@@ -461,6 +465,7 @@ const Rcmiworks = ({ theme }) => {
             Begin Your ChangeMaker Journey
           </div>
         </div>
+
       </div>
     </>
   );

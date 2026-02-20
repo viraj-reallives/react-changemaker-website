@@ -62,7 +62,7 @@
 .mySwiper :global(.swiper-button-next),
 .mySwiper :global(.swiper-button-prev) {
   color: white !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  /* background: rgba(0, 0, 0, 0.4) !important; */
   width: 35px !important;
   height: 35px !important;
   border-radius: 50% !important;
@@ -467,7 +467,6 @@
 }
 
 @media (max-width: 768px) {
-
   .university_text_title {
     font-size: 22px;
   }

@@ -105,7 +105,7 @@ const Navamindradhiraj_University = ({ theme }) => {
           <p className={Styles.participants_title_text}>
             In collaboration with:
           </p>
-          <p className={Styles.university_text_title}>Prof. Kirttanan (Punch)</p>
+          <p className={Styles.university_text_title}>Prof. Krittanan Pensirisomboon</p>
         </span>
       </div>
 

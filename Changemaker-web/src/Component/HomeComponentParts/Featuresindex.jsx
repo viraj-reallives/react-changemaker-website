@@ -26,7 +26,7 @@ const Featuresindex = ({ theme, settheme }) => {
       image: finalbusiness,
       title: " ETH Zurich, Switzerland",
       description: `Students explored global life scenarios in the RealLives ChangeMaking Workshop, building empathy, ethicalleadership, and sustainable problem-solving skills.`,
-      link: "/our-impact/ETH-University",
+      link: "/our-impact/eth-university",
     },
 
     {
@@ -34,7 +34,7 @@ const Featuresindex = ({ theme, settheme }) => {
       image: fourth_slide_1,
       title: "IIT Bombay, India",
       description: `Through simulation-based experiences, students connected technology, society, and values, learning how empathy-driven choices can drive social impact.`,
-      link: "/our-impact/IIT_Bombay",
+      link: "/our-impact/iit-bombay", 
     },
 
     {
@@ -42,7 +42,7 @@ const Featuresindex = ({ theme, settheme }) => {
       image: first_slide_3,
       title: " Navamindradhiraj University, Thailand ",
       description: ` Students participated in an immersive ChangeMaker  program, gaining insights into social responsibility, ethical decision-making, and the impact of choices on communities.`,
-      link: "/our-impact/Navamindradhiraj_University",
+      link: "/our-impact/navamindradhiraj-university", 
     },
   ];
 
@@ -117,10 +117,10 @@ const Featuresindex = ({ theme, settheme }) => {
             {impactcarddata.map((ourimpactcard, idx) => (
               <div key={idx} className={Styels.card_info_box}>
                 <div className={Styels.university_image_box}>
-                  <img
+                  <img  loading="lazy" decoding="async" 
                     className={Styels.image_fit_cover}
                     src={ourimpactcard.image}
-                    alt=""
+                    alt="Changemaker Index image"
                   />
                 </div>
 
@@ -185,9 +185,10 @@ const Featuresindex = ({ theme, settheme }) => {
 
               <div className={Styels.image_width_mobile}>
                 <img
+                    loading="lazy" decoding="async"
                   className={Styels.image_fit_cover}
                   src={featuresdata.image}
-                  alt=""
+                  alt="Changemaker Index image"
                 />
               </div>
             </div>

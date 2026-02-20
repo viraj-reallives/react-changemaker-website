@@ -16,7 +16,6 @@ import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
 import "./Component/Global_css/Global.css";
 
 const App = () => {
-  // Not copy image video logic
 
   const [showAlert, setShowAlert] = useState(false);
 
@@ -27,6 +26,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+
     const handleContextMenu = (e) => {
       const isMedia =
         e.target.tagName === "IMG" ||
@@ -59,7 +59,7 @@ const App = () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [triggerAlert]);
-
+  
   // Not copy image video logic
 
   // const [theme, settheme] = useState("light");
@@ -88,7 +88,9 @@ const App = () => {
   }
 
   return (
+
     <div className={`container ${theme}`}>
+
       {showAlert && (
         <div className="custom-protection-alert">
           <div className="alert-content">
@@ -100,15 +102,18 @@ const App = () => {
       <ScrollTop></ScrollTop>
 
       <Routes>
+
         <Route path="/" element={<Layout theme={theme} settheme={settheme} />}>
+        
           <Route index element={<Home theme={theme} settheme={settheme} />} />
 
           <Route
-            path="Home"
+            path="home"
             element={<Home theme={theme} settheme={settheme} />}
           />
+
           <Route
-            path="Certified-Institutes"
+            path="certified-institutes"
             element={<Certifiedinstitutes theme={theme} settheme={settheme} />}
           />
 
@@ -118,28 +123,25 @@ const App = () => {
           />
 
           <Route
-            path="our-impact/ETH-University"
+            path="our-impact/eth-university"
             element={<University theme={theme} />}
           />
           <Route
-            path="our-impact/Navamindradhiraj_University"
+            path="our-impact/navamindradhiraj-university"
             element={<Navamindradhiraj_University theme={theme} />}
-          ></Route>
-
+          />
           <Route
-            path="our-impact/KyungHee_University"
+            path="our-impact/kyunghee-university"
             element={<KyungHee_University theme={theme} />}
           />
-
           <Route
-            path="our-impact/IIT_Bombay"
+            path="our-impact/iit-bombay"
             element={<IIT_Bombay theme={theme} />}
           />
 
-          <Route path="/How-RCMI-Works" element={<Rcmiworks theme={theme} />} />
-
+          <Route path="how-rcmi-works" element={<Rcmiworks theme={theme} />} />
           <Route
-            path="/Contact"
+            path="contact"
             element={<Contact theme={theme} settheme={settheme} />}
           />
 
@@ -148,7 +150,9 @@ const App = () => {
             element={<NotFound theme={theme} settheme={settheme} />}
           />
         </Route>
+
       </Routes>
+
     </div>
   );
 };

@@ -23,7 +23,7 @@ const Home = ({ theme, settheme }) => {
               </h1>
 
               <div className={Styles.image_description}>
-                <img src={waterflow_image} alt="" />
+                <img loading="eager" decoding="async" src={waterflow_image} alt="Changemaker Index image"  />
 
                 <p className={Styles.top_description_title}>
                   Life simulation–based assessment that tracks 18 critical
@@ -46,13 +46,14 @@ const Home = ({ theme, settheme }) => {
         </div>
 
         <div className={Styles.content_image_right}>
-          <img className={Styles.image_hight_rem} src={firstsection} alt="" />
+          <img loading="eager" decoding="async"  className={Styles.image_hight_rem} src={firstsection} alt="Changemaker Index image" />
         </div>
       </div>
 
       <Featuresindex theme={theme} settheme={settheme}></Featuresindex>
 
       <ChangeMakeraction theme={theme} settheme={settheme}></ChangeMakeraction>
+      
     </div>
   );
 };

@@ -31,7 +31,7 @@ const Ourimpact = ({ theme }) => {
   };
 
   const impact_home = [
-    {
+  {
       id: 1,
       card_title: "ETH Zurich Workshop",
       card_date: "27 / 06 / 2018",
@@ -46,7 +46,7 @@ const Ourimpact = ({ theme }) => {
       intergrity_title: "Integrity and Work Ethics",
       teamwork_bg: "#f9c1a5",
       intergrity_bg: "#caecf1",
-      link: "/our-impact/ETH-University",
+      link: "/our-impact/eth-university", 
     },
     {
       id: 2,
@@ -56,14 +56,14 @@ const Ourimpact = ({ theme }) => {
       university_text: "Navamindradhiraj University, Bangkok",
       particepent_title: "Department - General Education",
       collaboration_text: "In collaboration with:",
-      name_card: "Prof. Kirttanan (Punch)",
+      name_card: "Prof. Krittanan Pensirisomboon",
       number_title: 150,
       skill_devloped: "Skills Developed",
       teamwork_title: "21’st Century Skills",
       intergrity_title: "Business Acumen",
       teamwork_bg: "#d4e8eb",
       intergrity_bg: "#dff6c2",
-      link: "/our-impact/Navamindradhiraj_University",
+      link: "/our-impact/navamindradhiraj-university", 
     },
     {
       id: 3,
@@ -81,7 +81,7 @@ const Ourimpact = ({ theme }) => {
       teamwork_bg: "#f7b4b4",
       intergrity_bg: "#ffef9f ",
       Used_Tools: "Empathy Canvas",
-      link: "/our-impact/KyungHee_University",
+      link: "/our-impact/kyunghee-university", 
     },
     {
       id: 4,
@@ -98,12 +98,13 @@ const Ourimpact = ({ theme }) => {
       intergrity_title: "Social Entrepreneurship",
       teamwork_bg: "#f7b4b4 ",
       intergrity_bg: "#c4c1ff",
-      link: "/our-impact/IIT_Bombay",
+      link: "/our-impact/iit-bombay", 
     },
   ];
 
   return (
     <div className={`${Styles.ourimpactmaincontainer} ${Styles[theme]}`}>
+      
       {/* Slider Section */}
 
       <div className={Styles.slider_componet}>
@@ -128,19 +129,19 @@ const Ourimpact = ({ theme }) => {
               speed={1000}
             >
               <SwiperSlide>
-                <img src={first_slide_1} className={Styles.slider_img} />
+                <img loading="eager" decoding="async"  src={first_slide_1} className={Styles.slider_img} alt="Changemaker Index image" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={first_slide_2} className={Styles.slider_img} />
+                <img loading="eager" decoding="async" src={first_slide_2} className={Styles.slider_img} alt="Changemaker Index image"/>
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={first_slide_3} className={Styles.slider_img} />
+                <img loading="eager" decoding="async" src={first_slide_3} className={Styles.slider_img} alt="Changemaker Index image"/>
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={first_slide_4} className={Styles.slider_img} />
+                <img loading="eager" decoding="async" src={first_slide_4} className={Styles.slider_img} alt="Changemaker Index image" />
               </SwiperSlide>
             </Swiper>
 
@@ -156,15 +157,15 @@ const Ourimpact = ({ theme }) => {
               speed={1000}
             >
               <SwiperSlide>
-                <img src={second_slide_1} className={Styles.slider_img} />
+                <img  loading="eager" decoding="async"  src={second_slide_1} className={Styles.slider_img} alt="Changemaker Index image" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={second_slide_2} className={Styles.slider_img} />
+                <img loading="eager" decoding="async"  src={second_slide_2} className={Styles.slider_img}  alt="Changemaker Index image"/>
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={second_slide_3} className={Styles.slider_img} />
+                <img loading="eager" decoding="async" src={second_slide_3} className={Styles.slider_img} alt="Changemaker Index image"/>
               </SwiperSlide>
             </Swiper>
 
