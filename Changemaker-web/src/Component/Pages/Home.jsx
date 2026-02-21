@@ -2,7 +2,7 @@ import Styles from "./Home.module.css";
 import Footer from "../Footer/Footer.jsx";
 import Featuresindex from "../HomeComponentParts/Featuresindex";
 import waterflow_image from "../../assets/Home-image/Water-flow-image.svg";
-import firstsection from "../../assets/Home-image/first-section-image.png";
+// import firstsection from "../../assets/Home-image/first-section-image.png";
 import ChangeMakeraction from "../HomeComponentParts/ChangeMakeraction";
 import { Link } from "react-router-dom";
 
@@ -46,7 +46,7 @@ const Home = ({ theme, settheme }) => {
         </div>
 
         <div className={Styles.content_image_right}>
-          <img loading="eager" decoding="async"  className={Styles.image_hight_rem} src={firstsection} alt="Changemaker Index image" />
+          <img loading="eager" decoding="async"  className={Styles.image_hight_rem} src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/first-section-image_f9elve.png" alt="Changemaker Index image" />
         </div>
       </div>
 

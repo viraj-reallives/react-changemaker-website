@@ -5,13 +5,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
-import fourth_slide_2 from "../../assets/Home-image/fourth_workshop-2-min.jpg";
-import fourth_slide_3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
+// import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
+// import fourth_slide_2 from "../../assets/Home-image/fourth_workshop-2-min.jpg";
+// import fourth_slide_3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
 import fourth_slide_logo from "../../assets/Home-image/iit_bom_rl.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
-import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
-import sdg_logo_3 from "../../assets/Home-image/E-WEB-Goal-04.svg";
+// import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
+// import sdg_logo_3 from "../../assets/Home-image/E-WEB-Goal-04.svg";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 
@@ -49,7 +49,7 @@ const IIT_Bombay = ({ theme }) => {
         >
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={fourth_slide_1}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -57,7 +57,7 @@ const IIT_Bombay = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={fourth_slide_2}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653471/fourth_workshop-2-min_umblqv.jpg"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -65,7 +65,7 @@ const IIT_Bombay = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={fourth_slide_3}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653470/fourth_workshop-3-min_dqej4n.jpg"
               className={Styles.slider_img}
               alt="slide 2"
             />

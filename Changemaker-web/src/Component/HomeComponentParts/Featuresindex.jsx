@@ -1,16 +1,16 @@
 import Styels from "../HomeComponentParts/Featuresindex.module.css";
 import waterflow_image from "../../assets/Home-image/Water-flow-image.svg";
 import firstsection from "../../assets/Home-image/first-section-image.png";
-import actionableReport from "../../assets/Home-image/Actionable Reports.png";
-import AiGuidance from "../../assets/Home-image/AI Guidance.png";
+// import actionableReport from "../../assets/Home-image/Actionable Reports.png";
+// import AiGuidance from "../../assets/Home-image/AI Guidance.png";
 import benifitimage from "../../assets/Home-image/background-benifits-image.svg";
-import decisionstracked from "../../assets/Home-image/Decisions Tracked.png";
-import insightsdeliverd from "../../assets/Home-image/Insights Delivered.png";
-import personalgrowth from "../../assets/Home-image/Personal Growth.png";
+// import decisionstracked from "../../assets/Home-image/Decisions Tracked.png";
+// import insightsdeliverd from "../../assets/Home-image/Insights Delivered.png";
+// import personalgrowth from "../../assets/Home-image/Personal Growth.png";
 import studentsimulate from "../../assets/Home-image/Student-Simulate.png";
-import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1.png";
-import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
-import first_slide_3 from "../../assets/Home-image/second-workshop-3.png";
+// import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1.png";
+// import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
+// import first_slide_3 from "../../assets/Home-image/second-workshop-3.png";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -23,7 +23,7 @@ const Featuresindex = ({ theme, settheme }) => {
   let impactcarddata = [
     {
       id: 1,
-      image: finalbusiness,
+      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
       title: " ETH Zurich, Switzerland",
       description: `Students explored global life scenarios in the RealLives ChangeMaking Workshop, building empathy, ethicalleadership, and sustainable problem-solving skills.`,
       link: "/our-impact/eth-university",
@@ -31,7 +31,7 @@ const Featuresindex = ({ theme, settheme }) => {
 
     {
       id: 2,
-      image: fourth_slide_1,
+      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
       title: "IIT Bombay, India",
       description: `Through simulation-based experiences, students connected technology, society, and values, learning how empathy-driven choices can drive social impact.`,
       link: "/our-impact/iit-bombay", 
@@ -39,17 +39,18 @@ const Featuresindex = ({ theme, settheme }) => {
 
     {
       id: 3,
-      image: first_slide_3,
+      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png",
       title: " Navamindradhiraj University, Thailand ",
       description: ` Students participated in an immersive ChangeMaker  program, gaining insights into social responsibility, ethical decision-making, and the impact of choices on communities.`,
       link: "/our-impact/navamindradhiraj-university", 
     },
   ];
 
+
   let featuresdata = [
     {
       id: 1,
-      image: studentsimulate,
+      image:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/Student-Simulate_d4rryd.png",
       title: "Students Simulate",
       description: `Students step into diverse real-world lives, experiencing challenges, opportunities, 
      and cultural contexts firsthand. They don’t just learn about the world—they live it through 
@@ -58,7 +59,7 @@ const Featuresindex = ({ theme, settheme }) => {
 
     {
       id: 2,
-      image: decisionstracked,
+      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/Decisions_Tracked_tvsg2f.png",
       title: "Decisions Tracked",
       description: `Every choice—small or big—is recorded and analyzed.
       This gives students a clear view of how decisions shape outcomes,
@@ -67,7 +68,7 @@ const Featuresindex = ({ theme, settheme }) => {
 
     {
       id: 3,
-      image: insightsdeliverd,
+      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/Insights_Delivered_teervk.png",
       title: "Insights Delivered",
       description: `The system automatically transforms student choices into rich insights,
        highlighting thinking patterns, strengths, and areas for growth. Educators get an 
@@ -76,7 +77,7 @@ const Featuresindex = ({ theme, settheme }) => {
 
     {
       id: 4,
-      image: AiGuidance,
+      image:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/AI_Guidance_hztqmt.png",
       title: "AI Guidance",
       description: `Built-in AI coaches students as they play, providing nudges, reflections,
        and tailored suggestions. It supports deeper self-awareness, critical thinking,
@@ -85,7 +86,7 @@ const Featuresindex = ({ theme, settheme }) => {
 
     {
       id: 5,
-      image: actionableReport,
+      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/Actionable_Reports_v0mwoe.png",
       title: "Actionable Reports",
       description: `Easy-to-understand dashboards summarise all learning outcomes and
        competencies. Educators receive detailed, ready-to-use reports they can use for
@@ -94,7 +95,7 @@ const Featuresindex = ({ theme, settheme }) => {
 
     {
       id: 6,
-      image: personalgrowth,
+      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/Personal_Growth_lele2n.png",
       title: "Personal Growth",
       description: `Students discover who they are as decision-makers.They build resilience,
        empathy, global awareness, and confidence through repeated reflection and 

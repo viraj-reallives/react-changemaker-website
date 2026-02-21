@@ -5,10 +5,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-import first_slide_1 from "../../assets/Home-image/second-workshop.png";
-import first_slide_2 from "../../assets/Home-image/second-workshop-2.png";
-import first_slide_3 from "../../assets/Home-image/second-workshop-3.png";
-import first_slide_4 from "../../assets/Home-image/second-workshop-4.png";
+// import first_slide_1 from "../../assets/Home-image/second-workshop.png";
+// import first_slide_2 from "../../assets/Home-image/second-workshop-2.png";
+// import first_slide_3 from "../../assets/Home-image/second-workshop-3.png";
+// import first_slide_4 from "../../assets/Home-image/second-workshop-4.png";
 import second_logo_slide from "../../assets/Home-image/second-logo-tab.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
@@ -40,6 +40,7 @@ const Navamindradhiraj_University = ({ theme }) => {
       </span>
 
       <div className={Styles.slider_wrapper}>
+
         <Swiper
           modules={[Navigation]}
           navigation={true}
@@ -48,17 +49,19 @@ const Navamindradhiraj_University = ({ theme }) => {
           speed={600}
           className={`${Styles.mySwiper} universitySlider`}
         >
+
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={first_slide_1}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/second-workshop_vmxhhq.png"
               className={Styles.slider_img}
               alt="slide 1"
             />
           </SwiperSlide>
 
+
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={first_slide_2}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-2_ikloth.png"
               className={Styles.slider_img}
               alt="slide 2"
             />
@@ -66,7 +69,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={first_slide_3}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-3_ycah0h.png"
               className={Styles.slider_img}
               alt="slide 3"
             />
@@ -74,7 +77,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={first_slide_4}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png"
               className={Styles.slider_img}
               alt="slide 3"
             />

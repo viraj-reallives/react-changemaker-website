@@ -5,11 +5,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-import therd_slide_0 from "../../assets/Home-image/3-rd-workshop-first-image.jpeg";
-import therd_slide_1 from "../../assets/Home-image/3-rd-workshop-image.png";
-import therd_slide_2 from "../../assets/Home-image/3-rd-workshop-2.png";
-import therd_slide_3 from "../../assets/Home-image/3-rd-workshop-3.png";
-import therd_slide_4 from "../../assets/Home-image/3-rd-workshop-4.png";
+// import therd_slide_0 from "../../assets/Home-image/3-rd-workshop-first-image.jpeg";
+// import therd_slide_1 from "../../assets/Home-image/3-rd-workshop-image.png";
+// import therd_slide_2 from "../../assets/Home-image/3-rd-workshop-2.png";
+// import therd_slide_3 from "../../assets/Home-image/3-rd-workshop-3.png";
+// import therd_slide_4 from "../../assets/Home-image/3-rd-workshop-4.png";
 import therd_logo_slide from "../../assets/Home-image/3-rd-workshop-logo.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
@@ -51,7 +51,7 @@ const KyungHee_University = ({ theme }) => {
         >
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={therd_slide_1}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/3-rd-workshop-image_jwd7ay.png"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -59,7 +59,7 @@ const KyungHee_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={therd_slide_0}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/3-rd-workshop-first-image_y34mx3.jpg"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -67,7 +67,7 @@ const KyungHee_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={therd_slide_2}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png"
               className={Styles.slider_img}
               alt="slide 2"
             />
@@ -75,7 +75,7 @@ const KyungHee_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={therd_slide_3}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png"
               className={Styles.slider_img}
               alt="slide 3"
             />
@@ -83,7 +83,7 @@ const KyungHee_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src={therd_slide_4}
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/3-rd-workshop-4_ea6we5.png"
               className={Styles.slider_img}
               alt="slide 3"
             />

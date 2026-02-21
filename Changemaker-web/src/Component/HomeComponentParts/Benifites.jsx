@@ -7,9 +7,7 @@ import userthreeduotone from "../../assets/Home-image/users-three-duotone 1.svg"
 import arrowup from "../../assets/Home-image/arrow-up.svg";
 
 const Benifites = ({ theme, settheme }) => {
-   
   let carddatachangemaker = [
-
     {
       id: 1,
       title: "Empower Yourself to Grow Beyond Academics",
@@ -45,7 +43,13 @@ const Benifites = ({ theme, settheme }) => {
 
   return (
     <div className={`${Style.Benfits_container} ${Style[theme]}`}>
-      <img className={Style.image_width} src={benfitsimage} alt="" />
+      <img
+        loading="lazy"
+        decoding="async"
+        className={Style.image_width}
+        src={benfitsimage}
+        alt=""
+      />
 
       <div className={Style.benifites_content_container}>
         <div className={Style.top_content_container}>
@@ -68,6 +72,8 @@ const Benifites = ({ theme, settheme }) => {
               <div className={`${Style.head_changer_tag} ${Style[theme]}`}>
                 <div className={Style.icon_card}>
                   <img
+                    loading="lazy"
+                    decoding="async"
                     key={elem.id}
                     className={Style.icon_benifit_image}
                     src={elem.imageUrl}

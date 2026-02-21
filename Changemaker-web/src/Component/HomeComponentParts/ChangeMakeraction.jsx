@@ -9,7 +9,7 @@ const ChangeMakeraction = ({ theme, settheme }) => {
   return (
     <div>
       <div className={Styles.change_maker_action_container}>
-        <img
+        <img loading="eager" decoding="async"
           className={Styles.image_fit_cover}
           src={changemake_image_action}
           alt=""

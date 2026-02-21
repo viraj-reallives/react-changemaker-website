@@ -1,6 +1,6 @@
 import Styles from "./Certifiedinstitutes.module.css";
 import Certifideimage from "../../assets/Home-image/Changemaker-Foundation-logo.svg";
-import orchid_school_banner from "../../assets/Home-image/orchid-background-img-2.jpeg.png";
+// import orchid_school_banner from "../../assets/Home-image/orchid-background-img-2.jpeg.png";
 import chnagemakerstudent from "../../assets/Home-image/changemaker_students 1.svg";
 import goal1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import goal2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
@@ -8,10 +8,10 @@ import goal3 from "../../assets/Home-image/E-WEB-Goal-04.svg";
 import sustinablegoal from "../../assets/Home-image/Sustinable-goal-img.svg";
 import national_image from "../../assets/Home-image/National-education.svg";
 import orchid_1 from "../../assets/Home-image/orchid-1.jpeg";
-import orchid_2 from "../../assets/Home-image/orchid-2.jpeg";
-import orchid_3 from "../../assets/Home-image/orchid-3.jpeg";
-import orchid_4 from "../../assets/Home-image/orchid-4.jpg";
-import orchid_5 from "../../assets/Home-image/orchid-5.png";
+// import orchid_2 from "../../assets/Home-image/orchid-2.jpeg";
+// import orchid_3 from "../../assets/Home-image/orchid-3.jpeg";
+// import orchid_4 from "../../assets/Home-image/orchid-4.jpg";
+// import orchid_5 from "../../assets/Home-image/orchid-5.png";
 import orchid_6 from "../../assets/Home-image/orchid-6.jpg";
 import quotes from "../../assets/Home-image/quote-svg.svg";
 import orchid_school_logo from "../../assets/Home-image/orchid-reallives-logo.svg";
@@ -21,39 +21,44 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
   let workshop = [
     {
       id: 1,
-      img: orchid_5,
+      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-5_kwmesy.png",
     },
 
     {
       id: 2,
-      img: orchid_2,
+      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-2_hgvd1d.jpg",
     },
 
     {
       id: 3,
-      img: orchid_3,
+      img: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/orchid-3_zmamzk.jpg",
     },
 
     {
       id: 4,
-      img: orchid_4,
+      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/orchid-4_tnp54i.jpg",
     },
 
     {
       id: 5,
-      img: orchid_1,
+      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/orchid-1_ipbgc7.jpg",
     },
 
     {
       id: 6,
-      img: orchid_6,
+      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/orchid-6_filvzp.jpg",
     },
   ];
 
   return (
     <div className={`${Styles.Maincontainercertifide} ${Styles[theme]}`}>
       <div className={Styles.rallives_foundation_tab_box}>
-        <img loading="eager" decoding="async"  src={orchid_school_banner} alt="Changemaker Index image" />
+        <img
+          loading="eager"
+          decoding="async"
+          src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-background-img-2.jpeg_off002.png"
+          alt="Changemaker Index image"
+        />
 
         <div className={Styles.inner_content_tab}>
           <h1 className={Styles.title_of_foundation}>
@@ -158,15 +163,15 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
 
                 <div className={Styles.sdg_image_left_bottom_container}>
                   <div className={Styles.sdg_img_box}>
-                    <img src={goal1} alt="" />
+                    <img loading="lazy" decoding="async" src={goal1} alt="" />
                   </div>
 
                   <div className={Styles.sdg_img_box}>
-                    <img src={goal2} alt="" />
+                    <img loading="lazy" decoding="async" src={goal2} alt="" />
                   </div>
 
                   <div className={Styles.sdg_img_box}>
-                    <img src={goal3} alt="" />
+                    <img loading="lazy" decoding="async" src={goal3} alt="" />
                   </div>
                 </div>
 
@@ -220,7 +225,13 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
         <div className={Styles.container_card_colume}>
           {workshop.map((datawork, idx) => (
             <div key={idx} className={Styles.card_data_add}>
-              <img loading="lazy" decoding="async" className={Styles.image_fit} src={datawork.img} alt="Changemaker Index image" />
+              <img
+                loading="lazy"
+                decoding="async"
+                className={Styles.image_fit}
+                src={datawork.img}
+                alt="Changemaker Index image"
+              />
             </div>
           ))}
         </div>
@@ -298,8 +309,9 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
         </p>
 
         <div className={Styles.changemaker_certificate}>
-
-          <img loading="lazy" decoding="async" 
+          <img
+            loading="lazy"
+            decoding="async"
             src="https://reallivesfrontend.s3.us-east-1.amazonaws.com/certificate.svg"
             alt="Changemaker Index image"
           />

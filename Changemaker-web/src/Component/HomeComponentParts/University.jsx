@@ -4,9 +4,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-import second_slide_1 from "../../assets/Home-image/school-1-image-slider.png";
-import second_slide_2 from "../../assets/Home-image/school-2-image-slider.png";
-import second_slide_3 from "../../assets/Home-image/school-3-image-slider.png";
+// import second_slide_1 from "../../assets/Home-image/school-1-image-slider.png";
+// import second_slide_2 from "../../assets/Home-image/school-2-image-slider.png";
+// import second_slide_3 from "../../assets/Home-image/school-3-image-slider.png";
 import first_logo_slide from "../../assets/Home-image/first-logo-tab.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
@@ -50,7 +50,7 @@ const University = ({ theme }) => {
           >
             <SwiperSlide className={Styles.swiperSlide}>
               <img
-                src={second_slide_1}
+                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png"
                 className={Styles.slider_img}
                 alt="slide 1"
               />
@@ -58,7 +58,7 @@ const University = ({ theme }) => {
 
             <SwiperSlide className={Styles.swiperSlide}>
               <img
-                src={second_slide_2}
+                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653481/school-2-image-slider_opj1vb.png"
                 className={Styles.slider_img}
                 alt="slide 2"
               />
@@ -66,7 +66,7 @@ const University = ({ theme }) => {
 
             <SwiperSlide className={Styles.swiperSlide}>
               <img
-                src={second_slide_3}
+                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/school-3-image-slider_troncd.png"
                 className={Styles.slider_img}
                 alt="slide 3"
               />

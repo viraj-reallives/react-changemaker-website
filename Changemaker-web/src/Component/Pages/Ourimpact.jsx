@@ -5,23 +5,23 @@ import React from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Styles from "./Ourimpact.module.css";
-import worldmap from "../../assets/Home-image/world-map.svg";
-import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1.png";
-import first_slide_1 from "../../assets/Home-image/second-workshop.png";
-import first_slide_2 from "../../assets/Home-image/second-workshop-2.png";
-import first_slide_3 from "../../assets/Home-image/second-workshop-3.png";
-import first_slide_4 from "../../assets/Home-image/second-workshop-4.png";
-import second_slide_1 from "../../assets/Home-image/school-1-image-slider.png";
-import second_slide_2 from "../../assets/Home-image/school-2-image-slider.png";
-import second_slide_3 from "../../assets/Home-image/school-3-image-slider.png";
-import therd_slide_0 from "../../assets/Home-image/3-rd-workshop-first-image.jpeg";
-import therd_slide_1 from "../../assets/Home-image/3-rd-workshop-image.png";
-import therd_slide_2 from "../../assets/Home-image/3-rd-workshop-2.png";
-import therd_slide_3 from "../../assets/Home-image/3-rd-workshop-3.png";
-import therd_slide_4 from "../../assets/Home-image/3-rd-workshop-4.png";
-import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
-import fourth_slide_2 from "../../assets/Home-image/fourth_workshop-2-min.jpg";
-import fourth_slide_3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
+// import worldmap from "../../assets/Home-image/world-map.svg";
+// import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1.png";
+// import first_slide_1 from "../../assets/Home-image/second-workshop.png";
+// import first_slide_2 from "../../assets/Home-image/second-workshop-2.png";
+// import first_slide_3 from "../../assets/Home-image/second-workshop-3.png";
+// import first_slide_4 from "../../assets/Home-image/second-workshop-4.png";
+// import second_slide_1 from "../../assets/Home-image/school-1-image-slider.png";
+// import second_slide_2 from "../../assets/Home-image/school-2-image-slider.png";
+// import second_slide_3 from "../../assets/Home-image/school-3-image-slider.png";
+// import therd_slide_0 from "../../assets/Home-image/3-rd-workshop-first-image.jpeg";
+// import therd_slide_1 from "../../assets/Home-image/3-rd-workshop-image.png";
+// import therd_slide_2 from "../../assets/Home-image/3-rd-workshop-2.png";
+// import therd_slide_3 from "../../assets/Home-image/3-rd-workshop-3.png";
+// import therd_slide_4 from "../../assets/Home-image/3-rd-workshop-4.png";
+// import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
+// import fourth_slide_2 from "../../assets/Home-image/fourth_workshop-2-min.jpg";
+// import fourth_slide_3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Ourimpact = ({ theme }) => {
@@ -35,7 +35,7 @@ const Ourimpact = ({ theme }) => {
       id: 1,
       card_title: "ETH Zurich Workshop",
       card_date: "27 / 06 / 2018",
-      imgURL: finalbusiness,
+      imgURL:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
       university_text: "ETH University Zurich, Switzerland",
       particepent_title: "Department - Institute of Molecular Systems Biology",
       collaboration_text: "In collaboration with:",
@@ -52,7 +52,7 @@ const Ourimpact = ({ theme }) => {
       id: 2,
       card_title: "Navamindradhiraj University Workshop",
       card_date: "20 / 09 / 2025",
-      imgURL: first_slide_1,
+      imgURL:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/second-workshop_vmxhhq.png",
       university_text: "Navamindradhiraj University, Bangkok",
       particepent_title: "Department - General Education",
       collaboration_text: "In collaboration with:",
@@ -69,7 +69,7 @@ const Ourimpact = ({ theme }) => {
       id: 3,
       card_title: "KyungHee University SDG Workshop",
       card_date: "29 / 09 / 2025",
-      imgURL: therd_slide_0,
+      imgURL:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/3-rd-workshop-first-image_y34mx3.jpg",
       university_text: "Kyunghee University, Korea",
       particepent_title: "Department - Social Sciences",
       collaboration_text: "In collaboration with:",
@@ -87,7 +87,7 @@ const Ourimpact = ({ theme }) => {
       id: 4,
       card_title: "IIT Bombay Exploring SDG 1 through Empathy Workshop",
       card_date: "07 / 11 / 2024",
-      imgURL: fourth_slide_1,
+      imgURL:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
       university_text: "IIT Bombay, India",
       particepent_title: "Department - IDC School of Design",
       collaboration_text: "In collaboration with:",
@@ -129,43 +129,19 @@ const Ourimpact = ({ theme }) => {
               speed={1000}
             >
               <SwiperSlide>
-                <img loading="eager" decoding="async"  src={first_slide_1} className={Styles.slider_img} alt="Changemaker Index image" />
+                <img loading="eager" decoding="async"  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png" className={Styles.slider_img} alt="Changemaker Index image" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img loading="eager" decoding="async" src={first_slide_2} className={Styles.slider_img} alt="Changemaker Index image"/>
+                <img loading="eager" decoding="async" src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-2_ikloth.png" className={Styles.slider_img} alt="Changemaker Index image"/>
               </SwiperSlide>
 
               <SwiperSlide>
-                <img loading="eager" decoding="async" src={first_slide_3} className={Styles.slider_img} alt="Changemaker Index image"/>
+                <img loading="eager" decoding="async" src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-3_ycah0h.png" className={Styles.slider_img} alt="Changemaker Index image"/>
               </SwiperSlide>
 
               <SwiperSlide>
-                <img loading="eager" decoding="async" src={first_slide_4} className={Styles.slider_img} alt="Changemaker Index image" />
-              </SwiperSlide>
-            </Swiper>
-
-            <Swiper
-              modules={[Autoplay, Navigation]}
-              navigation
-              loop={true}
-              loopedSlides={3}
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
-              }}
-              speed={1000}
-            >
-              <SwiperSlide>
-                <img  loading="eager" decoding="async"  src={second_slide_1} className={Styles.slider_img} alt="Changemaker Index image" />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img loading="eager" decoding="async"  src={second_slide_2} className={Styles.slider_img}  alt="Changemaker Index image"/>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img loading="eager" decoding="async" src={second_slide_3} className={Styles.slider_img} alt="Changemaker Index image"/>
+                <img loading="eager" decoding="async" src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png" className={Styles.slider_img} alt="Changemaker Index image" />
               </SwiperSlide>
             </Swiper>
 
@@ -181,24 +157,49 @@ const Ourimpact = ({ theme }) => {
               speed={1000}
             >
               <SwiperSlide>
-                <img src={therd_slide_1} className={Styles.slider_img} />
+                <img  loading="eager" decoding="async"  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png" className={Styles.slider_img} alt="Changemaker Index image" />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={therd_slide_2} className={Styles.slider_img} />
+                <img loading="eager" decoding="async"  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653481/school-2-image-slider_opj1vb.png" className={Styles.slider_img}  alt="Changemaker Index image"/>
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={therd_slide_3} className={Styles.slider_img} />
+                <img loading="eager" decoding="async" src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/school-3-image-slider_troncd.png" className={Styles.slider_img} alt="Changemaker Index image"/>
+              </SwiperSlide>
+            </Swiper>
+
+            <Swiper
+              modules={[Autoplay, Navigation]}
+              navigation
+              loop={true}
+              loopedSlides={3}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              speed={1000}
+            >
+              <SwiperSlide>
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/3-rd-workshop-image_jwd7ay.png" className={Styles.slider_img} />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={therd_slide_4} className={Styles.slider_img} />
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png" className={Styles.slider_img} />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png" className={Styles.slider_img} />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/3-rd-workshop-4_ea6we5.png" className={Styles.slider_img} />
               </SwiperSlide>
             </Swiper>
           </div>
 
           <div className={Styles.bottom_impact_container}>
+
             <Swiper
               modules={[Autoplay, Navigation]}
               navigation
@@ -211,16 +212,17 @@ const Ourimpact = ({ theme }) => {
               speed={1000}
             >
               <SwiperSlide>
-                <img src={fourth_slide_1} className={Styles.slider_img} />
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg" className={Styles.slider_img} />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={fourth_slide_2} className={Styles.slider_img} />
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653471/fourth_workshop-2-min_umblqv.jpg" className={Styles.slider_img} />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={fourth_slide_3} className={Styles.slider_img} />
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653470/fourth_workshop-3-min_dqej4n.jpg" className={Styles.slider_img} />
               </SwiperSlide>
+
             </Swiper>
 
             <Swiper
@@ -235,17 +237,19 @@ const Ourimpact = ({ theme }) => {
               speed={1000}
             >
               <SwiperSlide>
-                <img src={second_slide_1} className={Styles.slider_img} />
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png" className={Styles.slider_img} />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={therd_slide_2} className={Styles.slider_img} />
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png" className={Styles.slider_img} />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={therd_slide_3} className={Styles.slider_img} />
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png" className={Styles.slider_img} />
               </SwiperSlide>
+
             </Swiper>
+            
           </div>
         </div>
       </div>
@@ -269,12 +273,14 @@ const Ourimpact = ({ theme }) => {
           </p>
         </div>
         <div className={Styles.global_image_section}>
+
           <img
             className={Styles.impact_img_containe}
-            src={worldmap}
+            src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/world-map_nnisio.svg"
             alt="World Map"
           />
         </div>
+
       </div>
 
       {/* Impact Cards Section */}
