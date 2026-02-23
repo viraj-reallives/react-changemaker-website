@@ -5,6 +5,7 @@ import React from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Styles from "./Ourimpact.module.css";
+
 // import worldmap from "../../assets/Home-image/world-map.svg";
 // import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1.png";
 // import first_slide_1 from "../../assets/Home-image/second-workshop.png";
@@ -22,6 +23,7 @@ import Styles from "./Ourimpact.module.css";
 // import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
 // import fourth_slide_2 from "../../assets/Home-image/fourth_workshop-2-min.jpg";
 // import fourth_slide_3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
+
 import { FaArrowRight } from "react-icons/fa6";
 
 const Ourimpact = ({ theme }) => {
@@ -164,11 +166,15 @@ const Ourimpact = ({ theme }) => {
                 <img loading="eager" decoding="async"  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653481/school-2-image-slider_opj1vb.png" className={Styles.slider_img}  alt="Changemaker Index image"/>
               </SwiperSlide>
 
+               <SwiperSlide>
+                <img loading="eager" decoding="async" src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/orchid-6_filvzp.jpg" className={Styles.slider_img} alt="Changemaker Index image"/>
+              </SwiperSlide>
+
               <SwiperSlide>
                 <img loading="eager" decoding="async" src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/school-3-image-slider_troncd.png" className={Styles.slider_img} alt="Changemaker Index image"/>
               </SwiperSlide>
             </Swiper>
-
+            
             <Swiper
               modules={[Autoplay, Navigation]}
               navigation
@@ -189,13 +195,19 @@ const Ourimpact = ({ theme }) => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png" className={Styles.slider_img} />
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-5_kwmesy.png" className={Styles.slider_img} />
               </SwiperSlide>
+
+              {/* <SwiperSlide>
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png" className={Styles.slider_img} />
+              </SwiperSlide> */}
 
               <SwiperSlide>
                 <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/3-rd-workshop-4_ea6we5.png" className={Styles.slider_img} />
               </SwiperSlide>
+
             </Swiper>
+
           </div>
 
           <div className={Styles.bottom_impact_container}>
@@ -211,6 +223,11 @@ const Ourimpact = ({ theme }) => {
               }}
               speed={1000}
             >
+
+                 <SwiperSlide>
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-background-img-2.jpeg_off002.png" className={Styles.slider_img} />
+              </SwiperSlide>
+
               <SwiperSlide>
                 <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg" className={Styles.slider_img} />
               </SwiperSlide>
@@ -236,6 +253,11 @@ const Ourimpact = ({ theme }) => {
               }}
               speed={1000}
             >
+
+                <SwiperSlide>
+                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-2_hgvd1d.jpg" className={Styles.slider_img} />
+              </SwiperSlide>
+
               <SwiperSlide>
                 <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png" className={Styles.slider_img} />
               </SwiperSlide>
