@@ -15,6 +15,7 @@
 
 .navigation-path {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -184,6 +185,52 @@
   font-size: 35px !important;
   transition: all 0.3s ease;
 }
+
+
+.button-download {
+  padding: 10px 20px;
+  background-color: #ffc067;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  transition: all 0.3s ease; 
+
+  box-shadow: 0 0 2px #ffc067;
+  animation: glow 1.5s infinite alternate;
+}
+
+
+.button-download:hover {
+  transform: translateY(-2px) scale(1.05); 
+  box-shadow: 0 0 10px #ffc067, 0 0 15px #ffb347; 
+}
+
+
+.button-download:focus {
+  outline: none;
+  border: none;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 2px #ffc067;
+  }
+  to {
+    box-shadow: 0 0 8px #ffc067, 0 0 12px #ffb347;
+  }
+}
+
+.title-website-logo{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
 
 @media (max-width: 768px) {
   .header-fixed {

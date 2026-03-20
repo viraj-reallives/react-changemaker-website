@@ -88,6 +88,7 @@ const Contact = () => {
     <div className="contact-container">
       <div className="contact-box">
         <h2>Get in Touch</h2>
+        
 
         {/* Success Message UI (Same) */}
         {submitted ? (

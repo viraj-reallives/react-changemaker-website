@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logowhite from "../../assets/logo-white.svg";
 import "./Navbar";
+import "./Navbar.css";
 
 const Logo = () => {
   return (
@@ -11,7 +12,7 @@ const Logo = () => {
 
         <div className="line-style"></div>
 
-        <p>ChangeMaker Index</p>
+        <p className="title-website-logo">Reallives ChangeMaker Index</p>
       </Link>
     </span>
   );

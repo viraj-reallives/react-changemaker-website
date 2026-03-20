@@ -1,8 +1,19 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { FaDownload } from "react-icons/fa6";
 
 const Navbar = () => {
+  const downloadPDF = () => {
+    const link = document.createElement("a");
+    link.href =
+      "https://reallivesfrontend.s3.us-east-1.amazonaws.com/RCMI-Brochure.pdf";
+    link.download = "RCMI-Brochure (";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -50,6 +61,13 @@ const Navbar = () => {
           onClick={() => setShowMenu(false)}
         >
           How RCMI Works
+        </NavLink>
+
+        <NavLink>
+          <button className="button-download " onClick={downloadPDF}>
+            <FaDownload />
+            Download PDF
+          </button>
         </NavLink>
       </div>
     </nav>
