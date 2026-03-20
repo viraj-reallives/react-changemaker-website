@@ -66,7 +66,7 @@ const Navbar = () => {
         <NavLink>
           <button className="button-download " onClick={downloadPDF}>
             <FaDownload />
-            Download PDF
+            RCMI Brochure
           </button>
         </NavLink>
       </div>
