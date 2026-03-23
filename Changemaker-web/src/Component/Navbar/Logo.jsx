@@ -12,7 +12,7 @@ const Logo = () => {
 
         <div className="line-style"></div>
 
-        <p className="title-website-logo">Reallives ChangeMaker Index</p>
+        <p className="title-website-logo">RealLives ChangeMaker Index</p>
       </Link>
     </span>
   );

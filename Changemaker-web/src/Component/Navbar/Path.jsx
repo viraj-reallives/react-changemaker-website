@@ -4,15 +4,17 @@ import "./Navbar.css";
 import { FaDownload } from "react-icons/fa6";
 
 const Navbar = () => {
-  const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href =
-      "https://reallivesfrontend.s3.us-east-1.amazonaws.com/RCMI-Brochure.pdf";
-    link.download = "RCMI-Brochure (";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  
+  
+ const openPDFInNewTab = () => {
+  const link = document.createElement("a");
+  link.href = "https://reallivesfrontend.s3.us-east-1.amazonaws.com/RCMI-Brochure.pdf";
+  link.target = "_blank"; 
+  link.rel = "noopener noreferrer"; 
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -64,7 +66,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink>
-          <button className="button-download " onClick={downloadPDF}>
+          <button className="button-download " onClick={openPDFInNewTab}>
             <FaDownload />
             RCMI Brochure
           </button>

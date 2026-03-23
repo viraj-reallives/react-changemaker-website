@@ -5,6 +5,7 @@ import React from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Styles from "./Ourimpact.module.css";
+// import { GlobalMap } from "../GlobalMap";
 
 // import worldmap from "../../assets/Home-image/world-map.svg";
 // import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1.png";
@@ -25,6 +26,7 @@ import Styles from "./Ourimpact.module.css";
 // import fourth_slide_3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
 
 import { FaArrowRight } from "react-icons/fa6";
+import { GlobalMap } from "../GlobalMap";
 
 const Ourimpact = ({ theme }) => {
   const become_change_btn = () => {
@@ -294,13 +296,18 @@ const Ourimpact = ({ theme }) => {
             world beyond their own borders.
           </p>
         </div>
+
         <div className={Styles.global_image_section}>
 
-          <img
+          <GlobalMap/>
+
+          {/* <img
             className={Styles.impact_img_containe}
             src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/world-map_nnisio.svg"
             alt="World Map"
-          />
+          /> */}
+
+
         </div>
 
       </div>
