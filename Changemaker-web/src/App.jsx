@@ -14,6 +14,8 @@ import Navamindradhiraj_University from "./Component/HomeComponentParts/Navamind
 import KyungHee_University from "./Component/HomeComponentParts/KyungHee_University";
 import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
 import "./Component/Global_css/Global.css";
+import Starter from "./Starter";
+
 
 const App = () => {
 
@@ -152,6 +154,13 @@ const App = () => {
         </Route>
 
       </Routes>
+
+      
+      
+
+   
+
+     
 
     </div>
   );

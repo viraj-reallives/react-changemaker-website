@@ -1,118 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Lato", "Helvetica Neue", "Helvetica", "sans-serif" !important;
-}
-
-.container {
-  width: 100vw;
-  transition: 0.5s;
-}
-
-.dark.container {
-  background-color: #222;
-}
-
-/* lodaer css */
-
-.simple_loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.3); */
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-.loading {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 10px solid #ddd;
-  border-top-color: orange;
-  animation: loading 1s linear infinite;
-}
-/* Custom Alert Styles */
-.custom-protection-alert {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999999 !important;
-  pointer-events: none;
-}
-
-.alert-content {
-  background: #ff4b2b;
-  color: #ffffff;
-  padding: 18px 36px;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  animation: popUpAlert 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* Pop-up Animation */
-@keyframes popUpAlert {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-img,
-video {
-  -webkit-user-drag: none;
-  user-drag: none;
-  -webkit-touch-callout: none;
-}
-
-/* Middle Alert Box Fix */
-
-@keyframes slideDown {
-  from {
-    top: -100px;
-    opacity: 0;
-  }
-  to {
-    top: 25px;
-    opacity: 1;
-  }
-}
-
-@keyframes loading {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* end loader css  */
-
-/* starter css  */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
-} */
+}
 
 .decoration-style-none {
   text-decoration: none;
@@ -286,10 +179,10 @@ video {
 }
 
 .button-continue-card {
-  /* background: linear-gradient(96.79deg, #0040e0 0%, #2e5bff 100%); */
+  background: linear-gradient(96.79deg, #0040e0 0%, #2e5bff 100%);
   font-weight: 600;
   font-size: 15px;
-  color: #0aaec6;
+  color: white;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -359,8 +252,8 @@ video {
   color: #fd7c3f !important;
 }
 .btn-bg-color-white {
-  background: #da8f25 !important;
-  color: white !important;
+  background: #eaeaec !important;
+  color: #993100 !important;
 }
 
 
@@ -808,4 +701,3 @@ video {
 
   
 }
-
