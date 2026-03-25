@@ -40,7 +40,7 @@ const impactSites = [
     { id: 9, name: 'Japan', coordinates: [138.2, 36.2], },
 ];
 
-export const GlobalMap = ({ name = "Impact" }) => {
+export const GlobalMap = ({ name = "" }) => {
   const navigate = useNavigate(); 
 
   return (
