@@ -27,9 +27,11 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Links */}
+
       <div
         className={showMenu ? "navigation-path mobile-open" : "navigation-path"}
       >
+        
         <NavLink
           to="/"
           end

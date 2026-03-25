@@ -6,6 +6,7 @@ import "./Navbar.css";
 
 const Logo = () => {
   return (
+
     <span className="logo-and-title-container">
       <Link className="logo-and-title-container listed-style " to="/Home">
         <img className="image-icon-changemaker" src={logowhite} alt="" />
@@ -15,6 +16,8 @@ const Logo = () => {
         <p className="title-website-logo">RealLives ChangeMaker Index</p>
       </Link>
     </span>
+
+   
   );
 };
 

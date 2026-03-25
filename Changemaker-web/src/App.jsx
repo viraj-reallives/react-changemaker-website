@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback,Navigate  } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Component/Layout";
 import Home from "./Component/Pages/Home";
@@ -15,6 +15,7 @@ import KyungHee_University from "./Component/HomeComponentParts/KyungHee_Univers
 import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
 import "./Component/Global_css/Global.css";
 import Starter from "./Starter";
+
 
 
 const App = () => {
@@ -109,6 +110,13 @@ const App = () => {
         
           <Route index element={<Home theme={theme} settheme={settheme} />} />
 
+          {/* <Route index element={<Starter theme={theme} settheme={settheme} />} />
+
+           <Route
+            path="/"
+            element={<Starter theme={theme} settheme={settheme} />}
+          />
+           */}
           <Route
             path="home"
             element={<Home theme={theme} settheme={settheme} />}
@@ -155,13 +163,14 @@ const App = () => {
 
       </Routes>
 
+    
       
-      
-
-   
-
      
+    
 
+       
+
+      
     </div>
   );
 };

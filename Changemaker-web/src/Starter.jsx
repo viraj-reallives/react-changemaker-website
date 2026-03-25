@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import reallives_icon from "../src/assets/logo-white.svg";
-import rcmi_logo from "../public/rcmi-logo.png";
-import Home from "./Component/Pages/Home";
+import { NavLink } from "react-router-dom";
+// import reallives_icon from "../src/assets/logo-white.svg";
+// import rcmi_logo from "../public/rcmi-logo.png";
+// import Home from "./Home";
 
 // import "./Starter.css";
 
@@ -41,11 +42,11 @@ const Starter = () => {
             <div className="top-starter-container">
               <div className="head-starter-box">
                 <div className="head-logo-reallives">
-                  <img
+                  {/* <img
                     className="head-logo-reallives"
                     src={reallives_icon}
                     alt="Logo"
-                  />
+                  /> */}
                 </div>
               </div>
 
@@ -98,11 +99,11 @@ const Starter = () => {
             <div className="top-starter-container">
               <div className="head-starter-box bg-changemaker">
                 <div className="head-logo-reallives">
-                  <img
+                  {/* <img
                     className="head-logo-reallives"
                     src={rcmi_logo}
                     alt="Logo"
-                  />
+                  /> */}
                 </div>
               </div>
 
