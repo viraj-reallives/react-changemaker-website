@@ -45,7 +45,7 @@ export const GlobalMap = ({ name = "" }) => {
 
   return (
     <div className="map-container">
-      <h1 className="map-title">Global Impact - {name}</h1>
+      <h1 className="map-title">Global Impact{name}</h1>
 
       <div className="map-wrapper">
         <ComposableMap
