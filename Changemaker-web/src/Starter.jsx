@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from "react";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { NavLink } from "react-router-dom";
-// import reallives_icon from "../src/assets/logo-white.svg";
-// import rcmi_logo from "../public/rcmi-logo.png";
-// import Home from "./Home";
+import reallives_icon from "../src/assets/logo-white.svg";
+import rcmi_logo from "../public/rcmi-logo.png";
+import "../src/Starter.css"
+
 
 // import "./Starter.css";
 
@@ -42,11 +43,11 @@ const Starter = () => {
             <div className="top-starter-container">
               <div className="head-starter-box">
                 <div className="head-logo-reallives">
-                  {/* <img
+                  <img
                     className="head-logo-reallives"
                     src={reallives_icon}
                     alt="Logo"
-                  /> */}
+                  />
                 </div>
               </div>
 
@@ -99,11 +100,11 @@ const Starter = () => {
             <div className="top-starter-container">
               <div className="head-starter-box bg-changemaker">
                 <div className="head-logo-reallives">
-                  {/* <img
+                  <img
                     className="head-logo-reallives"
                     src={rcmi_logo}
                     alt="Logo"
-                  /> */}
+                  />
                 </div>
               </div>
 
@@ -136,7 +137,7 @@ const Starter = () => {
                 prepare you for future careers and responsible leadership.
               </p>
 
-              <NavLink to="home" className="decoration-style-none">
+              <NavLink to="home-page" className="decoration-style-none">
                 <button className="button-continue-card btn-bg-color-white">
                   Continue to RealLives ChangeMaker Index
                   <AnalyticsIcon className="arrow-move-11" />

@@ -4,17 +4,16 @@ import "./Navbar.css";
 import { FaDownload } from "react-icons/fa6";
 
 const Navbar = () => {
-  
-  
- const openPDFInNewTab = () => {
-  const link = document.createElement("a");
-  link.href = "https://reallivesfrontend.s3.us-east-1.amazonaws.com/RCMI-Brochure.pdf";
-  link.target = "_blank"; 
-  link.rel = "noopener noreferrer"; 
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+  const openPDFInNewTab = () => {
+    const link = document.createElement("a");
+    link.href =
+      "https://reallivesfrontend.s3.us-east-1.amazonaws.com/RCMI-Brochure.pdf";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -31,13 +30,20 @@ const Navbar = () => {
       <div
         className={showMenu ? "navigation-path mobile-open" : "navigation-path"}
       >
-        
-        <NavLink
-          to="/"
+        {/* <NavLink
+          to="/home-page"
           end
           className={({ isActive }) =>
             isActive ? "listed-style active" : "listed-style"
           }
+          onClick={() => setShowMenu(false)}
+        >
+          Home
+        </NavLink> */}
+
+        <NavLink
+          className="listed-style"
+          to="/home-page" 
           onClick={() => setShowMenu(false)}
         >
           Home

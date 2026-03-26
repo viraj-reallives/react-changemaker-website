@@ -8,7 +8,8 @@ const Logo = () => {
   return (
 
     <span className="logo-and-title-container">
-      <Link className="logo-and-title-container listed-style " to="/Home">
+
+      <Link className="logo-and-title-container listed-style " to="/">
         <img className="image-icon-changemaker" src={logowhite} alt="" />
 
         <div className="line-style"></div>

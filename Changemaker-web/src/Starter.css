@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* starter css  */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
-}
+} */
 
 .decoration-style-none {
   text-decoration: none;
@@ -179,10 +182,10 @@
 }
 
 .button-continue-card {
-  background: linear-gradient(96.79deg, #0040e0 0%, #2e5bff 100%);
+  /* background: linear-gradient(96.79deg, #0040e0 0%, #2e5bff 100%); */
   font-weight: 600;
   font-size: 15px;
-  color: white;
+  color: #0aaec6;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -252,8 +255,8 @@
   color: #fd7c3f !important;
 }
 .btn-bg-color-white {
-  background: #eaeaec !important;
-  color: #993100 !important;
+  background: #da8f25 !important;
+  color: white !important;
 }
 
 
@@ -646,7 +649,7 @@
 
 }
 
-@media (min-width: 350px) and ( max-width:390px) {
+@media (min-width: 300px) and ( max-width:390px) {
 
     .head-logo-reallives {
     width: 60px;
@@ -701,3 +704,4 @@
 
   
 }
+

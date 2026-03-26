@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback,Navigate  } from "react";
+import { useState, useEffect, useCallback, Navigate } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Component/Layout";
 import Home from "./Component/Pages/Home";
@@ -16,10 +16,7 @@ import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
 import "./Component/Global_css/Global.css";
 import Starter from "./Starter";
 
-
-
 const App = () => {
-
   const [showAlert, setShowAlert] = useState(false);
 
   const triggerAlert = useCallback(() => {
@@ -29,7 +26,6 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-
     const handleContextMenu = (e) => {
       const isMedia =
         e.target.tagName === "IMG" ||
@@ -62,7 +58,7 @@ const App = () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [triggerAlert]);
-  
+
   // Not copy image video logic
 
   // const [theme, settheme] = useState("light");
@@ -91,9 +87,7 @@ const App = () => {
   }
 
   return (
-
     <div className={`container ${theme}`}>
-
       {showAlert && (
         <div className="custom-protection-alert">
           <div className="alert-content">
@@ -104,21 +98,21 @@ const App = () => {
 
       <ScrollTop></ScrollTop>
 
-      <Routes>
+      {/* <Routes>
 
         <Route path="/" element={<Layout theme={theme} settheme={settheme} />}>
         
           <Route index element={<Home theme={theme} settheme={settheme} />} />
 
-          {/* <Route index element={<Starter theme={theme} settheme={settheme} />} />
+          <Route index element={<Starter theme={theme} settheme={settheme} />} />
 
            <Route
             path="/"
             element={<Starter theme={theme} settheme={settheme} />}
           />
-           */}
+          
           <Route
-            path="home"
+            path="home-page"
             element={<Home theme={theme} settheme={settheme} />}
           />
 
@@ -161,16 +155,65 @@ const App = () => {
           />
         </Route>
 
+      </Routes> */}
+
+      <Routes>
+
+         <Route
+            index
+            element={<Starter theme={theme} settheme={settheme} />}
+          />
+
+
+        <Route path="/" element={<Layout theme={theme} settheme={settheme} />}>
+        
+         
+          <Route
+            path="home-page"
+            element={<Home theme={theme} settheme={settheme} />}
+          />
+
+          <Route
+            path="certified-institutes"
+            element={<Certifiedinstitutes theme={theme} settheme={settheme} />}
+          />
+
+          <Route
+            path="our-impact"
+            element={<Ourimpact theme={theme} settheme={settheme} />}
+          />
+
+          <Route
+            path="our-impact/eth-university"
+            element={<University theme={theme} />}
+          />
+          <Route
+            path="our-impact/navamindradhiraj-university"
+            element={<Navamindradhiraj_University theme={theme} />}
+          />
+          <Route
+            path="our-impact/kyunghee-university"
+            element={<KyungHee_University theme={theme} />}
+          />
+          <Route
+            path="our-impact/iit-bombay"
+            element={<IIT_Bombay theme={theme} />}
+          />
+
+          <Route path="how-rcmi-works" element={<Rcmiworks theme={theme} />} />
+          <Route
+            path="contact"
+            element={<Contact theme={theme} settheme={settheme} />}
+          />
+
+          {/* Catch-all route */}
+          <Route
+            path="*"
+            element={<NotFound theme={theme} settheme={settheme} />}
+          />
+        </Route>
       </Routes>
 
-    
-      
-     
-    
-
-       
-
-      
     </div>
   );
 };
