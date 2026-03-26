@@ -79,7 +79,7 @@ const Starter = () => {
                 className="button-continue-card"
                 onClick={() => {
                   const newTab = window.open(
-                    "https://reallivesworld.com/reallives-website-main/",
+                    "https://reallivesworld.com/reallives-website-main/Home.html",
                     "_blank",
                   );
                   if (newTab) {
