@@ -56,7 +56,7 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
         <img
           loading="eager"
           decoding="async"
-          src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-background-img-2.jpeg_off002.png"
+          src="https://d2jn82ki4w4ftn.cloudfront.net/orchid-background-img-2.jpeg_off002.png"
           alt="Changemaker Index image"
         />
 
