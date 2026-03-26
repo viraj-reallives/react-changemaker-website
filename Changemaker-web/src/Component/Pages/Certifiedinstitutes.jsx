@@ -312,7 +312,7 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
           <img
             loading="lazy"
             decoding="async"
-            src="https://d2jn82ki4w4ftn.cloudfront.net/certificate.svg"
+            src="https://d2jn82ki4w4ftn.cloudfront.net/certificate.png"
             alt="Changemaker Index image"
           />
         </div>
