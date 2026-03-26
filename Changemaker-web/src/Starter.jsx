@@ -6,9 +6,6 @@ import reallives_icon from "../src/assets/logo-white.svg";
 import rcmi_logo from "../public/rcmi-logo.png";
 import "../src/Starter.css"
 
-
-// import "./Starter.css";
-
 const Starter = () => {
   const contentRef = useRef(null);
 

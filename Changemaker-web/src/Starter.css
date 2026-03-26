@@ -183,9 +183,10 @@
 
 .button-continue-card {
   /* background: linear-gradient(96.79deg, #0040e0 0%, #2e5bff 100%); */
+  background-color: #e6e6e6;
   font-weight: 600;
   font-size: 15px;
-  color: #0aaec6;
+  color: #0036fd;
   border-radius: 30px;
   border: none;
   cursor: pointer;
