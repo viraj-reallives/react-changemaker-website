@@ -90,7 +90,7 @@ const Chula_University = ({ theme }) => {
 
       <div className={Styles.content_tab_container_imapct}>
         <div className={Styles.container_logo_box_impact}>
-          <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/chula-rl.png" alt="" />
+          <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/chula-rl.svg" alt="" />
         </div>
       </div>
 

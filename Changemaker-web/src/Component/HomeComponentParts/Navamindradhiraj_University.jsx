@@ -52,7 +52,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/second-workshop_vmxhhq.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/navamindradhiraj-workshop/second-workshop-demo-svg.svg"
               className={Styles.slider_img}
               alt="slide 1"
             />
