@@ -15,6 +15,7 @@ import KyungHee_University from "./Component/HomeComponentParts/KyungHee_Univers
 import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
 import "./Component/Global_css/Global.css";
 import Starter from "./Starter";
+import Chula_University from "./Component/HomeComponentParts/Chula_University";
 
 const App = () => {
   const [showAlert, setShowAlert] = useState(false);
@@ -159,15 +160,10 @@ const App = () => {
 
       <Routes>
 
-         <Route
-            index
-            element={<Starter theme={theme} settheme={settheme} />}
-          />
-
+         <Route index element={<Starter theme={theme} settheme={settheme} />} />
 
         <Route path="/" element={<Layout theme={theme} settheme={settheme} />}>
         
-         
           <Route
             path="home-page"
             element={<Home theme={theme} settheme={settheme} />}
@@ -195,10 +191,18 @@ const App = () => {
             path="our-impact/kyunghee-university"
             element={<KyungHee_University theme={theme} />}
           />
+
           <Route
             path="our-impact/iit-bombay"
             element={<IIT_Bombay theme={theme} />}
           />
+
+          <Route
+          path="/our-impact/Chulalongkorn-University"
+          element={<Chula_University theme={theme} />}
+        />
+
+      Chulalongkorn University, Bangkok, Thailand
 
           <Route path="how-rcmi-works" element={<Rcmiworks theme={theme} />} />
           <Route
