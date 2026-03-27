@@ -51,7 +51,7 @@ const KyungHee_University = ({ theme }) => {
         >
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/3-rd-workshop-image_jwd7ay.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/kyunghee-korea-workshop/3-rd-workshop-image.png"
               className={Styles.slider_img}
               alt="slide 1"
             />
