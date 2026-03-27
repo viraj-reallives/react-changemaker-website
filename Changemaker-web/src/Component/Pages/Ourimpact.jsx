@@ -115,7 +115,7 @@ const Ourimpact = ({ theme }) => {
       card_title: "Chulalongkorn University Workshop",
       card_date: "27/04/2024",
       imgURL:
-        "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
+        "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/fifth-work-shop.png",
       university_text: "Chulalongkorn University, Bangkok, Thailand",
       particepent_title: "Department - Faculty of Education / BAScii Program",
       collaboration_text: "In collaboration with:",
