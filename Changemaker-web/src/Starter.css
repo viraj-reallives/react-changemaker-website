@@ -302,7 +302,7 @@
   }
 
   .card-starter-section {
-    padding: 1rem 8rem;
+    padding: 2rem 8rem;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
   }
@@ -345,7 +345,7 @@
   }
 
   .card-starter-section {
-    padding: 6rem 5rem;
+    padding: 6rem 7rem;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
   }
@@ -389,7 +389,7 @@
   }
 
   .card-starter-section {
-    padding: 1rem 5rem;
+    padding: 4rem 5rem;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
   }
@@ -434,7 +434,7 @@
   }
 
   .card-starter-section {
-    padding: 1rem 1rem;
+    padding: 6rem 3rem;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
   }
