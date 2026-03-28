@@ -377,6 +377,15 @@
   padding: 1rem 0rem;
 }
 
+.empathy_color{
+  background-color: #F4B3FF;
+}
+
+.critical_thinking_color{
+  background-color: #FFE396;
+}
+
+
 @media (max-width: 1200px) {
   .our_card_section_wrapper {
     padding: 1rem 1rem;

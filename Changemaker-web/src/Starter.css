@@ -329,7 +329,7 @@
   }
 
      .button-continue-card{
-        font-size: 11px;
+        font-size: 14px;
     }
 
   .container-cards-starter {
@@ -345,7 +345,7 @@
   }
 
   .card-starter-section {
-    padding: 1rem 5rem;
+    padding: 6rem 5rem;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
   }
@@ -360,7 +360,7 @@
   }
 
   .fetures-inner-box {
-    font-size: 9px;
+    font-size: 12px;
     padding: 7px 8px;
   }
 
@@ -369,7 +369,7 @@
 @media(min-width:1025px) and (max-width:1180px){
 
   .simulation-title-text{
-    font-size: 20px;
+    font-size: 21px;
   }
 
      .button-continue-card{
@@ -404,7 +404,7 @@
   }
 
   .fetures-inner-box {
-    font-size: 9px;
+    font-size: 11px;
     padding: 7px 8px;
   }
 
@@ -495,6 +495,9 @@
 }
 
 @media(min-width:700px) and (max-width:800px){
+
+  
+
      .button-continue-card{
         font-size: 11px;
     }
@@ -527,13 +530,24 @@
   }
 
   .fetures-inner-box {
-    font-size: 9px;
+    font-size: 8px;
     padding: 7px 8px;
   }
 
 }
 
 @media(min-width:600px) and (max-width:700px){
+
+    
+    .head-logo-reallives {
+    width: 100px;
+    height: 100px;
+   }
+
+     .head-starter-box {
+        height: 210px;
+    }
+
      .button-continue-card{
         font-size: 11px;
     }
@@ -573,6 +587,18 @@
 }
 
 @media(min-width:481px) and (max-width:600px){
+
+  .head-starter-box {
+        height: 210px;
+    }
+
+     
+    .head-logo-reallives {
+    width: 95px;
+    height: 95px;
+   }
+
+
      .button-continue-card{
         font-size: 11px;
     }
@@ -611,7 +637,17 @@
 
 }
 
-@media(min-width:400px) and (max-width:480px){
+@media(min-width:391px) and (max-width:480px){
+
+      .head-starter-box {
+        height: 210px;
+    }
+    
+    .head-logo-reallives {
+    width: 85px;
+    height: 85px;
+   }
+
           .button-continue-card{
         font-size: 11px;
     }
@@ -653,8 +689,8 @@
 @media (min-width: 300px) and ( max-width:390px) {
 
     .head-logo-reallives {
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
    }
 
     .head-starter-box{

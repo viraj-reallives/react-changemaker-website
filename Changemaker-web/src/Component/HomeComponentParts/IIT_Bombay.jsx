@@ -216,6 +216,7 @@ const IIT_Bombay = ({ theme }) => {
           </button>
         </div>
       </div>
+      
     </div>
   );
 };
