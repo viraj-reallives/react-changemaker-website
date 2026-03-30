@@ -235,7 +235,7 @@ const Navamindradhiraj_University = ({ theme }) => {
               challenges. The success at Navamindradhiraj University reinforces
               RealLives' effectiveness in transforming academic learning into
               actionable changemaking capabilities across diverse cultural and
-              educational contexts. <br /> <strong>Fostering Civic Empathy: </strong>For these
+              educational contexts. <br /> <strong>Fostering Civic Empathy - </strong>For these
               Thai students, the simulation served as a vital bridge between
               local urban realities in Bangkok and global socio-economic
               challenges. By stepping into the lives of individuals from vastly
