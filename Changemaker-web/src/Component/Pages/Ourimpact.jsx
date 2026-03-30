@@ -62,7 +62,7 @@ const Ourimpact = ({ theme }) => {
       university_text: "Navamindradhiraj University, Bangkok",
       particepent_title: "Department - General Education",
       collaboration_text: "In collaboration with:",
-      name_card: "Prof. Krittanan Pensirisomboon",
+      name_card: "Lecturer Krittanan Pensirisomboon",
       number_title: 150,
       skill_devloped: "Skills Developed",
       teamwork_title: "21’st Century Skills",

@@ -40,7 +40,6 @@ const Navamindradhiraj_University = ({ theme }) => {
       </span>
 
       <div className={Styles.slider_wrapper}>
-
         <Swiper
           modules={[Navigation]}
           navigation={true}
@@ -49,7 +48,6 @@ const Navamindradhiraj_University = ({ theme }) => {
           speed={600}
           className={`${Styles.mySwiper} universitySlider`}
         >
-
           <SwiperSlide className={Styles.swiperSlide}>
             <img
               src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/navamindradhiraj-workshop/second-workshop-demo-svg.svg"
@@ -57,7 +55,6 @@ const Navamindradhiraj_University = ({ theme }) => {
               alt="slide 1"
             />
           </SwiperSlide>
-
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
@@ -82,6 +79,26 @@ const Navamindradhiraj_University = ({ theme }) => {
               alt="slide 3"
             />
           </SwiperSlide>
+
+           <SwiperSlide className={Styles.swiperSlide}>
+            <img
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/navamindradhiraj-workshop/nmu-slider-image-1.jpg"
+              className={Styles.slider_img}
+              alt="slide 3"
+            />
+          </SwiperSlide>
+
+           <SwiperSlide className={Styles.swiperSlide}>
+            <img
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/navamindradhiraj-workshop/nmu-slider-image-2.jpg"
+              className={Styles.slider_img}
+              alt="slide 3"
+            />
+          </SwiperSlide>
+
+
+
+          
         </Swiper>
       </div>
 
@@ -94,13 +111,10 @@ const Navamindradhiraj_University = ({ theme }) => {
       <div className={Styles.wrapper_professior_data}>
         <span className={Styles.span_imapct_colume_2}>
           <p className={Styles.university_text_title}>
-           Navamindradhiraj University, Bangkok
-
+            Navamindradhiraj University, Bangkok
           </p>
           <p className={Styles.participants_title_text}>
-           Department - General Education
-
-
+            Department - General Education
           </p>
         </span>
 
@@ -108,7 +122,9 @@ const Navamindradhiraj_University = ({ theme }) => {
           <p className={Styles.participants_title_text}>
             In collaboration with:
           </p>
-          <p className={Styles.university_text_title}>Prof. Krittanan Pensirisomboon</p>
+          <p className={Styles.university_text_title}>
+            Prof. Krittanan Pensirisomboon
+          </p>
         </span>
       </div>
 
@@ -167,6 +183,14 @@ const Navamindradhiraj_University = ({ theme }) => {
               backgrounds globally while developing measurable empathy and
               changemaking competencies through our proprietary assessment
               tools.
+              <br />
+              <strong>Institutional Scale and Integration - </strong> This workshop was not just an
+              extracurricular activity; it was officially integrated into
+              Navamindradhiraj University’s mandatory "Metropolitan Studies"
+              curriculum. By embedding the RealLives simulation into the core
+              General Education module, the program successfully reached over
+              600 first-year students, operating at a massive institutional
+              scale.
             </p>
           </span>
         </div>
@@ -211,7 +235,13 @@ const Navamindradhiraj_University = ({ theme }) => {
               challenges. The success at Navamindradhiraj University reinforces
               RealLives' effectiveness in transforming academic learning into
               actionable changemaking capabilities across diverse cultural and
-              educational contexts.
+              educational contexts. <br /> <strong>Fostering Civic Empathy: </strong>For these
+              Thai students, the simulation served as a vital bridge between
+              local urban realities in Bangkok and global socio-economic
+              challenges. By stepping into the lives of individuals from vastly
+              different backgrounds, students developed crucial 21st-century
+              civic competencies, shifting their perspective from passive
+              observation to active, empathy-driven problem solving.
             </p>
           </span>
         </div>
