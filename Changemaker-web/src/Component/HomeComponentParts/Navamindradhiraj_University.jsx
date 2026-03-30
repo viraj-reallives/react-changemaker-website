@@ -123,7 +123,7 @@ const Navamindradhiraj_University = ({ theme }) => {
             In collaboration with:
           </p>
           <p className={Styles.university_text_title}>
-            Prof. Krittanan Pensirisomboon
+            Lecturer Krittanan Pensirisomboon
           </p>
         </span>
       </div>
