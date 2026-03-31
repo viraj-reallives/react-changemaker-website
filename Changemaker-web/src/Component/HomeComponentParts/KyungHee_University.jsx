@@ -102,7 +102,7 @@ const KyungHee_University = ({ theme }) => {
 
       <div className={Styles.sdg_container_imapct_tab}>
         <p className={Styles.student_testimonials_title}>
-          SDG’s Alligned with this workshop
+          SDGs Aligned with this workshop
         </p>
 
         <div className={Styles.grid_sdg_card_imapct}>
