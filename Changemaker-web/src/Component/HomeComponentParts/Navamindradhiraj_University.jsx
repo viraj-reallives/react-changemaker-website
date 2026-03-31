@@ -130,7 +130,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
       <div className={Styles.sdg_container_imapct_tab}>
         <p className={Styles.student_testimonials_title}>
-          SDG’s Alligned with this workshop
+          SDGs Aligned with this workshop
         </p>
 
         <div className={Styles.grid_sdg_card_imapct}>
@@ -239,7 +239,7 @@ const Navamindradhiraj_University = ({ theme }) => {
               Thai students, the simulation served as a vital bridge between
               local urban realities in Bangkok and global socio-economic
               challenges. By stepping into the lives of individuals from vastly
-              different backgrounds, students developed crucial 21st-century
+              different backgrounds, students developed crucial 21st century
               civic competencies, shifting their perspective from passive
               observation to active, empathy-driven problem solving.
             </p>
@@ -252,7 +252,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
         <div className={Styles.wapper_show_btn}>
           <button className={Styles.color_btn_font}>
-            21’st Century Skills
+            21st Century Skills
           </button>
           <button
             className={`${Styles.color_btn_font} ${Styles.empathy_btn_color}`}
