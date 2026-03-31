@@ -65,7 +65,7 @@ const Ourimpact = ({ theme }) => {
       name_card: "Lecturer Krittanan Pensirisomboon",
       number_title: 150,
       skill_devloped: "Skills Developed",
-      teamwork_title: "21’st Century Skills",
+      teamwork_title: "21st Century Skills",
       intergrity_title: "Business Acumen",
       teamwork_bg: "#d4e8eb",
       intergrity_bg: "#dff6c2",
