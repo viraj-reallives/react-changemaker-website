@@ -270,7 +270,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
           <span class={Styles.text_data_content_1}>
             <p>
-              I'm Panja "Thon Mai" Sulta Mujdatin. Through this experience, I
+              My name is Panjasuth Tangpanyapinit, 1st year student from the Faculty of Medicine, Navamindradhiraj University. Through this experience, I
               learned that while none of us choose the circumstances we're born
               into, rich or poor, we can always choose empathy, kindness, and
               inclusion. Life has its ups and downs, so being flexible and ready
