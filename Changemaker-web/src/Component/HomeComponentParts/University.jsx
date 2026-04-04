@@ -50,7 +50,7 @@ const University = ({ theme }) => {
           >
             <SwiperSlide className={Styles.swiperSlide}>
               <img
-                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png"
+                src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/eth-zurich/school-1-image-slider.png"
                 className={Styles.slider_img}
                 alt="slide 1"
               />
@@ -58,7 +58,7 @@ const University = ({ theme }) => {
 
             <SwiperSlide className={Styles.swiperSlide}>
               <img
-                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653481/school-2-image-slider_opj1vb.png"
+                src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/eth-zurich/school-2-image-slider.png"
                 className={Styles.slider_img}
                 alt="slide 2"
               />
@@ -66,7 +66,7 @@ const University = ({ theme }) => {
 
             <SwiperSlide className={Styles.swiperSlide}>
               <img
-                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/school-3-image-slider_troncd.png"
+                src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/eth-zurich/school-3-image-slider.png"
                 className={Styles.slider_img}
                 alt="slide 3"
               />

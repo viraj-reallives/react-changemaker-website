@@ -51,7 +51,7 @@ const KyungHee_University = ({ theme }) => {
         >
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/kyunghee-korea-workshop/3-rd-workshop-image.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-image.png"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -59,7 +59,7 @@ const KyungHee_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/3-rd-workshop-first-image_y34mx3.jpg"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/3-rd-workshop-first-image.jpg"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -67,7 +67,7 @@ const KyungHee_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-2.png"
               className={Styles.slider_img}
               alt="slide 2"
             />
@@ -75,7 +75,7 @@ const KyungHee_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-3.png"
               className={Styles.slider_img}
               alt="slide 3"
             />
@@ -83,7 +83,7 @@ const KyungHee_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/3-rd-workshop-4_ea6we5.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-4.png"
               className={Styles.slider_img}
               alt="slide 3"
             />

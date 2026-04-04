@@ -21,32 +21,32 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
   let workshop = [
     {
       id: 1,
-      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-5_kwmesy.png",
+      img:"https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-5.png",
     },
 
     {
       id: 2,
-      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-2_hgvd1d.jpg",
+      img:"https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-2.jpg",
     },
 
     {
       id: 3,
-      img: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/orchid-3_zmamzk.jpg",
+      img: "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-3.jpg",
     },
 
     {
       id: 4,
-      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/orchid-4_tnp54i.jpg",
+      img:"https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-4.jpg",
     },
 
     {
       id: 5,
-      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/orchid-1_ipbgc7.jpg",
+      img:"https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-1.jpg",
     },
 
     {
       id: 6,
-      img:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/orchid-6_filvzp.jpg",
+      img:"https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-6.jpg",
     },
   ];
 
@@ -56,7 +56,7 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
         <img
           loading="eager"
           decoding="async"
-          src="https://d2jn82ki4w4ftn.cloudfront.net/orchid-background-img-2.jpeg_off002.png"
+          src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-background-img.png"
           alt="Changemaker Index image"
         />
 
@@ -312,7 +312,7 @@ const Certifiedinstitutes = ({ theme, settheme }) => {
           <img
             loading="lazy"
             decoding="async"
-            src="https://d2jn82ki4w4ftn.cloudfront.net/certificate.png"
+            src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/certificate.png"
             alt="Changemaker Index image"
           />
         </div>

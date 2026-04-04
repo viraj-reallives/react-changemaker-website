@@ -46,7 +46,7 @@ const Home = ({ theme, settheme }) => {
         </div>
 
         <div className={Styles.content_image_right}>
-          <img loading="eager" decoding="async"  className={Styles.image_hight_rem} src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/first-section-image_f9elve.png" alt="Changemaker Index image" />
+          <img loading="eager" decoding="async"  className={Styles.image_hight_rem} src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/home-page/first-section-image.svg" alt="Changemaker Index image" />
         </div>
       </div>
 

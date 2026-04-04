@@ -40,7 +40,7 @@ const Ourimpact = ({ theme }) => {
       card_title: "ETH Zurich Workshop",
       card_date: "27 / 06 / 2018",
       imgURL:
-        "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
+        "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/home-page/final-business-with-purpose.png",
       university_text: "ETH University Zurich, Switzerland",
       particepent_title: "Department - Institute of Molecular Systems Biology",
       collaboration_text: "In collaboration with:",
@@ -58,7 +58,7 @@ const Ourimpact = ({ theme }) => {
       card_title: "Navamindradhiraj University Workshop",
       card_date: "20 / 09 / 2025",
       imgURL:
-        "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/second-workshop_vmxhhq.png",
+        "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/second-workshop.png",
       university_text: "Navamindradhiraj University, Bangkok",
       particepent_title: "Department - General Education",
       collaboration_text: "In collaboration with:",
@@ -76,7 +76,7 @@ const Ourimpact = ({ theme }) => {
       card_title: "KyungHee University SDG Workshop",
       card_date: "29 / 09 / 2025",
       imgURL:
-        "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/3-rd-workshop-first-image_y34mx3.jpg",
+        "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/3-rd-workshop-first-image.jpg",
       university_text: "Kyunghee University, Korea",
       particepent_title: "Department - Social Sciences",
       collaboration_text: "In collaboration with:",
@@ -96,7 +96,7 @@ const Ourimpact = ({ theme }) => {
       card_title: "IIT Bombay Exploring SDG 1 through Empathy Workshop",
       card_date: "07 / 11 / 2024",
       imgURL:
-        "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
+        "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/home-page/fourth_workshop-1.jpg",
       university_text: "IIT Bombay, India",
       particepent_title: "Department - IDC School of Design",
       collaboration_text: "In collaboration with:",
@@ -162,7 +162,7 @@ const Ourimpact = ({ theme }) => {
                 <img
                   loading="eager"
                   decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/home-page/final-business-with-purpose.png"
                   className={Styles.slider_img}
                   alt="Changemaker Index image"
                 />
@@ -172,7 +172,7 @@ const Ourimpact = ({ theme }) => {
                 <img
                   loading="eager"
                   decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-2_ikloth.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/navamindradhiraj-workshop/second-workshop-2.png"
                   className={Styles.slider_img}
                   alt="Changemaker Index image"
                 />
@@ -182,7 +182,7 @@ const Ourimpact = ({ theme }) => {
                 <img
                   loading="eager"
                   decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-3_ycah0h.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/navamindradhiraj-workshop/second-workshop-3.png"
                   className={Styles.slider_img}
                   alt="Changemaker Index image"
                 />
@@ -192,7 +192,7 @@ const Ourimpact = ({ theme }) => {
                 <img
                   loading="eager"
                   decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/home-page/second-workshop-4.png"
                   className={Styles.slider_img}
                   alt="Changemaker Index image"
                 />
@@ -214,7 +214,7 @@ const Ourimpact = ({ theme }) => {
                 <img
                   loading="eager"
                   decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/eth-zurich/school-1-image-slider.png"
                   className={Styles.slider_img}
                   alt="Changemaker Index image"
                 />
@@ -224,7 +224,7 @@ const Ourimpact = ({ theme }) => {
                 <img
                   loading="eager"
                   decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653481/school-2-image-slider_opj1vb.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/eth-zurich/school-2-image-slider.png"
                   className={Styles.slider_img}
                   alt="Changemaker Index image"
                 />
@@ -234,7 +234,7 @@ const Ourimpact = ({ theme }) => {
                 <img
                   loading="eager"
                   decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/orchid-6_filvzp.jpg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-6.jpg"
                   className={Styles.slider_img}
                   alt="Changemaker Index image"
                 />
@@ -244,7 +244,7 @@ const Ourimpact = ({ theme }) => {
                 <img
                   loading="eager"
                   decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/school-3-image-slider_troncd.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/eth-zurich/school-3-image-slider.png"
                   className={Styles.slider_img}
                   alt="Changemaker Index image"
                 />
@@ -271,25 +271,25 @@ const Ourimpact = ({ theme }) => {
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-2.png"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-5_kwmesy.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-5.png"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
 
               {/* <SwiperSlide>
-                <img src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png" className={Styles.slider_img} />
+                <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-3.png" className={Styles.slider_img} />
               </SwiperSlide> */}
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/3-rd-workshop-4_ea6we5.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-4.png"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
@@ -310,28 +310,28 @@ const Ourimpact = ({ theme }) => {
             >
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-background-img-2.jpeg_off002.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-background-img-2.png"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/home-page/fourth_workshop-1.jpg"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653471/fourth_workshop-2-min_umblqv.jpg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/iit-bombay-workshop/fourth_workshop-2-min.jpg"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653470/fourth_workshop-3-min_dqej4n.jpg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/iit-bombay-workshop/fourth_workshop-3-min.jpg"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
@@ -350,28 +350,28 @@ const Ourimpact = ({ theme }) => {
             >
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-2_hgvd1d.jpg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/certified-institutes-page/orchid-school/orchid-2.jpg"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/eth-zurich/school-1-image-slider.png"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-2.png"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/kyunghee-korea-workshop/3-rd-workshop-3.png"
                   className={Styles.slider_img}
                 />
               </SwiperSlide>

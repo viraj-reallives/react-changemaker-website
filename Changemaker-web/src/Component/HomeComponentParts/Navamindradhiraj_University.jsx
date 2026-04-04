@@ -50,7 +50,7 @@ const Navamindradhiraj_University = ({ theme }) => {
         >
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/navamindradhiraj-workshop/second-workshop-demo-svg.svg"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/navamindradhiraj-workshop/second-workshop-demo-svg.svg"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -58,7 +58,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-2_ikloth.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/navamindradhiraj-workshop/second-workshop-2.png"
               className={Styles.slider_img}
               alt="slide 2"
             />
@@ -66,7 +66,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-3_ycah0h.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/navamindradhiraj-workshop/second-workshop-3.png"
               className={Styles.slider_img}
               alt="slide 3"
             />
@@ -74,7 +74,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/home-page/second-workshop-4.png"
               className={Styles.slider_img}
               alt="slide 3"
             />
@@ -82,7 +82,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
            <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/navamindradhiraj-workshop/nmu-slider-image-1.jpg"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/navamindradhiraj-workshop/nmu-slider-image-1.jpg"
               className={Styles.slider_img}
               alt="slide 3"
             />
@@ -90,7 +90,7 @@ const Navamindradhiraj_University = ({ theme }) => {
 
            <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/navamindradhiraj-workshop/nmu-slider-image-2.jpg"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/navamindradhiraj-workshop/nmu-slider-image-2.jpg"
               className={Styles.slider_img}
               alt="slide 3"
             />
@@ -314,7 +314,7 @@ const Navamindradhiraj_University = ({ theme }) => {
             className={Styles.image_cover_class}
           >
             <source
-              src="https://reallivesfrontend.s3.us-east-1.amazonaws.com/Student-video-workshop.mp4"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/navamindradhiraj-workshop/Student-video-workshop.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

@@ -48,7 +48,7 @@ const Chula_University = ({ theme }) => {
 
             <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/fifth-work-shop-4.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/fifth-work-shop-4.png"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -57,7 +57,7 @@ const Chula_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/fifth-work-shop-2.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/fifth-work-shop-2.png"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -65,7 +65,7 @@ const Chula_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/fifth-work-shop-3.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/fifth-work-shop-3.png"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -73,13 +73,13 @@ const Chula_University = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/fifth-work-shop-5.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/fifth-work-shop-5.png"
               className={Styles.slider_img}
               alt="slide 1"
             />
 
               <img
-              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/fifth-work-shop.png"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/fifth-work-shop.png"
               className={Styles.slider_img}
               alt="slide 2"
             />
@@ -231,7 +231,7 @@ const Chula_University = ({ theme }) => {
             controls
             className={Styles.image_cover_class}
           >
-            <source src="https://d2jn82ki4w4ftn.cloudfront.net/Prof-Sawaros-Chula.mp4" />
+            <source src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/Prof-Sawaros-Chula.mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -250,7 +250,7 @@ const Chula_University = ({ theme }) => {
           </p>
 
           <div class={Styles.goal_img_chula }>
-                  <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/first-goal-img-1.png" alt=""/>
+                  <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/first-goal-img-1.png" alt=""/>
           </div>
 
             
@@ -261,7 +261,7 @@ const Chula_University = ({ theme }) => {
          <div className={Styles.impact_left_data_box}>
          
           <div class={Styles.goal_img_chula }>
-                  <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/second-goal-img-2.png" alt=""/>
+                  <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/second-goal-img-2.png" alt=""/>
           </div>
           </div>
 
@@ -269,7 +269,7 @@ const Chula_University = ({ theme }) => {
           <div className={Styles.impact_left_data_box}>
          
           <div class={Styles.goal_img_chula }>
-                  <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/therd-goal-img-3.png" alt=""/>
+                  <img src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/therd-goal-img-3.png" alt=""/>
           </div>
           </div>
 

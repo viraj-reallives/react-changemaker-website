@@ -49,7 +49,7 @@ const IIT_Bombay = ({ theme }) => {
         >
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/home-page/fourth_workshop-1.jpg"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -57,7 +57,7 @@ const IIT_Bombay = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653471/fourth_workshop-2-min_umblqv.jpg"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/iit-bombay-workshop/fourth_workshop-2-min.jpg"
               className={Styles.slider_img}
               alt="slide 1"
             />
@@ -65,7 +65,7 @@ const IIT_Bombay = ({ theme }) => {
 
           <SwiperSlide className={Styles.swiperSlide}>
             <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653470/fourth_workshop-3-min_dqej4n.jpg"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/iit-bombay-workshop/fourth_workshop-3-min.jpg"
               className={Styles.slider_img}
               alt="slide 2"
             />

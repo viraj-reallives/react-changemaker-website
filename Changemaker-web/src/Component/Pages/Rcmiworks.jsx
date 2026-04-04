@@ -70,7 +70,7 @@ const Rcmiworks = ({ theme }) => {
 
         <div className={Styles.competencies_Style_image}>
 
-          <img loading="eager" decoding="async" src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653470/competencies-background-image_alcaka.svg" alt="Changemaker Index image" />
+          <img loading="eager" decoding="async" src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/how-rcmi-works-page/competencies-background-image.svg" alt="Changemaker Index image" />
           
         </div>
 
@@ -244,7 +244,7 @@ const Rcmiworks = ({ theme }) => {
                  loading="lazy"
                   decoding="async"
                   className={Styles.image_fit_content}
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/RealLives_ChangeMaker_Index-1_by1edh.svg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/how-rcmi-works-page/RealLives_ChangeMaker_Index.svg"
                   alt=""
                 />
               </div>
@@ -267,7 +267,7 @@ const Rcmiworks = ({ theme }) => {
                 <img  loading="lazy"
                 decoding="async"
                   className={Styles.image_fit_content}
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/RealLives_ChangeMaker_Index-2_kw32ir.svg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/how-rcmi-works-page/RealLives_ChangeMaker_Index-2.svg"
                   alt=""
                 />
               </div>
@@ -293,7 +293,7 @@ const Rcmiworks = ({ theme }) => {
                  loading="lazy"
                 decoding="async"
                   className={Styles.image_fit_content}
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/make-a-changemaker-journey_fofepi.svg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/how-rcmi-works-page/make-a-changemaker-journey.svg"
                   alt=""
                 />
               </div>
@@ -323,7 +323,7 @@ const Rcmiworks = ({ theme }) => {
                 <img  loading="lazy"
                  decoding="async"
                   className={Styles.image_fit_content}
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653470/graph-rcmi-image_nuyons.svg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/how-rcmi-works-page/graph-rcmi-image.svg"
                   alt=""
                 />
               </div>
@@ -387,7 +387,7 @@ const Rcmiworks = ({ theme }) => {
               >
                 <img
                   className={Styles.image_fit_content}
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/Comptencies-ss-image_xktwdl.svg"
+                  src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/how-rcmi-works-page/competencies-image.svg"
                   alt=""
                 />
               </div>
@@ -415,7 +415,7 @@ const Rcmiworks = ({ theme }) => {
           <div className={Styles.changemaker_journey_background_image}>
             <img
               class={Styles.image_fit_content}
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653478/changemaker-journey-image_bdfof9.svg"
+              src="https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/how-rcmi-works-page/changemaker-journey-image.svg"
               alt=""
             />
           </div>
