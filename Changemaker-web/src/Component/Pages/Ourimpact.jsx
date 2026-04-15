@@ -65,10 +65,10 @@ const Ourimpact = ({ theme }) => {
       name_card: "Lecturer Krittanan Pensirisomboon",
       number_title: 150,
       skill_devloped: "Skills Developed",
-      teamwork_title: "21st Century Skills",
-      intergrity_title: "Business Acumen",
+      teamwork_title: "Experiential Learning",
+      intergrity_title: "SDG Awareness",
       teamwork_bg: "#d4e8eb",
-      intergrity_bg: "#dff6c2",
+      intergrity_bg: "rgb(247, 180, 180)",
       link: "/our-impact/navamindradhiraj-university",
     },
     {
