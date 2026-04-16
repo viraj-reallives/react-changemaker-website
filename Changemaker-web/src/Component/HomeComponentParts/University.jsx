@@ -15,6 +15,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 
 const University = ({ theme }) => {
+
   const goToExternal = () => {
     window.location.href =
       "https://reallivesworld.com/reallives-website-main/license.html";
@@ -24,7 +25,7 @@ const University = ({ theme }) => {
     <>
       <div className={`${Styles.first_university_container} ${Styles[theme]}`}>
         <span className={Styles.section_flex_button}>
-          <Link className={Styles.btn_top_slider} to="/our-impact">
+          <Link className={Styles.btn_top_slider} to="impact">
             Impact Home
           </Link>
 

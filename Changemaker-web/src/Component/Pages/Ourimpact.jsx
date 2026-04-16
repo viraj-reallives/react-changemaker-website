@@ -2,11 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Link, Outlet } from "react-router-dom";
 import React from "react";
-import "swiper/css";
-import "swiper/css/navigation";
 import Styles from "./Ourimpact.module.css";
 // import { GlobalMap } from "../GlobalMap";
-
 // import worldmap from "../../assets/Home-image/world-map.svg";
 // import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1.png";
 // import first_slide_1 from "../../assets/Home-image/second-workshop.png";
@@ -24,7 +21,6 @@ import Styles from "./Ourimpact.module.css";
 // import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
 // import fourth_slide_2 from "../../assets/Home-image/fourth_workshop-2-min.jpg";
 // import fourth_slide_3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
-
 import { FaArrowRight } from "react-icons/fa6";
 import { GlobalMap } from "../GlobalMap";
 
@@ -115,7 +111,7 @@ const Ourimpact = ({ theme }) => {
       card_title: "Chulalongkorn University Workshop",
       card_date: "27/04/2024",
       imgURL:
-        "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/chula-workshop/fifth-work-shop.png",
+        "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/our-impact-page/chula-workshop/fifth-work-shop.png",
       university_text: "Chulalongkorn University, Bangkok, Thailand",
       particepent_title: "Department - Faculty of Education / BAScii Program",
       collaboration_text: "In collaboration with:",
