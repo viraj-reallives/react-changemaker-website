@@ -25,7 +25,7 @@ const University = ({ theme }) => {
     <>
       <div className={`${Styles.first_university_container} ${Styles[theme]}`}>
         <span className={Styles.section_flex_button}>
-          <Link className={Styles.btn_top_slider} to="impact">
+          <Link className={Styles.btn_top_slider} to="/our-impact">
             Impact Home
           </Link>
 
