@@ -51,7 +51,7 @@ const Ourimpact = ({ theme }) => {
       intergrity_title: "Integrity and Work Ethics",
       teamwork_bg: "#f9c1a5",
       intergrity_bg: "#caecf1",
-      link: "/our-impact/eth-university",
+      link: "/our-impact/eth-university"
     },
     {
       id: 2,
@@ -511,6 +511,7 @@ const Ourimpact = ({ theme }) => {
                       Learn more <FaArrowRight />
                     </button>
                   </Link>
+                  
                 </div>
               </div>
             </div>

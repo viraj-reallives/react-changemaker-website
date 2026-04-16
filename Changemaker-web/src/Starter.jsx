@@ -146,7 +146,7 @@ const Starter = () => {
         </div>
 
         <p className="no-copy-write-title">
-          © 2025 RealLives World. All rights reserved.
+          © 2026 RealLives World. All rights reserved.
         </p>
       </div>
     </div>
