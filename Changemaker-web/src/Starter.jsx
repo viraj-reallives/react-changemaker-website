@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { NavLink } from "react-router-dom";
-// import reallives_icon from "../src/assets/logo-white.svg";
-// import rcmi_logo from "../public/rcmi-logo.png";
+import reallives_icon from "../src/assets/logo-white.svg";
+import rcmi_logo from "../public/rcmi-logo.png";
 // import Home from "./Home";
 
 // import "./Starter.css";
@@ -18,6 +18,9 @@ const Starter = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const realLivesUrl =
+    "https://reallivesworld.com/reallives-website-main/reallives";
 
   return (
     <div className="container-cards-starter">
@@ -38,16 +41,15 @@ const Starter = () => {
         </div>
 
         <div className="card-starter-section">
-
           <div className="starter-innner-card">
             <div className="top-starter-container">
               <div className="head-starter-box">
                 <div className="head-logo-reallives">
-                  {/* <img
+                  <img
                     className="head-logo-reallives"
                     src={reallives_icon}
                     alt="Logo"
-                  /> */}
+                  />
                 </div>
               </div>
 
@@ -78,12 +80,29 @@ const Starter = () => {
                 </span>
               </p>
 
+              {/* <button
+                className="button-continue-card"
+                onClick={() => {
+                  const newTab = window.open(
+                    "https://reallivesworld.com/reallives",
+                    "_blank",
+                  );
+                  if (newTab) {
+                    newTab.opener = null;
+                  }
+                }}
+              >
+                Go to RealLives
+                <ArrowRightAltIcon className="arrow-move-11" />
+              </button> */}
+
               <button
                 className="button-continue-card"
                 onClick={() => {
                   const newTab = window.open(
-                    "https://reallivesworld.com/reallives-website-main/reallives",
+                    realLivesUrl,
                     "_blank",
+                    "noopener,noreferrer",
                   );
                   if (newTab) {
                     newTab.opener = null;
@@ -100,11 +119,11 @@ const Starter = () => {
             <div className="top-starter-container">
               <div className="head-starter-box bg-changemaker">
                 <div className="head-logo-reallives">
-                  {/* <img
+                  <img
                     className="head-logo-reallives"
                     src={rcmi_logo}
                     alt="Logo"
-                  /> */}
+                  />
                 </div>
               </div>
 
@@ -145,7 +164,6 @@ const Starter = () => {
               </NavLink>
             </div>
           </div>
-
         </div>
 
         <p className="no-copy-write-title">
