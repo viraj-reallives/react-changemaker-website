@@ -33,7 +33,7 @@ const Navbar = () => {
       >
         
         <NavLink
-          to="/"
+          to="/Home"
           end
           className={({ isActive }) =>
             isActive ? "listed-style active" : "listed-style"

@@ -41,7 +41,61 @@ const Starter = () => {
         </div>
 
         <div className="card-starter-section">
+
+         
+
           <div className="starter-innner-card">
+            <div className="top-starter-container">
+              <div className="head-starter-box bg-changemaker">
+                <div className="head-logo-reallives">
+                  <img
+                    className="head-logo-reallives"
+                    src={rcmi_logo}
+                    alt="Logo"
+                  />
+                </div>
+              </div>
+
+              <div className="fetures-mini-box">
+                <div className="fetures-inner-box channgemaker-color-top">
+                  21ST CENTURY SKILLS
+                </div>
+                <div className="fetures-inner-box channgemaker-color-top">
+                  EMPATHY
+                </div>
+                <div className="fetures-inner-box channgemaker-color-top">
+                  sdg lived experience
+                </div>
+              </div>
+            </div>
+
+            <div className="bottom-starter-container">
+              <div className="bottom-title-desc">
+                <p className="simulation-title-text">
+                  RealLives ChangeMaker Index (RCMI)
+                </p>
+                <p className="simulation-desc-text title-changemaker-color">
+                  Turn insight into real-world impact
+                </p>
+              </div>
+
+              <p className="starter-mid-desc">
+                Measure and grow across 18 changemaking competencies. Reflect on
+                your decisions, understand your impact, and build skills that
+                prepare you for future careers and responsible leadership.
+              </p>
+
+              <NavLink to="home" className="decoration-style-none">
+                <button className="button-continue-card btn-bg-color-white">
+                  Continue to RealLives ChangeMaker Index
+                  <AnalyticsIcon className="arrow-move-11" />
+                </button>
+              </NavLink>
+            </div>
+          </div>
+
+
+           <div className="starter-innner-card">
             <div className="top-starter-container">
               <div className="head-starter-box">
                 <div className="head-logo-reallives">
@@ -115,55 +169,6 @@ const Starter = () => {
             </div>
           </div>
 
-          <div className="starter-innner-card">
-            <div className="top-starter-container">
-              <div className="head-starter-box bg-changemaker">
-                <div className="head-logo-reallives">
-                  <img
-                    className="head-logo-reallives"
-                    src={rcmi_logo}
-                    alt="Logo"
-                  />
-                </div>
-              </div>
-
-              <div className="fetures-mini-box">
-                <div className="fetures-inner-box channgemaker-color-top">
-                  21ST CENTURY SKILLS
-                </div>
-                <div className="fetures-inner-box channgemaker-color-top">
-                  EMPATHY
-                </div>
-                <div className="fetures-inner-box channgemaker-color-top">
-                  sdg lived experience
-                </div>
-              </div>
-            </div>
-
-            <div className="bottom-starter-container">
-              <div className="bottom-title-desc">
-                <p className="simulation-title-text">
-                  RealLives ChangeMaker Index (RCMI)
-                </p>
-                <p className="simulation-desc-text title-changemaker-color">
-                  Turn insight into real-world impact
-                </p>
-              </div>
-
-              <p className="starter-mid-desc">
-                Measure and grow across 18 changemaking competencies. Reflect on
-                your decisions, understand your impact, and build skills that
-                prepare you for future careers and responsible leadership.
-              </p>
-
-              <NavLink to="home" className="decoration-style-none">
-                <button className="button-continue-card btn-bg-color-white">
-                  Continue to RealLives ChangeMaker Index
-                  <AnalyticsIcon className="arrow-move-11" />
-                </button>
-              </NavLink>
-            </div>
-          </div>
         </div>
 
         <p className="no-copy-write-title">
