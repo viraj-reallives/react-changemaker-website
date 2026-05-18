@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useEffect } from "react";
 // Material Icons Import
@@ -36,23 +35,18 @@ const Navbar = ({ theme, settheme }) => {
       <div className="content-tap-impact">
         <Path />
 
-        <div
-          className="light-dark-box"
+        <button
+          type="button"
+          className="theme-toggle-btn"
           onClick={togglebtn}
-          style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
+          aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
         >
           {theme === "light" ? (
-            <DarkModeIcon
-              className="theme-toggle-icon"
-              sx={{ color: "#333" }}
-            />
+            <DarkModeIcon className="theme-toggle-icon" />
           ) : (
-            <LightModeIcon
-              className="theme-toggle-icon"
-              sx={{ color: "#ffdb58" }}
-            />
+            <LightModeIcon className="theme-toggle-icon" />
           )}
-        </div>
+        </button>
       </div>
     </div>
   );

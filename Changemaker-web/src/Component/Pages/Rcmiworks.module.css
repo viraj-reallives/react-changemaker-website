@@ -32,7 +32,12 @@
 }
 
 .dark .how_to_works_rcmi_container_inner {
-  background-color: #2a2a2a;
+  background: linear-gradient(
+    180deg,
+    #232a32 0%,
+    #283038 45%,
+    #2c2824 100%
+  );
 }
 
 .dark .first_title_how_to_work {
@@ -45,7 +50,12 @@
 }
 
 .dark .the_ChangeMaker_Journey_container {
-  background-color: #1e1e1e;
+  background: linear-gradient(
+    180deg,
+    #2a2218 0%,
+    #332a1e 50%,
+    #2a241c 100%
+  );
 }
 
 .dark .text_changemaker_journey,
@@ -191,7 +201,13 @@
   padding: 1.5rem;
   height: 100%;
   box-shadow: 0px 0px 8px 0px #00000040;
-  background-color: #dae5ea;
+  background: linear-gradient(
+    180deg,
+    #f2f6fa 0%,
+    #eaeef6 28%,
+    #e2eaf4 58%,
+    #f8f4ef 100%
+  );
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -247,7 +263,13 @@
 }
 
 .the_ChangeMaker_Journey_container {
-  background-color: #ffe5c5;
+  background: linear-gradient(
+    180deg,
+    #fff8f0 0%,
+    #ffeccd 32%,
+    #ffe0b8 62%,
+    #fff6eb 100%
+  );
   display: flex;
   align-items: center;
   flex-direction: column;

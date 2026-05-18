@@ -175,6 +175,7 @@ import Certifiedinstitutes from "./Component/Pages/Certifiedinstitutes";
 import Ourimpact from "./Component/Pages/Ourimpact";
 import Rcmiworks from "./Component/Pages/Rcmiworks";
 import Contact from "./Component/Pages/Contact";
+import GetRcmiReport from "./Component/Pages/GetRcmiReport";
 import NotFound from "./Component/Not-Founnd-page/NotFound";
 import "./App.css";
 import ScrollTop from "./ScrollTop/ScrollTop";
@@ -321,6 +322,11 @@ const App = () => {
           <Route
             path="contact"
             element={<Contact theme={theme} settheme={settheme} />}
+          />
+
+          <Route
+            path="get-rcmi-report"
+            element={<GetRcmiReport theme={theme} settheme={settheme} />}
           />
 
           <Route

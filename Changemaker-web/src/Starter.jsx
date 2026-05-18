@@ -2,8 +2,9 @@ import React, { useEffect, useRef } from "react";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { NavLink } from "react-router-dom";
-import reallives_icon from "../src/assets/logo-white.svg";
-import rcmi_logo from "../public/rcmi-logo.png";
+import reallives_icon from "./assets/logo-white.svg";
+
+const rcmi_logo = "/rcmi-logo.png";
 // import Home from "./Home";
 
 // import "./Starter.css";

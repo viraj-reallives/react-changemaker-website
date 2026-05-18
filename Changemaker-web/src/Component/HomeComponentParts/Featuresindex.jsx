@@ -15,11 +15,6 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Featuresindex = ({ theme, settheme }) => {
-  const become_change_btn = () => {
-    window.location.href =
-      "https://reallivesworld.com/reallives-website-main/license.html";
-  };
-
   let impactcarddata = [
     {
       id: 1,
@@ -116,7 +111,11 @@ const Featuresindex = ({ theme, settheme }) => {
         <div className={Styels.inforamtion_card_container}>
           <div className={Styels.card_info_container}>
             {impactcarddata.map((ourimpactcard, idx) => (
-              <div key={idx} className={Styels.card_info_box}>
+              <Link
+                key={idx}
+                to={ourimpactcard.link}
+                className={`${Styels.card_info_box} ${Styels.card_info_link}`}
+              >
                 <div className={Styels.university_image_box}>
                   <img  loading="lazy" decoding="async" 
                     className={Styels.image_fit_cover}
@@ -135,22 +134,15 @@ const Featuresindex = ({ theme, settheme }) => {
                   </p>
                 </div>
 
-                <Link className={Styels.larne_more_btn} to={ourimpactcard.link}>
+                <span className={Styels.larne_more_btn}>
                   Learn more <FaArrowRight />
-                </Link>
-              </div>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
 
         <div className={Styels.btn_larne_more}>
-          <button
-            className={Styels.explore_workshop_btn}
-            onClick={become_change_btn}
-          >
-            Explore Workshop Integration
-          </button>
-
           <Link className={Styels.text_decoration_none} to="/our-impact">
             <button className={Styels.inner_btn}>
               Explore More Impact Stories <FaArrowRight />

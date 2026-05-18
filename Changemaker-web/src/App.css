@@ -249,8 +249,8 @@ video {
 }
 
 .head-logo-reallives {
-  width: 80px;
-  height: 80px;
+  width: 115px;
+  height: 115px;
 }
 
 .head-logo-reallives img {
@@ -756,12 +756,12 @@ video {
 @media (min-width: 350px) and ( max-width:390px) {
 
     .head-logo-reallives {
-    width: 60px;
-    height: 60px;
+    width: 85px;
+    height: 85px;
    }
 
     .head-starter-box{
-        height: 140px;
+        height: 165px;
     }
 
     .none-mobile-style{

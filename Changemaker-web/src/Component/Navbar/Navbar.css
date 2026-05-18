@@ -5,7 +5,7 @@
   justify-content: space-between;
   top: 0;
   box-shadow: 0px 1px 5px 2px #edd0ac;
-  padding: 8px 3rem;
+  padding: 12px 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,8 +43,8 @@
 }
 
 .image-icon-changemaker {
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
 }
 
 .image-cover {
@@ -62,11 +62,11 @@
 .logo-and-title-container {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .line-style {
-  height: 50px;
+  height: 42px;
   width: 0px;
   border: 1px solid #eb9f3e;
 }
@@ -77,10 +77,43 @@
   gap: 1rem;
 }
 
-.light-dark-box {
-  width: 40px;
-  height: 40px;
+.theme-toggle-btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fafafa 0%, #f0f0f0 100%);
   cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.theme-toggle-btn:hover {
+  background: linear-gradient(145deg, #ffffff 0%, #e8e8e8 100%);
+  border-color: #d0d0d0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.theme-toggle-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dark .theme-toggle-btn {
+  background: linear-gradient(145deg, #3a3a3a 0%, #2a2a2a 100%);
+  border-color: #4a4a4a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark .theme-toggle-btn:hover {
+  background: linear-gradient(145deg, #444444 0%, #333333 100%);
+  border-color: #5a5a5a;
 }
 
 .dropdown-container {
@@ -182,35 +215,46 @@
 }
 
 .theme-toggle-icon {
-  font-size: 35px !important;
-  transition: all 0.3s ease;
+  font-size: 22px !important;
+  color: #333333 !important;
+  transition: color 0.25s ease;
 }
 
+.dark .theme-toggle-icon {
+  color: #ffdb58 !important;
+}
 
-.button-download {
+.button-rcmi-report {
   padding: 10px 20px;
   background-color: #ffc067;
+  color: #111111;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 999px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease; 
-  box-shadow: 0 0 2px #ffc067;
-  animation: glow 1.5s infinite alternate;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(255, 192, 103, 0.4);
 }
 
-
-.button-download:hover {
-  transform: translateY(-2px) scale(1.05); 
-  box-shadow: 0 0 10px #ffc067, 0 0 15px #ffb347; 
+.button-rcmi-report:hover {
+  background-color: #ffb347;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 192, 103, 0.5);
 }
 
-.button-download:focus {
+.button-rcmi-report:focus {
   outline: none;
-  border: none;
+}
+
+.dark .button-rcmi-report {
+  color: #111111;
 }
 
 
@@ -218,9 +262,10 @@
 
 
 
-.title-website-logo{
-  font-size: 1.2rem;
+.title-website-logo {
+  font-size: 1.05rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 
@@ -231,25 +276,30 @@
   }
 
   .image-icon-changemaker {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
   }
 
   .logo-and-title-container p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .line-style {
-    height: 35px;
+    height: 30px;
   }
 
   .content-tap-impact {
     gap: 1rem;
   }
 
-  .light-dark-box {
-    width: 32px;
-    height: 32px;
+  .theme-toggle-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  .theme-toggle-icon {
+    font-size: 20px !important;
   }
 
   .hamburger {
@@ -284,6 +334,12 @@
     text-align: center;
   }
 
+  .button-rcmi-report {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
   .bar.active:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -304,8 +360,8 @@
   }
 
   .image-icon-changemaker {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 
   .logo-and-title-container {
@@ -313,20 +369,30 @@
   }
 
   .logo-and-title-container p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .line-style {
-    height: 28px;
+    height: 24px;
   }
 
   .content-tap-impact {
     gap: 0.75rem;
   }
 
-  .light-dark-box {
-    width: 28px;
-    height: 28px;
+  .theme-toggle-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+
+  .theme-toggle-icon {
+    font-size: 18px !important;
+  }
+
+  .button-rcmi-report {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 
   .bar {
@@ -358,12 +424,16 @@
   }
 
   .logo-and-title-container p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .image-icon-changemaker {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .line-style {
+    height: 22px;
   }
 
   .listed-style {

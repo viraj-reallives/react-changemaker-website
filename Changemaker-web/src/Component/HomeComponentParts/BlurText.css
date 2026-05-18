@@ -1,0 +1,36 @@
+.blur-text-root {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.blur-text-segment {
+  opacity: 0;
+  filter: blur(8px);
+  transition:
+    opacity 420ms ease,
+    transform 420ms ease,
+    filter 420ms ease;
+  will-change: opacity, transform, filter;
+}
+
+.blur-text-segment.is-visible {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translate3d(0, 0, 0);
+}
+
+.blur-text-from-top {
+  transform: translate3d(0, -14px, 0);
+}
+
+.blur-text-from-bottom {
+  transform: translate3d(0, 14px, 0);
+}
+
+.blur-text-from-left {
+  transform: translate3d(-14px, 0, 0);
+}
+
+.blur-text-from-right {
+  transform: translate3d(14px, 0, 0);
+}
