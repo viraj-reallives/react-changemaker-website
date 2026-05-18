@@ -27,7 +27,7 @@ const Starter = () => {
     <div className="container-cards-starter">
       <img
         className="image-backgrounnd-starter"
-        src="https://reallivesfrontend.s3.us-east-1.amazonaws.com/starting-background-img.png"
+        src="https://d2jn82ki4w4ftn.cloudfront.net/starting-background-img.png"
         alt="Background"
       />
 
