@@ -6,16 +6,16 @@
 }
 
 .dark .rcmimaincontainer {
-  background-color: #121212;
+  background-color: var(--dm-bg);
 }
 
 .dark .data_container_rcmi_main {
-  background-color: #1a1a1a;
+  background-color: var(--dm-bg-elevated);
 }
 
 .dark .top_benfit_header {
-  background-color: #2a2a2a;
-  border-bottom-color: #444;
+  background-color: var(--dm-bg-muted);
+  border-bottom-color: var(--dm-border);
 }
 
 .dark .header_title_side_text {
@@ -28,7 +28,7 @@
 }
 
 .dark .rcmi_data_right_bar {
-  background-color: #262626;
+  background-color: var(--dm-bg-surface);
 }
 
 .dark .how_to_works_rcmi_container_inner {
@@ -74,7 +74,7 @@
 }
 
 .dark .make_decision_container {
-  background-color: #252525;
+  background-color: var(--dm-bg-surface);
 }
 
 .dark .make_decision_skill_text {
@@ -117,7 +117,7 @@
 }
 
 .dark .rcmi_data_left_bar {
-  background-color: #262626;
+  background-color: var(--dm-bg-surface);
 }
 
 .tow_box_rcmi {
@@ -128,7 +128,7 @@
 }
 
 .dark .tow_box_rcmi {
-  background-color: #333333;
+  background-color: var(--dm-bg-muted);
 }
 
 .top_benfit_header {

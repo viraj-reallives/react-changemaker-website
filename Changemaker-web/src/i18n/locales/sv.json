@@ -1,0 +1,842 @@
+{
+  "portal": {
+    "hero": {
+      "title": "Kliv ut ur ditt liv och in i en miljard andra",
+      "subtitle": "Lev | Känn | Förstå | Förändra"
+    },
+    "languages": {
+      "title": "Språk",
+      "hint": "Välj ditt språk"
+    },
+    "realLives": {
+      "ariaLabel": "RealLives",
+      "title": "RealLives Simuleringsplattform",
+      "subtitle": "Upplev liv över hela världen",
+      "description": "Kliv in i livet för människor från olika länder och bakgrunder.",
+      "descriptionExtended": "Bygg empati, förstå globala system och fatta livsbeslut genom uppslukande simulering.",
+      "cta": "Fortsätt till RealLives",
+      "features": {
+        "liveALife": "lev ett liv",
+        "realWorldData": "verklighetsdata",
+        "empathySimulation": "Empatisimulering"
+      }
+    },
+    "changeMaker": {
+      "ariaLabel": "ChangeMaker Index",
+      "title": "RealLives ChangeMaker Index (RCMI)",
+      "subtitle": "Förvandla insikt till verklig påverkan",
+      "description": "Mät och väx inom 18 förändringsskapande kompetenser. Reflektera över dina beslut, förstå din påverkan och bygg färdigheter som förbereder dig för framtida karriärer och ansvarsfullt ledarskap.",
+      "cta": "Gå till RealLives ChangeMaker Index",
+      "features": {
+        "skills": "2000-TALETS FÄRDIGHETER",
+        "empathy": "EMPATI",
+        "sdg": "upplevd sdg-erfarenhet"
+      }
+    },
+    "copyright": "© 2026 RealLives World. Alla rättigheter förbehållna."
+  },
+  "common": {
+    "learnMore": "Läs mer",
+    "back": "Tillbaka",
+    "goBack": "Gå tillbaka",
+    "home": "Hem",
+    "alt": {
+      "changemakerIndexImage": "Changemaker Index-bild",
+      "logo": "logotyp",
+      "img": "bild",
+      "rcmi": "RCMI",
+      "realLivesFoundation": "RealLives Foundation",
+      "arcadeDemo": "Arkad-demo"
+    },
+    "nav": {
+      "home": "Hem",
+      "certifiedInstitutes": "Certifierade institut",
+      "ourImpact": "Vår påverkan",
+      "howRcmiWorks": "Så fungerar RCMI",
+      "getRcmiReport": "Hämta RCMI-rapport"
+    },
+    "logo": {
+      "title": "RealLives ChangeMaker Index"
+    },
+    "theme": {
+      "switchToDark": "Byt till mörkt läge",
+      "switchToLight": "Byt till ljust läge"
+    },
+    "footer": {
+      "changeMakerIndex": "ChangeMaker Index",
+      "description": "RCMI ger studenter över hela världen möjlighet att bygga empati, etiskt tänkande och socialt ansvar genom uppslukande livssimuleringar. Genom att navigera i realistiska scenarier och reflektera över sina beslut utvecklar studenter färdigheter och tankesätt för att skapa meningsfull, positiv påverkan i sina samhällen och bortom.",
+      "getToKnow": "Lär känna",
+      "aboutRcmi": "Om RCMI",
+      "certifiedInstitutes": "Certifierade institut",
+      "ourImpact": "Vår påverkan",
+      "support": "Support",
+      "contactUs": "Kontakta oss"
+    },
+    "notFound": {
+      "title": "Det verkar som att du har gått vilse",
+      "description": "Sidan du letar efter är inte tillgänglig!",
+      "homeLink": "Hem"
+    },
+    "app": {
+      "contentProtected": "⚠️ Innehållet är skyddat"
+    },
+    "globalMap": {
+      "title": "Global påverkan",
+      "countries": {
+        "usa": "USA",
+        "thailand": "Thailand",
+        "southKorea": "Sydkorea",
+        "india": "Indien",
+        "switzerland": "Schweiz",
+        "china": "Kina",
+        "australia": "Australien",
+        "japan": "Japan"
+      }
+    },
+    "impact": {
+      "impactHome": "Påverkan Hem",
+      "inCollaborationWith": "I samarbete med:",
+      "participants": "Deltagare:",
+      "skillsDeveloped": "Utvecklade färdigheter",
+      "usedTool": "Använt verktyg:",
+      "sdgAligned": "SDG:er anpassade till denna workshop",
+      "objective": "Målsättning",
+      "programOverview": "Programöversikt",
+      "implementationMethodology": "Implementering & Metodik",
+      "crossCulturalExchange": "Tvärrkulturellt utbyte & Påverkan",
+      "outcomesImpact": "Resultat & Påverkan",
+      "studentTestimonial": "Studentutlåtande",
+      "empowerStudents": "Ge dina studenter globala perspektiv",
+      "beginChangeMakingJourney": "Påbörja din förändringsresa",
+      "videoUnsupported": "Din webbläsare stöder inte videotaggen."
+    },
+    "cta": {
+      "beginYourJourneyOfChange": "Påbörja din förändringsresa",
+      "howThisWorks": "Hur fungerar det här?",
+      "beginChangeMakerJourney": "Påbörja din ChangeMaker-resa",
+      "makeDecisionsGrowSkills": "Fatta beslut, utveckla färdigheter och se din påverkan bli verklighet."
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "Bortom traditionella tester,",
+      "titleLine2": "Mät det som verkligen betyder något",
+      "description": "Livssimuleringsbaserad bedömning som spårar 18 kritiska kompetenser genom autentiskt beslutsfattande, inte enkäter.",
+      "beginJourney": "Påbörja din förändringsresa",
+      "howThisWorks": "Hur fungerar det här?"
+    }
+  },
+  "features": {
+    "ourImpact": {
+      "title": "Vår påverkan",
+      "description": "Upptäck RealLives Foundations globala fotavtryck genom de workshops och evenemang vi har arrangerat för att inspirera till förändring.",
+      "descriptionLineBreak": "Upptäck RealLives Foundations globala fotavtryck genom de workshops och",
+      "descriptionLineBreak2": "evenemang vi har arrangerat för att inspirera till förändring.",
+      "exploreMore": "Utforska fler påverkansberättelser"
+    },
+    "changemakerFeatures": {
+      "title": "RealLives ChangeMaker Index-funktioner",
+      "description": "Upptäck hur ChangeMaker Index förvandlar dina livsval till insikter, spårar tillväxt, vägleder beslut och frigör din potential som en global ChangeMaker.",
+      "descriptionLineBreak": "Upptäck hur ChangeMaker Index förvandlar dina livsval till",
+      "descriptionLineBreak2": "insikter, spårar tillväxt, vägleder beslut och frigör din potential som en global ChangeMaker."
+    },
+    "impactCards": [
+      {
+        "title": " ETH Zürich, Schweiz",
+        "description": "Studenter utforskade globala livsscenarier i RealLives ChangeMaking Workshop, och byggde empati, etiskt ledarskap och hållbara problemlösningsförmågor.",
+        "link": "/our-impact/eth-university"
+      },
+      {
+        "title": "IIT Bombay, Indien",
+        "description": "Genom simuleringsbaserade upplevelser kopplade studenter samman teknik, samhälle och värderingar, och lärde sig hur empatidrivna val kan driva social påverkan.",
+        "link": "/our-impact/iit-bombay"
+      },
+      {
+        "title": " Navamindradhiraj University, Thailand ",
+        "description": " Studenter deltog i ett uppslukande ChangeMaker-program och fick insikter i socialt ansvar, etiskt beslutsfattande och valens påverkan på samhällen.",
+        "link": "/our-impact/navamindradhiraj-university"
+      }
+    ],
+    "featureCards": [
+      {
+        "title": "Studenter simulerar",
+        "description": "Studenter kliver in i olika verkliga liv och upplever utmaningar, möjligheter och kulturella kontexter på egen hand. De lär sig inte bara om världen – de lever den genom uppslukande simulering."
+      },
+      {
+        "title": "Beslut spåras",
+        "description": "Varje val – litet som stort – registreras och analyseras. Detta ger studenterna en tydlig bild av hur beslut formar resultat, vilket hjälper dem att förstå ansvar, etik och långsiktig påverkan."
+      },
+      {
+        "title": "Insikter levereras",
+        "description": "Systemet omvandlar automatiskt studenternas val till rika insikter, som belyser tankemönster, styrkor och områden för tillväxt. Lärare får ett omedelbart fönster in i varje elevs tankesätt."
+      },
+      {
+        "title": "AI-vägledning",
+        "description": "Inbyggd AI coachar studenter medan de spelar, ger knuffar, reflektioner och skräddarsydda förslag. Det stöder djupare självkännedom, kritiskt tänkande och avsiktligt beslutsfattande."
+      },
+      {
+        "title": "Agerbara rapporter",
+        "description": "Lättförståeliga instrumentpaneler sammanfattar alla läranderesultat och kompetenser. Lärare får detaljerade, färdiga rapporter som de kan använda för feedback, bedömning och personligt mentorskap."
+      },
+      {
+        "title": "Personlig tillväxt",
+        "description": "Studenter upptäcker vilka de är som beslutsfattare. De bygger motståndskraft, empati, global medvetenhet och självförtroende genom upprepad reflektion och erfarenhetsbaserat lärande."
+      }
+    ]
+  },
+  "changeMakerAction": {
+    "title": "Se ChangeMaker Index i aktion",
+    "description": "Utforska en interaktiv demo av RCMI för att förstå hur det fungerar, vad det mäter och hur det stöder studenters tillväxt.",
+    "descriptionLineBreak": "Utforska en interaktiv demo av RCMI för att förstå hur det fungerar, vad det mäter,",
+    "descriptionLineBreak2": "och hur det stöder studenters tillväxt."
+  },
+  "benefits": {
+    "title": "Fördelar som formar din framtid",
+    "description": "RealLives hjälper dig att bygga de sociala, emotionella och etiska färdigheter som betyder mest i livet. Väx med självförtroende när du lär dig att navigera verkliga utmaningar med syfte.",
+    "cards": [
+      {
+        "title": "Ge dig själv möjlighet att växa bortom akademiska meriter",
+        "description": "RealLives hjälper dig att gå bortom prestationer och testresultat genom att göra social, emotionell och etisk tillväxt synlig och mätbar. Genom uppslukande livssimuleringar upplever du verkliga situationer som bygger empati, motståndskraft och ansvarsfullt beslutsfattande, vilket är nyckeln till att trivas i livet och arbetet."
+      },
+      {
+        "title": "Få djupa insikter i din tillväxt",
+        "description": "ChangeMaker Index förvandlar varje val i spelet till meningsfulla insikter om ditt tankesätt och beteende. Det hjälper dig att förstå hur du närmar dig utmaningar, samarbetar med andra och leder med syfte, vilket stöder självkännedom och kontinuerlig personlig utveckling."
+      },
+      {
+        "title": "Bygg ett liv av reflektion och syfte",
+        "description": "Genom att avslöja effekterna av dina beslut uppmuntrar RealLives dig att tänka djupt, agera ansvarsfullt och växa medvetet. Det vårdar en global gemenskap av ChangeMakers, empatiska, självsäkra individer redo att leda med syfte och skapa positiv förändring i världen."
+      },
+      {
+        "title": "Sömlös integration med dina mål",
+        "description": "RealLives anpassar sig enkelt till personliga tillväxtresor, professionella utvecklingsvägar och livslånga lärandemål. Du kan spåra dina framsteg över 18 ChangeMaker-kompetenser och omvandla egenskaper som medkänsla, integritet och anpassningsförmåga till mätbara tillväxtmilstolpar."
+      }
+    ]
+  },
+  "pages": {
+    "getRcmiReport": {
+      "eyebrow": "RealLives ChangeMaker Index",
+      "heroTitle": "Din personliga RCMI-rapport",
+      "heroSubtitle": "RealLives ChangeMaker Index (RCMI) mäter hur du utvecklar empati, global medvetenhet och beslutsfattande genom uppslukande livssimuleringar — och översätter ditt spelande till en strukturerad bedömning av förändringsskapande potential.",
+      "heroPills": [
+        "18 Kompetenser",
+        "5-delsrapport",
+        "Datadrivna insikter"
+      ],
+      "timeline": {
+        "heading": "Så här får du din rapport",
+        "lead": "Registrera dig, spela tre liv och lås upp din fullständiga ChangeMaker-profil.",
+        "steps": [
+          {
+            "tag": "Steg 1",
+            "title": "Registrera dig på RealLives-plattformen",
+            "description": "Skapa ditt konto på RealLives simuleringsplattform. Din registrering förblir aktiv så att du kan återvända när som helst för att fortsätta din resa."
+          },
+          {
+            "tag": "Steg 2",
+            "title": "Spela 3 hela liv i simuleringen",
+            "description": "Upplev tre kompletta livsresor över olika länder, kön och ekonomiska skikt — och bygg den empati och kontextuella medvetenhet som driver din rapport."
+          },
+          {
+            "tag": "Steg 3",
+            "title": "Dina val formar 18 kompetenser",
+            "description": "Till skillnad från enkäter som frågar vad du tror att du skulle göra, observerar RealLives vad du faktiskt väljer. Varje beslut analyseras och kartläggs till 18 ChangeMaker-kompetenser i realtid.",
+            "highlight": true
+          },
+          {
+            "tag": "Steg 4",
+            "title": "Ta emot din personliga RCMI-rapport",
+            "description": "Din RealLives ChangeMaker Index-rapport genereras — en tydlig, datadriven uppdelning av din poäng, ditt stadium, styrkor, tillväxtområden och din personliga väg framåt."
+          }
+        ]
+      },
+      "sampleReport": {
+        "cta": "Visa exempelrapport"
+      },
+      "journey": {
+        "label": "Vad du kommer att få",
+        "heading": "Så här fungerar din rapport",
+        "lead": "Din rapport är en femdelad resa från att förstå din profil till att kartlägga din väg framåt.",
+        "partPrefix": "Del",
+        "parts": [
+          {
+            "id": "profile",
+            "part": "01",
+            "title": "Din profil",
+            "items": [
+              "ChangeMaker-översikt",
+              "Kompetensramverk",
+              "Radargraf & Poäng",
+              "Ditt ChangeMaker-stadium"
+            ]
+          },
+          {
+            "id": "context",
+            "part": "02",
+            "title": "Din kontext",
+            "items": [
+              "Landskaps- & Utmaningar",
+              "Allvarlighets- & Risköverväganden"
+            ]
+          },
+          {
+            "id": "strengths",
+            "part": "03",
+            "title": "Styrkor & Klyftor",
+            "items": [
+              "SWOT-analys",
+              "Nästa steg för tillväxt"
+            ]
+          },
+          {
+            "id": "path",
+            "part": "04",
+            "title": "Din väg",
+            "items": [
+              "Omfattande ChangeMaking-väg",
+              "Landsspecifik väg",
+              "Personlig väg"
+            ]
+          },
+          {
+            "id": "forward",
+            "part": "05",
+            "title": "Resan framåt",
+            "items": [
+              "Slutsammanfattning & Rekommendationer",
+              "Din resa framåt"
+            ]
+          }
+        ]
+      },
+      "preview": {
+        "label": "Rapportförhandsgranskning",
+        "heading": "Se vad som finns inuti",
+        "lead": "En rik, visuell rapport byggd från dina simuleringsdata — poäng, grafer, stadier och personliga rekommendationer.",
+        "images": [
+          {
+            "alt": "Rapportomslag med ChangeMaker-stadium och starkaste kompetenser",
+            "caption": "Ditt personliga rapportomslag"
+          },
+          {
+            "alt": "ChangeMaker-översikt med poäng och klusteruppdelning",
+            "caption": "ChangeMaker-översikt & klusterpoäng"
+          },
+          {
+            "alt": "Radargraf över 18 kompetenser",
+            "caption": "18-kompetens radargraf"
+          },
+          {
+            "alt": "ChangeMaker-stadium progression",
+            "caption": "Ditt ChangeMaker-stadium"
+          }
+        ]
+      },
+      "about": {
+        "rcmiTitle": "Om RealLives ChangeMaker Index",
+        "rcmiText": "RCMI analyserar spelares upplevelser över olika socioekonomiska och kulturella kontexter för att generera meningsfulla insikter, och översätter spelande till en strukturerad bedömning av förändringsskapande potential och social påverkan.",
+        "foundationTitle": "Om RealLives Foundation",
+        "foundationText": "RealLives Foundation främjar empati, global medvetenhet och förändringsskapande färdigheter genom erfarenhetsbaserat lärande — och hjälper individer att utforska olika mänskliga upplevelser och inspirera till handling mot en mer inkluderande värld."
+      },
+      "competency": {
+        "label": "Kompetensramverk",
+        "heading": "18 Kompetenser över 4 Kluster",
+        "lead": "Varje kluster återspeglar en distinkt dimension av förändringsskapande, uppmätt genom de val du gör i simuleringen.",
+        "clusters": [
+          {
+            "id": "personal",
+            "title": "Personlig",
+            "items": [
+              {
+                "name": "Självkännedom",
+                "desc": "Känn dina styrkor och svagheter"
+              },
+              {
+                "name": "Motståndskraft",
+                "desc": "Studsa tillbaka från motgångar"
+              },
+              {
+                "name": "Anpassningsförmåga",
+                "desc": "Anpassa dig till förändring effektivt"
+              },
+              {
+                "name": "Uthållighet",
+                "desc": "Fortsätt trots utmaningar"
+              },
+              {
+                "name": "Emotionell intelligens",
+                "desc": "Hantera känslor effektivt"
+              }
+            ]
+          },
+          {
+            "id": "strategic",
+            "title": "Strategiskt tänkande",
+            "items": [
+              {
+                "name": "Visionärt tänkande",
+                "desc": "Föreställ dig bättre framtider"
+              },
+              {
+                "name": "Kreativitet & Innovation",
+                "desc": "Generera nya idéer"
+              },
+              {
+                "name": "Problemlösning",
+                "desc": "Hitta effektiva lösningar"
+              },
+              {
+                "name": "Initiativ",
+                "desc": "Agera utan att bli ombedd"
+              },
+              {
+                "name": "Risktagande",
+                "desc": "Prova nya saker villigt"
+              },
+              {
+                "name": "Kritiskt tänkande",
+                "desc": "Analysera situationer noggrant"
+              }
+            ]
+          },
+          {
+            "id": "interpersonal",
+            "title": "Interpersonell",
+            "items": [
+              {
+                "name": "Empati",
+                "desc": "Förstå hur andra känner"
+              },
+              {
+                "name": "Kommunikationsfärdigheter",
+                "desc": "Dela idéer tydligt"
+              },
+              {
+                "name": "Samarbete",
+                "desc": "Arbeta väl med andra"
+              },
+              {
+                "name": "Ledarskap",
+                "desc": "Vägleda och inspirera människor"
+              },
+              {
+                "name": "Social medvetenhet",
+                "desc": "Läsa sociala situationer"
+              }
+            ]
+          },
+          {
+            "id": "contextual",
+            "title": "Kontextuell medvetenhet",
+            "items": [
+              {
+                "name": "Global medvetenhet",
+                "desc": "Förstå världsfrågor"
+              },
+              {
+                "name": "Etiskt ansvar",
+                "desc": "Gör det som är rätt för samhället"
+              }
+            ]
+          }
+        ]
+      },
+      "stages": {
+        "heading": "Ditt ChangeMaker-stadium",
+        "lead": "Gå framåt genom fem stadier när din kompetensprofil utvecklas.",
+        "quote": "Tillväxt är beviset på uthållighet.",
+        "items": [
+          {
+            "name": "Frö",
+            "range": "0 – 20",
+            "description": "Utforskar din potential"
+          },
+          {
+            "name": "Grodd",
+            "range": "21 – 40",
+            "description": "Utvecklar grundläggande färdigheter"
+          },
+          {
+            "name": "Planta",
+            "range": "41 – 60",
+            "description": "Växer med en blandning av styrkor"
+          },
+          {
+            "name": "Växt",
+            "range": "61 – 80",
+            "description": "Solid och balanserad profil"
+          },
+          {
+            "name": "Frukt",
+            "range": "81 – 100",
+            "description": "Blomstrar och skapar påverkan"
+          }
+        ]
+      },
+      "footer": {
+        "title": "Redo för din RCMI-rapport?",
+        "subtitle": "Registrera dig, spela tre liv och upptäck din ChangeMaker-poäng, ditt stadium och din personliga väg.",
+        "cta": "Hämta RCMI-rapport"
+      }
+    },
+    "rcmiWorks": {
+      "whatIsRcmi": {
+        "title": "Vad är RCMI?",
+        "paragraphs": [
+          "RealLives ChangeMaker Index (RCMI) är ett revolutionerande kompetensbaserat bedömningsverktyg som mäter en individs potential att skapa positiv påverkan i sina personliga och professionella liv.",
+          "Till skillnad från traditionella bedömningar som enbart fokuserar på akademisk kunskap eller tekniska färdigheter, ger RCMI en holistisk utvärdering av kritiska kompetenser som är avgörande för framgång på 2000-talet."
+        ]
+      },
+      "keyFeatures": {
+        "title": "Nyckelfunktioner",
+        "items": [
+          {
+            "label": "Drivs av RealLives Simulering :",
+            "text": "RealLives ChangeMaker Index (RCMI) är ett revolutionerande kompetensbaserat bedömningsverktyg som mäter en individs potential att skapa positiv påverkan i sina personliga och professionella liv."
+          },
+          {
+            "label": "AI-driven poänggenerering :",
+            "text": "Avancerade algoritmer analyserar prestanda över alla kompetenser för att generera korrekta, personliga insikter."
+          },
+          {
+            "label": "Globalt erkännande :",
+            "text": "Utvecklat i samarbete med ledande institutioner inklusive Korea University"
+          }
+        ]
+      },
+      "science": {
+        "title": "Vetenskapen bakom RCMI",
+        "intro": "RCMI Index bygger på en robust grund av psykometrisk forskning, utbildningsteori och datadrivna insikter. Bedömningsramverket utvecklades genom samarbete mellan RealLives Foundation och Korea University, och kombinerar expertis inom:",
+        "items": [
+          {
+            "label": "Kompetensbaserad utbildning:",
+            "text": "Lärande genom realistisk simulering och beslutsfattande"
+          },
+          {
+            "label": "Kompetensbaserad utbildning:",
+            "text": "Fokus på färdigheter och förmågor snarare än bara kunskap"
+          },
+          {
+            "label": "Forskning om social påverkan:",
+            "text": "Förståelse för de kompetenser som driver meningsfull förändring"
+          },
+          {
+            "label": "Positiv psykologi:",
+            "text": "Betoning på styrkebaserad utveckling"
+          }
+        ],
+        "closing": "RealLives-simuleringen erbjuder en unik bedömningsmiljö där individer fattar beslut som påverkar ett simulerat liv, vilket avslöjar deras naturliga kompetenser inom områden som problemlösning, empati, etiskt resonemang och global medvetenhet."
+      },
+      "howItWorks": {
+        "title": "Hur fungerar RealLives ChangeMaker Index?",
+        "steps": [
+          {
+            "title": "Steg 1: Fatta ett verkligt beslut",
+            "paragraphs": [
+              "Varje spelare ställs inför verklighetstrogna situationer och måste välja vad de ska göra. Dessa val beror på din karaktärs unika liv — deras familjebakgrund, inkomstnivå, jobb och mer. Precis som i verkliga livet formar varje beslut vem du blir."
+            ]
+          },
+          {
+            "title": "Steg 2: Mäta kompetenser",
+            "paragraphs": [
+              "Varje val speglar olika tankesätt och färdigheter. När du bestämmer dig uppdaterar vårt system automatiskt din karaktärs kompetenser baserat på ditt val."
+            ]
+          },
+          {
+            "title": "Steg 3: Bygga ChangeMaker Index",
+            "paragraphs": [
+              "Låt oss säga att du valde A — \"Gör resan och ta tillbaka vattnet.\" Vår egenutvecklade algoritm analyserar avsikten och effekten av det valet och uppdaterar ditt ChangeMaker Index, vilket visar hur din empati, motståndskraft och ditt beslutsfattande utvecklas över tid."
+            ]
+          },
+          {
+            "title": "Steg 4 — Visa din ChangeMaker-graf",
+            "paragraphs": [
+              "Se din personliga ChangeMaker-resa bli levande! ChangeMaker-grafen visualiserar dina framsteg över 18 ChangeMaker-kompetenser",
+              "Varje nytt beslut uppdaterar din graf och visar var du växer och var du kan växa härnäst."
+            ]
+          },
+          {
+            "title": "Steg 5 — Upptäck dina ChangeMaker-kluster",
+            "paragraphs": [
+              "Din övergripande ChangeMaker-poäng byggs av fyra kraftfulla kluster, som var och en kombinerar flera kompetenser du utvecklar genom dina beslut:",
+              {
+                "label": "1 Interna / Personliga egenskaper –",
+                "text": "Hur du växer som individ: Självkännedom, Motståndskraft, Anpassningsförmåga, Uthållighet, Emotionell intelligens"
+              },
+              {
+                "label": "2 Interpersonella kompetenser –",
+                "text": "Hur du växer som individ: Självkännedom, Motståndskraft, Anpassningsförmåga, Uthållighet, Emotionell intelligens"
+              },
+              {
+                "label": "3 Strategiskt tänkande –",
+                "text": "Hur du planerar, löser problem och förnyar: Visionärt tänkande, Kreativitet & Innovation, Problemlösningsfärdigheter, Initiativ, Risktagande, Kritiskt tänkande"
+              },
+              {
+                "label": "4 Kontextuell medvetenhet –",
+                "text": "Hur du förstår den bredare världen och agerar ansvarsfullt: Global medvetenhet, Etiskt ansvar"
+              },
+              "Tillsammans visar dessa kluster hur dina val bygger personlig tillväxt, social påverkan, strategisk förmåga och ansvarsfullt medborgarskap — vilket ger en holistisk syn på din ChangeMaker-potential."
+            ]
+          }
+        ]
+      },
+      "journey": {
+        "title": "ChangeMaker-resan",
+        "subtitle": "De fem stadierna av ChangeMaker-utveckling",
+        "description": "RCMI Index placerar individer på en utvecklingsresa med fem distinkta stadier, som var och en representerar en nivå av förändringsskapande kapacitet:",
+        "stages": [
+          {
+            "head": "Stadium 1: Frö",
+            "quote": "\"Börjar precis utforska din potential\"",
+            "description": "I Frö-stadiet är individer i allra första början av sin förändringsresa. De upptäcker sina intressen, börjar förstå sina styrkor och börjar utveckla grundläggande kompetenser."
+          },
+          {
+            "head": "Stadium 2: Grodd",
+            "quote": "\"Börjar utveckla grundläggande färdigheter\"",
+            "description": "I Grodd-stadiet utvecklar individer aktivt sina kompetenser och börjar se tillväxt inom specifika områden. De bygger självförtroende och börjar ta initiativ."
+          },
+          {
+            "head": "Stadium 3: Planta",
+            "quote": "\"Växer sig starkare med en blandning av styrkor och tillväxtområden\"",
+            "description": "I Planta-stadiet har individer utvecklat en solid grund av kompetenser med tydliga styrkor som växer fram. De arbetar aktivt med förbättringsområden samtidigt som de utnyttjar sina styrkor."
+          },
+          {
+            "head": "Stadium 4: Växt",
+            "quote": "\"På god väg, med en solid och balanserad profil\"",
+            "description": "I Växt-stadiet blomstrar individer, förgrenar sig och gör sin närvaro känd. Deras arbete skapar synlig förändring, och deras kontakter hjälper deras påverkan att spridas ytterligare. Detta är tiden att skydda det de har byggt."
+          },
+          {
+            "head": "Stadium 5: Frukt",
+            "quote": "\"Blomstrar som en ChangeMaker, skapar meningsfull påverkan\"",
+            "description": "I Frukt-stadiet är individer på toppen av sin förändringsskapande kapacitet. De skapar betydande, ihållande påverkan och inspirerar andra att göra detsamma."
+          }
+        ]
+      },
+      "cta": {
+        "text": "Fatta beslut, utveckla färdigheter och se din påverkan bli verklighet.",
+        "button": "Påbörja din ChangeMaker-resa"
+      }
+    },
+    "contact": {
+      "title": "Hör av dig",
+      "success": {
+        "title": "Svaret skickades framgångsrikt!",
+        "message": "Tack för att du hör av dig. Vi kommer att kontakta dig snart.",
+        "sendAnother": "Skicka ett till"
+      },
+      "form": {
+        "firstName": "Förnamn",
+        "lastName": "Efternamn",
+        "email": "E-postadress",
+        "message": "Meddelande",
+        "securityCheck": "Säkerhetskontroll:",
+        "answerPlaceholder": "Svar",
+        "sendMessage": "Skicka meddelande",
+        "sending": "Skickar..."
+      },
+      "errors": {
+        "captchaIncorrect": "Felaktig CAPTCHA, försök igen.",
+        "submissionFailed": "Inskickningen misslyckades. Försök igen.",
+        "networkError": "Nätverksfel. Kontrollera din anslutning."
+      },
+      "emailSubject": "Nytt meddelande från kontaktformulär"
+    },
+    "certifiedInstitutes": {
+      "hero": {
+        "titleLine1": "RealLives Foundation är stolta över att certifiera",
+        "titleLine2": "The Orchid School Pune som en ChangeMaker-skola"
+      },
+      "dashboard": {
+        "title": "Instrumentpanel för certifierade institut",
+        "description": "Här hamnar innehållet för ditt certifierade institut.",
+        "overallScore": {
+          "title": "Övergripande ChangeMaker-poäng",
+          "description": "En sammansatt poäng som återspeglar studenters empati och handlingsorientering.",
+          "value": "81",
+          "suffix": "/100"
+        },
+        "certifiedStudents": {
+          "title": "Antal certifierade studenter",
+          "description": "Studenter som slutfört ChangeMaker Workshop och visat tillämpat lärande.",
+          "value": "66",
+          "suffix": "Student"
+        },
+        "drivenBy": {
+          "title": "Drivs av RealLives Simulering",
+          "description": "The Orchid School Pune är en RealLives-certifierad ChangeMaker-skola"
+        },
+        "sdg": {
+          "title": "SDG:er som hanteras genom programmet",
+          "description": "3 SDG:er påverkade genom studentledda projekt och simuleringar"
+        },
+        "nep": {
+          "text": "The Orchid School, Pune uppfyller NEP 2020:s mål för erfarenhetsbaserat och kompetensbaserat lärande genom RealLives.",
+          "textLineBreak": "The Orchid School, Pune uppfyller NEP 2020:s mål för erfarenhetsbaserat och kompetensbaserat lärande genom RealLives."
+        }
+      },
+      "workshop": {
+        "button": "Workshop-bilder",
+        "paragraphs": [
+          "Efter framgångsrikt slutförande av Changemaker-programmet vid The Orchid School, Pune, är RealLives stolta över att certifiera skolan som en officiell Changemaker-skola. I år engagerade programmet 75 studenter, vilket resulterade i 10 unika sociala affärspitchar och rörelser, tillsammans med 75 individuella Changemaker-rapporter som visar tankeväckande, effektdrivna idéer.",
+          "Denna prestation återspeglar skolans engagemang för att vårda ledarskap, empati och socialt ansvar hos unga sinnen."
+        ]
+      },
+      "praise": {
+        "button": "Berömmande ord",
+        "testimonials": [
+          {
+            "quote": "Jag brukade tro att globala problem var för stora för studenter som oss. Att uppleva livet genom SDG:erna hjälpte mig att förstå människors kamper och visade mig att även små affärsidéer kan skapa verklig förändring",
+            "author": "— Elev i årskurs 11"
+          },
+          {
+            "quote": "Att leva ett liv kopplat till SDG:erna hjälpte mig att känna empati, inte bara lära mig fakta. Det gjorde vår sociala affärsidé mer meningsfull eftersom vi designade den för verkliga människor, inte påhittade problem.",
+            "author": "— Elev i årskurs 11"
+          },
+          {
+            "quote": "Denna upplevelse fick mig att inse att empati är det första steget till förändringsskapande. Att förstå globala utmaningar hjälpte vårt team att bygga en affärsidé som fokuserar på påverkan, inte bara vinst.",
+            "author": "— Elev i årskurs 11"
+          }
+        ]
+      },
+      "certificate": {
+        "title": "ChangeMaker-certifikat tilldelat studenter"
+      }
+    },
+    "ourImpact": {
+      "slider": {
+        "impact": "Påverkan",
+        "description": "av RealLives Foundation runt om i världen"
+      },
+      "globalStory": {
+        "title": "Vår globala påverkansberättelse",
+        "description": "RealLives har levererat sex workshops i sex länder och samarbetat med ledande universitet för att föra in globalt, erfarenhetsbaserat lärande i klassrummen. Studenter engagerar sig i verkliga scenarier, fattar livsavgörande beslut, utforskar globala skillnader och bygger empati för olika mänskliga upplevelser. Genom att integrera RealLives berikar institutioner kurser i sociologi, ekonomi och internationella relationer samtidigt som de stärker studenternas kritiska tänkande och problemlösningsförmåga. Studenter rapporterar djupare förståelse för globala frågor och en starkare koppling till världen utanför sina egna gränser."
+      },
+      "sectionTitle": "Påverkan Hem",
+      "midSection": {
+        "title": "Varje val du gör formar din tillväxt. Spåra dina färdigheter, utforska din potential och se hur du kan göra en verklig påverkan",
+        "cta": "Påbörja din förändringsresa"
+      },
+      "bottomCta": {
+        "title": "Fatta beslut, utveckla färdigheter och se din påverkan bli verklighet.",
+        "cta": "Påbörja din förändringsresa"
+      },
+      "cards": [
+        {
+          "card_title": "ETH Zürich Workshop",
+          "card_date": "27 / 06 / 2018",
+          "university_text": "ETH University Zürich, Schweiz",
+          "particepent_title": "Avdelning - Institute of Molecular Systems Biology",
+          "collaboration_text": "I samarbete med:",
+          "name_card": "Prof. Dr. Ernst Hafen",
+          "number_title": 120,
+          "skill_devloped": "Utvecklade färdigheter",
+          "teamwork_title": "Lagarbete",
+          "intergrity_title": "Integritet och arbetsmoral",
+          "link": "/our-impact/eth-university"
+        },
+        {
+          "card_title": "Navamindradhiraj University Workshop",
+          "card_date": "20 / 09 / 2025",
+          "university_text": "Navamindradhiraj University, Bangkok",
+          "particepent_title": "Avdelning - General Education",
+          "collaboration_text": "I samarbete med:",
+          "name_card": "Prof. Krittanan Pensirisomboon",
+          "number_title": 150,
+          "skill_devloped": "Utvecklade färdigheter",
+          "teamwork_title": "2000-talets färdigheter",
+          "intergrity_title": "Affärsmannaskap",
+          "link": "/our-impact/navamindradhiraj-university"
+        },
+        {
+          "card_title": "KyungHee University SDG Workshop",
+          "card_date": "29 / 09 / 2025",
+          "university_text": "Kyunghee University, Korea",
+          "particepent_title": "Avdelning - Social Sciences",
+          "collaboration_text": "I samarbete med:",
+          "name_card": "Prof. Dr. Utak Chang",
+          "number_title": 30,
+          "skill_devloped": "Utvecklade färdigheter",
+          "teamwork_title": "SDG-medvetenhet",
+          "intergrity_title": "Förändringsskapande",
+          "Used_Tools": "Empati Canvas",
+          "link": "/our-impact/kyunghee-university"
+        },
+        {
+          "card_title": "IIT Bombay Exploring SDG 1 through Empathy Workshop",
+          "card_date": "07 / 11 / 2024",
+          "university_text": "IIT Bombay, Indien",
+          "particepent_title": "Avdelning - IDC School of Design",
+          "collaboration_text": "I samarbete med:",
+          "name_card": "India HCI 2024",
+          "number_title": 30,
+          "skill_devloped": "Utvecklade färdigheter",
+          "teamwork_title": "SDG-medvetenhet",
+          "intergrity_title": "Socialt entreprenörskap",
+          "link": "/our-impact/iit-bombay"
+        }
+      ]
+    }
+  },
+  "universities": {
+    "eth": {
+      "breadcrumb": "ETH Zürich Workshop",
+      "university": "ETH University Zürich, Schweiz",
+      "department": "Avdelning - Institute of Molecular Systems Biology",
+      "collaborator": "Prof. Dr. Ernst Hafen",
+      "skills": [
+        "Lagarbete",
+        "Integritet och arbetsmoral"
+      ],
+      "objective": "Att utveckla tvärkulturell empati och global medvetenhet bland studenter från höginkomstländer genom att göra det möjligt för dem att uppleva livsomständigheter i utvecklingsländer genom RealLives-simulering. Programmet syftade till att överbrygga perspektivklyftan mellan studenter från privilegierade bakgrunder och globala utvecklingsutmaningar samtidigt som det främjade meningsfull interkulturell dialog och förståelse för FN:s globala mål för hållbar utveckling genom erfarenhetsbaserat lärande och strukturerade utbyten mellan kamrater.",
+      "programOverview": "RealLives Foundation samarbetade med ETH Zürich för att genomföra ett innovativt tvärkulturellt empatiprogram som gav studenter djupa insikter i FN:s sjutton globala mål för hållbar utveckling (SDG). Genom att engagera sig i den textbaserade RealLives-simuleringen lärde sig schweiziska studenter att känna empati med människor från andra delar av världen och fick nya perspektiv på globala utvecklingsutmaningar. Programmet underlättade praktisk erfarenhet av att diskutera SDG:er och deras verkliga konsekvenser genom direkt samarbete med studenter från utvecklingsländer, vilket skapade autentiska interkulturella lärandeupplevelser.",
+      "implementation": "Programmet tog upp en viktig utmaning: studenter från höginkomstländer som Schweiz visar ofta svårigheter att relatera till globala utmaningar som tas upp i FN:s globala mål för hållbar utveckling. RealLives-simuleringen gjorde det möjligt för studenter att uppleva livet när de föds på slumpmässiga platser på jorden, där varje simulerat liv varade mellan 30 och 45 minuter. Under det rent textbaserade spelet stötte studenterna på verklig data från offentliga databaser om sina tilldelade länder och lärde sig om specifika SDG-utmaningar. De upplevde hur livet utspelade sig runt dem fram till åtta års ålder, då de kunde börja fatta självständiga beslut, och avslutade varje simulering genom att skriva reflekterande dödsrunor om sina levda erfarenheter och livsval.",
+      "crossCultural": "Programmet innehöll ett unikt partnerskap med FLAME University i Pune, Indien, etablerat genom Parag Mankeekars koppling. Tjugo ETH-studenter upplevde livet genom att födas i Pune, Indien, medan tjugo indiska studenter levde simulerade liv i Zürich, Schweiz. Efter att ha slutfört tre liv i sina respektive tilldelade städer arrangerade programmet en-till-en Skype-konferenser mellan schweiziska och indiska studenter för att dela erfarenheter och insikter. Framgången med denna perspektivomvandling bedömdes noggrant genom inspelade intervjuer med schweiziska studenter, vilket visade mätbara förändringar i deras förståelse för globala utvecklingsutmaningar och tvärkulturell empatiutveckling."
+    },
+    "navamindradhiraj": {
+      "breadcrumb": "Navamindradhiraj University Bangkok",
+      "university": "Navamindradhiraj University, Bangkok",
+      "department": "Avdelning - General Education",
+      "collaborator": "Prof. Krittanan Pensirisomboon",
+      "skills": [
+        "2000-talets färdigheter",
+        "Affärsmannaskap"
+      ],
+      "objective": "Att utveckla empatiska globala medborgare genom erfarenhetsbaserat lärande genom att göra det möjligt för studenter vid Navamindradhiraj University att uppleva olika livsomständigheter genom RealLives-simulering, bearbeta sina känslomässiga reaktioner genom strukturerad reflektion och kanalisera sin nyfunna empati till handlingsbara sociala affärslösningar. Det omfattande ChangeMaker-programmet syftade till att överbrygga klyftan mellan medvetenhet och handling samtidigt som det främjade kritiskt tänkande kring hållbara utvecklingsmål och globala utmaningar.",
+      "programOverview": "RealLives Foundation genomförde framgångsrikt ett omfattande ChangeMaker-program vid Navamindradhiraj University i Bangkok, med fokus på hållbara utvecklingsmål och empatidrivet förändringsskapande. Workshopen engagerade universitetsstudenter i en uppslukande utbildningsresa som kombinerade livssimuleringsupplevelser med strukturerad reflektion och entreprenöriellt tänkande. Deltagarna navigerade genom det kompletta RealLives-ekosystemet, upplevde liv över olika socioekonomiska bakgrunder globalt samtidigt som de utvecklade mätbar empati och förändringsskapande kompetenser genom våra egenutvecklade bedömningsverktyg.",
+      "implementation": "Programmet använde vår integrerade fyrstegsmetodik: studenterna upplevde först olika globala liv genom RealLives-simulering, bearbetade sedan sina känslomässiga reaktioner med hjälp av Empathy Canvas-ramverket, följt av att generera personliga ChangeMaker Index-rapporter som analyserade deras utveckling över 18 kompetenser. Workshopen avslutades med att studenterna skapade livskraftiga sociala affärslösningar med hjälp av vår Social Business Canvas, som direkt adresserade utmaningar de stötte på under sina simulerade livsupplevelser. Denna erfarenhetsbaserade inlärningsmetod gjorde det möjligt för deltagarna att gå bortom teoretisk förståelse av globala frågor till att utveckla praktiska, empatidrivna lösningar.",
+      "crossCultural": "Workshopen visade betydande mätbara resultat i studentengagemang och empatiutveckling. Deltagarna visade ökad förståelse för globala skillnader, förbättrat kritiskt tänkande kring hållbara utvecklingsutmaningar och ökad motivation att driva sociala påverkansinitiativ. Studenter skapade innovativa sociala affärsförslag inriktade på frågor från utbildningsojämlikhet till hållbar resurshantering, vilket återspeglade deras fördjupade medvetenhet om sammankopplade globala utmaningar. Framgången vid Navamindradhiraj University förstärker RealLives effektivitet i att omvandla akademiskt lärande till handlingsbara förändringsskapande förmågor över olika kulturella och pedagogiska kontexter.",
+      "testimonial": {
+        "paragraphs": [
+          "Jag är Panja \"Thon Mai\" Sulta Mujdatin. Genom denna upplevelse lärde jag mig att även om ingen av oss väljer de omständigheter vi föds in i, rika eller fattiga, kan vi alltid välja empati, vänlighet och inkludering. Livet har sina upp- och nedgångar, så att vara flexibel och redo för förändring är avgörande.",
+          "Inspirerad av en funktionshindrad familjemedlem utvecklade jag ett socialt påverkansprojekt för att öka medvetenheten om personer med funktionsnedsättning. Jag planerar att dela intervjuvideor på TikTok, Instagram och YouTube så att deras röster och perspektiv hörs. Jag kommer också att återvinna oanvänt material och samarbeta med funktionshindrade skapare för att göra handgjorda produkter, som jag kommer att sälja på offentliga platser och donera all vinst till en stiftelse.",
+          "Mina kärnprinciper inkluderar att skapa kvalitetsinnehåll som informerar och inspirerar, anpassa tillvägagångssätt för att respektera varje persons komfort och integritet, upprätthålla konsekvens för att driva verklig långsiktig förändring, och främja samarbete för att säkerställa att funktionshindrade inkluderas och bemyndigas.",
+          "Mitt budskap till unga människor: alla är människor, behandla alla människor lika."
+        ]
+      }
+    },
+    "kyunghee": {
+      "breadcrumb": "KyungHee University SDG Workshop",
+      "skills": [
+        "SDG-medvetenhet",
+        "Förändringsskapande"
+      ],
+      "objective": "Att främja globalt medborgarskap och empatiutveckling bland koreanska universitetsstudenter genom erfarenhetsbaserat lärande och tvärkulturell förståelse. Workshopen syftade till att bredda studenternas perspektiv på globala utmaningar och hållbar utveckling samtidigt som de utvecklade sin kapacitet för empatiskt beslutsfattande och förändringsskapande färdigheter genom uppslukande livssimuleringsupplevelser och strukturerade reflektionsprocesser.",
+      "programOverview": "RealLives Foundation genomförde en omfattande ChangeMaker-workshop vid Kyung Hee University i Seoul, Sydkorea, organiserad av Prof. Dr. Utak Chang, tidigare chef för UNESCO APCEIU (Asia-Pacific Centre of Education for International Understanding), med hjälp av Prof. Ms. Chanmi Kim. Programmet engagerade 30 universitetsstudenter i en uppslukande pedagogisk upplevelse utformad för att utveckla global medvetenhet och empati genom RealLives simuleringsplattform. Detta samarbete med UNESCO:s utbildningsledning visade RealLives anpassning till internationella utbildningsstandarder och dess effektivitet i att främja interkulturell förståelse och utveckling av globalt medborgarskap.",
+      "implementation": "Workshopen använde RealLives integrerade pedagogiska tillvägagångssätt, vilket gjorde det möjligt för studenter att uppleva olika livsomständigheter över olika länder och socioekonomiska bakgrunder genom textbaserad simulering. Deltagarna navigerade i flera liv som varade i 30-45 minuter vardera, stötte på verklig data och fattade kritiska livsbeslut som återspeglade autentiska globala utmaningar. Programmet införlivade strukturerad reflektion genom Empathy Canvas-ramverket, vilket gjorde det möjligt för studenter att bearbeta sina känslomässiga reaktioner och utveckla en djupare förståelse för globala skillnader. Studenter genererade också personliga ChangeMaker Index-rapporter, vilket gav mätbara insikter i deras utveckling över nyckelkompetenser inklusive empati, global medvetenhet och kritiskt tänkande.",
+      "outcomes": "Workshopen visade ett betydande engagemang från koreanska universitetsstudenter, som visade ökad förståelse för globala utvecklingsutmaningar och ökad empati för människor från olika kulturella och ekonomiska bakgrunder. Under sakkunnig ledning av UNESCO-anslutna lärare utvecklade studenterna handlingsbara insikter i hållbara utvecklingsmål och sina personliga roller som globala förändringsskapare. Programmets framgång vid Kyung Hee University, underlättat av internationellt erkända utbildningsledare, förstärker RealLives effektivitet i olika akademiska sammanhang och dess potential för att skala interkulturella utbildningsinitiativ över utbildningsinstitutioner i Asien-Stillahavsområdet."
+    },
+    "iitBombay": {
+      "breadcrumb": "IIT Bombay Indien",
+      "university": "IIT Bombay, Indien",
+      "department": "Avdelning - IDC School of Design",
+      "collaborator": "India HCI 2024",
+      "skills": [
+        "2000-talets färdigheter",
+        "Affärsmannaskap"
+      ],
+      "objective": "Att utveckla empatiska globala medborgare genom erfarenhetsbaserat lärande genom att göra det möjligt för studenter vid IIT Bombay att uppleva olika livsomständigheter genom RealLives-simulering, bearbeta sina känslomässiga reaktioner genom strukturerad reflektion och kanalisera sin nyfunna empati till handlingsbara sociala affärslösningar. Det omfattande ChangeMaker-programmet syftade till att överbrygga klyftan mellan medvetenhet och handling samtidigt som det främjade kritiskt tänkande kring hållbara utvecklingsmål och globala utmaningar.",
+      "programOverview": "RealLives Foundation genomförde framgångsrikt ett omfattande ChangeMaker-program vid IIT Bombay, med fokus på hållbara utvecklingsmål och empatidrivet förändringsskapande. Workshopen engagerade universitetsstudenter i en uppslukande utbildningsresa som kombinerade livssimuleringsupplevelser med strukturerad reflektion och entreprenöriellt tänkande. Deltagarna navigerade genom det kompletta RealLives-ekosystemet, upplevde liv över olika socioekonomiska bakgrunder globalt samtidigt som de utvecklade mätbar empati och förändringsskapande kompetenser genom våra egenutvecklade bedömningsverktyg.",
+      "implementation": "Programmet använde vår integrerade fyrstegsmetodik: studenterna upplevde först olika globala liv genom RealLives-simulering, bearbetade sedan sina känslomässiga reaktioner med hjälp av Empathy Canvas-ramverket, följt av att generera personliga ChangeMaker Index-rapporter som analyserade deras utveckling över 18 kompetenser. Workshopen avslutades med att studenterna skapade livskraftiga sociala affärslösningar med hjälp av vår Social Business Canvas, som direkt adresserade utmaningar de stötte på under sina simulerade livsupplevelser. Denna erfarenhetsbaserade inlärningsmetod gjorde det möjligt för deltagarna att gå bortom teoretisk förståelse av globala frågor till att utveckla praktiska, empatidrivna lösningar.",
+      "outcomes": "Workshopen visade betydande mätbara resultat i studentengagemang och empatiutveckling. Deltagarna visade ökad förståelse för globala skillnader, förbättrat kritiskt tänkande kring hållbara utvecklingsutmaningar och ökad motivation att driva sociala påverkansinitiativ. Studenter skapade innovativa sociala affärsförslag inriktade på frågor från utbildningsojämlikhet till hållbar resurshantering, vilket återspeglade deras fördjupade medvetenhet om sammankopplade globala utmaningar. Framgången vid IIT Bombay förstärker RealLives effektivitet i att omvandla akademiskt lärande till handlingsbara förändringsskapande förmågor över olika kulturella och pedagogiska kontexter."
+    }
+  }
+}

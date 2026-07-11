@@ -1,15 +1,18 @@
 import Styles from "../HomeComponentParts/ChangeMakeraction.module.css";
 import changemake_image_action from "../../assets/Home-image/changemaker-bg.png";
 import Benifits from "../HomeComponentParts/Benifites";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import "../Footer/Footer.css";
 
 const ChangeMakeraction = ({ theme, settheme }) => {
-  //   console.log(theme);
+  const { t } = useMarketingTranslation();
 
   return (
     <div>
       <div className={Styles.change_maker_action_container}>
-        <img loading="eager" decoding="async"
+        <img
+          loading="eager"
+          decoding="async"
           className={Styles.image_fit_cover}
           src={changemake_image_action}
           alt=""
@@ -17,26 +20,12 @@ const ChangeMakeraction = ({ theme, settheme }) => {
 
         <div className={Styles.see_chnagemaker_index}>
           <p className={Styles.title_see_changemaker}>
-            See the ChangeMaker Index in Action
+            {t("changeMakerAction.title")}
           </p>
           <p className={Styles.title_discription_index}>
-            Explore an interactive demo of the RCMI to understand how it works,
-            what it measures,
-            <br />
-            and how it supports student growth.
+            {t("changeMakerAction.descriptionLineBreak")} <br />
+            {t("changeMakerAction.descriptionLineBreak2")}
           </p>
-
-          {/* <div className="iframe_container">
-            <div className="rcmi_embed_cdn">
-              <iframe
-                className="iframe-width width-100"
-                src="https://demo.arcade.software/i527E8HZo4YlXdSC8arb?embed&amp;embed_mobile=tab&amp;embed_desktop=inline&amp;show_copy_link=true"
-                frameborder="0"
-              >
-              </iframe>
-
-            </div>
-          </div> */}
 
           <div className="iframe_container">
             <div className="rcmi_embed_cdn">
@@ -44,14 +33,14 @@ const ChangeMakeraction = ({ theme, settheme }) => {
                 className="iframe-width width-100"
                 src="https://demo.arcade.software/i527E8HZo4YlXdSC8arb?embed&amp;embed_mobile=tab&amp;embed_desktop=inline&amp;show_copy_link=true"
                 frameBorder="0"
-                title="Arcade Demo"
+                title={t("common.alt.arcadeDemo")}
               ></iframe>
             </div>
           </div>
         </div>
       </div>
 
-      <Benifits theme={theme} settheme={settheme}></Benifits>
+      <Benifits theme={theme} settheme={settheme} />
     </div>
   );
 };

@@ -2,233 +2,64 @@ import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import PersonAddOutlinedIcon from "@mui/icons-material/PersonAddOutlined";
-import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined";
-import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
-import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
-import PictureAsPdfOutlinedIcon from "@mui/icons-material/PictureAsPdfOutlined";
-import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
-import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
-import LightbulbOutlinedIcon from "@mui/icons-material/LightbulbOutlined";
-import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
+import {
+  MdArrowBack,
+  MdPersonAdd,
+  MdSportsEsports,
+  MdPsychology,
+  MdAssessment,
+  MdPictureAsPdf,
+  MdOpenInNew,
+  MdGroups,
+  MdLightbulb,
+  MdPublic,
+} from "react-icons/md";
 import foundationLogo from "../../assets/Home-image/Changemaker-Foundation-logo.svg";
 import styles from "./GetRcmiReport.module.css";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const REGISTER_URL = "https://reallivesworld.com/register-gamer";
+const REGISTER_URL = "https://reallivesworld.com/signup/gamer";
 
 const SAMPLE_REPORT_URL =
   "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/bilime5710-changemaker-report.pdf";
 
-const REPORT_PREVIEW_IMAGES = [
-  {
-    src: "/report-pages/page-01.png",
-    alt: "Report cover with ChangeMaker stage and strongest competencies",
-    caption: "Your personalised report cover",
-  },
-  {
-    src: "/report-pages/page-05.png",
-    alt: "ChangeMaker overview with score and cluster breakdown",
-    caption: "ChangeMaker overview & cluster scores",
-  },
-  {
-    src: "/report-pages/page-07.png",
-    alt: "Radar graph of 18 competencies",
-    caption: "18-competency radar graph",
-  },
-  {
-    src: "/report-pages/page-08.png",
-    alt: "ChangeMaker stage progression",
-    caption: "Your ChangeMaker stage",
-  },
+const REPORT_PREVIEW_SRCS = [
+  "/report-pages/page-01.png",
+  "/report-pages/page-05.png",
+  "/report-pages/page-07.png",
+  "/report-pages/page-08.png",
 ];
 
-const TIMELINE_STEPS = [
-  {
-    id: 1,
-    icon: PersonAddOutlinedIcon,
-    title: "Register on the RealLives Platform",
-    description:
-      "Create your account on the RealLives simulation platform. Your registration stays active so you can return anytime to continue your journey.",
-    tag: "Step 1",
-  },
-  {
-    id: 2,
-    icon: SportsEsportsOutlinedIcon,
-    title: "Play 3 Full Lives in the Simulation",
-    description:
-      "Experience three complete life journeys across different countries, genders, and economic strata — building the empathy and contextual awareness that power your report.",
-    tag: "Step 2",
-  },
-  {
-    id: 3,
-    icon: PsychologyOutlinedIcon,
-    title: "Your Choices Shape 18 Competencies",
-    description:
-      "Unlike surveys that ask what you think you'd do, RealLives observes what you actually choose. Every decision is analysed and mapped to 18 ChangeMaker competencies in real time.",
-    tag: "Step 3",
-    highlight: true,
-  },
-  {
-    id: 4,
-    icon: AssessmentOutlinedIcon,
-    title: "Receive Your Personalised RCMI Report",
-    description:
-      "Your RealLives ChangeMaker Index report is generated — a clear, data-driven breakdown of your score, stage, strengths, growth areas, and personalised path forward.",
-    tag: "Step 4",
-  },
+const TIMELINE_ICONS = [MdPersonAdd, MdSportsEsports, MdPsychology, MdAssessment];
+
+const JOURNEY_COLORS = [
+  { color: "#f06292", colorSoft: "#fce4ec" },
+  { color: "#ffb74d", colorSoft: "#fff3e0" },
+  { color: "#4fc3f7", colorSoft: "#e1f5fe" },
+  { color: "#ba68c8", colorSoft: "#f3e5f5" },
+  { color: "#4db6ac", colorSoft: "#e0f2f1" },
 ];
 
-const REPORT_JOURNEY = [
-  {
-    id: "profile",
-    part: "01",
-    title: "Your Profile",
-    color: "#f06292",
-    colorSoft: "#fce4ec",
-    items: [
-      "ChangeMaker Overview",
-      "Competency Framework",
-      "Radar Graph & Scores",
-      "Your ChangeMaker Stage",
-    ],
-  },
-  {
-    id: "context",
-    part: "02",
-    title: "Your Context",
-    color: "#ffb74d",
-    colorSoft: "#fff3e0",
-    items: [
-      "Country Landscape & Challenges",
-      "Severity & Risk Considerations",
-    ],
-  },
-  {
-    id: "strengths",
-    part: "03",
-    title: "Strengths & Gaps",
-    color: "#4fc3f7",
-    colorSoft: "#e1f5fe",
-    items: ["SWOT Analysis", "Next Steps for Growth"],
-  },
-  {
-    id: "path",
-    part: "04",
-    title: "Your Path",
-    color: "#ba68c8",
-    colorSoft: "#f3e5f5",
-    items: [
-      "Comprehensive ChangeMaking Path",
-      "Country-Specific Path",
-      "Personalised Path",
-    ],
-  },
-  {
-    id: "forward",
-    part: "05",
-    title: "Journey Forward",
-    color: "#4db6ac",
-    colorSoft: "#e0f2f1",
-    items: ["Final Summary & Recommendations", "Your Journey Forward"],
-  },
-];
-
-const CHANGEMAKER_STAGES = [
-  {
-    name: "Seed",
-    range: "0 – 20",
-    description: "Exploring your potential",
-  },
-  {
-    name: "Sprout",
-    range: "21 – 40",
-    description: "Developing foundation skills",
-  },
-  {
-    name: "Sapling",
-    range: "41 – 60",
-    description: "Growing with mix of strengths",
-  },
-  {
-    name: "Plant",
-    range: "61 – 80",
-    description: "Solid and balanced profile",
-  },
-  {
-    name: "Fruit",
-    range: "81 – 100",
-    description: "Thriving and creating impact",
-  },
-];
-
-const COMPETENCY_CLUSTERS = [
-  {
-    id: "personal",
-    title: "Personal",
-    icon: PsychologyOutlinedIcon,
-    accent: "#f06292",
-    accentSoft: "#fce4ec",
-    items: [
-      { name: "Self-Awareness", desc: "Know your strengths and weaknesses" },
-      { name: "Resilience", desc: "Bounce back from setbacks" },
-      { name: "Adaptability", desc: "Adjust to change effectively" },
-      { name: "Persistence", desc: "Keep going despite challenges" },
-      {
-        name: "Emotional Intelligence",
-        desc: "Manage emotions effectively",
-      },
-    ],
-  },
-  {
-    id: "strategic",
-    title: "Strategic Thinking",
-    icon: LightbulbOutlinedIcon,
-    accent: "#42a5f5",
-    accentSoft: "#e3f2fd",
-    items: [
-      { name: "Visionary Thinking", desc: "Imagine better futures" },
-      { name: "Creativity & Innovation", desc: "Generate new ideas" },
-      { name: "Problem-Solving", desc: "Find effective solutions" },
-      { name: "Initiative", desc: "Act without being asked" },
-      { name: "Risk-Taking", desc: "Try new things willingly" },
-      { name: "Critical Thinking", desc: "Analyse situations carefully" },
-    ],
-  },
-  {
-    id: "interpersonal",
-    title: "Interpersonal",
-    icon: GroupsOutlinedIcon,
-    accent: "#ab47bc",
-    accentSoft: "#f3e5f5",
-    items: [
-      { name: "Empathy", desc: "Understand how others feel" },
-      { name: "Communication Skills", desc: "Share ideas clearly" },
-      { name: "Collaboration", desc: "Work well with others" },
-      { name: "Leadership", desc: "Guide and inspire people" },
-      { name: "Social Awareness", desc: "Read social situations" },
-    ],
-  },
-  {
-    id: "contextual",
-    title: "Contextual Awareness",
-    icon: PublicOutlinedIcon,
-    accent: "#66bb6a",
-    accentSoft: "#e8f5e9",
-    items: [
-      { name: "Global Awareness", desc: "Understand world issues" },
-      {
-        name: "Ethical Responsibility",
-        desc: "Do what's right for society",
-      },
-    ],
-  },
-];
+const CLUSTER_META = {
+  personal: { icon: MdPsychology, accent: "#f06292", accentSoft: "#fce4ec" },
+  strategic: { icon: MdLightbulb, accent: "#42a5f5", accentSoft: "#e3f2fd" },
+  interpersonal: { icon: MdGroups, accent: "#ab47bc", accentSoft: "#f3e5f5" },
+  contextual: { icon: MdPublic, accent: "#66bb6a", accentSoft: "#e8f5e9" },
+};
 
 const GetRcmiReport = ({ theme }) => {
   const navigate = useNavigate();
+  const { t, getMessage } = useMarketingTranslation();
+  const page = getMessage("pages.getRcmiReport") ?? {};
+  const timelineSteps = page.timeline?.steps ?? [];
+  const journeyParts = page.journey?.parts ?? [];
+  const previewImages = page.preview?.images ?? [];
+  const competencyClusters = page.competency?.clusters ?? [];
+  const changemakerStages = page.competency?.stages?.items ?? [];
+  const stageQuote = page.competency?.stages?.quote;
+  const heroPills = page.heroPills ?? [];
   const pageRef = useRef(null);
   const heroRef = useRef(null);
   const timelineRef = useRef(null);
@@ -356,41 +187,36 @@ const GetRcmiReport = ({ theme }) => {
         type="button"
         className={styles.backBtn}
         onClick={handleBack}
-        aria-label="Go back"
+        aria-label={t("common.goBack")}
       >
-        <ArrowBackIcon fontSize="small" />
-        <span>Back</span>
+        <MdArrowBack className={styles.inlineIcon} />
+        <span>{t("common.back")}</span>
       </button>
 
       <header ref={heroRef} className={styles.hero}>
-        <p className={styles.eyebrow}>RealLives ChangeMaker Index</p>
-        <h1 className={styles.heroTitle}>Your Personalised RCMI Report</h1>
-        <p className={styles.heroSubtitle}>
-          The RealLives ChangeMaker Index (RCMI) measures how you develop
-          empathy, global awareness, and decision-making through immersive life
-          simulations — translating your gameplay into a structured assessment of
-          changemaking potential.
-        </p>
+        <p className={styles.eyebrow}>{page.eyebrow}</p>
+        <h1 className={styles.heroTitle}>{page.heroTitle}</h1>
+        <p className={styles.heroSubtitle}>{page.heroSubtitle}</p>
         <div className={styles.heroPills}>
-          <span className={styles.heroPill}>18 Competencies</span>
-          <span className={styles.heroPill}>5-Part Report</span>
-          <span className={styles.heroPill}>Data-Driven Insights</span>
+          {heroPills.map((pill) => (
+            <span key={pill} className={styles.heroPill}>
+              {pill}
+            </span>
+          ))}
         </div>
       </header>
 
       <section className={styles.timelineSection}>
-        <h2 className={styles.sectionHeading}>How to Get Your Report</h2>
-        <p className={styles.sectionLead}>
-          Register, play three lives, and unlock your full ChangeMaker profile.
-        </p>
+        <h2 className={styles.sectionHeading}>{page.timeline?.heading}</h2>
+        <p className={styles.sectionLead}>{page.timeline?.lead}</p>
         <div ref={timelineRef} className={styles.timeline}>
           <div className={styles.timelineLine} aria-hidden="true" />
 
-          {TIMELINE_STEPS.map((step) => {
-            const Icon = step.icon;
+          {timelineSteps.map((step, idx) => {
+            const Icon = TIMELINE_ICONS[idx] ?? MdAssessment;
             return (
               <article
-                key={step.id}
+                key={step.title}
                 className={`${styles.timelineItem} ${step.highlight ? styles.timelineItemHighlight : ""}`}
               >
                 <div className={styles.timelineMarker}>
@@ -421,74 +247,74 @@ const GetRcmiReport = ({ theme }) => {
           className={styles.sampleReportCta}
           onClick={handleViewSampleReport}
         >
-          <PictureAsPdfOutlinedIcon className={styles.sampleReportIcon} />
-          View Sample Report
-          <OpenInNewOutlinedIcon className={styles.sampleReportArrow} />
+          <MdPictureAsPdf className={styles.sampleReportIcon} />
+          {page.sampleReport?.cta}
+          <MdOpenInNew className={styles.sampleReportArrow} />
         </button>
         <span className={styles.dividerLine} aria-hidden="true" />
       </div>
 
       <section ref={journeyRef} className={styles.reportJourneySection}>
-        <p className={styles.sectionLabel}>What you&apos;ll receive</p>
-        <h2 className={styles.sectionHeading}>How Your Report Works</h2>
-        <p className={styles.sectionLead}>
-          Your report is a five-part journey from understanding your profile to
-          charting your path forward.
-        </p>
+        <p className={styles.sectionLabel}>{page.journey?.label}</p>
+        <h2 className={styles.sectionHeading}>{page.journey?.heading}</h2>
+        <p className={styles.sectionLead}>{page.journey?.lead}</p>
 
         <div className={styles.journeyRoadmap}>
-          {REPORT_JOURNEY.map((part) => (
-            <div
-              key={part.id}
-              className={styles.journeyBlock}
-              style={{
-                "--journey-color": part.color,
-                "--journey-soft": part.colorSoft,
-              }}
-            >
-              <span className={styles.journeyPart}>{part.part}</span>
-              <span className={styles.journeyTitle}>{part.title}</span>
-            </div>
-          ))}
+          {journeyParts.map((part, idx) => {
+            const colors = JOURNEY_COLORS[idx] ?? JOURNEY_COLORS[0];
+            return (
+              <div
+                key={part.id}
+                className={styles.journeyBlock}
+                style={{
+                  "--journey-color": colors.color,
+                  "--journey-soft": colors.colorSoft,
+                }}
+              >
+                <span className={styles.journeyPart}>{part.part}</span>
+                <span className={styles.journeyTitle}>{part.title}</span>
+              </div>
+            );
+          })}
         </div>
 
         <div className={styles.journeyDetails}>
-          {REPORT_JOURNEY.map((part) => (
-            <article
-              key={part.id}
-              className={styles.journeyDetailCard}
-              style={{
-                "--journey-color": part.color,
-                "--journey-soft": part.colorSoft,
-              }}
-            >
-              <h3 className={styles.journeyDetailTitle}>
-                Part {part.part} — {part.title}
-              </h3>
-              <ul className={styles.journeyDetailList}>
-                {part.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
+          {journeyParts.map((part, idx) => {
+            const colors = JOURNEY_COLORS[idx] ?? JOURNEY_COLORS[0];
+            return (
+              <article
+                key={part.id}
+                className={styles.journeyDetailCard}
+                style={{
+                  "--journey-color": colors.color,
+                  "--journey-soft": colors.colorSoft,
+                }}
+              >
+                <h3 className={styles.journeyDetailTitle}>
+                  {page.journey?.partPrefix} {part.part} — {part.title}
+                </h3>
+                <ul className={styles.journeyDetailList}>
+                  {(part.items ?? []).map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            );
+          })}
         </div>
       </section>
 
       <section ref={previewRef} className={styles.previewSection}>
-        <p className={styles.sectionLabel}>Report preview</p>
-        <h2 className={styles.sectionHeading}>See What&apos;s Inside</h2>
-        <p className={styles.sectionLead}>
-          A rich, visual report built from your simulation data — scores,
-          graphs, stages, and personalised recommendations.
-        </p>
+        <p className={styles.sectionLabel}>{page.preview?.label}</p>
+        <h2 className={styles.sectionHeading}>{page.preview?.heading}</h2>
+        <p className={styles.sectionLead}>{page.preview?.lead}</p>
 
         <div className={styles.previewGrid}>
-          {REPORT_PREVIEW_IMAGES.map((img) => (
-            <figure key={img.src} className={styles.previewCard}>
+          {previewImages.map((img, idx) => (
+            <figure key={img.caption} className={styles.previewCard}>
               <div className={styles.previewImageWrap}>
                 <img
-                  src={img.src}
+                  src={REPORT_PREVIEW_SRCS[idx]}
                   alt={img.alt}
                   loading="lazy"
                   className={styles.previewImage}
@@ -505,58 +331,42 @@ const GetRcmiReport = ({ theme }) => {
           <article className={`${styles.aboutCard} ${styles.aboutRcmi}`}>
             <img
               src="/rcmi-logo.png"
-              alt="RCMI"
+              alt={t("common.alt.rcmi")}
               className={styles.aboutLogo}
             />
-            <h3 className={styles.aboutTitle}>
-              About RealLives ChangeMaker Index
-            </h3>
-            <p className={styles.aboutText}>
-              RCMI analyses players&apos; experiences across diverse
-              socioeconomic and cultural contexts to generate meaningful
-              insights, translating gameplay into a structured assessment of
-              changemaking potential and social impact orientation.
-            </p>
+            <h3 className={styles.aboutTitle}>{page.about?.rcmiTitle}</h3>
+            <p className={styles.aboutText}>{page.about?.rcmiText}</p>
           </article>
           <article className={`${styles.aboutCard} ${styles.aboutFoundation}`}>
             <div className={styles.foundationLogoWrap}>
               <img
                 src={foundationLogo}
-                alt="RealLives Foundation"
+                alt={t("common.alt.realLivesFoundation")}
                 className={styles.foundationLogo}
               />
             </div>
-            <h3 className={styles.aboutTitle}>About RealLives Foundation</h3>
-            <p className={styles.aboutText}>
-              RealLives Foundation fosters empathy, global awareness, and
-              changemaking skills through experiential learning — helping
-              individuals explore diverse human experiences and inspire action
-              toward a more inclusive world.
-            </p>
+            <h3 className={styles.aboutTitle}>{page.about?.foundationTitle}</h3>
+            <p className={styles.aboutText}>{page.about?.foundationText}</p>
           </article>
         </div>
       </section>
 
       <section ref={competencyRef} className={styles.competencySection}>
-        <p className={styles.sectionLabel}>Competency framework</p>
-        <h2 className={styles.sectionHeading}>
-          18 Competencies Across 4 Clusters
-        </h2>
-        <p className={styles.sectionLead}>
-          Each cluster reflects a distinct dimension of changemaking, measured
-          through the choices you make in simulation.
-        </p>
+        <p className={styles.sectionLabel}>{page.competency?.label}</p>
+        <h2 className={styles.sectionHeading}>{page.competency?.heading}</h2>
+        <p className={styles.sectionLead}>{page.competency?.lead}</p>
 
         <div className={styles.competencyGrid}>
-          {COMPETENCY_CLUSTERS.map((cluster) => {
-            const Icon = cluster.icon;
+          {competencyClusters.map((cluster) => {
+            const meta = CLUSTER_META[cluster.id] ?? CLUSTER_META.personal;
+            const Icon = meta.icon;
             return (
               <article
                 key={cluster.id}
                 className={styles.competencyCard}
                 style={{
-                  "--cluster-accent": cluster.accent,
-                  "--cluster-accent-soft": cluster.accentSoft,
+                  "--cluster-accent": meta.accent,
+                  "--cluster-accent-soft": meta.accentSoft,
                 }}
               >
                 <div className={styles.cardHeader}>
@@ -567,7 +377,7 @@ const GetRcmiReport = ({ theme }) => {
                 </div>
 
                 <ul className={styles.clusterList}>
-                  {cluster.items.map((item) => (
+                  {(cluster.items ?? []).map((item) => (
                     <li key={item.name} className={styles.clusterItem}>
                       <span className={styles.compName}>{item.name}</span>
                       <span className={styles.compDesc}>{item.desc}</span>
@@ -580,12 +390,12 @@ const GetRcmiReport = ({ theme }) => {
         </div>
 
         <div className={styles.stagesSection}>
-          <h3 className={styles.stagesHeading}>Your ChangeMaker Stage</h3>
-          <p className={styles.stagesLead}>
-            Progress through five stages as your competency profile develops.
-          </p>
+          <h3 className={styles.stagesHeading}>
+            {page.competency?.stages?.heading}
+          </h3>
+          <p className={styles.stagesLead}>{page.competency?.stages?.lead}</p>
           <div className={styles.stagesRow}>
-            {CHANGEMAKER_STAGES.map((stage) => (
+            {changemakerStages.map((stage) => (
               <div key={stage.name} className={styles.stageCard}>
                 <span className={styles.stageName}>{stage.name}</span>
                 <span className={styles.stageRange}>{stage.range}</span>
@@ -593,9 +403,9 @@ const GetRcmiReport = ({ theme }) => {
               </div>
             ))}
           </div>
-          <p className={styles.stageQuote}>
-            &ldquo;Growth is the proof of persistence.&rdquo;
-          </p>
+          {stageQuote && (
+            <p className={styles.stageQuote}>&ldquo;{stageQuote}&rdquo;</p>
+          )}
         </div>
       </section>
 
@@ -604,18 +414,15 @@ const GetRcmiReport = ({ theme }) => {
       <footer className={styles.fixedFooter}>
         <div className={styles.footerInner}>
           <div className={styles.footerText}>
-            <p className={styles.footerTitle}>Ready for your RCMI Report?</p>
-            <p className={styles.footerSubtitle}>
-              Register, play three lives, and discover your ChangeMaker score,
-              stage, and personalised path.
-            </p>
+            <p className={styles.footerTitle}>{page.footer?.title}</p>
+            <p className={styles.footerSubtitle}>{page.footer?.subtitle}</p>
           </div>
           <button
             type="button"
             className={styles.footerCta}
             onClick={handleGetReport}
           >
-            Get RCMI Report
+            {page.footer?.cta}
           </button>
         </div>
       </footer>

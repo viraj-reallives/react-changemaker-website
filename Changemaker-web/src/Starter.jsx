@@ -1,183 +1,203 @@
-import React, { useEffect, useRef } from "react";
-import AnalyticsIcon from "@mui/icons-material/Analytics";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import { NavLink } from "react-router-dom";
-import reallives_icon from "./assets/logo-white.svg";
+import { Link } from "react-router-dom";
+import { MdArrowForward } from "react-icons/md";
+import { useMarketingTranslation } from "./context/MarketingLocaleContext";
+import {
+  PortalLanguageMobile,
+  PortalLanguageSidebar,
+} from "./components/portal/PortalLanguageBar";
+import portalCustom from "./components/costom_css/portal_custom.module.css";
+import styles from "./Portal.module.css";
+import reallivesLogo from "./assets/logo-white.svg";
+import backgroundImg from "./assets/landing page/starting-background-img.png";
 
-const rcmi_logo = "/rcmi-logo.png";
-// import Home from "./Home";
+const rcmiLogo = "/rcmi-logo.png";
+const REAL_LIVES_URL =
+  "https://reallivesworld.com/reallives-website-main/reallives";
 
-// import "./Starter.css";
-
-const Starter = () => {
-  const contentRef = useRef(null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      contentRef.current?.classList.add("show-now-11");
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  const realLivesUrl =
-    "https://reallivesworld.com/reallives-website-main/reallives";
+function PortalContent() {
+  const { t } = useMarketingTranslation();
 
   return (
-    <div className="container-cards-starter">
-      <img
-        className="image-backgrounnd-starter"
-        src="https://d2jn82ki4w4ftn.cloudfront.net/starting-background-img.png"
-        alt="Background"
-      />
+    <>
+      <PortalLanguageSidebar />
 
-      <div
-        className="starter-outer-container"
-        id="content-wrapper-11"
-        ref={contentRef}
-      >
-        <div className="container-top-head-starter">
-          <p className="choose-title-starter">Choose Your Experience</p>
-          <p className="explore-title-starter">Explore Lives. Create Impact.</p>
+      <div className={`${styles.content} ${portalCustom.content_overwrite_style}`}>
+        <div className={styles.heading}>
+          <p
+            className={`${styles.chooseTitle} ${portalCustom.choose_title_starter}`}
+          >
+            {t("portal.hero.title")}
+          </p>
+          <p
+            className={`${styles.exploreTitle} ${portalCustom.explore_title_starter}`}
+          >
+            {t("portal.hero.subtitle")}
+          </p>
         </div>
 
-        <div className="card-starter-section">
+        <PortalLanguageMobile />
 
-         
-
-          <div className="starter-innner-card">
-            <div className="top-starter-container">
-              <div className="head-starter-box bg-changemaker">
-                <div className="head-logo-reallives">
+        <div className={`${styles.cards} ${portalCustom.card_style_container}`}>
+          {/* RCMI — primary, left */}
+          <Link
+            to="/home"
+            className={styles.cardLink}
+            aria-label={t("portal.changeMaker.ariaLabel")}
+          >
+            <div
+              className={`${styles.card} ${styles.cardChangeMaker} ${portalCustom.grid_cards_style}`}
+            >
+              <div
+                className={`${styles.cardTop} ${portalCustom.head_starter_box} ${portalCustom.head_color_changemaker}`}
+              >
+                <div className={portalCustom.head_logo_reallives}>
                   <img
-                    className="head-logo-reallives"
-                    src={rcmi_logo}
-                    alt="Logo"
+                    className={portalCustom.image_fit_contain}
+                    src={rcmiLogo}
+                    alt="ChangeMaker Index Logo"
                   />
                 </div>
               </div>
 
-              <div className="fetures-mini-box">
-                <div className="fetures-inner-box channgemaker-color-top">
-                  21ST CENTURY SKILLS
-                </div>
-                <div className="fetures-inner-box channgemaker-color-top">
-                  EMPATHY
-                </div>
-                <div className="fetures-inner-box channgemaker-color-top">
-                  sdg lived experience
-                </div>
-              </div>
-            </div>
-
-            <div className="bottom-starter-container">
-              <div className="bottom-title-desc">
-                <p className="simulation-title-text">
-                  RealLives ChangeMaker Index (RCMI)
-                </p>
-                <p className="simulation-desc-text title-changemaker-color">
-                  Turn insight into real-world impact
-                </p>
-              </div>
-
-              <p className="starter-mid-desc">
-                Measure and grow across 18 changemaking competencies. Reflect on
-                your decisions, understand your impact, and build skills that
-                prepare you for future careers and responsible leadership.
-              </p>
-
-              <NavLink to="home" className="decoration-style-none">
-                <button className="button-continue-card btn-bg-color-white">
-                  Continue to RealLives ChangeMaker Index
-                  <AnalyticsIcon className="arrow-move-11" />
-                </button>
-              </NavLink>
-            </div>
-          </div>
-
-
-           <div className="starter-innner-card">
-            <div className="top-starter-container">
-              <div className="head-starter-box">
-                <div className="head-logo-reallives">
-                  <img
-                    className="head-logo-reallives"
-                    src={reallives_icon}
-                    alt="Logo"
-                  />
-                </div>
-              </div>
-
-              <div className="fetures-mini-box">
-                <div className="fetures-inner-box">live a life</div>
-                <div className="fetures-inner-box">real world data</div>
-                <div className="fetures-inner-box">Empathy simulation</div>
-              </div>
-            </div>
-
-            <div className="bottom-starter-container">
-              <div className="bottom-title-desc">
-                <p className="simulation-title-text">
-                  RealLives Simulation Platform
-                </p>
-                <p className="simulation-desc-text">
-                  Experience lives across the world
-                </p>
-              </div>
-
-              <p className="starter-mid-desc">
-                Step into the lives of people from different countries and
-                backgrounds.
-                <span className="none-mobile-style">
-                  {" "}
-                  Build empathy, understand global systems, and make life
-                  decisions through immersive simulation.
+              <div className={styles.cardFeatures} aria-hidden="true">
+                <span
+                  className={`${styles.featurePill} ${portalCustom.change_text_changemaker}`}
+                >
+                  {t("portal.changeMaker.features.skills")}
                 </span>
-              </p>
+                <span
+                  className={`${styles.featurePill} ${portalCustom.change_text_changemaker}`}
+                >
+                  {t("portal.changeMaker.features.empathy")}
+                </span>
+                <span
+                  className={`${styles.featurePill} ${portalCustom.change_text_changemaker}`}
+                >
+                  {t("portal.changeMaker.features.sdg")}
+                </span>
+              </div>
 
-              {/* <button
-                className="button-continue-card"
-                onClick={() => {
-                  const newTab = window.open(
-                    "https://reallivesworld.com/reallives",
-                    "_blank",
-                  );
-                  if (newTab) {
-                    newTab.opener = null;
-                  }
-                }}
-              >
-                Go to RealLives
-                <ArrowRightAltIcon className="arrow-move-11" />
-              </button> */}
+              <div className={styles.cardBody}>
+                <h2
+                  className={`${styles.cardHeading} ${portalCustom.simulation_title_text}`}
+                >
+                  {t("portal.changeMaker.title")}
+                </h2>
+                <p
+                  className={`${styles.cardDescription} ${styles.cardDescriptionAlt} ${portalCustom.title_changemaker_color}`}
+                >
+                  {t("portal.changeMaker.subtitle")}
+                </p>
+                <p
+                  className={`${styles.cardLongDescription} ${portalCustom.starter_mid_desc}`}
+                >
+                  {t("portal.changeMaker.description")}
+                </p>
+              </div>
 
-              <button
-                className="button-continue-card"
-                onClick={() => {
-                  const newTab = window.open(
-                    realLivesUrl,
-                    "_blank",
-                    "noopener,noreferrer",
-                  );
-                  if (newTab) {
-                    newTab.opener = null;
-                  }
-                }}
+              <div
+                className={`${styles.cardCta} ${portalCustom.button_continue_card_changemaker}`}
+                aria-hidden="true"
               >
-                Go to RealLives
-                <ArrowRightAltIcon className="arrow-move-11" />
-              </button>
+                {t("portal.changeMaker.cta")} <MdArrowForward />
+              </div>
             </div>
-          </div>
+          </Link>
 
+          {/* RealLives — right */}
+          <a
+            href={REAL_LIVES_URL}
+            className={styles.cardLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("portal.realLives.ariaLabel")}
+          >
+            <div
+              className={`${styles.card} ${styles.cardRealLives} ${portalCustom.grid_cards_style}`}
+            >
+              <div
+                className={`${styles.cardTop} ${portalCustom.head_starter_box}`}
+              >
+                <div className={portalCustom.head_logo_reallives}>
+                  <img
+                    className={portalCustom.image_fit_contain}
+                    src={reallivesLogo}
+                    alt="RealLives Logo"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.cardFeatures} aria-hidden="true">
+                <span
+                  className={`${styles.featurePill} ${portalCustom.fetures_inner_box}`}
+                >
+                  {t("portal.realLives.features.liveALife")}
+                </span>
+                <span
+                  className={`${styles.featurePill} ${portalCustom.fetures_inner_box}`}
+                >
+                  {t("portal.realLives.features.realWorldData")}
+                </span>
+                <span
+                  className={`${styles.featurePill} ${portalCustom.fetures_inner_box}`}
+                >
+                  {t("portal.realLives.features.empathySimulation")}
+                </span>
+              </div>
+
+              <div className={styles.cardBody}>
+                <h2
+                  className={`${styles.cardHeading} ${portalCustom.simulation_title_text}`}
+                >
+                  {t("portal.realLives.title")}
+                </h2>
+                <p
+                  className={`${styles.cardDescription} ${portalCustom.simulation_desc_text}`}
+                >
+                  {t("portal.realLives.subtitle")}
+                </p>
+                <p
+                  className={`${styles.cardLongDescription} ${portalCustom.starter_mid_desc}`}
+                >
+                  {t("portal.realLives.description")}
+                  <span className={styles.desktopOnly}>
+                    {" "}
+                    {t("portal.realLives.descriptionExtended")}
+                  </span>
+                </p>
+              </div>
+
+              <div
+                className={`${styles.cardCta} ${portalCustom.button_continue_card}`}
+                aria-hidden="true"
+              >
+                {t("portal.realLives.cta")} <MdArrowForward />
+              </div>
+            </div>
+          </a>
         </div>
 
-        <p className="no-copy-write-title">
-          © 2026 RealLives World. All rights reserved.
+        <p className={`${styles.copyright} ${portalCustom.no_copy_write_title}`}>
+          {t("portal.copyright")}
         </p>
       </div>
-    </div>
+    </>
   );
-};
+}
 
-export default Starter;
+export default function Starter() {
+  return (
+    <main className={`${styles.page} ${portalCustom.background_black}`}>
+      <img
+        className={`${styles.bgImage} ${portalCustom.portalPage}`}
+        src={backgroundImg}
+        alt=""
+        fetchPriority="high"
+      />
+
+      <div className={styles.pageInner}>
+        <PortalContent />
+      </div>
+    </main>
+  );
+}

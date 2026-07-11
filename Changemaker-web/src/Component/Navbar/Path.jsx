@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const { t } = useMarketingTranslation();
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -13,12 +15,9 @@ const Navbar = () => {
         <span className={showMenu ? "bar active" : "bar"}></span>
       </div>
 
-      {/* Navigation Links */}
-
       <div
         className={showMenu ? "navigation-path mobile-open" : "navigation-path"}
       >
-        
         <NavLink
           to="/Home"
           end
@@ -27,7 +26,7 @@ const Navbar = () => {
           }
           onClick={() => setShowMenu(false)}
         >
-          Home
+          {t("common.nav.home")}
         </NavLink>
 
         <NavLink
@@ -35,7 +34,7 @@ const Navbar = () => {
           to="/certified-institutes"
           onClick={() => setShowMenu(false)}
         >
-          Certified Institutes
+          {t("common.nav.certifiedInstitutes")}
         </NavLink>
 
         <NavLink
@@ -43,7 +42,7 @@ const Navbar = () => {
           to="/our-impact"
           onClick={() => setShowMenu(false)}
         >
-          Our Impact
+          {t("common.nav.ourImpact")}
         </NavLink>
 
         <NavLink
@@ -51,7 +50,7 @@ const Navbar = () => {
           to="/how-rcmi-works"
           onClick={() => setShowMenu(false)}
         >
-          How RCMI Works
+          {t("common.nav.howRcmiWorks")}
         </NavLink>
 
         <NavLink
@@ -59,7 +58,7 @@ const Navbar = () => {
           className="button-rcmi-report"
           onClick={() => setShowMenu(false)}
         >
-          Get RCMI Report
+          {t("common.nav.getRcmiReport")}
         </NavLink>
       </div>
     </nav>

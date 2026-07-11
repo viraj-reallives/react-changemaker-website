@@ -21,7 +21,7 @@
 }
 
 .dark .feautures_inner_main {
-  background-color: #222222;
+  background-color: var(--dm-bg-surface);
   color: #dccece;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .dark .cards_features_box {
-  background-color: #333333;
+  background-color: var(--dm-bg-muted);
 }
 
 .dark .features_description_text {
@@ -214,7 +214,7 @@
 }
 
 .dark .impact_section_container {
-  background-color: #222222;
+  background-color: var(--dm-bg-surface);
 }
 
 .dark .experience_text_reallives {
@@ -226,7 +226,7 @@
 }
 
 .dark .card_info_box {
-  background-color: #333333;
+  background-color: var(--dm-bg-muted);
 }
 
 .dark .title_university_name {

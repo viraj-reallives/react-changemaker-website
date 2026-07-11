@@ -7,7 +7,7 @@
 }
 
 .dark.ourimpactmaincontainer {
-  background-color: #111111;
+  background-color: var(--dm-bg);
 }
 
 .slider_componet {
@@ -25,7 +25,7 @@
 }
 
 .dark .our_global_impact_component {
-  background-color: #1a1a1a;
+  background-color: var(--dm-bg-elevated);
 }
 
 .dark .global_second_description {
@@ -306,7 +306,7 @@
 }
 
 .dark .individual_slide_inner {
-  background-color: #333333;
+  background-color: var(--dm-bg-muted);
 }
 
 .dark .impact_text_slide {

@@ -53,7 +53,7 @@
 }
 
 .dark .Maincontainercertifide {
-  background-color: #121212;
+  background-color: var(--dm-bg);
   color: white;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .dark.dashboard_content_box {
-  background-color: #222222;
+  background-color: var(--dm-bg-surface);
   color: white;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .dark.wrapper_all_data_cards {
-  background-color: #222222;
+  background-color: var(--dm-bg-surface);
   color: black;
 }
 
@@ -309,7 +309,7 @@
 }
 
 .dark .workshop_still_container {
-  background-color: #222222;
+  background-color: var(--dm-bg-surface);
 }
 
 .dark p {
@@ -371,7 +371,7 @@
 }
 
 .dark .student_impact_container {
-  background: #222222;
+  background: var(--dm-bg-surface);
 }
 
 .student_impact_cards_container {
@@ -392,7 +392,7 @@
 }
 
 .dark .inner_data_impact {
-  background-color: #333333;
+  background-color: var(--dm-bg-muted);
 }
 
 .quotes_container {
@@ -429,7 +429,7 @@
 }
 
 .dark .changemaker_certificate_container {
-  background-color: #222222;
+  background-color: var(--dm-bg-surface);
 }
 
 .changemaker_text_font {
@@ -527,22 +527,22 @@
 }
 
 .dark .top_cards_dashboard {
-  background-color: #333333;
+  background-color: var(--dm-bg-muted);
 }
 .dark .second_number_title {
   color: white;
 }
 
 .dark .right_top_content_i {
-  background-color: #2f2d2d;
+  background-color: var(--dm-bg-muted);
 }
 
 .dark .left_side_content_inner {
-  background-color: #2f2d2d;
+  background-color: var(--dm-bg-muted);
 }
 
 .dark .right_bottom_content_i {
-  background-color: #2f2d2d;
+  background-color: var(--dm-bg-muted);
 }
 
 .dark .workshop_still_btn {

@@ -1,31 +1,26 @@
-import React from 'react'
-import "../Not-Founnd-page/NotFound.css"
-import Home from '../Pages/Home'
-import { Link } from 'react-router-dom'
-
-
+import "../Not-Founnd-page/NotFound.css";
+import { Link } from "react-router-dom";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
 const NotFound = () => {
+  const { t } = useMarketingTranslation();
+
   return (
- <section className="page_404">
+    <section className="page_404">
       <div className="page_404_container">
-        
         <div className="four_zero_four_bg"></div>
 
         <div className="contant_box_404">
-          <h3>Look like you're lost</h3>
-          <p>the page you are looking for not avaible!</p>
+          <h3>{t("common.notFound.title")}</h3>
+          <p>{t("common.notFound.description")}</p>
 
-         <Link to="/Home" className="link_404">Home</Link>
-
-          {/* <LINK path="/" className="link_404" > Home</LINK> */}
-
-          
+          <Link to="/Home" className="link_404">
+            {t("common.notFound.homeLink")}
+          </Link>
         </div>
-
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

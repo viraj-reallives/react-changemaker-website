@@ -1,15 +1,13 @@
-import React from "react";
 import "./Navbar.css";
 import { useEffect } from "react";
-// Material Icons Import
-import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-
-import Dropdown from "./Dropdown";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import Path from "./Path";
 import Logo from "./Logo";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = ({ theme, settheme }) => {
+  const { t } = useMarketingTranslation();
   useEffect(() => {
     let metaThemeColor = document.querySelector('meta[name="theme-color"]');
 
@@ -20,7 +18,7 @@ const Navbar = ({ theme, settheme }) => {
     }
     metaThemeColor.setAttribute(
       "content",
-      theme === "light" ? "#FFD700" : "#1a1a1a",
+      theme === "light" ? "#FFD700" : "#050505",
     );
   }, [theme]);
 
@@ -35,18 +33,28 @@ const Navbar = ({ theme, settheme }) => {
       <div className="content-tap-impact">
         <Path />
 
-        <button
-          type="button"
-          className="theme-toggle-btn"
-          onClick={togglebtn}
-          aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
-        >
-          {theme === "light" ? (
-            <DarkModeIcon className="theme-toggle-icon" />
-          ) : (
-            <LightModeIcon className="theme-toggle-icon" />
-          )}
-        </button>
+        <div className="navbar-utilities">
+          <LanguageSwitcher />
+
+          <span className="navbar-utilities-divider" aria-hidden="true" />
+
+          <button
+            type="button"
+            className="theme-toggle-btn"
+            onClick={togglebtn}
+            aria-label={
+              theme === "light"
+                ? t("common.theme.switchToDark")
+                : t("common.theme.switchToLight")
+            }
+          >
+            {theme === "light" ? (
+              <MdDarkMode className="theme-toggle-icon" />
+            ) : (
+              <MdLightMode className="theme-toggle-icon" />
+            )}
+          </button>
+        </div>
       </div>
     </div>
   );

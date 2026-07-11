@@ -9,7 +9,7 @@
 
 /* ===== DARK MODE ===== */
 .footer.dark {
-  background-color: #171616;
+  background-color: var(--dm-bg-elevated);
 }
 
 .footer.dark .changemaker-text {

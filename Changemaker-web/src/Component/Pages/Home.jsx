@@ -1,17 +1,21 @@
 import Styles from "./Home.module.css";
-import Footer from "../Footer/Footer.jsx";
 import Featuresindex from "../HomeComponentParts/Featuresindex";
 import waterflow_image from "../../assets/Home-image/Water-flow-image.svg";
-// import firstsection from "../../assets/Home-image/first-section-image.png";
 import ChangeMakeraction from "../HomeComponentParts/ChangeMakeraction";
 import { Link } from "react-router-dom";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
 const Home = ({ theme, settheme }) => {
+  const { t } = useMarketingTranslation();
+
   const become_change_btn = () => {
-    window.location.href =
-      "https://reallivesworld.com/reallives-website-main/license.html";
+    window.open(
+      "https://reallivesworld.com/reallives/university/pricing",
+      "_blank",
+      "noopener,noreferrer",
+    );
   };
-  //  {Styles.homecontainer}
+
   return (
     <div className={`${Styles.homecontainer} ${Styles[theme]}`}>
       <div className={Styles.first_content_structure}>
@@ -19,16 +23,19 @@ const Home = ({ theme, settheme }) => {
           <div className={Styles.top_heading_container_main}>
             <div className={Styles.wrapper_heading}>
               <h1 className={Styles.title_section_1}>
-                Beyond Traditional Testing, <br /> Measure What Really Matters
+                {t("home.hero.titleLine1")} <br /> {t("home.hero.titleLine2")}
               </h1>
 
               <div className={Styles.image_description}>
-                <img loading="eager" decoding="async" src={waterflow_image} alt="Changemaker Index image"  />
+                <img
+                  loading="eager"
+                  decoding="async"
+                  src={waterflow_image}
+                  alt={t("common.alt.changemakerIndexImage")}
+                />
 
                 <p className={Styles.top_description_title}>
-                  Life simulation–based assessment that tracks 18 critical
-                  <br />
-                  competencies through authentic decision-making, not surveys.
+                  {t("home.hero.description")}
                 </p>
               </div>
             </div>
@@ -36,24 +43,31 @@ const Home = ({ theme, settheme }) => {
 
           <div className={Styles.container_btn}>
             <button className={Styles.redirect_btn} onClick={become_change_btn}>
-              Begin Your Journey of Change
+              {t("home.hero.beginJourney")}
             </button>
 
             <Link className={Styles.text_decoration_none} to="/How-RCMI-Works">
-              <button className={Styles.How_works}>How this works?</button>
+              <button className={Styles.How_works}>
+                {t("home.hero.howThisWorks")}
+              </button>
             </Link>
           </div>
         </div>
 
         <div className={Styles.content_image_right}>
-          <img loading="eager" decoding="async"  className={Styles.image_hight_rem} src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/first-section-image_f9elve.png" alt="Changemaker Index image" />
+          <img
+            loading="eager"
+            decoding="async"
+            className={Styles.image_hight_rem}
+            src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/first-section-image_f9elve.png"
+            alt={t("common.alt.changemakerIndexImage")}
+          />
         </div>
       </div>
 
-      <Featuresindex theme={theme} settheme={settheme}></Featuresindex>
+      <Featuresindex theme={theme} settheme={settheme} />
 
-      <ChangeMakeraction theme={theme} settheme={settheme}></ChangeMakeraction>
-      
+      <ChangeMakeraction theme={theme} settheme={settheme} />
     </div>
   );
 };

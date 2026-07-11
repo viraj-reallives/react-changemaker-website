@@ -5,7 +5,7 @@
 }
 
 .dark .first_university_container {
-  background-color: #121212;
+  background-color: var(--dm-bg);
 }
 
 .dark .btn_top_slider {

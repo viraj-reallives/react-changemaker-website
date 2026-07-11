@@ -1,0 +1,842 @@
+{
+  "portal": {
+    "hero": {
+      "title": "Treten Sie aus Ihrem Leben heraus und hinein in eine Milliarde mehr",
+      "subtitle": "Live | Fühlen | Verstehen | Ändern"
+    },
+    "languages": {
+      "title": "Sprache",
+      "hint": "Wählen Sie Ihre Sprache"
+    },
+    "realLives": {
+      "ariaLabel": "RealLives",
+      "title": "RealLives-Simulationsplattform",
+      "subtitle": "Erleben Sie Leben auf der ganzen Welt",
+      "description": "Treten Sie ein in das Leben von Menschen aus unterschiedlichen Ländern und mit unterschiedlichem Hintergrund.",
+      "descriptionExtended": "Bauen Sie Empathie auf, verstehen Sie globale Systeme und treffen Sie Lebensentscheidungen durch immersive Simulation.",
+      "cta": "Weiter zu RealLives",
+      "features": {
+        "liveALife": "Lebe ein Leben",
+        "realWorldData": "Daten aus der realen Welt",
+        "empathySimulation": "Empathiesimulation"
+      }
+    },
+    "changeMaker": {
+      "ariaLabel": "ChangeMaker Index",
+      "title": "RealLives ChangeMaker Index (RCMI)",
+      "subtitle": "Verwandeln Sie Erkenntnisse in reale Auswirkungen",
+      "description": "Messen und wachsen Sie in 18 veränderlichen Kompetenzen. Denken Sie über Ihre Entscheidungen nach, verstehen Sie deren Auswirkungen und entwickeln Sie Fähigkeiten, die Sie auf zukünftige Karrieren und verantwortungsvolle Führung vorbereiten.",
+      "cta": "Gehen Sie zum RealLives ChangeMaker-Index",
+      "features": {
+        "skills": "FÄHIGKEITEN DES 21. JAHRHUNDERTS",
+        "empathy": "EMPATHIE",
+        "sdg": "SDG gelebte Erfahrung"
+      }
+    },
+    "copyright": "© 2026 RealLives World. Alle Rechte vorbehalten."
+  },
+  "common": {
+    "learnMore": "Erfahren Sie mehr",
+    "back": "Zurück",
+    "goBack": "Geh zurück",
+    "home": "Heim",
+    "alt": {
+      "changemakerIndexImage": "Bild des Changemaker-Index",
+      "logo": "logo",
+      "img": "img",
+      "rcmi": "RCMI",
+      "realLivesFoundation": "RealLives Foundation",
+      "arcadeDemo": "Arcade Demo"
+    },
+    "nav": {
+      "home": "Heim",
+      "certifiedInstitutes": "Zertifizierte Institute",
+      "ourImpact": "Unsere Wirkung",
+      "howRcmiWorks": "So funktioniert RCMI",
+      "getRcmiReport": "Holen Sie sich den RCMI-Bericht"
+    },
+    "logo": {
+      "title": "RealLives ChangeMaker-Index"
+    },
+    "theme": {
+      "switchToDark": "Wechseln Sie in den Dunkelmodus",
+      "switchToLight": "Wechseln Sie in den Lichtmodus"
+    },
+    "footer": {
+      "changeMakerIndex": "ChangeMaker Index",
+      "description": "RCMI befähigt Studierende weltweit, durch immersive Lebenssimulationen Empathie, ethisches Denken und soziale Verantwortung zu entwickeln. Indem sie realistische Szenarien durchspielen und ihre Entscheidungen reflektieren, entwickeln die Schüler die Fähigkeiten und die Denkweise, um sinnvolle, positive Auswirkungen in ihren Gemeinden und darüber hinaus zu erzielen.",
+      "getToKnow": "Lernen Sie es kennen",
+      "aboutRcmi": "Über RCMI",
+      "certifiedInstitutes": "Zertifizierte Institute",
+      "ourImpact": "Unsere Wirkung",
+      "support": "Unterstützung",
+      "contactUs": "Kontaktieren Sie uns"
+    },
+    "notFound": {
+      "title": "Sieht aus, als wärst du verloren",
+      "description": "Die von Ihnen gesuchte Seite ist nicht verfügbar!",
+      "homeLink": "Heim"
+    },
+    "app": {
+      "contentProtected": "⚠️ Der Inhalt ist geschützt"
+    },
+    "globalMap": {
+      "title": "Globale Auswirkungen",
+      "countries": {
+        "usa": "USA",
+        "thailand": "Thailand",
+        "southKorea": "Südkorea",
+        "india": "Indien",
+        "switzerland": "Schweiz",
+        "china": "China",
+        "australia": "Australien",
+        "japan": "Japan"
+      }
+    },
+    "impact": {
+      "impactHome": "Impact Home",
+      "inCollaborationWith": "In Zusammenarbeit mit:",
+      "participants": "Teilnehmer:",
+      "skillsDeveloped": "Fähigkeiten entwickelt",
+      "usedTool": "Verwendetes Werkzeug:",
+      "sdgAligned": "SDGs im Zusammenhang mit diesem Workshop",
+      "objective": "Objektiv",
+      "programOverview": "Programmübersicht",
+      "implementationMethodology": "Implementierung & Methodik",
+      "crossCulturalExchange": "Interkultureller Austausch und Wirkung",
+      "outcomesImpact": "Ergebnisse und Auswirkungen",
+      "studentTestimonial": "Erfahrungsbericht von Studenten",
+      "empowerStudents": "Geben Sie Ihren Schülern globale Perspektiven",
+      "beginChangeMakingJourney": "Beginnen Sie Ihre Reise zur Veränderung",
+      "videoUnsupported": "Ihr Browser unterstützt das Video-Tag nicht."
+    },
+    "cta": {
+      "beginYourJourneyOfChange": "Beginnen Sie Ihre Reise der Veränderung",
+      "howThisWorks": "Wie funktioniert das?",
+      "beginChangeMakerJourney": "Beginnen Sie Ihre ChangeMaker-Reise",
+      "makeDecisionsGrowSkills": "Treffen Sie Entscheidungen, erweitern Sie Ihre Fähigkeiten und erleben Sie, wie Ihre Wirkung zum Leben erweckt wird."
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "Über traditionelle Tests hinaus",
+      "titleLine2": "Messen Sie, was wirklich wichtig ist",
+      "description": "Auf einer Lebenssimulation basierende Bewertung, die 18 kritische Kompetenzen durch authentische Entscheidungsfindung und nicht durch Umfragen verfolgt.",
+      "beginJourney": "Beginnen Sie Ihre Reise der Veränderung",
+      "howThisWorks": "Wie funktioniert das?"
+    }
+  },
+  "features": {
+    "ourImpact": {
+      "title": "Unsere Wirkung",
+      "description": "Entdecken Sie die globale Präsenz der RealLives Foundation durch die Workshops und Veranstaltungen, die wir veranstaltet haben, um Veränderungen anzuregen.",
+      "descriptionLineBreak": "Entdecken Sie die globale Präsenz der RealLives Foundation in den Workshops und",
+      "descriptionLineBreak2": "Veranstaltungen, die wir veranstaltet haben, um Veränderungen anzuregen.",
+      "exploreMore": "Entdecken Sie weitere Impact Stories"
+    },
+    "changemakerFeatures": {
+      "title": "RealLives ChangeMaker-Indexfunktionen",
+      "description": "Entdecken Sie, wie der ChangeMaker-Index Ihre Lebensentscheidungen in Erkenntnisse umwandelt, Wachstum verfolgt, Entscheidungen leitet und Ihr Potenzial als globaler ChangeMaker freisetzt.",
+      "descriptionLineBreak": "Entdecken Sie, wie der ChangeMaker Index Ihre Lebensentscheidungen verändert",
+      "descriptionLineBreak2": "Einblicke gewinnen, Wachstum verfolgen, Entscheidungen leiten und Ihr Potenzial als globaler ChangeMaker freisetzen."
+    },
+    "impactCards": [
+      {
+        "title": "ETH Zürich, Schweiz",
+        "description": "Im RealLives ChangeMaking Workshop erkundeten die Schüler globale Lebensszenarien und bauten Empathie, ethische Führung und nachhaltige Problemlösungsfähigkeiten auf.",
+        "link": "/our-impact/eth-university"
+      },
+      {
+        "title": "IIT Bombay, India",
+        "description": "Durch simulationsbasierte Erfahrungen verknüpften die Schüler Technologie, Gesellschaft und Werte und lernten, wie empathiegesteuerte Entscheidungen soziale Auswirkungen haben können.",
+        "link": "/our-impact/iit-bombay"
+      },
+      {
+        "title": "Navamindradhiraj-Universität, Thailand",
+        "description": "Die Schüler nahmen an einem umfassenden ChangeMaker-Programm teil und gewannen Einblicke in soziale Verantwortung, ethische Entscheidungsfindung und die Auswirkungen von Entscheidungen auf Gemeinschaften.",
+        "link": "/our-impact/navamindradhiraj-university"
+      }
+    ],
+    "featureCards": [
+      {
+        "title": "Schüler simulieren",
+        "description": "Die Schüler tauchen in ein vielfältiges Leben in der realen Welt ein und erleben Herausforderungen, Chancen und kulturelle Kontexte aus erster Hand. Sie lernen die Welt nicht nur kennen, sondern erleben sie durch immersive Simulationen."
+      },
+      {
+        "title": "Entscheidungen nachverfolgt",
+        "description": "Jede Entscheidung – ob klein oder groß – wird aufgezeichnet und analysiert. Dies gibt den Schülern einen klaren Überblick darüber, wie Entscheidungen die Ergebnisse beeinflussen, und hilft ihnen, Verantwortung, Ethik und langfristige Auswirkungen zu verstehen."
+      },
+      {
+        "title": "Erkenntnisse geliefert",
+        "description": "Das System wandelt die Entscheidungen der Schüler automatisch in umfassende Erkenntnisse um und hebt Denkmuster, Stärken und Wachstumsbereiche hervor. Pädagogen erhalten einen sofortigen Einblick in die Denkweise jedes Lernenden."
+      },
+      {
+        "title": "KI-Anleitung",
+        "description": "Die integrierte KI coacht die Schüler beim Spielen und gibt Anstöße, Überlegungen und maßgeschneiderte Vorschläge. Es unterstützt ein tieferes Selbstbewusstsein, kritisches Denken und bewusste Entscheidungsfindung"
+      },
+      {
+        "title": "Umsetzbare Berichte",
+        "description": "Leicht verständliche Dashboards fassen alle Lernergebnisse und Kompetenzen zusammen. Pädagogen erhalten detaillierte, gebrauchsfertige Berichte, die sie für Feedback, Beurteilung und personalisiertes Mentoring nutzen können."
+      },
+      {
+        "title": "Persönliches Wachstum",
+        "description": "Die Schüler entdecken, wer sie als Entscheidungsträger sind. Durch wiederholte Reflexion und erfahrungsbasiertes Lernen bauen sie Belastbarkeit, Empathie, globales Bewusstsein und Selbstvertrauen auf."
+      }
+    ]
+  },
+  "changeMakerAction": {
+    "title": "Sehen Sie den ChangeMaker-Index in Aktion",
+    "description": "Entdecken Sie eine interaktive Demo des RCMI, um zu verstehen, wie es funktioniert, was es misst und wie es die Schülerentwicklung unterstützt.",
+    "descriptionLineBreak": "Entdecken Sie eine interaktive Demo des RCMI, um zu verstehen, wie es funktioniert, was es misst,",
+    "descriptionLineBreak2": "und wie es das Studentenwachstum unterstützt."
+  },
+  "benefits": {
+    "title": "Vorteile, die Ihre Zukunft gestalten",
+    "description": "RealLives hilft Ihnen dabei, die sozialen, emotionalen und ethischen Fähigkeiten zu entwickeln, die im Leben am wichtigsten sind. Wachsen Sie mit Selbstvertrauen, während Sie lernen, die Herausforderungen der realen Welt zielgerichtet zu meistern.",
+    "cards": [
+      {
+        "title": "Befähigen Sie sich, über die akademische Welt hinaus zu wachsen",
+        "description": "RealLives hilft Ihnen, über Erfolge und Testergebnisse hinauszugehen, indem es soziales, emotionales und ethisches Wachstum sichtbar und messbar macht. Durch immersive Lebenssimulationen erleben Sie reale Situationen, die Empathie, Belastbarkeit und verantwortungsvolle Entscheidungsfindung fördern – allesamt Schlüsselfaktoren für ein erfolgreiches Leben und Arbeiten."
+      },
+      {
+        "title": "Erhalten Sie tiefe Einblicke in Ihr Wachstum",
+        "description": "Der ChangeMaker-Index wandelt jede Entscheidung im Spiel in aussagekräftige Erkenntnisse über Ihre Denkweise und Ihr Verhalten um. Es hilft Ihnen zu verstehen, wie Sie Herausforderungen angehen, mit anderen zusammenarbeiten und zielgerichtet führen, und unterstützt so das Selbstbewusstsein und die kontinuierliche persönliche Entwicklung."
+      },
+      {
+        "title": "Bauen Sie ein Leben voller Reflexion und Zielstrebigkeit auf",
+        "description": "Indem RealLives die Auswirkungen Ihrer Entscheidungen offenlegt, ermutigt es Sie, gründlich nachzudenken, verantwortungsbewusst zu handeln und bewusst zu wachsen. Es fördert eine globale Gemeinschaft von ChangeMakern, einfühlsamen, selbstbewussten Menschen, die bereit sind, zielgerichtet zu führen und positive Veränderungen in der Welt herbeizuführen."
+      },
+      {
+        "title": "Nahtlose Integration mit Ihren Zielen",
+        "description": "RealLives lässt sich mühelos an persönliche Wachstumspfade, berufliche Entwicklungspfade und lebenslange Lernziele anpassen. Sie können Ihren Fortschritt in 18 ChangeMaker-Kompetenzen verfolgen und Qualitäten wie Mitgefühl, Integrität und Anpassungsfähigkeit in messbare Wachstumsmeilensteine ​​umwandeln."
+      }
+    ]
+  },
+  "pages": {
+    "getRcmiReport": {
+      "eyebrow": "RealLives ChangeMaker-Index",
+      "heroTitle": "Ihr personalisierter RCMI-Bericht",
+      "heroSubtitle": "Der RealLives ChangeMaker Index (RCMI) misst, wie Sie Empathie, globales Bewusstsein und Entscheidungsfindung durch immersive Lebenssimulationen entwickeln – und übersetzt Ihr Gameplay in eine strukturierte Bewertung des Veränderungspotenzials.",
+      "heroPills": [
+        "18 Kompetenzen",
+        "5-teiliger Bericht",
+        "Datengesteuerte Erkenntnisse"
+      ],
+      "timeline": {
+        "heading": "So erhalten Sie Ihren Bericht",
+        "lead": "Registrieren Sie sich, spielen Sie drei Leben und schalten Sie Ihr vollständiges ChangeMaker-Profil frei.",
+        "steps": [
+          {
+            "tag": "Schritt 1",
+            "title": "Registrieren Sie sich auf der RealLives-Plattform",
+            "description": "Erstellen Sie Ihr Konto auf der Simulationsplattform RealLives. Ihre Registrierung bleibt aktiv, sodass Sie jederzeit zurückkehren können, um Ihre Reise fortzusetzen."
+          },
+          {
+            "tag": "Schritt 2",
+            "title": "Spielen Sie 3 vollständige Leben in der Simulation",
+            "description": "Erleben Sie drei komplette Lebensreisen durch verschiedene Länder, Geschlechter und Wirtschaftsschichten – und bauen Sie das Einfühlungsvermögen und das Kontextbewusstsein auf, die Ihrem Bericht zugrunde liegen."
+          },
+          {
+            "tag": "Schritt 3",
+            "title": "Ihre Entscheidungen formen 18 Kompetenzen",
+            "description": "Im Gegensatz zu Umfragen, bei denen gefragt wird, was Sie Ihrer Meinung nach tun würden, beobachtet RealLives, was Sie tatsächlich wählen. Jede Entscheidung wird in Echtzeit analysiert und auf 18 ChangeMaker-Kompetenzen abgebildet.",
+            "highlight": true
+          },
+          {
+            "tag": "Schritt 4",
+            "title": "Erhalten Sie Ihren personalisierten RCMI-Bericht",
+            "description": "Ihr RealLives ChangeMaker Index-Bericht wird erstellt – eine klare, datengesteuerte Aufschlüsselung Ihrer Punktzahl, Ihres Stadiums, Ihrer Stärken, Wachstumsbereiche und Ihres personalisierten Wegs nach vorne."
+          }
+        ]
+      },
+      "sampleReport": {
+        "cta": "Beispielbericht anzeigen"
+      },
+      "journey": {
+        "label": "Was Sie erhalten",
+        "heading": "So funktioniert Ihr Bericht",
+        "lead": "Ihr Bericht ist eine fünfteilige Reise vom Verständnis Ihres Profils bis zur Planung Ihres weiteren Weges.",
+        "partPrefix": "Teil",
+        "parts": [
+          {
+            "id": "Profil",
+            "part": "01",
+            "title": "Ihr Profil",
+            "items": [
+              "ChangeMaker-Übersicht",
+              "Kompetenzrahmen",
+              "Radardiagramm und Ergebnisse",
+              "Ihre ChangeMaker-Bühne"
+            ]
+          },
+          {
+            "id": "Kontext",
+            "part": "02",
+            "title": "Ihr Kontext",
+            "items": [
+              "Länderlandschaft und Herausforderungen",
+              "Schweregrad- und Risikoüberlegungen"
+            ]
+          },
+          {
+            "id": "Stärken",
+            "part": "03",
+            "title": "Stärken und Lücken",
+            "items": [
+              "SWOT-Analyse",
+              "Nächste Schritte für Wachstum"
+            ]
+          },
+          {
+            "id": "Weg",
+            "part": "04",
+            "title": "Dein Weg",
+            "items": [
+              "Umfassender ChangeMaking-Pfad",
+              "Länderspezifischer Pfad",
+              "Personalisierter Pfad"
+            ]
+          },
+          {
+            "id": "nach vorne",
+            "part": "05",
+            "title": "Reise vorwärts",
+            "items": [
+              "Abschließende Zusammenfassung und Empfehlungen",
+              "Ihre Reise nach vorne"
+            ]
+          }
+        ]
+      },
+      "preview": {
+        "label": "Berichtsvorschau",
+        "heading": "Sehen Sie, was drin ist",
+        "lead": "Ein umfassender, visueller Bericht, der aus Ihren Simulationsdaten erstellt wird – Ergebnisse, Grafiken, Phasen und personalisierte Empfehlungen.",
+        "images": [
+          {
+            "alt": "Berichtsabdeckung mit ChangeMaker-Stufe und stärksten Kompetenzen",
+            "caption": "Ihr personalisierter Berichtsumschlag"
+          },
+          {
+            "alt": "ChangeMaker-Übersicht mit Score- und Cluster-Aufschlüsselung",
+            "caption": "ChangeMaker-Übersicht und Cluster-Scores"
+          },
+          {
+            "alt": "Radardiagramm von 18 Kompetenzen",
+            "caption": "18-Kompetenz-Radardiagramm"
+          },
+          {
+            "alt": "Fortschritt der ChangeMaker-Phase",
+            "caption": "Ihre ChangeMaker-Bühne"
+          }
+        ]
+      },
+      "about": {
+        "rcmiTitle": "Über RealLives ChangeMaker Index",
+        "rcmiText": "RCMI analysiert die Erfahrungen der Spieler in verschiedenen sozioökonomischen und kulturellen Kontexten, um aussagekräftige Erkenntnisse zu gewinnen und das Gameplay in eine strukturierte Bewertung des Veränderungspotenzials und der Ausrichtung auf soziale Auswirkungen zu übersetzen.",
+        "foundationTitle": "Über die RealLives Foundation",
+        "foundationText": "Die RealLives Foundation fördert Empathie, globales Bewusstsein und Fähigkeiten zur Veränderung durch erfahrungsbasiertes Lernen. Sie hilft Einzelpersonen dabei, vielfältige menschliche Erfahrungen zu erkunden und Maßnahmen für eine integrativere Welt anzuregen."
+      },
+      "competency": {
+        "label": "Kompetenzrahmen",
+        "heading": "18 Kompetenzen in 4 Clustern",
+        "lead": "Jeder Cluster spiegelt eine bestimmte Dimension des Wandels wider, gemessen an den Entscheidungen, die Sie in der Simulation treffen.",
+        "clusters": [
+          {
+            "id": "persönlich",
+            "title": "Persönlich",
+            "items": [
+              {
+                "name": "Selbstbewusstsein",
+                "desc": "Kennen Sie Ihre Stärken und Schwächen"
+              },
+              {
+                "name": "Widerstandsfähigkeit",
+                "desc": "Erholen Sie sich von Rückschlägen"
+              },
+              {
+                "name": "Anpassungsfähigkeit",
+                "desc": "Passen Sie sich effektiv an Veränderungen an"
+              },
+              {
+                "name": "Beharrlichkeit",
+                "desc": "Machen Sie trotz Herausforderungen weiter"
+              },
+              {
+                "name": "Emotionale Intelligenz",
+                "desc": "Emotionen effektiv verwalten"
+              }
+            ]
+          },
+          {
+            "id": "strategisch",
+            "title": "Strategisches Denken",
+            "items": [
+              {
+                "name": "Visionäres Denken",
+                "desc": "Stellen Sie sich eine bessere Zukunft vor"
+              },
+              {
+                "name": "Kreativität und Innovation",
+                "desc": "Generieren Sie neue Ideen"
+              },
+              {
+                "name": "Problemlösung",
+                "desc": "Finden Sie wirksame Lösungen"
+              },
+              {
+                "name": "Initiative",
+                "desc": "Handeln Sie unaufgefordert"
+              },
+              {
+                "name": "Risikobereitschaft",
+                "desc": "Probieren Sie gerne neue Dinge aus"
+              },
+              {
+                "name": "Kritisches Denken",
+                "desc": "Analysieren Sie Situationen sorgfältig"
+              }
+            ]
+          },
+          {
+            "id": "zwischenmenschlich",
+            "title": "Zwischenmenschlich",
+            "items": [
+              {
+                "name": "Empathie",
+                "desc": "Verstehe, wie andere sich fühlen"
+              },
+              {
+                "name": "Kommunikationsfähigkeit",
+                "desc": "Teilen Sie Ideen klar mit"
+              },
+              {
+                "name": "Zusammenarbeit",
+                "desc": "Arbeiten Sie gut mit anderen zusammen"
+              },
+              {
+                "name": "Führung",
+                "desc": "Menschen anleiten und inspirieren"
+              },
+              {
+                "name": "Soziales Bewusstsein",
+                "desc": "Lesen Sie soziale Situationen"
+              }
+            ]
+          },
+          {
+            "id": "kontextbezogen",
+            "title": "Kontextbewusstsein",
+            "items": [
+              {
+                "name": "Globales Bewusstsein",
+                "desc": "Weltprobleme verstehen"
+              },
+              {
+                "name": "Ethische Verantwortung",
+                "desc": "Tun Sie, was für die Gesellschaft richtig ist"
+              }
+            ]
+          }
+        ],
+        "stages": {
+          "heading": "Ihre ChangeMaker-Bühne",
+          "lead": "Durchlaufen Sie fünf Phasen, während sich Ihr Kompetenzprofil entwickelt.",
+          "quote": "Wachstum ist der Beweis für Beständigkeit.",
+          "items": [
+            {
+              "name": "Samen",
+              "range": "0 – 20",
+              "description": "Entdecken Sie Ihr Potenzial"
+            },
+            {
+              "name": "Sprießen",
+              "range": "21 – 40",
+              "description": "Grundlegende Fähigkeiten entwickeln"
+            },
+            {
+              "name": "Schössling",
+              "range": "41 – 60",
+              "description": "Wachsen mit einem Mix aus Stärken"
+            },
+            {
+              "name": "Anlage",
+              "range": "61 – 80",
+              "description": "Solides und ausgewogenes Profil"
+            },
+            {
+              "name": "Obst",
+              "range": "81 – 100",
+              "description": "Gedeihen und Wirkung erzielen"
+            }
+          ]
+        }
+      },
+      "footer": {
+        "title": "Bereit für Ihren RCMI-Bericht?",
+        "subtitle": "Registrieren Sie sich, spielen Sie drei Leben und entdecken Sie Ihren ChangeMaker-Score, Ihre Stufe und Ihren personalisierten Weg.",
+        "cta": "Holen Sie sich den RCMI-Bericht"
+      }
+    },
+    "rcmiWorks": {
+      "whatIsRcmi": {
+        "title": "Was ist RCMI?",
+        "paragraphs": [
+          "Der RealLives ChangeMaker Index (RCMI) ist ein revolutionäres kompetenzbasiertes Bewertungstool, das das Potenzial einer Person misst, positive Auswirkungen auf ihr persönliches und berufliches Leben zu haben.",
+          "Im Gegensatz zu herkömmlichen Beurteilungen, die sich ausschließlich auf akademisches Wissen oder technische Fähigkeiten konzentrieren, bietet RCMI eine ganzheitliche Bewertung kritischer Kompetenzen, die für den Erfolg im 21. Jahrhundert unerlässlich sind."
+        ]
+      },
+      "keyFeatures": {
+        "title": "Hauptmerkmale",
+        "items": [
+          {
+            "label": "Unterstützt von RealLives Simulation:",
+            "text": "Der RealLives ChangeMaker Index (RCMI) ist ein revolutionäres kompetenzbasiertes Bewertungstool, das das Potenzial einer Person misst, positive Auswirkungen auf ihr persönliches und berufliches Leben zu haben."
+          },
+          {
+            "label": "KI-gestützte Score-Generierung:",
+            "text": "Fortschrittliche Algorithmen analysieren die Leistung aller Kompetenzen, um genaue, personalisierte Erkenntnisse zu generieren."
+          },
+          {
+            "label": "Globale Anerkennung:",
+            "text": "Entwickelt in Zusammenarbeit mit führenden Institutionen, darunter der Korea University"
+          }
+        ]
+      },
+      "science": {
+        "title": "Die Wissenschaft hinter RCMI",
+        "intro": "Der RCMI-Index basiert auf einer soliden Grundlage aus psychometrischer Forschung, Bildungstheorie und datengesteuerten Erkenntnissen. Der Bewertungsrahmen wurde in Zusammenarbeit zwischen der RealLives Foundation und der Korea University entwickelt und vereint Fachwissen in folgenden Bereichen:",
+        "items": [
+          {
+            "label": "Kompetenzbasierte Ausbildung:",
+            "text": "Lernen durch realistische Simulation und Entscheidungsfindung"
+          },
+          {
+            "label": "Kompetenzbasierte Ausbildung:",
+            "text": "Konzentrieren Sie sich auf Fähigkeiten und Fertigkeiten und nicht nur auf Wissen"
+          },
+          {
+            "label": "Soziale Wirkungsforschung:",
+            "text": "Die Kompetenzen verstehen, die sinnvolle Veränderungen vorantreiben"
+          },
+          {
+            "label": "Positive Psychologie:",
+            "text": "Schwerpunkt auf stärkenbasierter Entwicklung"
+          }
+        ],
+        "closing": "Die RealLives-Simulation bietet eine einzigartige Beurteilungsumgebung, in der Einzelpersonen Entscheidungen treffen, die sich auf ein simuliertes Leben auswirken, und ihre natürlichen Kompetenzen in Bereichen wie Problemlösung, Empathie, ethisches Denken und globales Bewusstsein offenbaren."
+      },
+      "howItWorks": {
+        "title": "Wie funktioniert der RealLives ChangeMaker Index?",
+        "steps": [
+          {
+            "title": "Schritt 1: Eine echte Entscheidung treffen",
+            "paragraphs": [
+              "Jeder Spieler steht vor lebensähnlichen Situationen und muss entscheiden, was er tun möchte. Diese Entscheidungen hängen vom einzigartigen Leben Ihres Charakters ab – seinem familiären Hintergrund, seinem Einkommensniveau, seinem Job und mehr. Genau wie im wirklichen Leben prägt jede Entscheidung, wer du wirst."
+            ]
+          },
+          {
+            "title": "Schritt 2: Kompetenzen messen",
+            "paragraphs": [
+              "Jede Wahl spiegelt unterschiedliche Denkweisen und Fähigkeiten wider. Wenn Sie sich entscheiden, aktualisiert unser System automatisch die Kompetenzen Ihres Charakters basierend auf Ihrer Wahl."
+            ]
+          },
+          {
+            "title": "Schritt 3: Aufbau des ChangeMaker-Index",
+            "paragraphs": [
+              "Nehmen wir an, Sie haben sich für A entschieden: „Machen Sie sich auf die Reise und bringen Sie das Wasser zurück.“ Unser proprietärer Algorithmus analysiert die Absicht und Auswirkung dieser Wahl und aktualisiert Ihren ChangeMaker-Index und zeigt, wie sich Ihr Einfühlungsvermögen, Ihre Belastbarkeit und Ihre Entscheidungsfindung im Laufe der Zeit entwickeln."
+            ]
+          },
+          {
+            "title": "Schritt 4 – Sehen Sie sich Ihr ChangeMaker-Diagramm an",
+            "paragraphs": [
+              "Erleben Sie, wie Ihre persönliche ChangeMaker-Reise lebendig wird! Das ChangeMaker-Diagramm visualisiert Ihren Fortschritt in 18 ChangeMaker-Kompetenzen",
+              "Jede neue Entscheidung aktualisiert Ihr Diagramm und zeigt, wo Sie wachsen und wo Sie als nächstes wachsen können."
+            ]
+          },
+          {
+            "title": "Schritt 5 – Entdecken Sie Ihre ChangeMaker-Cluster",
+            "paragraphs": [
+              "Ihr gesamter ChangeMaker-Score besteht aus vier leistungsstarken Clustern, die jeweils mehrere Kompetenzen kombinieren, die Sie durch Ihre Entscheidungen entwickeln:",
+              {
+                "label": "1 Interne / persönliche Qualitäten –",
+                "text": "Wie Sie als Individuum wachsen: Selbstbewusstsein, Belastbarkeit, Anpassungsfähigkeit, Beharrlichkeit, emotionale Intelligenz"
+              },
+              {
+                "label": "2 Zwischenmenschliche Kompetenzen –",
+                "text": "Wie Sie als Individuum wachsen: Selbstbewusstsein, Belastbarkeit, Anpassungsfähigkeit, Beharrlichkeit, emotionale Intelligenz"
+              },
+              {
+                "label": "3 Strategisches Denken –",
+                "text": "Wie Sie planen, Probleme lösen und Innovationen entwickeln: Visionäres Denken, Kreativität und Innovation, Fähigkeiten zur Problemlösung, Initiative, Risikobereitschaft, kritisches Denken"
+              },
+              {
+                "label": "4 Kontextbewusstsein –",
+                "text": "Wie Sie die Welt verstehen und verantwortungsvoll handeln: Globales Bewusstsein, ethische Verantwortung"
+              },
+              "Zusammen zeigen diese Cluster, wie Ihre Entscheidungen zu persönlichem Wachstum, sozialer Wirkung, strategischen Fähigkeiten und verantwortungsvollem Bürgertum führen – und bieten so einen ganzheitlichen Überblick über Ihr ChangeMaker-Potenzial."
+            ]
+          }
+        ]
+      },
+      "journey": {
+        "title": "Die ChangeMaker-Reise",
+        "subtitle": "Die fünf Phasen der ChangeMaker-Entwicklung",
+        "description": "Der RCMI-Index versetzt Einzelpersonen auf eine Entwicklungsreise mit fünf verschiedenen Phasen, die jeweils ein Maß an Veränderungsfähigkeit darstellen:",
+        "stages": [
+          {
+            "head": "Stufe 1: Saatgut",
+            "quote": "„Ich fange gerade erst an, Ihr Potenzial auszuschöpfen“",
+            "description": "In der Seed-Phase stehen Einzelpersonen ganz am Anfang ihrer Reise zur Veränderung. Sie entdecken ihre Interessen, beginnen ihre Stärken zu verstehen und beginnen, grundlegende Kompetenzen zu entwickeln."
+          },
+          {
+            "head": "Stufe 2: Sprießen",
+            "quote": "„Begonnen mit der Entwicklung grundlegender Fähigkeiten“",
+            "description": "In der Sprout-Phase entwickeln Einzelpersonen aktiv ihre Kompetenzen und beginnen, Wachstum in bestimmten Bereichen zu erkennen. Sie bauen Selbstvertrauen auf und beginnen, Initiative zu ergreifen."
+          },
+          {
+            "head": "Stufe 3: Setzling",
+            "quote": "„Mit einem Mix aus Stärken und Wachstumsbereichen stärker werden“",
+            "description": "In der Sapling-Phase haben Einzelpersonen eine solide Grundlage an Kompetenzen entwickelt, aus denen sich klare Stärken herauskristallisieren. Sie arbeiten aktiv an Bereichen mit Verbesserungspotenzial und nutzen dabei ihre Stärken."
+          },
+          {
+            "head": "Stufe 4: Pflanze",
+            "quote": "„Gut unterwegs, mit einem soliden und ausgewogenen Profil“",
+            "description": "Im Pflanzenstadium gedeihen die Individuen, verzweigen sich und machen ihre Präsenz spürbar. Ihre Arbeit führt zu sichtbaren Veränderungen und ihre Verbindungen tragen dazu bei, dass sich ihre Wirkung weiter ausbreitet. Dies ist die Zeit, das zu schützen, was sie aufgebaut haben."
+          },
+          {
+            "head": "Stufe 5: Obst",
+            "quote": "„Als ChangeMaker erfolgreich sein und sinnvolle Wirkung erzielen“",
+            "description": "In der Fruchtphase befinden sich Einzelpersonen auf dem Höhepunkt ihrer Fähigkeit, Veränderungen herbeizuführen. Sie erzeugen eine bedeutende, nachhaltige Wirkung und inspirieren andere, dasselbe zu tun."
+          }
+        ]
+      },
+      "cta": {
+        "text": "Treffen Sie Entscheidungen, erweitern Sie Ihre Fähigkeiten und erleben Sie, wie Ihre Wirkung zum Leben erweckt wird.",
+        "button": "Beginnen Sie Ihre ChangeMaker-Reise"
+      }
+    },
+    "contact": {
+      "title": "Nehmen Sie Kontakt auf",
+      "success": {
+        "title": "Antwort erfolgreich übermittelt!",
+        "message": "Vielen Dank, dass Sie sich gemeldet haben. Wir werden uns bald mit Ihnen in Verbindung setzen.",
+        "sendAnother": "Schicken Sie noch einen"
+      },
+      "form": {
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "email": "E-Mail-Adresse",
+        "message": "Nachricht",
+        "securityCheck": "Sicherheitskontrolle:",
+        "answerPlaceholder": "Antwort",
+        "sendMessage": "Nachricht senden",
+        "sending": "Senden..."
+      },
+      "errors": {
+        "captchaIncorrect": "Falsches CAPTCHA, bitte versuchen Sie es erneut.",
+        "submissionFailed": "Die Übermittlung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
+        "networkError": "Netzwerkfehler. Überprüfen Sie Ihre Verbindung."
+      },
+      "emailSubject": "Übermittlung eines neuen Kontaktformulars"
+    },
+    "certifiedInstitutes": {
+      "hero": {
+        "titleLine1": "Die RealLives Foundation ist stolz auf die Zertifizierung",
+        "titleLine2": "Die Orchid School Pune als ChangeMaker-Schule"
+      },
+      "dashboard": {
+        "title": "Dashboard des zertifizierten Instituts",
+        "description": "Hier kommen Ihre zertifizierten Institutsinhalte zum Einsatz.",
+        "overallScore": {
+          "title": "Gesamtbewertung von ChangeMaker",
+          "description": "Eine zusammengesetzte Bewertung, die das Einfühlungsvermögen und die Handlungsorientierung der Schüler widerspiegelt.",
+          "value": "81",
+          "suffix": "/100"
+        },
+        "certifiedStudents": {
+          "title": "Anzahl zertifizierter Studierender",
+          "description": "Studierende, die den ChangeMaker-Workshop abgeschlossen und angewandtes Lernen gezeigt haben.",
+          "value": "66",
+          "suffix": "Student"
+        },
+        "drivenBy": {
+          "title": "Angetrieben durch RealLives Simulation",
+          "description": "Die Orchid School Pune ist eine von RealLives zertifizierte ChangeMaker-Schule"
+        },
+        "sdg": {
+          "title": "SDGs werden durch das Programm angesprochen",
+          "description": "3 SDGs werden durch von Studenten geleitete Projekte und Simulationen beeinflusst"
+        },
+        "nep": {
+          "text": "Die Orchid School, Pune erfüllt die erfahrungs- und kompetenzbasierten Lernziele des NEP 2020 durch RealLives.",
+          "textLineBreak": "Die Orchid School, Pune erfüllt die erfahrungs- und kompetenzbasierten Lernziele des NEP 2020 durch RealLives."
+        }
+      },
+      "workshop": {
+        "button": "Workshop-Bilder",
+        "paragraphs": [
+          "Nach dem erfolgreichen Abschluss des Changemaker-Programms an der Orchid School in Pune ist RealLives stolz, die Schule als offizielle Changemaker-Schule zertifizieren zu können. In diesem Jahr beteiligte sich das Programm an 75 Studenten, was zu 10 einzigartigen Social-Business-Pitches und -Bewegungen sowie 75 individuellen Changemaker-Berichten führte, die durchdachte, wirkungsorientierte Ideen vorstellten.",
+          "Dieser Erfolg spiegelt das Engagement der Schule wider, Führungsqualitäten, Empathie und soziale Verantwortung in jungen Köpfen zu fördern."
+        ]
+      },
+      "praise": {
+        "button": "Lobende Worte",
+        "testimonials": [
+          {
+            "quote": "Früher dachte ich, globale Probleme seien zu groß für Studenten wie uns. Das Erleben des Lebens anhand der SDGs hat mir geholfen, die Probleme der Menschen zu verstehen und mir gezeigt, dass selbst kleine Geschäftsideen echte Veränderungen bewirken können",
+            "author": "— Schüler der 11. Klasse"
+          },
+          {
+            "quote": "Ein Leben im Zusammenhang mit den SDGs hat mir geholfen, Empathie zu empfinden und nicht nur Fakten zu lernen. Dadurch wurde unsere Social-Business-Idee bedeutungsvoller, weil wir sie für echte Menschen und nicht für eingebildete Probleme konzipierten.",
+            "author": "— Schüler der 11. Klasse"
+          },
+          {
+            "quote": "Diese Erfahrung hat mir klar gemacht, dass Empathie der erste Schritt zur Veränderung ist. Das Verständnis globaler Herausforderungen hat unserem Team dabei geholfen, eine Geschäftsidee zu entwickeln, die sich auf die Wirkung und nicht nur auf den Gewinn konzentriert.",
+            "author": "— Schüler der 11. Klasse"
+          }
+        ]
+      },
+      "certificate": {
+        "title": "ChangeMaker-Zertifikat an Studierende verliehen"
+      }
+    },
+    "ourImpact": {
+      "slider": {
+        "impact": "Auswirkungen",
+        "description": "der RealLives Foundation auf der ganzen Welt"
+      },
+      "globalStory": {
+        "title": "Unsere Global Impact Story",
+        "description": "RealLives hat in Zusammenarbeit mit führenden Universitäten sechs Workshops in sechs Ländern durchgeführt, um globales, erfahrungsorientiertes Lernen in die Klassenzimmer zu bringen. Die Schüler beschäftigen sich mit realen Szenarien, treffen lebensbestimmende Entscheidungen, erforschen globale Unterschiede und entwickeln Empathie für unterschiedliche menschliche Erfahrungen. Durch die Integration von RealLives bereichern Institutionen ihre Kurse in Soziologie, Wirtschaft und internationalen Beziehungen und stärken gleichzeitig das kritische Denken und die Problemlösungsfähigkeiten der Studierenden. Studierende berichten von einem tieferen Verständnis globaler Probleme und einer stärkeren Verbindung zur Welt jenseits ihrer eigenen Grenzen."
+      },
+      "sectionTitle": "Impact Home",
+      "midSection": {
+        "title": "Jede Entscheidung, die Sie treffen, prägt Ihr Wachstum. Verfolgen Sie Ihre Fähigkeiten, erkunden Sie Ihr Potenzial und sehen Sie, wie Sie in der Praxis etwas bewirken können",
+        "cta": "Beginnen Sie Ihre Reise zur Veränderung"
+      },
+      "bottomCta": {
+        "title": "Treffen Sie Entscheidungen, erweitern Sie Ihre Fähigkeiten und erleben Sie, wie Ihre Wirkung zum Leben erweckt wird.",
+        "cta": "Beginnen Sie Ihre Reise zur Veränderung"
+      },
+      "cards": [
+        {
+          "card_title": "Workshop der ETH Zürich",
+          "card_date": "27 / 06 / 2018",
+          "university_text": "ETH University Zurich, Switzerland",
+          "particepent_title": "Abteilung - Institut für Molekulare Systembiologie",
+          "collaboration_text": "In Zusammenarbeit mit:",
+          "name_card": "Prof. Dr. Ernst Hafen",
+          "number_title": 120,
+          "skill_devloped": "Fähigkeiten entwickelt",
+          "teamwork_title": "Teamarbeit",
+          "intergrity_title": "Integrität und Arbeitsethik",
+          "link": "/our-impact/eth-university"
+        },
+        {
+          "card_title": "Workshop der Navamindradhiraj-Universität",
+          "card_date": "20 / 09 / 2025",
+          "university_text": "Navamindradhiraj University, Bangkok",
+          "particepent_title": "Abteilung - Allgemeine Bildung",
+          "collaboration_text": "In Zusammenarbeit mit:",
+          "name_card": "Prof. Kritanan Pensirisomboon",
+          "number_title": 150,
+          "skill_devloped": "Fähigkeiten entwickelt",
+          "teamwork_title": "Fähigkeiten des 21. Jahrhunderts",
+          "intergrity_title": "Geschäftssinn",
+          "link": "/our-impact/navamindradhiraj-university"
+        },
+        {
+          "card_title": "SDG-Workshop der KyungHee-Universität",
+          "card_date": "29 / 09 / 2025",
+          "university_text": "Kyunghee University, Korea",
+          "particepent_title": "Abteilung - Sozialwissenschaften",
+          "collaboration_text": "In Zusammenarbeit mit:",
+          "name_card": "Prof. Dr. Utak Chang",
+          "number_title": 30,
+          "skill_devloped": "Fähigkeiten entwickelt",
+          "teamwork_title": "SDG-Bewusstsein",
+          "intergrity_title": "ChangeMaking",
+          "Used_Tools": "Empathy Canvas",
+          "link": "/our-impact/kyunghee-university"
+        },
+        {
+          "card_title": "IIT Bombay erforscht SDG 1 durch einen Empathie-Workshop",
+          "card_date": "07 / 11 / 2024",
+          "university_text": "IIT Bombay, India",
+          "particepent_title": "Abteilung - IDC School of Design",
+          "collaboration_text": "In Zusammenarbeit mit:",
+          "name_card": "India HCI 2024",
+          "number_title": 30,
+          "skill_devloped": "Fähigkeiten entwickelt",
+          "teamwork_title": "SDG-Bewusstsein",
+          "intergrity_title": "Soziales Unternehmertum",
+          "link": "/our-impact/iit-bombay"
+        }
+      ]
+    }
+  },
+  "universities": {
+    "eth": {
+      "breadcrumb": "Workshop der ETH Zürich",
+      "university": "ETH University Zurich, Switzerland",
+      "department": "Abteilung - Institut für Molekulare Systembiologie",
+      "collaborator": "Prof. Dr. Ernst Hafen",
+      "skills": [
+        "Teamarbeit",
+        "Integrität und Arbeitsethik"
+      ],
+      "objective": "Entwicklung von interkultureller Empathie und globalem Bewusstsein bei Schülern aus Ländern mit hohem Einkommen, indem ihnen ermöglicht wird, die Lebensumstände in Entwicklungsländern durch RealLives-Simulation zu erleben. Das Programm zielte darauf ab, die perspektivische Kluft zwischen Studierenden aus privilegierten Verhältnissen und globalen Entwicklungsherausforderungen zu überbrücken und gleichzeitig einen sinnvollen interkulturellen Dialog und das Verständnis für die Ziele der Vereinten Nationen für nachhaltige Entwicklung durch erfahrungsorientiertes Lernen und strukturierten Peer-to-Peer-Austausch zu fördern.",
+      "programOverview": "Die RealLives Foundation hat sich mit der ETH Zürich zusammengetan, um ein innovatives interkulturelles Empathieprogramm durchzuführen, das Studierenden tiefe Einblicke in die siebzehn Ziele für nachhaltige Entwicklung (SDGs) der Vereinten Nationen verschafft. Durch die Auseinandersetzung mit der textbasierten RealLives-Simulation lernten Schweizer Studierende, sich in Menschen aus anderen Teilen der Welt hineinzuversetzen und gewannen neue Perspektiven auf globale Entwicklungsherausforderungen. Das Programm ermöglichte praktische Erfahrungen bei der Diskussion von SDGs und ihren Auswirkungen auf die reale Welt durch die direkte Zusammenarbeit mit Studierenden aus Entwicklungsländern und schuf so authentische interkulturelle Lernerfahrungen.",
+      "implementation": "Das Programm befasste sich mit einer zentralen Herausforderung: Studierende aus Ländern mit hohem Einkommen wie der Schweiz haben häufig Schwierigkeiten im Zusammenhang mit globalen Herausforderungen, die in den Zielen für nachhaltige Entwicklung der Vereinten Nationen behandelt werden. Die RealLives-Simulation ermöglichte es den Schülern, das Leben zu erleben, wenn sie an zufälligen Orten auf der Erde geboren wurden, wobei jedes simulierte Leben zwischen 30 und 45 Minuten dauerte. Während des rein textbasierten Spiels stießen die Schüler auf reale Daten aus öffentlichen Datenbanken über die ihnen zugewiesenen Länder und lernten so spezifische SDG-Herausforderungen kennen. Sie erlebten, wie sich das Leben um sie herum abspielte, bis sie im Alter von acht Jahren beginnen konnten, unabhängige Entscheidungen zu treffen, und jede Simulation mit dem Verfassen nachdenklicher Nachrufe über ihre gelebten Erfahrungen und Lebensentscheidungen abschloss.",
+      "crossCultural": "Das Programm beinhaltete eine einzigartige Partnerschaft mit der FLAME University in Pune, Indien, die durch Parag Mankeekars Verbindung entstand. Zwanzig ETH-Studenten erlebten das Leben, indem sie in Pune, Indien, geboren wurden, während zwanzig indische Studenten ein simuliertes Leben in Zürich, Schweiz, führten. Nachdem sie drei Leben in den jeweiligen Städten absolviert hatten, organisierte das Programm persönliche Skype-Konferenzen zwischen Schweizer und indischen Studenten, um Erfahrungen und Erkenntnisse auszutauschen. Der Erfolg dieser Perspektiventransformation wurde anhand aufgezeichneter Interviews mit Schweizer Studierenden streng bewertet, die messbare Veränderungen in ihrem Verständnis der globalen Entwicklungsherausforderungen und der interkulturellen Empathieentwicklung zeigten."
+    },
+    "navamindradhiraj": {
+      "breadcrumb": "Navamindradhiraj-Universität Bangkok",
+      "university": "Navamindradhiraj University, Bangkok",
+      "department": "Abteilung - Allgemeine Bildung",
+      "collaborator": "Prof. Kritanan Pensirisomboon",
+      "skills": [
+        "Fähigkeiten des 21. Jahrhunderts",
+        "Geschäftssinn"
+      ],
+      "objective": "Durch erfahrungsorientiertes Lernen sollen einfühlsame Weltbürger entwickelt werden, indem Studenten der Navamindradhiraj-Universität mithilfe von RealLives-Simulationen in die Lage versetzt werden, unterschiedliche Lebensumstände zu erleben, ihre emotionalen Reaktionen durch strukturierte Reflexion zu verarbeiten und ihr neu gewonnenes Einfühlungsvermögen in umsetzbare soziale Geschäftslösungen zu kanalisieren. Das umfassende ChangeMaker-Programm zielte darauf ab, die Lücke zwischen Bewusstsein und Handeln zu schließen und gleichzeitig kritisches Denken über nachhaltige Entwicklungsziele und globale Herausforderungen zu fördern.",
+      "programOverview": "Die RealLives Foundation führte erfolgreich ein umfassendes ChangeMaker-Programm an der Navamindradhiraj-Universität in Bangkok durch, das sich auf nachhaltige Entwicklungsziele und empathiegesteuerte Veränderungsprozesse konzentrierte. Der Workshop entführte Universitätsstudenten in eine immersive Bildungsreise, die Lebenssimulationserfahrungen mit strukturierter Reflexion und unternehmerischem Denken kombinierte. Die Teilnehmer navigierten durch das gesamte RealLives-Ökosystem, erlebten Leben mit unterschiedlichem sozioökonomischem Hintergrund auf der ganzen Welt und entwickelten gleichzeitig messbares Einfühlungsvermögen und Kompetenzen zur Veränderung durch unsere proprietären Bewertungstools.",
+      "implementation": "Das Programm nutzte unsere integrierte Vier-Schritte-Methodik: Die Schüler erlebten zunächst mithilfe der RealLives-Simulation vielfältige globale Leben, verarbeiteten dann ihre emotionalen Reaktionen mithilfe des Empathy Canvas-Frameworks und erstellten anschließend personalisierte ChangeMaker-Indexberichte, in denen ihre Entwicklung in 18 Kompetenzen analysiert wurde. Der Workshop endete damit, dass die Studierenden mithilfe unseres Social Business Canvas tragfähige Social-Business-Lösungen entwickelten und dabei direkt auf die Herausforderungen eingingen, denen sie während ihrer simulierten Lebenserfahrungen begegneten. Dieser erfahrungsorientierte Lernansatz ermöglichte es den Teilnehmern, über das theoretische Verständnis globaler Probleme hinaus praktische, empathiebasierte Lösungen zu entwickeln.",
+      "crossCultural": "Der Workshop zeigte signifikante messbare Ergebnisse in Bezug auf das Engagement der Schüler und die Entwicklung von Empathie. Die Teilnehmer zeigten ein verbessertes Verständnis für globale Ungleichheiten, ein verbessertes kritisches Denken über Herausforderungen der nachhaltigen Entwicklung und eine erhöhte Motivation, Initiativen mit sozialer Wirkung zu verfolgen. Die Studierenden erstellten innovative Social-Business-Vorschläge, die sich mit Themen befassen, die von Bildungsungleichheit bis hin zu nachhaltigem Ressourcenmanagement reichen, und ihr vertieftes Bewusstsein für miteinander verbundene globale Herausforderungen widerspiegeln. Der Erfolg an der Navamindradhiraj-Universität unterstreicht die Wirksamkeit von RealLives bei der Umwandlung akademischen Lernens in umsetzbare Fähigkeiten zur Veränderung in verschiedenen kulturellen und Bildungskontexten.",
+      "testimonial": {
+        "paragraphs": [
+          "Ich bin Panja „Thon Mai“ Sulta Mujdatin. Durch diese Erfahrung habe ich gelernt, dass sich keiner von uns die Umstände aussucht, in die er hineingeboren wird, ob reich oder arm, wir uns aber immer für Empathie, Freundlichkeit und Inklusion entscheiden können. Das Leben hat seine Höhen und Tiefen, daher ist es wichtig, flexibel und bereit für Veränderungen zu sein.",
+          "Inspiriert durch ein behindertes Familienmitglied entwickelte ich ein soziales Projekt, um das Bewusstsein für Menschen mit Behinderungen zu schärfen. Ich habe vor, Interviewvideos auf TikTok, Instagram und YouTube zu teilen, damit ihre Stimmen und Perspektiven gehört werden. Außerdem werde ich ungenutzte Materialien recyceln und mit behinderten Künstlern zusammenarbeiten, um handgefertigte Produkte herzustellen, die ich im öffentlichen Raum verkaufe und den gesamten Gewinn an eine Stiftung spende.",
+          "Zu meinen Grundprinzipien gehört die Erstellung hochwertiger Inhalte, die informieren und inspirieren, die Anpassung von Ansätzen, um den Komfort und die Privatsphäre jedes Einzelnen zu respektieren, die Wahrung der Konsistenz, um echte langfristige Veränderungen herbeizuführen, und die Förderung der Zusammenarbeit, um sicherzustellen, dass Menschen mit Behinderungen einbezogen und befähigt werden.",
+          "Meine Botschaft an junge Menschen: Jeder ist ein Mensch, behandle alle Menschen gleich."
+        ]
+      }
+    },
+    "kyunghee": {
+      "breadcrumb": "SDG-Workshop der KyungHee-Universität",
+      "skills": [
+        "SDG-Bewusstsein",
+        "ChangeMaking"
+      ],
+      "objective": "Förderung der Weltbürgerschaft und der Empathieentwicklung unter koreanischen Universitätsstudenten durch erfahrungsorientiertes Lernen und interkulturelles Verständnis. Der Workshop zielte darauf ab, die Perspektiven der Studierenden auf globale Herausforderungen und nachhaltige Entwicklung zu erweitern und gleichzeitig ihre Fähigkeit zur empathischen Entscheidungsfindung und Veränderungsfähigkeit durch immersive Lebenssimulationserfahrungen und strukturierte Reflexionsprozesse zu entwickeln.",
+      "programOverview": "Die RealLives Foundation führte einen umfassenden ChangeMaker-Workshop an der Kyung-Hee-Universität in Seoul, Südkorea, durch, organisiert von Prof. Dr. Utak Chang, ehemaliger Direktor des UNESCO APCEIU (Asia-Pacific Center of Education for International Understanding), mit Unterstützung von Prof. Frau Chanmi Kim. Das Programm beteiligte 30 Universitätsstudenten an einem umfassenden Bildungserlebnis, das darauf abzielte, globales Bewusstsein und Empathie mithilfe der Simulationsplattform RealLives zu entwickeln. Diese Zusammenarbeit mit der Bildungsleitung der UNESCO demonstrierte die Ausrichtung von RealLives an internationalen Bildungsstandards und seine Wirksamkeit bei der Förderung des interkulturellen Verständnisses und der Entwicklung einer Weltbürgerschaft.",
+      "implementation": "Der Workshop nutzte den integrierten Bildungsansatz von RealLives und ermöglichte es den Schülern, durch textbasierte Simulationen verschiedene Lebensumstände in verschiedenen Ländern und mit sozioökonomischem Hintergrund zu erleben. Die Teilnehmer navigierten jeweils 30–45 Minuten lang durch mehrere Leben, stießen auf Daten aus der realen Welt und trafen wichtige Lebensentscheidungen, die authentische globale Herausforderungen widerspiegelten. Das Programm beinhaltete eine strukturierte Reflexion durch das Empathy Canvas-Framework, die es den Schülern ermöglichte, ihre emotionalen Reaktionen zu verarbeiten und ein tieferes Verständnis für globale Ungleichheiten zu entwickeln. Die Studierenden erstellten außerdem personalisierte ChangeMaker-Index-Berichte, die messbare Einblicke in ihre Entwicklung in Schlüsselkompetenzen wie Empathie, globales Bewusstsein und Fähigkeiten zum kritischen Denken bieten.",
+      "outcomes": "Der Workshop zeigte ein erhebliches Engagement koreanischer Universitätsstudenten, die ein besseres Verständnis für globale Entwicklungsherausforderungen und ein größeres Einfühlungsvermögen für Menschen mit unterschiedlichem kulturellen und wirtschaftlichen Hintergrund zeigten. Unter der fachkundigen Anleitung von der UNESCO angeschlossenen Pädagogen entwickelten die Schüler umsetzbare Erkenntnisse über nachhaltige Entwicklungsziele und ihre persönliche Rolle als globale Veränderer. Der Erfolg des Programms an der Kyung-Hee-Universität, das von international anerkannten Bildungsleitern unterstützt wird, unterstreicht die Wirksamkeit von RealLives in verschiedenen akademischen Kontexten und sein Potenzial für die Skalierung interkultureller Bildungsinitiativen in Bildungseinrichtungen im asiatisch-pazifischen Raum."
+    },
+    "iitBombay": {
+      "breadcrumb": "IIT Bombay Indien",
+      "university": "IIT Bombay, India",
+      "department": "Abteilung - IDC School of Design",
+      "collaborator": "India HCI 2024",
+      "skills": [
+        "Fähigkeiten des 21. Jahrhunderts",
+        "Geschäftssinn"
+      ],
+      "objective": "Durch erfahrungsorientiertes Lernen sollen einfühlsame Weltbürger entwickelt werden, indem den Studierenden am IIT Bombay mithilfe von RealLives-Simulationen ermöglicht wird, unterschiedliche Lebensumstände zu erleben, ihre emotionalen Reaktionen durch strukturierte Reflexion zu verarbeiten und ihr neu gewonnenes Einfühlungsvermögen in umsetzbare soziale Geschäftslösungen zu kanalisieren. Das umfassende ChangeMaker-Programm zielte darauf ab, die Lücke zwischen Bewusstsein und Handeln zu schließen und gleichzeitig kritisches Denken über nachhaltige Entwicklungsziele und globale Herausforderungen zu fördern.",
+      "programOverview": "Die RealLives Foundation führte am IIT Bombay erfolgreich ein umfassendes ChangeMaker-Programm durch, das sich auf nachhaltige Entwicklungsziele und empathiegesteuerte Veränderungen konzentrierte. Der Workshop entführte Universitätsstudenten in eine immersive Bildungsreise, die Lebenssimulationserfahrungen mit strukturierter Reflexion und unternehmerischem Denken kombinierte. Die Teilnehmer navigierten durch das gesamte RealLives-Ökosystem, erlebten Leben mit unterschiedlichem sozioökonomischem Hintergrund auf der ganzen Welt und entwickelten gleichzeitig messbares Einfühlungsvermögen und Kompetenzen zur Veränderung durch unsere proprietären Bewertungstools.",
+      "implementation": "Das Programm nutzte unsere integrierte Vier-Schritte-Methodik: Die Schüler erlebten zunächst mithilfe der RealLives-Simulation vielfältige globale Leben, verarbeiteten dann ihre emotionalen Reaktionen mithilfe des Empathy Canvas-Frameworks und erstellten anschließend personalisierte ChangeMaker-Indexberichte, in denen ihre Entwicklung in 18 Kompetenzen analysiert wurde. Der Workshop endete damit, dass die Studierenden mithilfe unseres Social Business Canvas tragfähige Social-Business-Lösungen entwickelten und dabei direkt auf die Herausforderungen eingingen, denen sie während ihrer simulierten Lebenserfahrungen begegneten. Dieser erfahrungsorientierte Lernansatz ermöglichte es den Teilnehmern, über das theoretische Verständnis globaler Probleme hinaus praktische, empathiebasierte Lösungen zu entwickeln.",
+      "outcomes": "Der Workshop zeigte signifikante messbare Ergebnisse in Bezug auf das Engagement der Schüler und die Entwicklung von Empathie. Die Teilnehmer zeigten ein verbessertes Verständnis für globale Ungleichheiten, ein verbessertes kritisches Denken über Herausforderungen der nachhaltigen Entwicklung und eine erhöhte Motivation, Initiativen mit sozialer Wirkung zu verfolgen. Die Studierenden erstellten innovative Social-Business-Vorschläge, die sich mit Themen befassen, die von Bildungsungleichheit bis hin zu nachhaltigem Ressourcenmanagement reichen, und ihr vertieftes Bewusstsein für miteinander verbundene globale Herausforderungen widerspiegeln. Der Erfolg am IIT Bombay unterstreicht die Wirksamkeit von RealLives bei der Umwandlung akademischen Lernens in umsetzbare Fähigkeiten zur Veränderung in verschiedenen Kultur- und Bildungskontexten."
+    }
+  }
+}

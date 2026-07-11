@@ -1,0 +1,689 @@
+.portalPage {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  pointer-events: auto !important;
+  opacity: 0.5 !important;
+}
+
+.background_black {
+  background-color: black !important;
+}
+
+.choose_title_starter {
+  font-weight: 400 !important;
+  font-size: 42px !important;
+  color: #ffffff !important;
+}
+
+.explore_title_starter {
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  color: #dddddd !important;
+}
+
+.no_copy_write_title {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  text-align: center !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.grid_cards_style {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  backdrop-filter: blur(3px) !important;
+  background: transparent !important;
+  padding: 1rem !important;
+  border: 1px solid rgba(109, 109, 109, 0.4) !important;
+  min-height: 0 !important;
+  height: 100%;
+}
+
+.head_starter_box {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 153, 173, 0.4) 27.08%,
+    rgba(149, 149, 149, 0.4) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  border-radius: 12px;
+  min-height: 200px;
+  padding: 1.75rem 1rem;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.head_logo_reallives {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.content_overwrite_style {
+  max-width: 63rem !important;
+}
+
+.image_fit_contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+}
+
+.fetures_inner_box {
+  background-color: #ccd7ff !important;
+  color: #0036fd !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  font-size: 11px !important;
+  white-space: normal !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+}
+
+.change_text_changemaker {
+  color: #c2410c !important;
+  background-color: #ffd4bc !important;
+  border: 1px solid rgba(234, 88, 12, 0.22) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  font-size: 11px !important;
+  white-space: normal !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+}
+
+.head_color_changemaker {
+  background: linear-gradient(
+    180deg,
+    rgba(196, 142, 98, 0.32) 0%,
+    rgba(115, 115, 115, 0.4) 100%
+  ) !important;
+  min-height: 200px;
+  padding: 1.75rem 1rem;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.simulation_title_text {
+  font-weight: 700 !important;
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem) !important;
+  color: #f2f2f2 !important;
+  line-height: 1.25 !important;
+}
+
+.simulation_desc_text {
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  color: #618efe !important;
+}
+
+.starter_mid_desc {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 22px !important;
+  color: #e6e6e6 !important;
+}
+
+.button_continue_card {
+  background: #fffafa !important;
+  color: #2e5bff !important;
+  border: 1.5px solid #2e5bff !important;
+  padding: 0.65rem 0.85rem !important;
+  gap: 0.5rem !important;
+  text-align: center !important;
+  white-space: normal !important;
+  line-height: 1.35 !important;
+  min-height: 2.75rem !important;
+  height: auto !important;
+  font-weight: 600 !important;
+}
+
+.title_changemaker_color {
+  color: #fd7c3f !important;
+}
+
+.button_continue_card_changemaker {
+  background: linear-gradient(96.79deg, #e87722 0%, #ea580c 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 0.65rem 0.85rem !important;
+  gap: 0.5rem !important;
+  text-align: center !important;
+  white-space: normal !important;
+  line-height: 1.35 !important;
+  min-height: 2.75rem !important;
+  height: auto !important;
+  font-weight: 600 !important;
+}
+
+
+
+@media(max-width:991px){
+  .card_style_container{
+     grid-template-columns: repeat(2,1fr) !important;
+   }
+     
+   .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+@media(max-width:860px){
+   
+  .card_style_container{
+     grid-template-columns: repeat(2,1fr) !important;
+   }
+     
+   .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+@media(max-width:800px){
+
+  .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+     
+   .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+@media(max-width:770px){
+
+  .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+     
+   .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+@media(max-width:700px){
+
+  .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+     
+   .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+
+}
+
+@media(max-width:660px){
+
+  .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+     
+   .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+
+}
+
+@media(max-width:600px){
+
+    .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+     
+   .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+
+}
+
+@media(max-width:560px){
+
+   .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+
+  .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+
+  .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 28px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+
+}
+
+@media(max-width:460px){
+
+   .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+
+  .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 23px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+@media(max-width:400px){
+
+  .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+
+  .head_starter_box{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .head_color_changemaker{
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 23px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 78px;
+    height: 78px;
+  }
+
+
+}
+
+@media(max-width:360px){
+
+   .card_style_container{
+     grid-template-columns: 1fr !important;
+   }
+
+  .head_starter_box{
+    min-height: 140px !important;
+    padding: 1rem 0.75rem !important;
+  }
+
+  .head_color_changemaker{
+    min-height: 140px !important;
+    padding: 1rem 0.75rem !important;
+  }
+
+  .button_continue_card_changemaker{
+    font-size: 12px !important;
+    gap: 4px !important;
+  }
+  .button_continue_card{
+    font-size: 13px !important;
+    gap: 4px !important;
+  }
+
+  .choose_title_starter{
+    font-size: 23px !important;
+  }
+
+  .explore_title_starter{
+    font-size: 18px !important;
+  }
+
+  .grid_cards_style{
+    min-height: 0 !important;
+  }
+
+  .head_logo_reallives {
+    width: 78px;
+    height: 78px;
+  }
+
+
+}
+
+
+

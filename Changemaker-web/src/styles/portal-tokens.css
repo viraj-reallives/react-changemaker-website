@@ -1,0 +1,33 @@
+:root {
+  --color-brand-blue-soft: #30a5b7;
+  --color-brand-cyan-bright: #04e0ff;
+  --color-brand-orange: #ea580c;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #333333;
+  --color-text-muted: #555555;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-tertiary: #f3f4f6;
+  --color-bg-overlay-strong: rgba(0, 0, 0, 0.5);
+  --color-bg-glass: rgba(255, 255, 255, 0.08);
+  --color-bg-card-dark: #282828;
+  --color-border-soft: #dbdbdb;
+  --space-6: 0.375rem;
+  --space-8: 0.5rem;
+  --space-10: 0.625rem;
+  --space-12: 0.75rem;
+  --space-14: 0.875rem;
+  --space-16: 1rem;
+  --space-18: 1.125rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-28: 1.75rem;
+  --space-48: 3rem;
+  --radius-3xl: 1rem;
+  --radius-pill: 1.5625rem;
+  --radius-pill-lg: 1.875rem;
+  --shadow-card: 0 0 9px 0 #00000040;
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --transition-fast: 0.2s;
+  --transition-base: 0.3s;
+}

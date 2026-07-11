@@ -6,7 +6,7 @@
 }
 
 .dark.page {
-  background: linear-gradient(180deg, #141414 0%, #1a1a1a 50%, #1e1c18 100%);
+  background: linear-gradient(180deg, var(--dm-bg) 0%, var(--dm-bg-elevated) 50%, #0c0a08 100%);
   color: #f0f0f0;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .dark .backBtn {
-  background: #2a2a2a;
+  background: var(--dm-bg-surface);
   border-color: #444;
   color: #f0f0f0;
 }
@@ -200,7 +200,7 @@
 }
 
 .dark .timelineDot {
-  border-color: #1a1a1a;
+  border-color: var(--dm-bg-elevated);
 }
 
 .timelineIconWrap {
@@ -217,7 +217,7 @@
 }
 
 .dark .timelineIconWrap {
-  background: #2a2a2a;
+  background: var(--dm-bg-surface);
   border-color: #444;
 }
 
@@ -337,8 +337,14 @@
 }
 
 .sampleReportIcon,
-.sampleReportArrow {
-  font-size: 1.15rem !important;
+.sampleReportArrow,
+.inlineIcon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+.inlineIcon {
+  font-size: 1rem;
 }
 
 /* Report journey — 5 parts from PDF */
@@ -466,7 +472,7 @@
 }
 
 .dark .previewCard {
-  background: #262626;
+  background: var(--dm-bg-surface);
   border-color: #3a3a3a;
 }
 
@@ -495,7 +501,7 @@
 
 .dark .previewCaption {
   color: #e0e0e0;
-  background: #2a2a2a;
+  background: var(--dm-bg-surface);
 }
 
 .aboutGrid {
@@ -603,7 +609,7 @@
 }
 
 .dark .competencyCard {
-  background: #262626;
+  background: var(--dm-bg-surface);
   border-color: #3a3a3a;
 }
 
@@ -670,11 +676,11 @@
 }
 
 .dark .clusterItem {
-  background: #2a2a2a;
+  background: var(--dm-bg-surface);
 }
 
 .dark .clusterItem:hover {
-  background: #333333;
+  background: var(--dm-bg-muted);
 }
 
 .compName {
@@ -767,7 +773,7 @@
 }
 
 .dark .stageCard {
-  background: #2a2a2a;
+  background: var(--dm-bg-surface);
   border-color: #3a3a3a;
 }
 

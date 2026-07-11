@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import "./Contact.css";
 
 const Contact = () => {
+  const { t } = useMarketingTranslation();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -16,7 +18,6 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [isSending, setIsSending] = useState(false);
 
-  // Generate math captcha logic (Same as before)
   useEffect(() => {
     generateCaptcha();
   }, []);
@@ -35,26 +36,23 @@ const Contact = () => {
     setFormData({ ...formData, [id]: value });
   };
 
-  // Naya API Submission Function
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // 1. Captcha validation
-    if (parseInt(userCaptchaInput) !== captchaAnswer) {
-      setCaptchaError("Incorrect CAPTCHA, please try again.");
+    if (parseInt(userCaptchaInput, 10) !== captchaAnswer) {
+      setCaptchaError(t("pages.contact.errors.captchaIncorrect"));
       generateCaptcha();
       return;
     }
 
     setIsSending(true);
 
-    // 2. Prepare Data for Web3Forms
     const submissionData = new FormData();
     submissionData.append("access_key", "66469d30-3566-42fe-a853-2d5a0404a9b5");
     submissionData.append("name", `${formData.firstName} ${formData.lastName}`);
     submissionData.append("email", formData.email);
     submissionData.append("message", formData.message);
-    submissionData.append("subject", "New Contact Form Submission");
+    submissionData.append("subject", t("pages.contact.emailSubject"));
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -68,10 +66,10 @@ const Contact = () => {
         setSubmitted(true);
         setFormData({ firstName: "", lastName: "", email: "", message: "" });
       } else {
-        setCaptchaError("Submission failed. Please try again.");
+        setCaptchaError(t("pages.contact.errors.submissionFailed"));
       }
-    } catch (error) {
-      setCaptchaError("Network error. Check your connection.");
+    } catch {
+      setCaptchaError(t("pages.contact.errors.networkError"));
     } finally {
       setIsSending(false);
     }
@@ -87,16 +85,14 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-box">
-        <h2>Get in Touch</h2>
-        
+        <h2>{t("pages.contact.title")}</h2>
 
-        {/* Success Message UI (Same) */}
         {submitted ? (
           <div className="success-message">
             <h3 style={{ color: "#28a745" }}>
-              Response submitted successfully!
+              {t("pages.contact.success.title")}
             </h3>
-            <p>Thank you for reaching out. We will contact you soon.</p>
+            <p>{t("pages.contact.success.message")}</p>
             <button
               onClick={() => {
                 setSubmitted(false);
@@ -109,13 +105,13 @@ const Contact = () => {
                 color: "black",
               }}
             >
-              Send Another
+              {t("pages.contact.success.sendAnother")}
             </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="firstName">First Name</label>
+              <label htmlFor="firstName">{t("pages.contact.form.firstName")}</label>
               <input
                 type="text"
                 id="firstName"
@@ -126,7 +122,7 @@ const Contact = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="lastName">Last Name</label>
+              <label htmlFor="lastName">{t("pages.contact.form.lastName")}</label>
               <input
                 type="text"
                 id="lastName"
@@ -137,7 +133,7 @@ const Contact = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="email">Email Address</label>
+              <label htmlFor="email">{t("pages.contact.form.email")}</label>
               <input
                 type="email"
                 id="email"
@@ -148,7 +144,7 @@ const Contact = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">{t("pages.contact.form.message")}</label>
               <textarea
                 id="message"
                 value={formData.message}
@@ -160,14 +156,15 @@ const Contact = () => {
 
             <div className="form-group">
               <label>
-                Security Check: <strong>{captchaQuestion}</strong>
+                {t("pages.contact.form.securityCheck")}{" "}
+                <strong>{captchaQuestion}</strong>
               </label>
               <div className="captcha-input-container">
                 <input
                   type="number"
                   value={userCaptchaInput}
                   onChange={(e) => setUserCaptchaInput(e.target.value)}
-                  placeholder="Answer"
+                  placeholder={t("pages.contact.form.answerPlaceholder")}
                   required
                 />
                 <button
@@ -198,7 +195,9 @@ const Contact = () => {
                 cursor: isFormValid && !isSending ? "pointer" : "not-allowed",
               }}
             >
-              {isSending ? "Sending..." : "Send Message"}
+              {isSending
+                ? t("pages.contact.form.sending")
+                : t("pages.contact.form.sendMessage")}
             </button>
           </form>
         )}

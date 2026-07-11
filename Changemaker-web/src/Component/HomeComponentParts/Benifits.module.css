@@ -4,7 +4,7 @@
 }
 
 .dark.Benfits_container {
-  background-color: #222222;
+  background-color: var(--dm-bg-surface);
 }
 
 .image_width {
@@ -14,7 +14,7 @@
 }
 
 .dark.benifites_content_container {
-  background-color: #121212;
+  background-color: var(--dm-bg);
 }
 
 .benifites_content_container {
@@ -76,7 +76,7 @@
 }
 
 .dark.changemaker_grid_cards {
-  background-color: #222222;
+  background-color: var(--dm-bg-surface);
   color: white;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .dark.head_changer_tag {
-  background-color: #474543;
+  background-color: var(--dm-bg-muted);
 }
 
 .dark.header_title_side_text {

@@ -1,192 +1,42 @@
-// import { useState, useEffect, useCallback,Navigate  } from "react";
-// import { Routes, Route } from "react-router-dom";
-// import Layout from "./Component/Layout";
-// import Home from "./Component/Pages/Home";
-// import Certifiedinstitutes from "./Component/Pages/Certifiedinstitutes";
-// import Ourimpact from "./Component/Pages/Ourimpact";
-// import Rcmiworks from "./Component/Pages/Rcmiworks";
-// import Contact from "./Component/Pages/Contact";
-// import NotFound from "./Component/Not-Founnd-page/NotFound";
-// import "./App.css";
-// import ScrollTop from "./ScrollTop/ScrollTop";
-// import University from "./Component/HomeComponentParts/University";
-// import Navamindradhiraj_University from "./Component/HomeComponentParts/Navamindradhiraj_University";
-// import KyungHee_University from "./Component/HomeComponentParts/KyungHee_University";
-// import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
-// import "./Component/Global_css/Global.css";
-// import Starter from "./Starter";
-
-// const App = () => {
-
-//   const [showAlert, setShowAlert] = useState(false);
-
-//   const triggerAlert = useCallback(() => {
-//     setShowAlert(true);
-
-//     setTimeout(() => setShowAlert(false), 2000);
-//   }, []);
-
-//   useEffect(() => {
-
-//     const handleContextMenu = (e) => {
-//       const isMedia =
-//         e.target.tagName === "IMG" ||
-//         e.target.tagName === "VIDEO" ||
-//         e.target.closest("img") ||
-//         e.target.closest("video");
-
-//       if (isMedia) {
-//         e.preventDefault();
-//         triggerAlert();
-//       }
-//     };
-
-//     const handleKeyDown = (e) => {
-//       if (
-//         e.keyCode === 123 ||
-//         (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) ||
-//         (e.ctrlKey && e.keyCode === 85)
-//       ) {
-//         e.preventDefault();
-//         triggerAlert();
-//       }
-//     };
-
-//     document.addEventListener("contextmenu", handleContextMenu);
-//     document.addEventListener("keydown", handleKeyDown);
-
-//     return () => {
-//       document.removeEventListener("contextmenu", handleContextMenu);
-//       document.removeEventListener("keydown", handleKeyDown);
-//     };
-//   }, [triggerAlert]);
-
-//   // Not copy image video logic
-
-//   // const [theme, settheme] = useState("light");
-
-//   const [theme, settheme] = useState(
-//     () => localStorage.getItem("user-theme") || "light",
-//   );
-
-//   useEffect(() => {
-//     localStorage.setItem("user-theme", theme);
-//     document.body.className = theme;
-//   }, [theme]);
-
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     setTimeout(() => setLoading(false), 1000);
-//   }, []);
-
-//   if (loading) {
-//     return (
-//       <div className={`simple_loader ${theme}`}>
-//         <div className="loading"></div>
-//       </div>
-//     );
-//   }
-
-//   return (
-
-//     <div className={`container ${theme}`}>
-
-//       {showAlert && (
-//         <div className="custom-protection-alert">
-//           <div className="alert-content">
-//             <span>⚠️ Content is Protected</span>
-//           </div>
-//         </div>
-//       )}
-
-//       <ScrollTop></ScrollTop>
-
-//       <Routes>
-
-//         <Route path="/" element={<Layout theme={theme} settheme={settheme} />}>
-
-//           <Route index element={<Home theme={theme} settheme={settheme} />} />
-
-//           <Route index element={<Starter theme={theme} settheme={settheme} />} />
-
-//            <Route
-//             path="/"
-//             element={<Starter theme={theme} settheme={settheme} />}
-//           />
-
-//           <Route
-//             path="home"
-//             element={<Home theme={theme} settheme={settheme} />}
-//           />
-
-//           <Route
-//             path="certified-institutes"
-//             element={<Certifiedinstitutes theme={theme} settheme={settheme} />}
-//           />
-
-//           <Route
-//             path="our-impact"
-//             element={<Ourimpact theme={theme} settheme={settheme} />}
-//           />
-
-//           <Route
-//             path="our-impact/eth-university"
-//             element={<University theme={theme} />}
-//           />
-//           <Route
-//             path="our-impact/navamindradhiraj-university"
-//             element={<Navamindradhiraj_University theme={theme} />}
-//           />
-//           <Route
-//             path="our-impact/kyunghee-university"
-//             element={<KyungHee_University theme={theme} />}
-//           />
-//           <Route
-//             path="our-impact/iit-bombay"
-//             element={<IIT_Bombay theme={theme} />}
-//           />
-
-//           <Route path="how-rcmi-works" element={<Rcmiworks theme={theme} />} />
-//           <Route
-//             path="contact"
-//             element={<Contact theme={theme} settheme={settheme} />}
-//           />
-
-//           <Route
-//             path="*"
-//             element={<NotFound theme={theme} settheme={settheme} />}
-//           />
-//         </Route>
-
-//       </Routes>
-
-//     </div>
-//   );
-// };
-
-// export default App;
-
-import { useState, useEffect, useCallback } from "react";
+import { lazy, Suspense, useState, useEffect, useCallback } from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./Component/Layout";
-import Home from "./Component/Pages/Home";
-import Certifiedinstitutes from "./Component/Pages/Certifiedinstitutes";
-import Ourimpact from "./Component/Pages/Ourimpact";
-import Rcmiworks from "./Component/Pages/Rcmiworks";
-import Contact from "./Component/Pages/Contact";
-import GetRcmiReport from "./Component/Pages/GetRcmiReport";
-import NotFound from "./Component/Not-Founnd-page/NotFound";
 import "./App.css";
 import ScrollTop from "./ScrollTop/ScrollTop";
-import University from "./Component/HomeComponentParts/University";
-import Navamindradhiraj_University from "./Component/HomeComponentParts/Navamindradhiraj_University";
-import KyungHee_University from "./Component/HomeComponentParts/KyungHee_University";
-import IIT_Bombay from "./Component/HomeComponentParts/IIT_Bombay";
 import "./Component/Global_css/Global.css";
-import Starter from "./Starter";
+import { useMarketingTranslation } from "./context/MarketingLocaleContext";
+
+const Starter = lazy(() => import("./Starter"));
+const Layout = lazy(() => import("./Component/Layout"));
+const Home = lazy(() => import("./Component/Pages/Home"));
+const Certifiedinstitutes = lazy(() =>
+  import("./Component/Pages/Certifiedinstitutes"),
+);
+const Ourimpact = lazy(() => import("./Component/Pages/Ourimpact"));
+const Rcmiworks = lazy(() => import("./Component/Pages/Rcmiworks"));
+const Contact = lazy(() => import("./Component/Pages/Contact"));
+const GetRcmiReport = lazy(() => import("./Component/Pages/GetRcmiReport"));
+const NotFound = lazy(() => import("./Component/Not-Founnd-page/NotFound"));
+const University = lazy(() =>
+  import("./Component/HomeComponentParts/University"),
+);
+const Navamindradhiraj_University = lazy(() =>
+  import("./Component/HomeComponentParts/Navamindradhiraj_University"),
+);
+const KyungHee_University = lazy(() =>
+  import("./Component/HomeComponentParts/KyungHee_University"),
+);
+const IIT_Bombay = lazy(() =>
+  import("./Component/HomeComponentParts/IIT_Bombay"),
+);
+
+const PageFallback = () => (
+  <div className="simple_loader light" aria-hidden="true">
+    <div className="loading" />
+  </div>
+);
 
 const App = () => {
+  const { t } = useMarketingTranslation();
   const [showAlert, setShowAlert] = useState(false);
 
   const triggerAlert = useCallback(() => {
@@ -228,7 +78,6 @@ const App = () => {
     };
   }, [triggerAlert]);
 
-  // Theme
   const [theme, settheme] = useState(
     () => localStorage.getItem("user-theme") || "light",
   );
@@ -238,103 +87,82 @@ const App = () => {
     document.body.className = theme;
   }, [theme]);
 
-  // Loader
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      setTimeout(() => setLoading(false), 1000);
-    };
-
-    if (document.readyState === "complete") {
-      handleLoad();
-    } else {
-      window.addEventListener("load", handleLoad);
-    }
-
-    return () => window.removeEventListener("load", handleLoad);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className={`simple_loader ${theme}`}>
-        <div className="loading"></div>
-      </div>
-    );
-  }
-
   return (
     <div className={`container ${theme}`}>
       {showAlert && (
         <div className="custom-protection-alert">
           <div className="alert-content">
-            <span>⚠️ Content is Protected</span>
+            <span>{t("common.app.contentProtected")}</span>
           </div>
         </div>
       )}
 
       <ScrollTop />
 
-      <Routes>
-        <Route
-          path="/"
-          element={<Starter theme={theme} settheme={settheme} />}
-        />
-
-        <Route path="/" element={<Layout theme={theme} settheme={settheme} />}>
+      <Suspense fallback={<PageFallback />}>
+        <Routes>
           <Route
-            path="home"
-            element={<Home theme={theme} settheme={settheme} />}
+            path="/"
+            element={<Starter theme={theme} settheme={settheme} />}
           />
 
-          <Route
-            path="certified-institutes"
-            element={<Certifiedinstitutes theme={theme} settheme={settheme} />}
-          />
+          <Route path="/" element={<Layout theme={theme} settheme={settheme} />}>
+            <Route
+              path="home"
+              element={<Home theme={theme} settheme={settheme} />}
+            />
 
-          <Route
-            path="our-impact"
-            element={<Ourimpact theme={theme} settheme={settheme} />}
-          />
+            <Route
+              path="certified-institutes"
+              element={
+                <Certifiedinstitutes theme={theme} settheme={settheme} />
+              }
+            />
 
-          <Route
-            path="our-impact/eth-university"
-            element={<University theme={theme} />}
-          />
+            <Route
+              path="our-impact"
+              element={<Ourimpact theme={theme} settheme={settheme} />}
+            />
 
-          <Route
-            path="our-impact/navamindradhiraj-university"
-            element={<Navamindradhiraj_University theme={theme} />}
-          />
+            <Route
+              path="our-impact/eth-university"
+              element={<University theme={theme} />}
+            />
 
-          <Route
-            path="our-impact/kyunghee-university"
-            element={<KyungHee_University theme={theme} />}
-          />
+            <Route
+              path="our-impact/navamindradhiraj-university"
+              element={<Navamindradhiraj_University theme={theme} />}
+            />
 
-          <Route
-            path="our-impact/iit-bombay"
-            element={<IIT_Bombay theme={theme} />}
-          />
+            <Route
+              path="our-impact/kyunghee-university"
+              element={<KyungHee_University theme={theme} />}
+            />
 
-          <Route path="how-rcmi-works" element={<Rcmiworks theme={theme} />} />
+            <Route
+              path="our-impact/iit-bombay"
+              element={<IIT_Bombay theme={theme} />}
+            />
 
-          <Route
-            path="contact"
-            element={<Contact theme={theme} settheme={settheme} />}
-          />
+            <Route path="how-rcmi-works" element={<Rcmiworks theme={theme} />} />
 
-          <Route
-            path="get-rcmi-report"
-            element={<GetRcmiReport theme={theme} settheme={settheme} />}
-          />
+            <Route
+              path="contact"
+              element={<Contact theme={theme} settheme={settheme} />}
+            />
 
-          <Route
-            path="*"
-            element={<NotFound theme={theme} settheme={settheme} />}
-          />
-        </Route>
-      </Routes>
+            <Route
+              path="get-rcmi-report"
+              element={<GetRcmiReport theme={theme} settheme={settheme} />}
+            />
+
+            <Route
+              path="*"
+              element={<NotFound theme={theme} settheme={settheme} />}
+            />
+          </Route>
+        </Routes>
+      </Suspense>
     </div>
   );
 };

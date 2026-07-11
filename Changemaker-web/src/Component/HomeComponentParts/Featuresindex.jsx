@@ -1,141 +1,66 @@
 import Styels from "../HomeComponentParts/Featuresindex.module.css";
-import waterflow_image from "../../assets/Home-image/Water-flow-image.svg";
-import firstsection from "../../assets/Home-image/first-section-image.png";
-// import actionableReport from "../../assets/Home-image/Actionable Reports.png";
-// import AiGuidance from "../../assets/Home-image/AI Guidance.png";
-import benifitimage from "../../assets/Home-image/background-benifits-image.svg";
-// import decisionstracked from "../../assets/Home-image/Decisions Tracked.png";
-// import insightsdeliverd from "../../assets/Home-image/Insights Delivered.png";
-// import personalgrowth from "../../assets/Home-image/Personal Growth.png";
-import studentsimulate from "../../assets/Home-image/Student-Simulate.png";
-// import finalbusiness from "../../assets/Home-image/Final Business with Purpose 1.png";
-// import fourth_slide_1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
-// import first_slide_3 from "../../assets/Home-image/second-workshop-3.png";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
-const Featuresindex = ({ theme, settheme }) => {
-  let impactcarddata = [
-    {
-      id: 1,
-      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
-      title: " ETH Zurich, Switzerland",
-      description: `Students explored global life scenarios in the RealLives ChangeMaking Workshop, building empathy, ethicalleadership, and sustainable problem-solving skills.`,
-      link: "/our-impact/eth-university",
-    },
+const IMPACT_IMAGES = [
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png",
+];
 
-    {
-      id: 2,
-      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
-      title: "IIT Bombay, India",
-      description: `Through simulation-based experiences, students connected technology, society, and values, learning how empathy-driven choices can drive social impact.`,
-      link: "/our-impact/iit-bombay", 
-    },
+const FEATURE_IMAGES = [
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/Student-Simulate_d4rryd.png",
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/Decisions_Tracked_tvsg2f.png",
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/Insights_Delivered_teervk.png",
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/AI_Guidance_hztqmt.png",
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/Actionable_Reports_v0mwoe.png",
+  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/Personal_Growth_lele2n.png",
+];
 
-    {
-      id: 3,
-      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png",
-      title: " Navamindradhiraj University, Thailand ",
-      description: ` Students participated in an immersive ChangeMaker  program, gaining insights into social responsibility, ethical decision-making, and the impact of choices on communities.`,
-      link: "/our-impact/navamindradhiraj-university", 
-    },
-  ];
-
-
-  let featuresdata = [
-    {
-      id: 1,
-      image:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/Student-Simulate_d4rryd.png",
-      title: "Students Simulate",
-      description: `Students step into diverse real-world lives, experiencing challenges, opportunities, 
-     and cultural contexts firsthand. They don’t just learn about the world—they live it through 
-     immersive simulation.`,
-    },
-
-    {
-      id: 2,
-      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/Decisions_Tracked_tvsg2f.png",
-      title: "Decisions Tracked",
-      description: `Every choice—small or big—is recorded and analyzed.
-      This gives students a clear view of how decisions shape outcomes,
-       helping them understand responsibility, ethics, and long-term impact.`,
-    },
-
-    {
-      id: 3,
-      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/Insights_Delivered_teervk.png",
-      title: "Insights Delivered",
-      description: `The system automatically transforms student choices into rich insights,
-       highlighting thinking patterns, strengths, and areas for growth. Educators get an 
-       instant window into each learner’s mindset.`,
-    },
-
-    {
-      id: 4,
-      image:"https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/AI_Guidance_hztqmt.png",
-      title: "AI Guidance",
-      description: `Built-in AI coaches students as they play, providing nudges, reflections,
-       and tailored suggestions. It supports deeper self-awareness, critical thinking,
-        and intentional decision-making`,
-    },
-
-    {
-      id: 5,
-      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/Actionable_Reports_v0mwoe.png",
-      title: "Actionable Reports",
-      description: `Easy-to-understand dashboards summarise all learning outcomes and
-       competencies. Educators receive detailed, ready-to-use reports they can use for
-        feedback, assessment, and personalised mentoring.`,
-    },
-
-    {
-      id: 6,
-      image: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/Personal_Growth_lele2n.png",
-      title: "Personal Growth",
-      description: `Students discover who they are as decision-makers.They build resilience,
-       empathy, global awareness, and confidence through repeated reflection and 
-       experience-based learning.`,
-    },
-  ];
+const Featuresindex = ({ theme }) => {
+  const { t, getMessage } = useMarketingTranslation();
+  const impactCards = getMessage("features.impactCards") ?? [];
+  const featureCards = getMessage("features.featureCards") ?? [];
 
   return (
     <div className={`${Styels.feautures_main} ${Styels[theme]}`}>
       <div className={Styels.impact_section_container}>
-        <p className={Styels.experience_text_reallives}>Our Impact</p>
+        <p className={Styels.experience_text_reallives}>
+          {t("features.ourImpact.title")}
+        </p>
         <p className={Styels.description_features_bottom}>
-          Discover the global footprint of the RealLives Foundation through the
-          workshops and <br />
-          events we’ve hosted to inspire change.
+          {t("features.ourImpact.descriptionLineBreak")} <br />
+          {t("features.ourImpact.descriptionLineBreak2")}
         </p>
 
         <div className={Styels.inforamtion_card_container}>
           <div className={Styels.card_info_container}>
-            {impactcarddata.map((ourimpactcard, idx) => (
+            {impactCards.map((card, idx) => (
               <Link
-                key={idx}
-                to={ourimpactcard.link}
+                key={card.link ?? idx}
+                to={card.link}
                 className={`${Styels.card_info_box} ${Styels.card_info_link}`}
               >
                 <div className={Styels.university_image_box}>
-                  <img  loading="lazy" decoding="async" 
+                  <img
+                    loading="lazy"
+                    decoding="async"
                     className={Styels.image_fit_cover}
-                    src={ourimpactcard.image}
-                    alt="Changemaker Index image"
+                    src={IMPACT_IMAGES[idx]}
+                    alt={t("common.alt.changemakerIndexImage")}
                   />
                 </div>
 
                 <div className={Styels.content_data_text_box}>
-                  <p className={Styels.title_university_name}>
-                    {ourimpactcard.title}
-                  </p>
-
+                  <p className={Styels.title_university_name}>{card.title}</p>
                   <p className={Styels.description_university_text}>
-                    {ourimpactcard.description}
+                    {card.description}
                   </p>
                 </div>
 
                 <span className={Styels.larne_more_btn}>
-                  Learn more <FaArrowRight />
+                  {t("common.learnMore")} <FaArrowRight />
                 </span>
               </Link>
             ))}
@@ -145,7 +70,7 @@ const Featuresindex = ({ theme, settheme }) => {
         <div className={Styels.btn_larne_more}>
           <Link className={Styels.text_decoration_none} to="/our-impact">
             <button className={Styels.inner_btn}>
-              Explore More Impact Stories <FaArrowRight />
+              {t("features.ourImpact.exploreMore")} <FaArrowRight />
             </button>
           </Link>
         </div>
@@ -154,34 +79,31 @@ const Featuresindex = ({ theme, settheme }) => {
       <div className={Styels.feautures_inner_main}>
         <div className={Styels.top_features_box}>
           <p className={Styels.reallives_changemaker_text}>
-            RealLives ChangeMaker Index Features
+            {t("features.changemakerFeatures.title")}
           </p>
           <p className={Styels.description_changemake_text}>
-            Discover how the ChangeMaker Index turns your life choices into
-            insights, tracking growth, <br /> guiding decisions, and unlocking
-            your potential as a global ChangeMaker.
+            {t("features.changemakerFeatures.descriptionLineBreak")} <br />
+            {t("features.changemakerFeatures.descriptionLineBreak2")}
           </p>
         </div>
 
         <div className={Styels.features_card_container}>
-          {featuresdata.map((featuresdata) => (
-            <div key={featuresdata.id} className={Styels.cards_features_box}>
+          {featureCards.map((card, idx) => (
+            <div key={card.title ?? idx} className={Styels.cards_features_box}>
               <div className={Styels.content_data_text_box}>
-                <p className={Styels.features_text_card}>
-                  {featuresdata.title}
-                </p>
-
+                <p className={Styels.features_text_card}>{card.title}</p>
                 <p className={Styels.features_description_text}>
-                  {featuresdata.description}
+                  {card.description}
                 </p>
               </div>
 
               <div className={Styels.image_width_mobile}>
                 <img
-                    loading="lazy" decoding="async"
+                  loading="lazy"
+                  decoding="async"
                   className={Styels.image_fit_cover}
-                  src={featuresdata.image}
-                  alt="Changemaker Index image"
+                  src={FEATURE_IMAGES[idx]}
+                  alt={t("common.alt.changemakerIndexImage")}
                 />
               </div>
             </div>

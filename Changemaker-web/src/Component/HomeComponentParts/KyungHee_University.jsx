@@ -5,38 +5,38 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-// import therd_slide_0 from "../../assets/Home-image/3-rd-workshop-first-image.jpeg";
-// import therd_slide_1 from "../../assets/Home-image/3-rd-workshop-image.png";
-// import therd_slide_2 from "../../assets/Home-image/3-rd-workshop-2.png";
-// import therd_slide_3 from "../../assets/Home-image/3-rd-workshop-3.png";
-// import therd_slide_4 from "../../assets/Home-image/3-rd-workshop-4.png";
 import therd_logo_slide from "../../assets/Home-image/3-rd-workshop-logo.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
 import sdg_logo_3 from "../../assets/Home-image/E-WEB-Goal-04.svg";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
+import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
 const KyungHee_University = ({ theme }) => {
+  const { t, getMessage } = useMarketingTranslation();
+  const uni = getMessage("universities.kyunghee") ?? {};
+  const skills = uni.skills ?? [];
+
   const goToExternal = () => {
-    window.location.href =
-      "https://reallivesworld.com/reallives-website-main/license.html";
+    window.open(
+      "https://reallivesworld.com/reallives/university/pricing",
+      "_blank",
+      "noopener,noreferrer",
+    );
   };
+
   return (
     <div className={`${Styles.first_university_container} ${Styles[theme]}`}>
       <span className={Styles.section_flex_button}>
         <Link className={Styles.btn_top_slider} to="/our-impact">
-          Impact Home
+          {t("common.impact.impactHome")}
         </Link>
 
         <FaAngleRight />
 
-        {/* <span class="material-symbols-outlined icon-arrwo-left margin-top-5">
-                arrow_forward_ios
-              </span> */}
-
         <button className={`${Styles.btn_top_slider} ${Styles.active_color}`}>
-          KyungHee University SDG Workshop
+          {uni.breadcrumb}
         </button>
       </span>
 
@@ -53,7 +53,7 @@ const KyungHee_University = ({ theme }) => {
             <img
               src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/3-rd-workshop-image_jwd7ay.png"
               className={Styles.slider_img}
-              alt="slide 1"
+              alt={t("common.alt.img")}
             />
           </SwiperSlide>
 
@@ -61,7 +61,7 @@ const KyungHee_University = ({ theme }) => {
             <img
               src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/3-rd-workshop-first-image_y34mx3.jpg"
               className={Styles.slider_img}
-              alt="slide 1"
+              alt={t("common.alt.img")}
             />
           </SwiperSlide>
 
@@ -69,7 +69,7 @@ const KyungHee_University = ({ theme }) => {
             <img
               src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png"
               className={Styles.slider_img}
-              alt="slide 2"
+              alt={t("common.alt.img")}
             />
           </SwiperSlide>
 
@@ -77,7 +77,7 @@ const KyungHee_University = ({ theme }) => {
             <img
               src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/3-rd-workshop-3_wegcf0.png"
               className={Styles.slider_img}
-              alt="slide 3"
+              alt={t("common.alt.img")}
             />
           </SwiperSlide>
 
@@ -85,12 +85,11 @@ const KyungHee_University = ({ theme }) => {
             <img
               src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/3-rd-workshop-4_ea6we5.png"
               className={Styles.slider_img}
-              alt="slide 3"
+              alt={t("common.alt.img")}
             />
           </SwiperSlide>
         </Swiper>
       </div>
-
 
       <div className={Styles.content_tab_container_imapct}>
         <div className={Styles.container_logo_box_impact}>
@@ -98,11 +97,9 @@ const KyungHee_University = ({ theme }) => {
         </div>
       </div>
 
-       
-
       <div className={Styles.sdg_container_imapct_tab}>
         <p className={Styles.student_testimonials_title}>
-          SDG’s Alligned with this workshop
+          {t("common.impact.sdgAligned")}
         </p>
 
         <div className={Styles.grid_sdg_card_imapct}>
@@ -122,98 +119,60 @@ const KyungHee_University = ({ theme }) => {
 
       <div className={Styles.first_tab_style}>
         <div className={Styles.impact_left_data_box}>
-          <p className={Styles.student_testimonials_title}>Objective</p>
+          <p className={Styles.student_testimonials_title}>
+            {t("common.impact.objective")}
+          </p>
 
-          <span class={Styles.text_data_content_1}>
-            <p>
-              To foster global citizenship and empathy development among Korean
-              university students through experiential learning and
-              cross-cultural understanding. The workshop aimed to expand
-              students' perspectives on global challenges and sustainable
-              development while developing their capacity for empathetic
-              decision-making and changemaking skills through immersive life
-              simulation experiences and structured reflection processes.
-            </p>
-          </span>
-        </div>
-
-        <div className={Styles.impact_left_data_box}>
-          <p className={Styles.student_testimonials_title}>Program Overview</p>
-
-          <span class={Styles.text_data_content_1}>
-            <p>
-              RealLives Foundation conducted a comprehensive ChangeMaker
-              workshop at Kyung Hee University in Seoul, South Korea, organized
-              by Prof. Dr. Utak Chang, former Director of UNESCO APCEIU
-              (Asia-Pacific Centre of Education for International
-              Understanding), with assistance from Prof. Ms. Chanmi Kim. The
-              program engaged 30 university students in an immersive educational
-              experience designed to develop global awareness and empathy
-              through the RealLives simulation platform. This collaboration with
-              UNESCO's educational leadership demonstrated RealLives' alignment
-              with international education standards and its effectiveness in
-              promoting intercultural understanding and global citizenship
-              development.
-            </p>
+          <span className={Styles.text_data_content_1}>
+            <p>{uni.objective}</p>
           </span>
         </div>
 
         <div className={Styles.impact_left_data_box}>
           <p className={Styles.student_testimonials_title}>
-            Implementation & Methodology
+            {t("common.impact.programOverview")}
           </p>
 
-          <span class={Styles.text_data_content_1}>
-            <p>
-              The workshop utilized RealLives' integrated educational approach,
-              enabling students to experience diverse life circumstances across
-              different countries and socioeconomic backgrounds through
-              text-based simulation. Participants navigated multiple lives
-              lasting 30-45 minutes each, encountering real-world data and
-              making critical life decisions that reflected authentic global
-              challenges. The program incorporated structured reflection through
-              the Empathy Canvas framework, allowing students to process their
-              emotional responses and develop deeper understanding of global
-              disparities. Students also generated personalized ChangeMaker
-              Index reports, providing measurable insights into their
-              development across key competencies including empathy, global
-              awareness, and critical thinking skills.
-            </p>
+          <span className={Styles.text_data_content_1}>
+            <p>{uni.programOverview}</p>
           </span>
         </div>
 
         <div className={Styles.impact_left_data_box}>
-          <p className={Styles.student_testimonials_title}>Outcomes & Impact</p>
+          <p className={Styles.student_testimonials_title}>
+            {t("common.impact.implementationMethodology")}
+          </p>
 
-          <span class={Styles.text_data_content_1}>
-            <p>
-              The workshop demonstrated significant engagement from Korean
-              university students, who showed enhanced understanding of global
-              development challenges and increased empathy for people from
-              different cultural and economic backgrounds. Under the expert
-              guidance of UNESCO-affiliated educators, students developed
-              actionable insights into sustainable development goals and their
-              personal roles as global changemakers. The program's success at
-              Kyung Hee University, facilitated by internationally recognized
-              education leaders, reinforces RealLives' effectiveness in diverse
-              academic contexts and its potential for scaling intercultural
-              education initiatives across Asia-Pacific educational
-              institutions.
-            </p>
+          <span className={Styles.text_data_content_1}>
+            <p>{uni.implementation}</p>
+          </span>
+        </div>
+
+        <div className={Styles.impact_left_data_box}>
+          <p className={Styles.student_testimonials_title}>
+            {t("common.impact.outcomesImpact")}
+          </p>
+
+          <span className={Styles.text_data_content_1}>
+            <p>{uni.outcomes}</p>
           </span>
         </div>
       </div>
 
       <div className={Styles.span_imapct_colume}>
-        <p className={Styles.participants_title_text}>Skills Developed</p>
+        <p className={Styles.participants_title_text}>
+          {t("common.impact.skillsDeveloped")}
+        </p>
 
         <div className={Styles.wapper_show_btn}>
-          <button className={Styles.color_btn_font}>SDG Awareness</button>
-          <button
-            className={`${Styles.color_btn_font} ${Styles.empathy_btn_color}`}
-          >
-            ChangeMaking
-          </button>
+          {skills.map((skill, idx) => (
+            <button
+              key={skill}
+              className={`${Styles.color_btn_font} ${idx === 1 ? Styles.empathy_btn_color : ""}`}
+            >
+              {skill}
+            </button>
+          ))}
         </div>
       </div>
 
@@ -222,10 +181,10 @@ const KyungHee_University = ({ theme }) => {
       >
         <div className={Styles.card_reallives_campus_box}>
           <p className={Styles.global_student_title}>
-            Empower Your Students with Global Perspectives
+            {t("common.impact.empowerStudents")}
           </p>
           <button onClick={goToExternal} className={Styles.larne_more_btn}>
-            Begin Your ChangeMaking Journey
+            {t("common.impact.beginChangeMakingJourney")}
             <FaArrowRight />
           </button>
         </div>
