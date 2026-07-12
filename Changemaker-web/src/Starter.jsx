@@ -11,8 +11,7 @@ import reallivesLogo from "./assets/logo-white.svg";
 import backgroundImg from "./assets/landing page/starting-background-img.png";
 
 const rcmiLogo = "/rcmi-logo.png";
-const REAL_LIVES_URL =
-  "https://reallivesworld.com/reallives-website-main/reallives";
+const REAL_LIVES_URL = "https://reallivesworld.com/";
 
 function PortalContent() {
   const { t } = useMarketingTranslation();
