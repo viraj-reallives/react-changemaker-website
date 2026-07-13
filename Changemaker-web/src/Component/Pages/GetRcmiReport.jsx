@@ -17,6 +17,7 @@ import {
 import foundationLogo from "../../assets/Home-image/Changemaker-Foundation-logo.svg";
 import styles from "./GetRcmiReport.module.css";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useLocalePath } from "../../hooks/useLocalePath";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,6 +52,7 @@ const CLUSTER_META = {
 
 const GetRcmiReport = ({ theme }) => {
   const navigate = useNavigate();
+  const localePath = useLocalePath();
   const { t, getMessage } = useMarketingTranslation();
   const page = getMessage("pages.getRcmiReport") ?? {};
   const timelineSteps = page.timeline?.steps ?? [];
@@ -72,7 +74,7 @@ const GetRcmiReport = ({ theme }) => {
     if (window.history.length > 1) {
       navigate(-1);
     } else {
-      navigate("/home");
+      navigate(localePath("/home"));
     }
   };
 

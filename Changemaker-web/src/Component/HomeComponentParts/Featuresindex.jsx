@@ -2,6 +2,7 @@ import Styels from "../HomeComponentParts/Featuresindex.module.css";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useLocalePath } from "../../hooks/useLocalePath";
 
 const IMPACT_IMAGES = [
   "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
@@ -20,6 +21,7 @@ const FEATURE_IMAGES = [
 
 const Featuresindex = ({ theme }) => {
   const { t, getMessage } = useMarketingTranslation();
+  const localePath = useLocalePath();
   const impactCards = getMessage("features.impactCards") ?? [];
   const featureCards = getMessage("features.featureCards") ?? [];
 
@@ -39,7 +41,7 @@ const Featuresindex = ({ theme }) => {
             {impactCards.map((card, idx) => (
               <Link
                 key={card.link ?? idx}
-                to={card.link}
+                to={localePath(card.link)}
                 className={`${Styels.card_info_box} ${Styels.card_info_link}`}
               >
                 <div className={Styels.university_image_box}>
@@ -68,7 +70,7 @@ const Featuresindex = ({ theme }) => {
         </div>
 
         <div className={Styels.btn_larne_more}>
-          <Link className={Styels.text_decoration_none} to="/our-impact">
+          <Link className={Styels.text_decoration_none} to={localePath("/our-impact")}>
             <button className={Styels.inner_btn}>
               {t("features.ourImpact.exploreMore")} <FaArrowRight />
             </button>

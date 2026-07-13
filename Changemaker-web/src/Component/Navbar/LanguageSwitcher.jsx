@@ -1,11 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { MdCheck, MdExpandMore, MdLanguage } from "react-icons/md";
+import { useLocation, useNavigate } from "react-router-dom";
 import { SUPPORTED_LOCALES } from "../../i18n";
+import { localizePath } from "../../i18n/routing";
 import { getLanguageNativeLabel } from "../../i18n/languages";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
 const LanguageSwitcher = () => {
-  const { locale, setLocale } = useMarketingTranslation();
+  const { locale } = useMarketingTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef(null);
 
@@ -32,8 +36,10 @@ const LanguageSwitcher = () => {
   }, [isOpen]);
 
   const handleSelect = (code) => {
-    setLocale(code);
     setIsOpen(false);
+    navigate(
+      `${localizePath(location.pathname, code)}${location.search}${location.hash}`,
+    );
   };
 
   return (

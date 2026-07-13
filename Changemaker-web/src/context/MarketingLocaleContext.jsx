@@ -6,24 +6,21 @@ import {
   defaultMessages,
   loadLocale,
 } from "../i18n";
+import { getLocaleFromPath, getStoredLocale } from "../i18n/routing";
 import { getNested } from "../i18n/utils";
 
 const STORAGE_KEY = "cm-marketing-locale";
 
 const MarketingLocaleContext = createContext(null);
 
-function readStoredLocale() {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored && SUPPORTED_LOCALES.includes(stored)) return stored;
-  } catch {
-    // Ignore storage failures in private browsing.
-  }
-  return DEFAULT_LOCALE;
+function readInitialLocale() {
+  const fromUrl = getLocaleFromPath(window.location.pathname);
+  if (fromUrl) return fromUrl;
+  return getStoredLocale();
 }
 
 export function MarketingLocaleProvider({ children }) {
-  const [locale, setLocaleState] = useState(readStoredLocale);
+  const [locale, setLocaleState] = useState(readInitialLocale);
   const [messages, setMessages] = useState(defaultMessages);
   const [isLoading, setIsLoading] = useState(locale !== DEFAULT_LOCALE);
 

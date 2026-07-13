@@ -6,6 +6,7 @@ import {
   Marker,
 } from "react-simple-maps";
 import { useMarketingTranslation } from "../context/MarketingLocaleContext";
+import { useLocalePath } from "../hooks/useLocalePath";
 import "../Component/Global_css/GlobalMap.css";
 
 const worldGeoUrl =
@@ -48,6 +49,7 @@ const impactSites = [
 
 export const GlobalMap = ({ name = "" }) => {
   const navigate = useNavigate();
+  const localePath = useLocalePath();
   const { t } = useMarketingTranslation();
 
   return (
@@ -90,7 +92,7 @@ export const GlobalMap = ({ name = "" }) => {
               coordinates={site.coordinates}
               onClick={() => {
                 if (site.path) {
-                  navigate(`/${site.path}`);
+                  navigate(localePath(`/${site.path}`));
                 } else if (site.url) {
                   window.open(site.url, "_blank");
                 }

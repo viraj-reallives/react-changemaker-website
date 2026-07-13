@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { useLocalePath } from "../../hooks/useLocalePath";
 import first_logo_slide from "../../assets/Home-image/first-logo-tab.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
@@ -17,6 +18,8 @@ const University = ({ theme }) => {
   const uni = getMessage("universities.eth") ?? {};
   const skills = uni.skills ?? [];
 
+  const localePath = useLocalePath();
+
   const goToExternal = () => {
     window.open(
       "https://reallivesworld.com/reallives/university/pricing",
@@ -29,7 +32,7 @@ const University = ({ theme }) => {
     <>
       <div className={`${Styles.first_university_container} ${Styles[theme]}`}>
         <span className={Styles.section_flex_button}>
-          <Link className={Styles.btn_top_slider} to="/our-impact">
+          <Link className={Styles.btn_top_slider} to={localePath("/our-impact")}>
             {t("common.impact.impactHome")}
           </Link>
 

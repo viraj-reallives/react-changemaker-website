@@ -1,9 +1,11 @@
 import "../Not-Founnd-page/NotFound.css";
 import { Link } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useLocalePath } from "../../hooks/useLocalePath";
 
 const NotFound = () => {
   const { t } = useMarketingTranslation();
+  const localePath = useLocalePath();
 
   return (
     <section className="page_404">
@@ -14,7 +16,7 @@ const NotFound = () => {
           <h3>{t("common.notFound.title")}</h3>
           <p>{t("common.notFound.description")}</p>
 
-          <Link to="/Home" className="link_404">
+          <Link to={localePath("/home")} className="link_404">
             {t("common.notFound.homeLink")}
           </Link>
         </div>

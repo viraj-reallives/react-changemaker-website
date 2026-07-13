@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { useLocalePath } from "../../hooks/useLocalePath";
 import fourth_slide_logo from "../../assets/Home-image/iit_bom_rl.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import { FaArrowRight } from "react-icons/fa6";
@@ -15,6 +16,8 @@ const IIT_Bombay = ({ theme }) => {
   const { t, getMessage } = useMarketingTranslation();
   const uni = getMessage("universities.iitBombay") ?? {};
   const skills = uni.skills ?? [];
+
+  const localePath = useLocalePath();
 
   const goToExternal = () => {
     window.open(
@@ -27,7 +30,7 @@ const IIT_Bombay = ({ theme }) => {
   return (
     <div className={`${Styles.first_university_container} ${Styles[theme]}`}>
       <span className={Styles.section_flex_button}>
-        <Link className={Styles.btn_top_slider} to="/our-impact">
+        <Link className={Styles.btn_top_slider} to={localePath("/our-impact")}>
           {t("common.impact.impactHome")}
         </Link>
 

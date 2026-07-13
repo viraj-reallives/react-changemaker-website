@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useLocalePath } from "../../hooks/useLocalePath";
 import "./Navbar.css";
 
 const Navbar = () => {
   const { t } = useMarketingTranslation();
+  const localePath = useLocalePath();
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -19,7 +21,7 @@ const Navbar = () => {
         className={showMenu ? "navigation-path mobile-open" : "navigation-path"}
       >
         <NavLink
-          to="/Home"
+          to={localePath("/home")}
           end
           className={({ isActive }) =>
             isActive ? "listed-style active" : "listed-style"
@@ -31,7 +33,7 @@ const Navbar = () => {
 
         <NavLink
           className="listed-style"
-          to="/certified-institutes"
+          to={localePath("/certified-institutes")}
           onClick={() => setShowMenu(false)}
         >
           {t("common.nav.certifiedInstitutes")}
@@ -39,7 +41,7 @@ const Navbar = () => {
 
         <NavLink
           className="listed-style"
-          to="/our-impact"
+          to={localePath("/our-impact")}
           onClick={() => setShowMenu(false)}
         >
           {t("common.nav.ourImpact")}
@@ -47,14 +49,14 @@ const Navbar = () => {
 
         <NavLink
           className="listed-style"
-          to="/how-rcmi-works"
+          to={localePath("/how-rcmi-works")}
           onClick={() => setShowMenu(false)}
         >
           {t("common.nav.howRcmiWorks")}
         </NavLink>
 
         <NavLink
-          to="/get-rcmi-report"
+          to={localePath("/get-rcmi-report")}
           className="button-rcmi-report"
           onClick={() => setShowMenu(false)}
         >

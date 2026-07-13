@@ -4,6 +4,9 @@ import "./App.css";
 import ScrollTop from "./ScrollTop/ScrollTop";
 import "./Component/Global_css/Global.css";
 import { useMarketingTranslation } from "./context/MarketingLocaleContext";
+import LocaleGate from "./components/routing/LocaleGate";
+import RootLocaleRedirect from "./components/routing/RootLocaleRedirect";
+import LegacyLocaleRedirect from "./components/routing/LegacyLocaleRedirect";
 
 const Starter = lazy(() => import("./Starter"));
 const Layout = lazy(() => import("./Component/Layout"));
@@ -101,65 +104,89 @@ const App = () => {
 
       <Suspense fallback={<PageFallback />}>
         <Routes>
+          <Route path="/" element={<RootLocaleRedirect />} />
+
+          <Route path="/home" element={<LegacyLocaleRedirect />} />
+          <Route path="/Home" element={<LegacyLocaleRedirect />} />
           <Route
-            path="/"
-            element={<Starter theme={theme} settheme={settheme} />}
+            path="/certified-institutes"
+            element={<LegacyLocaleRedirect />}
           />
+          <Route
+            path="/Certified-Institutes"
+            element={<LegacyLocaleRedirect />}
+          />
+          <Route path="/our-impact/*" element={<LegacyLocaleRedirect />} />
+          <Route path="/how-rcmi-works" element={<LegacyLocaleRedirect />} />
+          <Route path="/How-RCMI-Works" element={<LegacyLocaleRedirect />} />
+          <Route path="/contact" element={<LegacyLocaleRedirect />} />
+          <Route path="/Contact" element={<LegacyLocaleRedirect />} />
+          <Route path="/get-rcmi-report" element={<LegacyLocaleRedirect />} />
 
-          <Route path="/" element={<Layout theme={theme} settheme={settheme} />}>
+          <Route path="/:locale" element={<LocaleGate />}>
             <Route
-              path="home"
-              element={<Home theme={theme} settheme={settheme} />}
+              index
+              element={<Starter theme={theme} settheme={settheme} />}
             />
 
-            <Route
-              path="certified-institutes"
-              element={
-                <Certifiedinstitutes theme={theme} settheme={settheme} />
-              }
-            />
+            <Route element={<Layout theme={theme} settheme={settheme} />}>
+              <Route
+                path="home"
+                element={<Home theme={theme} settheme={settheme} />}
+              />
 
-            <Route
-              path="our-impact"
-              element={<Ourimpact theme={theme} settheme={settheme} />}
-            />
+              <Route
+                path="certified-institutes"
+                element={
+                  <Certifiedinstitutes theme={theme} settheme={settheme} />
+                }
+              />
 
-            <Route
-              path="our-impact/eth-university"
-              element={<University theme={theme} />}
-            />
+              <Route
+                path="our-impact"
+                element={<Ourimpact theme={theme} settheme={settheme} />}
+              />
 
-            <Route
-              path="our-impact/navamindradhiraj-university"
-              element={<Navamindradhiraj_University theme={theme} />}
-            />
+              <Route
+                path="our-impact/eth-university"
+                element={<University theme={theme} />}
+              />
 
-            <Route
-              path="our-impact/kyunghee-university"
-              element={<KyungHee_University theme={theme} />}
-            />
+              <Route
+                path="our-impact/navamindradhiraj-university"
+                element={<Navamindradhiraj_University theme={theme} />}
+              />
 
-            <Route
-              path="our-impact/iit-bombay"
-              element={<IIT_Bombay theme={theme} />}
-            />
+              <Route
+                path="our-impact/kyunghee-university"
+                element={<KyungHee_University theme={theme} />}
+              />
 
-            <Route path="how-rcmi-works" element={<Rcmiworks theme={theme} />} />
+              <Route
+                path="our-impact/iit-bombay"
+                element={<IIT_Bombay theme={theme} />}
+              />
 
-            <Route
-              path="contact"
-              element={<Contact theme={theme} settheme={settheme} />}
-            />
+              <Route
+                path="how-rcmi-works"
+                element={<Rcmiworks theme={theme} />}
+              />
 
-            <Route
-              path="get-rcmi-report"
-              element={<GetRcmiReport theme={theme} settheme={settheme} />}
-            />
+              <Route
+                path="contact"
+                element={<Contact theme={theme} settheme={settheme} />}
+              />
 
-            <Route
-              path="*"
-              element={<NotFound theme={theme} settheme={settheme} />}
-            />
+              <Route
+                path="get-rcmi-report"
+                element={<GetRcmiReport theme={theme} settheme={settheme} />}
+              />
+
+              <Route
+                path="*"
+                element={<NotFound theme={theme} settheme={settheme} />}
+              />
+            </Route>
           </Route>
         </Routes>
       </Suspense>

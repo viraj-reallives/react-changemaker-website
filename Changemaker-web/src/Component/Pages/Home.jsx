@@ -4,9 +4,11 @@ import waterflow_image from "../../assets/Home-image/Water-flow-image.svg";
 import ChangeMakeraction from "../HomeComponentParts/ChangeMakeraction";
 import { Link } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useLocalePath } from "../../hooks/useLocalePath";
 
 const Home = ({ theme, settheme }) => {
   const { t } = useMarketingTranslation();
+  const localePath = useLocalePath();
 
   const become_change_btn = () => {
     window.open(
@@ -46,7 +48,10 @@ const Home = ({ theme, settheme }) => {
               {t("home.hero.beginJourney")}
             </button>
 
-            <Link className={Styles.text_decoration_none} to="/How-RCMI-Works">
+            <Link
+              className={Styles.text_decoration_none}
+              to={localePath("/how-rcmi-works")}
+            >
               <button className={Styles.How_works}>
                 {t("home.hero.howThisWorks")}
               </button>

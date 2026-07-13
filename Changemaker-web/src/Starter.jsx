@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MdArrowForward } from "react-icons/md";
 import { useMarketingTranslation } from "./context/MarketingLocaleContext";
+import { useLocalePath } from "./hooks/useLocalePath";
 import {
   PortalLanguageMobile,
   PortalLanguageSidebar,
@@ -15,6 +16,7 @@ const REAL_LIVES_URL = "https://reallivesworld.com/";
 
 function PortalContent() {
   const { t } = useMarketingTranslation();
+  const localePath = useLocalePath();
 
   return (
     <>
@@ -39,7 +41,7 @@ function PortalContent() {
         <div className={`${styles.cards} ${portalCustom.card_style_container}`}>
           {/* RCMI — primary, left */}
           <Link
-            to="/home"
+            to={localePath("/home")}
             className={styles.cardLink}
             aria-label={t("portal.changeMaker.ariaLabel")}
           >

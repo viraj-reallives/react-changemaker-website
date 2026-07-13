@@ -1,5 +1,7 @@
 import styles from "./PortalLanguageBar.module.css";
+import { useLocation, useNavigate } from "react-router-dom";
 import { SUPPORTED_LOCALES } from "../../i18n";
+import { localizePath } from "../../i18n/routing";
 import { getLanguageNativeLabel } from "../../i18n/languages";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import enIcon from "../../assets/landing page/en.svg";
@@ -19,7 +21,15 @@ const LANGUAGE_ICONS = {
 };
 
 function LanguageIcons({ layout }) {
-  const { locale, setLocale } = useMarketingTranslation();
+  const { locale } = useMarketingTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleSelect = (code) => {
+    navigate(
+      `${localizePath(location.pathname, code)}${location.search}${location.hash}`,
+    );
+  };
 
   return (
     <ul
@@ -38,7 +48,7 @@ function LanguageIcons({ layout }) {
               className={`${styles.languageButton} ${isSelected ? styles.languageButtonActive : ""}`}
               aria-label={`Select ${nativeLabel}`}
               aria-pressed={isSelected}
-              onClick={() => setLocale(code)}
+              onClick={() => handleSelect(code)}
             >
               <span className={styles.iconFrame} aria-hidden="true">
                 <img

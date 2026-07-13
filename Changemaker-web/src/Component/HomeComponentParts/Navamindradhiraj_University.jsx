@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { useLocalePath } from "../../hooks/useLocalePath";
 import second_logo_slide from "../../assets/Home-image/second-logo-tab.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
@@ -19,6 +20,8 @@ const Navamindradhiraj_University = ({ theme }) => {
   const skills = uni.skills ?? [];
   const testimonialParagraphs = uni.testimonial?.paragraphs ?? [];
 
+  const localePath = useLocalePath();
+
   const goToExternal = () => {
     window.open(
       "https://reallivesworld.com/reallives/university/pricing",
@@ -30,7 +33,7 @@ const Navamindradhiraj_University = ({ theme }) => {
   return (
     <div className={`${Styles.first_university_container} ${Styles[theme]}`}>
       <span className={Styles.section_flex_button}>
-        <Link className={Styles.btn_top_slider} to="/our-impact">
+        <Link className={Styles.btn_top_slider} to={localePath("/our-impact")}>
           {t("common.impact.impactHome")}
         </Link>
 

@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import Styles from "./Ourimpact.module.css";
 import { FaArrowRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useLocalePath } from "../../hooks/useLocalePath";
 
 const GlobalMap = lazy(() =>
   import("../GlobalMap").then((m) => ({ default: m.GlobalMap })),
@@ -41,6 +42,7 @@ const IMPACT_CARD_META = [
 
 const Ourimpact = ({ theme }) => {
   const { t, getMessage } = useMarketingTranslation();
+  const localePath = useLocalePath();
   const impactCards = getMessage("pages.ourImpact.cards") ?? [];
 
   const become_change_btn = () => {
@@ -377,7 +379,7 @@ const Ourimpact = ({ theme }) => {
                     </div>
 
                     <Link
-                      to={card.link}
+                      to={localePath(card.link)}
                       className={Styles.text_decoration_none}
                     >
                       <button className={Styles.larne_more_btn}>
