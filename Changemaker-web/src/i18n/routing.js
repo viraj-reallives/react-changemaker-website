@@ -16,17 +16,33 @@ export function getStoredLocale() {
   return DEFAULT_LOCALE;
 }
 
-export function stripLocalePrefix(pathname) {
+/** Removes a locale code from either the start (legacy) or end (current) of a path. */
+export function stripLocaleFromPath(pathname) {
   const segments = String(pathname || "")
     .split("/")
     .filter(Boolean);
 
-  if (segments.length > 0 && isSupportedLocale(segments[0])) {
+  if (segments.length === 0) return "/";
+
+  // Current format: /page/.../locale
+  if (isSupportedLocale(segments[segments.length - 1])) {
+    const rest = segments.slice(0, -1).join("/");
+    return rest ? `/${rest}` : "/";
+  }
+
+  // Legacy format: /locale/page/...
+  if (isSupportedLocale(segments[0])) {
     const rest = segments.slice(1).join("/");
     return rest ? `/${rest}` : "/";
   }
 
-  return pathname || "/";
+  const normalized = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  return normalized || "/";
+}
+
+/** @deprecated Use stripLocaleFromPath */
+export function stripLocalePrefix(pathname) {
+  return stripLocaleFromPath(pathname);
 }
 
 export function getLocaleFromPath(pathname) {
@@ -34,18 +50,28 @@ export function getLocaleFromPath(pathname) {
     .split("/")
     .filter(Boolean);
 
-  if (segments.length > 0 && isSupportedLocale(segments[0])) {
+  if (segments.length === 0) return null;
+
+  // Prefer suffix (current format)
+  if (isSupportedLocale(segments[segments.length - 1])) {
+    return segments[segments.length - 1];
+  }
+
+  // Fall back to prefix (legacy share links)
+  if (isSupportedLocale(segments[0])) {
     return segments[0];
   }
 
   return null;
 }
 
+/** Builds a path with the language code at the end, e.g. /certified-institutes/en */
 export function localizePath(path, locale = DEFAULT_LOCALE) {
   const code = isSupportedLocale(locale) ? locale : DEFAULT_LOCALE;
-  const stripped = stripLocalePrefix(path || "/");
-  const normalized =
-    stripped === "/" ? "" : stripped.startsWith("/") ? stripped : `/${stripped}`;
+  const stripped = stripLocaleFromPath(path || "/");
 
-  return normalized ? `/${code}${normalized}` : `/${code}`;
+  if (stripped === "/") return `/${code}`;
+
+  const normalized = stripped.startsWith("/") ? stripped : `/${stripped}`;
+  return `${normalized}/${code}`;
 }

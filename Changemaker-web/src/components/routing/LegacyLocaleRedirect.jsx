@@ -1,9 +1,18 @@
 import { Navigate, useLocation } from "react-router-dom";
-import { getStoredLocale, localizePath } from "../../i18n/routing";
+import {
+  getLocaleFromPath,
+  getStoredLocale,
+  localizePath,
+} from "../../i18n/routing";
 
 export default function LegacyLocaleRedirect() {
   const location = useLocation();
-  const target = localizePath(location.pathname, getStoredLocale());
+  const locale = getLocaleFromPath(location.pathname) || getStoredLocale();
+  const target = localizePath(location.pathname, locale);
+
+  if (target === location.pathname) {
+    return null;
+  }
 
   return (
     <Navigate

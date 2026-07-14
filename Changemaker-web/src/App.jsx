@@ -7,6 +7,7 @@ import { useMarketingTranslation } from "./context/MarketingLocaleContext";
 import LocaleGate from "./components/routing/LocaleGate";
 import RootLocaleRedirect from "./components/routing/RootLocaleRedirect";
 import LegacyLocaleRedirect from "./components/routing/LegacyLocaleRedirect";
+import LegacyPrefixRedirect from "./components/routing/LegacyPrefixRedirect";
 
 const Starter = lazy(() => import("./Starter"));
 const Layout = lazy(() => import("./Component/Layout"));
@@ -106,6 +107,93 @@ const App = () => {
         <Routes>
           <Route path="/" element={<RootLocaleRedirect />} />
 
+          {/* Current format: language code last — /certified-institutes/en */}
+          <Route element={<Layout theme={theme} settheme={settheme} />}>
+            <Route path="home/:locale" element={<LocaleGate />}>
+              <Route
+                index
+                element={<Home theme={theme} settheme={settheme} />}
+              />
+            </Route>
+
+            <Route path="certified-institutes/:locale" element={<LocaleGate />}>
+              <Route
+                index
+                element={
+                  <Certifiedinstitutes theme={theme} settheme={settheme} />
+                }
+              />
+            </Route>
+
+            <Route
+              path="our-impact/eth-university/:locale"
+              element={<LocaleGate />}
+            >
+              <Route index element={<University theme={theme} />} />
+            </Route>
+
+            <Route
+              path="our-impact/navamindradhiraj-university/:locale"
+              element={<LocaleGate />}
+            >
+              <Route
+                index
+                element={<Navamindradhiraj_University theme={theme} />}
+              />
+            </Route>
+
+            <Route
+              path="our-impact/kyunghee-university/:locale"
+              element={<LocaleGate />}
+            >
+              <Route index element={<KyungHee_University theme={theme} />} />
+            </Route>
+
+            <Route
+              path="our-impact/iit-bombay/:locale"
+              element={<LocaleGate />}
+            >
+              <Route index element={<IIT_Bombay theme={theme} />} />
+            </Route>
+
+            <Route path="our-impact/:locale" element={<LocaleGate />}>
+              <Route
+                index
+                element={<Ourimpact theme={theme} settheme={settheme} />}
+              />
+            </Route>
+
+            <Route path="how-rcmi-works/:locale" element={<LocaleGate />}>
+              <Route index element={<Rcmiworks theme={theme} />} />
+            </Route>
+
+            <Route path="contact/:locale" element={<LocaleGate />}>
+              <Route
+                index
+                element={<Contact theme={theme} settheme={settheme} />}
+              />
+            </Route>
+
+            <Route path="get-rcmi-report/:locale" element={<LocaleGate />}>
+              <Route
+                index
+                element={<GetRcmiReport theme={theme} settheme={settheme} />}
+              />
+            </Route>
+          </Route>
+
+          {/* Portal: /en */}
+          <Route path="/:locale" element={<LocaleGate />}>
+            <Route
+              index
+              element={<Starter theme={theme} settheme={settheme} />}
+            />
+          </Route>
+
+          {/* Legacy prefix: /en/certified-institutes → /certified-institutes/en */}
+          <Route path="/:locale/*" element={<LegacyPrefixRedirect />} />
+
+          {/* Paths missing a language code */}
           <Route path="/home" element={<LegacyLocaleRedirect />} />
           <Route path="/Home" element={<LegacyLocaleRedirect />} />
           <Route
@@ -123,70 +211,11 @@ const App = () => {
           <Route path="/Contact" element={<LegacyLocaleRedirect />} />
           <Route path="/get-rcmi-report" element={<LegacyLocaleRedirect />} />
 
-          <Route path="/:locale" element={<LocaleGate />}>
+          <Route element={<Layout theme={theme} settheme={settheme} />}>
             <Route
-              index
-              element={<Starter theme={theme} settheme={settheme} />}
+              path="*"
+              element={<NotFound theme={theme} settheme={settheme} />}
             />
-
-            <Route element={<Layout theme={theme} settheme={settheme} />}>
-              <Route
-                path="home"
-                element={<Home theme={theme} settheme={settheme} />}
-              />
-
-              <Route
-                path="certified-institutes"
-                element={
-                  <Certifiedinstitutes theme={theme} settheme={settheme} />
-                }
-              />
-
-              <Route
-                path="our-impact"
-                element={<Ourimpact theme={theme} settheme={settheme} />}
-              />
-
-              <Route
-                path="our-impact/eth-university"
-                element={<University theme={theme} />}
-              />
-
-              <Route
-                path="our-impact/navamindradhiraj-university"
-                element={<Navamindradhiraj_University theme={theme} />}
-              />
-
-              <Route
-                path="our-impact/kyunghee-university"
-                element={<KyungHee_University theme={theme} />}
-              />
-
-              <Route
-                path="our-impact/iit-bombay"
-                element={<IIT_Bombay theme={theme} />}
-              />
-
-              <Route
-                path="how-rcmi-works"
-                element={<Rcmiworks theme={theme} />}
-              />
-
-              <Route
-                path="contact"
-                element={<Contact theme={theme} settheme={settheme} />}
-              />
-
-              <Route
-                path="get-rcmi-report"
-                element={<GetRcmiReport theme={theme} settheme={settheme} />}
-              />
-
-              <Route
-                path="*"
-                element={<NotFound theme={theme} settheme={settheme} />}
-              />
-            </Route>
           </Route>
         </Routes>
       </Suspense>
