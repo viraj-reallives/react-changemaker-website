@@ -85,6 +85,7 @@
       "countries": {
         "usa": "미국",
         "thailand": "태국",
+        "thailandChula": "방콕 (출라)",
         "southKorea": "대한민국",
         "india": "인도",
         "switzerland": "스위스",
@@ -740,7 +741,7 @@
           "particepent_title": "학부 - 교양 교육부",
           "collaboration_text": "협력 기관:",
           "name_card": "Krittanan Pensirisomboon 교수",
-          "number_title": 150,
+          "number_title": "750+",
           "skill_devloped": "개발된 기술",
           "teamwork_title": "21세기 기술",
           "intergrity_title": "비즈니스 통찰력",
@@ -772,6 +773,19 @@
           "teamwork_title": "SDG 인식",
           "intergrity_title": "소셜 기업가 정신",
           "link": "/our-impact/iit-bombay"
+        },
+        {
+          "card_title": "출라롱콘 대학교 워크숍",
+          "card_date": "27 / 04 / 2024",
+          "university_text": "태국 방콕 출라롱콘 대학교",
+          "particepent_title": "교육학부 / BAScii 프로그램",
+          "collaboration_text": "협력 기관:",
+          "name_card": "사와로스 타나폰상수스(Sawaros Thanapornsangsuth) 박사",
+          "number_title": 200,
+          "skill_devloped": "개발된 기술",
+          "teamwork_title": "공감",
+          "intergrity_title": "SDG 인식",
+          "link": "/our-impact/chulalongkorn-university"
         }
       ]
     }
@@ -837,6 +851,19 @@
       "programOverview": "리얼라이브즈 재단은 지속가능발전목표와 공감 주도 체인지메이킹에 중점을 두고 IIT 뭄바이에서 포괄적인 체인지메이커 프로그램을 성공적으로 수행했습니다. 이 워크숍은 대학생들을 삶 시뮬레이션 경험, 구조화된 성찰, 기업가적 사고가 결합된 몰입형 교육 여정에 참여시켰습니다. 참가자들은 완전한 리얼라이브즈 생태계를 탐색하면서 전 세계적으로 다양한 사회 경제적 배경에 걸친 삶을 경험하는 동시에 당사의 독점적인 평가 도구를 통해 측정 가능한 공감 능력과 체인지메이킹 역량을 개발했습니다.",
       "implementation": "이 프로그램은 통합된 4단계 방법론을 활용했습니다. 학생들은 먼저 리얼라이브즈 시뮬레이션을 통해 다양한 글로벌 삶을 경험한 다음, 공감 캔버스 프레임워크를 사용하여 감정적 반응을 처리했고, 18가지 역량에 걸친 발전을 분석하는 맞춤형 체인지메이커 지수 보고서를 생성했습니다. 워크숍은 학생들이 소셜 비즈니스 캔버스를 사용하여 실행 가능한 소셜 비즈니스 솔루션을 생성하여 시뮬레이션된 삶의 경험 중 겪었던 문제들을 직접 다루는 것으로 마무리되었습니다. 이러한 경험적 학습 접근 방식을 통해 참가자들은 글로벌 문제에 대한 이론적 이해를 넘어 실용적이고 공감 주도적인 솔루션을 개발할 수 있었습니다.",
       "outcomes": "이 워크숍은 학생 참여와 공감 능력 개발에서 측정 가능한 중요한 결과를 보여주었습니다. 참가자들은 글로벌 격차에 대한 이해도 향상, 지속 가능성 개발 과제에 대한 비판적 사고 향상, 사회적 영향력 이니셔티브 추구에 대한 동기 부여 증가를 보여주었습니다. 학생들은 교육 불평등에서 지속 가능한 자원 관리에 이르는 문제들을 대상으로 혁신적인 사회 비즈니스 제안을 창출하여 서로 연결된 글로벌 과제에 대한 깊은 인식을 반영했습니다. IIT 뭄바이에서의 성공은 학문적 학습을 다양한 문화 및 교육적 맥락에 걸쳐 실행 가능한 체인지메이킹 역량으로 전환하는 데 있어 리얼라이브즈의 효과를 강화합니다."
+    },
+    "chulalongkorn": {
+      "breadcrumb": "Chulalongkorn University, Thailand",
+      "university": "Chulalongkorn University, Thailand",
+      "department": "Department - Faculty of Education / BAScii Program",
+      "collaborator": "Dr. Sawaros Thanapornsangsuth",
+      "professorSectionTitle": "A Note from the Professor",
+      "empathyCanvasSectionTitle": "Empathy Canvas Insights & Reflections",
+      "skills": ["Empathy", "SDG Awareness", "Critical Thinking"],
+      "objective": "To develop empathy and global awareness among university students by immersing them in real-life poverty scenarios through simulation-based learning. The workshop aimed to deepen understanding of SDG 1 (No Poverty), enabling students to experience systemic inequalities, reflect on privilege, and build critical thinking and changemaking skills through experiential learning and structured reflection.",
+      "programOverview": "RealLives conducted an immersive SDG-focused workshop at Chulalongkorn University (Thailand) for students in the BAScii program. The session centered on SDG 1: No Poverty, where students simulated lives in poverty-affected countries such as Burundi, experiencing challenges like limited access to healthcare, education, and income. The workshop combined simulation gameplay, guided reflection, and collaborative discussion to help students understand poverty beyond statistics. By integrating real-world data and AI-driven life scenarios, the program enabled students to connect emotionally with global issues while developing a deeper awareness of inequality and global citizenship.",
+      "implementation": "The workshop followed a structured experiential learning approach combining simulation, reflection, and collaborative analysis. It began with an introduction to SDG 1: No Poverty and the global context of inequality, followed by an immersive RealLives simulation where students experienced full life journeys shaped by real-world data. Participants made critical decisions around education, healthcare, and livelihood while navigating systemic constraints faced in poverty-affected regions. This was followed by a reflective exercise in which students wrote personal letters from the perspective of their simulated character, fostering emotional connection and deeper empathy. The session then transitioned into a group-based Empathy Canvas activity, where students analyzed their character's experiences across dimensions such as environment, behavior, influences, and emotions. The workshop concluded with group presentations and a facilitated discussion linking individual experiences to broader global challenges and the role of students as changemakers.",
+      "outcomes": "The workshop resulted in a significant shift in students' understanding of global poverty, transforming it from an abstract concept into a deeply personal and emotional experience. Participants demonstrated heightened empathy, with many expressing strong emotional reactions to the difficult life choices encountered during the simulation. The gamified and interactive nature of the platform drove high engagement, enabling students to connect more meaningfully with global issues compared to traditional learning methods. Students also developed a stronger awareness of their own privilege and the structural inequalities that shape life outcomes across different regions. The experience encouraged critical thinking and reflection, with many participants recognizing their potential role as changemakers in addressing global challenges. While students expressed a desire for more time to explore the simulation further, the overall impact highlighted the effectiveness of experiential, data-driven learning in fostering global citizenship, empathy, and action-oriented mindsets."
     }
   }
 }

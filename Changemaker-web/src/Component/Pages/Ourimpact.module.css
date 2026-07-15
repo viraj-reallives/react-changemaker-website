@@ -68,7 +68,10 @@
 }
 
 .our_card_section_wrapper {
-  padding: 1rem 7rem;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -86,7 +89,7 @@
 }
 
 .card_box_impact {
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   box-shadow: 0px 0px 6px 0px #00000040;
   border-radius: 6px;
   display: grid;
@@ -335,7 +338,10 @@
   padding: 1rem 1rem;
 }
 .wrapper_descision_skills {
-  padding: 1rem 13rem;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 }
 
 .decision_skills_container {

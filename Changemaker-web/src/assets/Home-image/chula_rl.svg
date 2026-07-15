@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://res.cloudinary.com/dexw6sglh/image/upload/q_auto/f_auto/v1771840605/reallives-logo_v5cdkc.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="RealLives is The Largest Gamified Simulation Engine of Human Experience on the Planet"
+    />
+    <!-- <meta name="theme-color" content="#ffd700" /> -->
+    <!-- Open Graph / WhatsApp, Facebook, LinkedIn link previews (read from raw HTML; crawlers do not run the React app) -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RealLives Foundation" />
+    <meta property="og:title" content="RealLives Foundation" />
+    <meta
+      property="og:description"
+      content="RealLives is The Largest Gamified Simulation Engine of Human Experience on the Planet"
+    />
+    <meta property="og:url" content="https://www.reallivesworld.com/" />
+    <meta
+      property="og:image"
+      content="https://www.reallivesworld.com/og-image.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="537" />
+    <meta
+      property="og:image:alt"
+      content="RealLives — you are the world. Collage of lives around the globe with the RealLives logo."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RealLives Foundation" />
+    <meta
+      name="twitter:description"
+      content="RealLives is The Largest Gamified Simulation Engine of Human Experience on the Planet"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.reallivesworld.com/og-image.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200..300,0..1,0"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>RealLives Foundation</title>
+    <script type="module" crossorigin src="/assets/index-vVl6sba1.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/asyncToGenerator-BVcl5FgL.js">
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-Cyuzqnbw.js">
+    <link rel="modulepreload" crossorigin href="/assets/objectSpread2-BKmw6jbZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/objectWithoutProperties-CjlH8YfO.js">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-Bb6DECmz.js">
+    <link rel="modulepreload" crossorigin href="/assets/jsx-runtime-BH1R-mb2.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-Cdb_1TOH.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-wjANxPmZ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function () {
+        var AUTH_KEYS = ['gp:user', 'gp:token', 'gp:rememberMe', 'gp:activeTenantId']
+        function clearAuthStorage() {
+          try {
+            AUTH_KEYS.forEach(function (k) {
+              localStorage.removeItem(k)
+              sessionStorage.removeItem(k)
+            })
+          } catch (e) {}
+        }
+        if (/[?&]reset=1(?:&|$)/.test(location.search)) {
+          clearAuthStorage()
+          try {
+            var u = new URL(location.href)
+            u.searchParams.delete('reset')
+            location.replace(u.pathname + u.search + u.hash)
+          } catch (e) {
+            location.replace('/login')
+          }
+        }
+        window.__RL_CLEAR_AUTH__ = clearAuthStorage
+        window.__RL_APP_MOUNTED__ = false
+        window.addEventListener('rl-app-mounted', function () {
+          window.__RL_APP_MOUNTED__ = true
+        })
+        var shown = false
+        function showBootError(msg) {
+          if (shown || window.__RL_APP_MOUNTED__) return
+          shown = true
+          var root = document.getElementById('root')
+          if (!root) return
+          root.innerHTML =
+            '<div style="min-height:100vh;padding:24px;background:linear-gradient(180deg,#0f172a 0%,#1e293b 100%);color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,sans-serif">' +
+            '<h1 style="font-size:20px;margin:0 0 12px">App did not start</h1>' +
+            '<p style="font-size:14px;color:#94a3b8;line-height:1.5;margin:0 0 12px">' +
+            (msg || 'JavaScript failed to load.') +
+            '</p>' +
+            '<button type="button" id="rl-clear-auth-btn" style="display:inline-block;padding:10px 16px;border-radius:8px;background:#06b6d4;color:#0f172a;font-weight:600;border:none;cursor:pointer;font-size:15px">Clear session &amp; sign in</button></div>'
+          var btn = document.getElementById('rl-clear-auth-btn')
+          if (btn) {
+            btn.onclick = function () {
+              clearAuthStorage()
+              location.replace('/login?reset=1')
+            }
+          }
+        }
+        window.addEventListener('error', function (e) {
+          if (e.message) showBootError(e.message)
+        })
+        window.addEventListener('unhandledrejection', function (e) {
+          var reason = e.reason && (e.reason.message || String(e.reason))
+          if (reason) showBootError(reason)
+        })
+        setTimeout(function () {
+          var root = document.getElementById('root')
+          if (root && !root.hasChildNodes() && !window.__RL_APP_MOUNTED__) showBootError()
+        }, 12000)
+      })()
+    </script>
+  </body>
+</html>

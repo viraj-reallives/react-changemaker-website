@@ -1,24 +1,32 @@
 import React from "react";
-import Styles from "../HomeComponentParts/Navamindradhiraj_University.module.css";
+import Styles from "./Chulalongkorn_University.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { useLocalePath } from "../../hooks/useLocalePath";
-import second_logo_slide from "../../assets/Home-image/second-logo-tab.svg";
+import chulaLogo from "../../assets/Home-image/chula_rl.svg";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
-import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
-import sdg_logo_3 from "../../assets/Home-image/E-WEB-Goal-04.svg";
+import slide1 from "../../assets/chula-workshop/fifth-work-shop-4.png";
+import slide2 from "../../assets/chula-workshop/fifth-work-shop-2.png";
+import slide3 from "../../assets/chula-workshop/fifth-work-shop-3.png";
+import slide4 from "../../assets/chula-workshop/fifth-work-shop-5.png";
+import slide5 from "../../assets/chula-workshop/fifth-work-shop.png";
+import empathyCanvas1 from "../../assets/chula-workshop/first-goal-img-1.png";
+import empathyCanvas2 from "../../assets/chula-workshop/second-goal-img-2.png";
+import empathyCanvas3 from "../../assets/chula-workshop/therd-goal-img-3.png";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
-const Navamindradhiraj_University = ({ theme }) => {
+const SLIDER_IMAGES = [slide1, slide2, slide3, slide4, slide5];
+const EMPATHY_CANVAS_IMAGES = [empathyCanvas1, empathyCanvas2, empathyCanvas3];
+
+const Chulalongkorn_University = ({ theme }) => {
   const { t, getMessage } = useMarketingTranslation();
-  const uni = getMessage("universities.navamindradhiraj") ?? {};
+  const uni = getMessage("universities.chulalongkorn") ?? {};
   const skills = uni.skills ?? [];
-  const testimonialParagraphs = uni.testimonial?.paragraphs ?? [];
 
   const localePath = useLocalePath();
 
@@ -53,43 +61,21 @@ const Navamindradhiraj_University = ({ theme }) => {
           speed={600}
           className={`${Styles.mySwiper} universitySlider`}
         >
-          <SwiperSlide className={Styles.swiperSlide}>
-            <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/second-workshop_vmxhhq.png"
-              className={Styles.slider_img}
-              alt={t("common.alt.img")}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className={Styles.swiperSlide}>
-            <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-2_ikloth.png"
-              className={Styles.slider_img}
-              alt={t("common.alt.img")}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className={Styles.swiperSlide}>
-            <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-3_ycah0h.png"
-              className={Styles.slider_img}
-              alt={t("common.alt.img")}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className={Styles.swiperSlide}>
-            <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png"
-              className={Styles.slider_img}
-              alt={t("common.alt.img")}
-            />
-          </SwiperSlide>
+          {SLIDER_IMAGES.map((src) => (
+            <SwiperSlide key={src} className={Styles.swiperSlide}>
+              <img
+                src={src}
+                className={Styles.slider_img}
+                alt={t("common.alt.img")}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
 
       <div className={Styles.content_tab_container_imapct}>
         <div className={Styles.container_logo_box_impact}>
-          <img src={second_logo_slide} alt="" />
+          <img src={chulaLogo} alt="" />
         </div>
       </div>
 
@@ -115,14 +101,6 @@ const Navamindradhiraj_University = ({ theme }) => {
         <div className={Styles.grid_sdg_card_imapct}>
           <div className={Styles.sdg_imapct}>
             <img src={sdg_logo_1} alt="" />
-          </div>
-
-          <div className={Styles.sdg_imapct}>
-            <img src={sdg_logo_2} alt="" />
-          </div>
-
-          <div className={Styles.sdg_imapct}>
-            <img src={sdg_logo_3} alt="" />
           </div>
         </div>
       </div>
@@ -160,12 +138,49 @@ const Navamindradhiraj_University = ({ theme }) => {
 
         <div className={Styles.impact_left_data_box}>
           <p className={Styles.student_testimonials_title}>
-            {t("common.impact.crossCulturalExchange")}
+            {t("common.impact.outcomesImpact")}
           </p>
 
           <span className={Styles.text_data_content_1}>
-            <p>{uni.crossCultural}</p>
+            <p>{uni.outcomes}</p>
           </span>
+        </div>
+      </div>
+
+      <div className={Styles.container_student_impact_data}>
+        <div className={Styles.impact_left_data_box}>
+          <p className={Styles.student_testimonials_title}>
+            {uni.professorSectionTitle}
+          </p>
+
+          <div className={Styles.testimonial_video}>
+            <iframe
+              src="https://www.youtube.com/embed/70nSMII7IYQ"
+              title="Chulalongkorn University professor workshop reflection"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className={Styles.container_student_impact_data}>
+        <div className={Styles.impact_left_data_box}>
+          <p className={Styles.student_testimonials_title}>
+            {uni.empathyCanvasSectionTitle}
+          </p>
+
+          <div className={Styles.empathy_canvas_grid}>
+            {EMPATHY_CANVAS_IMAGES.map((src) => (
+              <img
+                key={src}
+                src={src}
+                className={Styles.empathy_canvas_image}
+                alt={t("common.alt.img")}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
@@ -178,35 +193,17 @@ const Navamindradhiraj_University = ({ theme }) => {
           {skills.map((skill, idx) => (
             <button
               key={skill}
-              className={`${Styles.color_btn_font} ${idx === 1 ? Styles.empathy_btn_color : ""}`}
+              className={`${Styles.color_btn_font} ${
+                idx === 1
+                  ? Styles.empathy_btn_color
+                  : idx === 2
+                    ? Styles.critical_thinking_btn_color
+                    : ""
+              }`}
             >
               {skill}
             </button>
           ))}
-        </div>
-      </div>
-
-      <div className={Styles.container_student_impact_data}>
-        <div className={Styles.impact_left_data_box}>
-          <p className={Styles.student_testimonials_title}>
-            {t("common.impact.studentTestimonial")}
-          </p>
-
-          <div className={Styles.testimonial_video}>
-            <iframe
-              src="https://www.youtube.com/embed/pkJbLhjpZpc?si=dZ90iEvKdRaqUlCY"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
-
-          <span className={Styles.text_data_content_1}>
-            {testimonialParagraphs.map((paragraph) => (
-              <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-            ))}
-          </span>
         </div>
       </div>
 
@@ -227,4 +224,4 @@ const Navamindradhiraj_University = ({ theme }) => {
   );
 };
 
-export default Navamindradhiraj_University;
+export default Chulalongkorn_University;

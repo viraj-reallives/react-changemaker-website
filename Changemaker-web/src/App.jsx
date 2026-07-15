@@ -32,6 +32,9 @@ const KyungHee_University = lazy(() =>
 const IIT_Bombay = lazy(() =>
   import("./Component/HomeComponentParts/IIT_Bombay"),
 );
+const Chulalongkorn_University = lazy(() =>
+  import("./Component/HomeComponentParts/Chulalongkorn_University"),
+);
 
 const PageFallback = () => (
   <div className="simple_loader light" aria-hidden="true">
@@ -154,6 +157,16 @@ const App = () => {
               element={<LocaleGate />}
             >
               <Route index element={<IIT_Bombay theme={theme} />} />
+            </Route>
+
+            <Route
+              path="our-impact/chulalongkorn-university/:locale"
+              element={<LocaleGate />}
+            >
+              <Route
+                index
+                element={<Chulalongkorn_University theme={theme} />}
+              />
             </Route>
 
             <Route path="our-impact/:locale" element={<LocaleGate />}>

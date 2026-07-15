@@ -25,6 +25,12 @@ const impactSites = [
     path: "our-impact/navamindradhiraj-university",
   },
   {
+    id: 10,
+    countryKey: "thailandChula",
+    coordinates: [100.53, 13.74],
+    path: "our-impact/chulalongkorn-university",
+  },
+  {
     id: 4,
     countryKey: "southKorea",
     coordinates: [127.8, 40.5],

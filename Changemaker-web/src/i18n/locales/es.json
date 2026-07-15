@@ -85,6 +85,7 @@
       "countries": {
         "usa": "EE. UU.",
         "thailand": "Tailandia",
+        "thailandChula": "Bangkok (Chula)",
         "southKorea": "Corea del Sur",
         "india": "India",
         "switzerland": "Suiza",
@@ -740,7 +741,7 @@
           "particepent_title": "Departamento - Educación General",
           "collaboration_text": "En colaboración con:",
           "name_card": "Prof. Krittanan Pensirisomboon",
-          "number_title": 150,
+          "number_title": "750+",
           "skill_devloped": "Habilidades Desarrolladas",
           "teamwork_title": "Habilidades del Siglo XXI",
           "intergrity_title": "Perspicacia Comercial",
@@ -772,6 +773,19 @@
           "teamwork_title": "Conciencia de los ODS",
           "intergrity_title": "Emprendimiento Social",
           "link": "/our-impact/iit-bombay"
+        },
+        {
+          "card_title": "Taller de la Universidad de Chulalongkorn",
+          "card_date": "27 / 04 / 2024",
+          "university_text": "Universidad de Chulalongkorn, Bangkok, Tailandia",
+          "particepent_title": "Facultad de Educación / Programa BAScii",
+          "collaboration_text": "En colaboración con:",
+          "name_card": "Dr. Sawaros Thanapornsangsuth",
+          "number_title": 200,
+          "skill_devloped": "Habilidades Desarrolladas",
+          "teamwork_title": "Empatía",
+          "intergrity_title": "Conciencia de los ODS",
+          "link": "/our-impact/chulalongkorn-university"
         }
       ]
     }
@@ -837,6 +851,19 @@
       "programOverview": "La Fundación RealLives llevó a cabo con éxito un Programa integral de ChangeMaker en IIT Bombay, centrándose en los objetivos de desarrollo sostenible y la creación de cambios impulsada por la empatía. El taller involucró a estudiantes universitarios en un viaje educativo inmersivo que combinó experiencias de simulación de vida con reflexión estructurada y pensamiento emprendedor. Los participantes navegaron a través del ecosistema completo de RealLives, experimentando vidas en diferentes entornos socioeconómicos a nivel mundial mientras desarrollaban empatía medible y competencias de creación de cambios a través de nuestras herramientas de evaluación patentadas.",
       "implementation": "El programa utilizó nuestra metodología integrada de cuatro pasos: los estudiantes primero experimentaron diversas vidas globales a través de la simulación de RealLives, luego procesaron sus respuestas emocionales utilizando el marco del Lienzo de Empatía, seguido de la generación de informes personalizados del Índice ChangeMaker que analizaban su desarrollo en 18 competencias. El taller concluyó con los estudiantes creando soluciones comerciales sociales viables utilizando nuestro Lienzo de Negocios Sociales, abordando directamente los desafíos que encontraron durante sus experiencias de vida simuladas. Este enfoque de aprendizaje experiencial permitió a los participantes ir más allá de la comprensión teórica de los problemas globales para desarrollar soluciones prácticas impulsadas por la empatía.",
       "outcomes": "El taller demostró resultados medibles significativos en la participación de los estudiantes y el desarrollo de la empatía. Los participantes mostraron una mayor comprensión de las disparidades globales, un mejor pensamiento crítico sobre los desafíos del desarrollo sostenible y una mayor motivación para emprender iniciativas de impacto social. Los estudiantes crearon propuestas innovadoras de negocios sociales dirigidas a problemas que van desde la desigualdad educativa hasta la gestión sostenible de los recursos, lo que refleja su profunda conciencia de los desafíos globales interconectados. El éxito en IIT Bombay refuerza la eficacia de RealLives en la transformación del aprendizaje académico en capacidades de creación de cambios viables en diversos contextos culturales y educativos."
+    },
+    "chulalongkorn": {
+      "breadcrumb": "Chulalongkorn University, Thailand",
+      "university": "Chulalongkorn University, Thailand",
+      "department": "Department - Faculty of Education / BAScii Program",
+      "collaborator": "Dr. Sawaros Thanapornsangsuth",
+      "professorSectionTitle": "A Note from the Professor",
+      "empathyCanvasSectionTitle": "Empathy Canvas Insights & Reflections",
+      "skills": ["Empathy", "SDG Awareness", "Critical Thinking"],
+      "objective": "To develop empathy and global awareness among university students by immersing them in real-life poverty scenarios through simulation-based learning. The workshop aimed to deepen understanding of SDG 1 (No Poverty), enabling students to experience systemic inequalities, reflect on privilege, and build critical thinking and changemaking skills through experiential learning and structured reflection.",
+      "programOverview": "RealLives conducted an immersive SDG-focused workshop at Chulalongkorn University (Thailand) for students in the BAScii program. The session centered on SDG 1: No Poverty, where students simulated lives in poverty-affected countries such as Burundi, experiencing challenges like limited access to healthcare, education, and income. The workshop combined simulation gameplay, guided reflection, and collaborative discussion to help students understand poverty beyond statistics. By integrating real-world data and AI-driven life scenarios, the program enabled students to connect emotionally with global issues while developing a deeper awareness of inequality and global citizenship.",
+      "implementation": "The workshop followed a structured experiential learning approach combining simulation, reflection, and collaborative analysis. It began with an introduction to SDG 1: No Poverty and the global context of inequality, followed by an immersive RealLives simulation where students experienced full life journeys shaped by real-world data. Participants made critical decisions around education, healthcare, and livelihood while navigating systemic constraints faced in poverty-affected regions. This was followed by a reflective exercise in which students wrote personal letters from the perspective of their simulated character, fostering emotional connection and deeper empathy. The session then transitioned into a group-based Empathy Canvas activity, where students analyzed their character's experiences across dimensions such as environment, behavior, influences, and emotions. The workshop concluded with group presentations and a facilitated discussion linking individual experiences to broader global challenges and the role of students as changemakers.",
+      "outcomes": "The workshop resulted in a significant shift in students' understanding of global poverty, transforming it from an abstract concept into a deeply personal and emotional experience. Participants demonstrated heightened empathy, with many expressing strong emotional reactions to the difficult life choices encountered during the simulation. The gamified and interactive nature of the platform drove high engagement, enabling students to connect more meaningfully with global issues compared to traditional learning methods. Students also developed a stronger awareness of their own privilege and the structural inequalities that shape life outcomes across different regions. The experience encouraged critical thinking and reflection, with many participants recognizing their potential role as changemakers in addressing global challenges. While students expressed a desire for more time to explore the simulation further, the overall impact highlighted the effectiveness of experiential, data-driven learning in fostering global citizenship, empathy, and action-oriented mindsets."
     }
   }
 }

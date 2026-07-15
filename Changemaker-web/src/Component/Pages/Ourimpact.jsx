@@ -8,6 +8,7 @@ import Styles from "./Ourimpact.module.css";
 import { FaArrowRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
+import chulaWorkshopCardImg from "../../assets/chula-workshop/fifth-work-shop-4.png";
 
 const GlobalMap = lazy(() =>
   import("../GlobalMap").then((m) => ({ default: m.GlobalMap })),
@@ -37,6 +38,11 @@ const IMPACT_CARD_META = [
       "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
     teamwork_bg: "#f7b4b4 ",
     intergrity_bg: "#c4c1ff",
+  },
+  {
+    imgURL: chulaWorkshopCardImg,
+    teamwork_bg: "#d4e8eb",
+    intergrity_bg: "#caecf1",
   },
 ];
 
