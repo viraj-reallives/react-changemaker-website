@@ -124,7 +124,8 @@
       "titleLine2": "Mät det som verkligen betyder något",
       "description": "Livssimuleringsbaserad bedömning som spårar 18 kritiska kompetenser genom autentiskt beslutsfattande, inte enkäter.",
       "beginJourney": "Påbörja din förändringsresa",
-      "howThisWorks": "Hur fungerar det här?"
+      "howThisWorks": "Hur fungerar det här?",
+      "ethCaption": "ChangeMaker-workshop vid ETH Zürich, Schweiz"
     }
   },
   "features": {
@@ -639,7 +640,7 @@
         "submissionFailed": "Inskickningen misslyckades. Försök igen.",
         "networkError": "Nätverksfel. Kontrollera din anslutning."
       },
-      "emailSubject": "Nytt meddelande från kontaktformulär"
+      "emailSubject": "RCMI Website Form Submission"
     },
     "certifiedInstitutes": {
       "hero": {

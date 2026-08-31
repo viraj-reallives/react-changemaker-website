@@ -124,7 +124,8 @@
       "titleLine2": "Mide lo que realmente importa",
       "description": "Evaluación basada en simulación de vida que rastrea 18 competencias críticas a través de la toma de decisiones auténtica, no encuestas.",
       "beginJourney": "Comienza tu Viaje de Cambio",
-      "howThisWorks": "¿Cómo funciona esto?"
+      "howThisWorks": "¿Cómo funciona esto?",
+      "ethCaption": "Taller ChangeMaker en ETH Zúrich, Suiza"
     }
   },
   "features": {
@@ -639,7 +640,7 @@
         "submissionFailed": "El envío falló. Por favor, inténtalo de nuevo.",
         "networkError": "Error de red. Verifica tu conexión."
       },
-      "emailSubject": "Nuevo Envío del Formulario de Contacto"
+      "emailSubject": "RCMI Website Form Submission"
     },
     "certifiedInstitutes": {
       "hero": {

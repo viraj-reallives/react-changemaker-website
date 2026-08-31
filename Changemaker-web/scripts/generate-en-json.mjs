@@ -637,7 +637,7 @@ const en = {
         submissionFailed: "Submission failed. Please try again.",
         networkError: "Network error. Check your connection.",
       },
-      emailSubject: "New Contact Form Submission",
+      emailSubject: "RCMI Website Form Submission",
     },
 
     certifiedInstitutes: {

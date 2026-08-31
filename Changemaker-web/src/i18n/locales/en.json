@@ -124,7 +124,8 @@
       "titleLine2": "Measure What Really Matters",
       "description": "Life simulation–based assessment that tracks 18 critical competencies through authentic decision-making, not surveys.",
       "beginJourney": "Begin Your Journey of Change",
-      "howThisWorks": "How this works?"
+      "howThisWorks": "How this works?",
+      "ethCaption": "Changemaker workshop at ETH Zurich, Switzerland"
     }
   },
   "features": {
@@ -639,7 +640,7 @@
         "submissionFailed": "Submission failed. Please try again.",
         "networkError": "Network error. Check your connection."
       },
-      "emailSubject": "New Contact Form Submission"
+      "emailSubject": "RCMI Website Form Submission"
     },
     "certifiedInstitutes": {
       "hero": {

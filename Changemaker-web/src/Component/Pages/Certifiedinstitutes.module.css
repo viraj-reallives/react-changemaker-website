@@ -15,7 +15,7 @@
 }
 
 .dark .inner_content_first {
-  background-color: black;
+  background-color: var(--dm-bg);
 }
 
 .child_inner_content {

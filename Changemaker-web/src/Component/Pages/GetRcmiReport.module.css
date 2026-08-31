@@ -6,7 +6,7 @@
 }
 
 .dark.page {
-  background: linear-gradient(180deg, var(--dm-bg) 0%, var(--dm-bg-elevated) 50%, #0c0a08 100%);
+  background: linear-gradient(180deg, var(--dm-bg) 0%, var(--dm-bg-elevated) 50%, #0c1830 100%);
   color: #f0f0f0;
 }
 
@@ -177,7 +177,7 @@
 }
 
 .dark .timelineItemHighlight .timelineContent {
-  background: linear-gradient(135deg, #1e2e28 0%, #2a261e 100%);
+  background: linear-gradient(135deg, #163044 0%, #2a2818 100%);
   border-color: rgba(255, 192, 103, 0.25);
 }
 

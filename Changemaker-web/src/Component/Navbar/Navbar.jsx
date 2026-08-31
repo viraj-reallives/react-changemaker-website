@@ -18,7 +18,7 @@ const Navbar = ({ theme, settheme }) => {
     }
     metaThemeColor.setAttribute(
       "content",
-      theme === "light" ? "#FFD700" : "#050505",
+      theme === "light" ? "#FFD700" : "#F8C078",
     );
   }, [theme]);
 

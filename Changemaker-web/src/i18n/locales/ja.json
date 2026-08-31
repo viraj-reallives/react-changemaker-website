@@ -124,7 +124,8 @@
       "titleLine2": "本当に重要なものを測定する",
       "description": "アンケートではなく、実際の意思決定を通じて18の重要なコンピテンシーを追跡する、人生シミュレーションベースの評価。",
       "beginJourney": "変革の旅を始める",
-      "howThisWorks": "仕組み"
+      "howThisWorks": "仕組み",
+      "ethCaption": "スイス・チューリッヒ工科大学（ETH Zurich）でのチェンジメーカー・ワークショップ"
     }
   },
   "features": {
@@ -639,7 +640,7 @@
         "submissionFailed": "送信に失敗しました。もう一度お試しください。",
         "networkError": "ネットワークエラーです。接続を確認してください。"
       },
-      "emailSubject": "新しいお問い合わせフォームの送信"
+      "emailSubject": "RCMI Website Form Submission"
     },
     "certifiedInstitutes": {
       "hero": {

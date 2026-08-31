@@ -11,15 +11,25 @@
   transition: 0.5s;
 }
 
+body.dark,
 .dark.container {
-  --dm-bg: #050505;
-  --dm-bg-elevated: #0a0a0a;
-  --dm-bg-surface: #111111;
-  --dm-bg-muted: #181818;
-  --dm-bg-hover: #1f1f1f;
-  --dm-border: rgba(255, 255, 255, 0.08);
-  background-color: var(--dm-bg);
+  --dm-bg: #102038;
+  --dm-bg-elevated: #162848;
+  --dm-bg-surface: #1c3258;
+  --dm-bg-muted: #243c68;
+  --dm-bg-hover: #2c4a7c;
+  --dm-border: rgba(168, 196, 236, 0.16);
+  --dm-nav: #f8c078;
+  --dm-nav-text: #152544;
   color-scheme: dark;
+}
+
+body.dark {
+  background-color: var(--dm-bg);
+}
+
+.dark.container {
+  background-color: var(--dm-bg);
 }
 
 /* lodaer css */

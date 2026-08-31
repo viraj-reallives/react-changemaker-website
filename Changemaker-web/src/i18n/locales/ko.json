@@ -124,7 +124,8 @@
       "titleLine2": "정말 중요한 것을 측정하세요",
       "description": "설문조사가 아닌 실제 의사결정을 통해 18가지 핵심 역량을 추적하는 삶 시뮬레이션 기반 평가입니다.",
       "beginJourney": "변화의 여정을 시작하세요",
-      "howThisWorks": "어떻게 작동하나요?"
+      "howThisWorks": "어떻게 작동하나요?",
+      "ethCaption": "스위스 ETH Zurich 체인지메이커 워크숍"
     }
   },
   "features": {
@@ -639,7 +640,7 @@
         "submissionFailed": "제출에 실패했습니다. 다시 시도해 주세요.",
         "networkError": "네트워크 오류입니다. 연결을 확인해 주세요."
       },
-      "emailSubject": "새로운 문의 양식 제출"
+      "emailSubject": "RCMI Website Form Submission"
     },
     "certifiedInstitutes": {
       "hero": {

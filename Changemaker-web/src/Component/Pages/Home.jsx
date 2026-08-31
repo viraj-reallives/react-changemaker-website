@@ -1,6 +1,7 @@
 import Styles from "./Home.module.css";
 import Featuresindex from "../HomeComponentParts/Featuresindex";
 import waterflow_image from "../../assets/Home-image/Water-flow-image.svg";
+import ethStudentsPhoto from "../../assets/ETH-Sudents2.png";
 import ChangeMakeraction from "../HomeComponentParts/ChangeMakeraction";
 import { Link } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
@@ -30,10 +31,12 @@ const Home = ({ theme, settheme }) => {
 
               <div className={Styles.image_description}>
                 <img
+                  className={Styles.waterflow_bg}
                   loading="eager"
                   decoding="async"
                   src={waterflow_image}
-                  alt={t("common.alt.changemakerIndexImage")}
+                  alt=""
+                  aria-hidden="true"
                 />
 
                 <p className={Styles.top_description_title}>
@@ -60,13 +63,18 @@ const Home = ({ theme, settheme }) => {
         </div>
 
         <div className={Styles.content_image_right}>
-          <img
-            loading="eager"
-            decoding="async"
-            className={Styles.image_hight_rem}
-            src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653479/first-section-image_f9elve.png"
-            alt={t("common.alt.changemakerIndexImage")}
-          />
+          <div className={Styles.hero_photo_frame}>
+            <img
+              loading="eager"
+              decoding="async"
+              className={Styles.image_hight_rem}
+              src={ethStudentsPhoto}
+              alt={t("home.hero.ethCaption")}
+            />
+            <p className={Styles.hero_photo_caption}>
+              {t("home.hero.ethCaption")}
+            </p>
+          </div>
         </div>
       </div>
 

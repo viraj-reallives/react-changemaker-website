@@ -34,9 +34,9 @@
 .dark .how_to_works_rcmi_container_inner {
   background: linear-gradient(
     180deg,
-    #232a32 0%,
-    #283038 45%,
-    #2c2824 100%
+    var(--dm-bg) 0%,
+    var(--dm-bg-elevated) 45%,
+    var(--dm-bg-surface) 100%
   );
 }
 
@@ -52,9 +52,9 @@
 .dark .the_ChangeMaker_Journey_container {
   background: linear-gradient(
     180deg,
-    #2a2218 0%,
-    #332a1e 50%,
-    #2a241c 100%
+    var(--dm-bg-elevated) 0%,
+    var(--dm-bg-surface) 50%,
+    var(--dm-bg-muted) 100%
   );
 }
 
@@ -64,7 +64,7 @@
 }
 
 .dark .point_cards_inner {
-  background-color: #2d3328 !important;
+  background-color: var(--dm-bg-muted) !important;
 }
 
 .dark .stage_title_text,
