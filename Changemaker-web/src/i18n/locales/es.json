@@ -120,12 +120,18 @@
   },
   "home": {
     "hero": {
+      "kicker": "RealLives ChangeMaker Index",
       "titleLine1": "Más allá de las pruebas tradicionales,",
       "titleLine2": "Mide lo que realmente importa",
       "description": "Evaluación basada en simulación de vida que rastrea 18 competencias críticas a través de la toma de decisiones auténtica, no encuestas.",
       "beginJourney": "Comienza tu Viaje de Cambio",
       "howThisWorks": "¿Cómo funciona esto?",
-      "ethCaption": "Taller ChangeMaker en ETH Zúrich, Suiza"
+      "ethCaption": "Taller ChangeMaker en ETH Zúrich, Suiza",
+      "stats": [
+        { "value": "18", "label": "Competencias" },
+        { "value": "En vivo", "label": "Simulación" },
+        { "value": "Sin", "label": "Encuestas" }
+      ]
     }
   },
   "features": {

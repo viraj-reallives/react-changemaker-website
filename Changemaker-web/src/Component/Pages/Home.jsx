@@ -1,6 +1,5 @@
 import Styles from "./Home.module.css";
 import Featuresindex from "../HomeComponentParts/Featuresindex";
-import waterflow_image from "../../assets/Home-image/Water-flow-image.svg";
 import ethStudentsPhoto from "../../assets/ETH-Sudents2.png";
 import ChangeMakeraction from "../HomeComponentParts/ChangeMakeraction";
 import { Link } from "react-router-dom";
@@ -8,8 +7,9 @@ import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
 
 const Home = ({ theme, settheme }) => {
-  const { t } = useMarketingTranslation();
+  const { t, getMessage } = useMarketingTranslation();
   const localePath = useLocalePath();
+  const stats = getMessage("home.hero.stats") ?? [];
 
   const become_change_btn = () => {
     window.open(
@@ -20,63 +20,52 @@ const Home = ({ theme, settheme }) => {
   };
 
   return (
-    <div className={`${Styles.homecontainer} ${Styles[theme]}`}>
-      <div className={Styles.first_content_structure}>
-        <div className={Styles.content_left_bar}>
-          <div className={Styles.top_heading_container_main}>
-            <div className={Styles.wrapper_heading}>
-              <h1 className={Styles.title_section_1}>
-                {t("home.hero.titleLine1")} <br /> {t("home.hero.titleLine2")}
-              </h1>
+    <div className={`${Styles.page} ${Styles[theme]}`}>
+      <section className={Styles.hero}>
+        <div className={Styles.heroCopy}>
+          <p className={Styles.kicker}>{t("home.hero.kicker")}</p>
 
-              <div className={Styles.image_description}>
-                <img
-                  className={Styles.waterflow_bg}
-                  loading="eager"
-                  decoding="async"
-                  src={waterflow_image}
-                  alt=""
-                  aria-hidden="true"
-                />
+          <h1 className={Styles.title}>
+            <span className={Styles.titleLead}>{t("home.hero.titleLine1")}</span>
+            <span className={Styles.titlePunch}>{t("home.hero.titleLine2")}</span>
+          </h1>
 
-                <p className={Styles.top_description_title}>
-                  {t("home.hero.description")}
-                </p>
-              </div>
-            </div>
-          </div>
+          <p className={Styles.lede}>{t("home.hero.description")}</p>
 
-          <div className={Styles.container_btn}>
-            <button className={Styles.redirect_btn} onClick={become_change_btn}>
+          {stats.length > 0 && (
+            <ul className={Styles.stats}>
+              {stats.map((stat) => (
+                <li key={`${stat.value}-${stat.label}`} className={Styles.stat}>
+                  <span className={Styles.statValue}>{stat.value}</span>
+                  <span className={Styles.statLabel}>{stat.label}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <div className={Styles.actions}>
+            <button className={Styles.btnPrimary} onClick={become_change_btn}>
               {t("home.hero.beginJourney")}
             </button>
 
-            <Link
-              className={Styles.text_decoration_none}
-              to={localePath("/how-rcmi-works")}
-            >
-              <button className={Styles.How_works}>
-                {t("home.hero.howThisWorks")}
-              </button>
+            <Link className={Styles.btnSecondary} to={localePath("/how-rcmi-works")}>
+              {t("home.hero.howThisWorks")}
             </Link>
           </div>
         </div>
 
-        <div className={Styles.content_image_right}>
-          <div className={Styles.hero_photo_frame}>
-            <img
-              loading="eager"
-              decoding="async"
-              className={Styles.image_hight_rem}
-              src={ethStudentsPhoto}
-              alt={t("home.hero.ethCaption")}
-            />
-            <p className={Styles.hero_photo_caption}>
-              {t("home.hero.ethCaption")}
-            </p>
-          </div>
-        </div>
-      </div>
+        <figure className={Styles.heroMedia}>
+          <img
+            loading="eager"
+            decoding="async"
+            src={ethStudentsPhoto}
+            alt={t("home.hero.ethCaption")}
+          />
+          <figcaption className={Styles.photoChip}>
+            {t("home.hero.ethCaption")}
+          </figcaption>
+        </figure>
+      </section>
 
       <Featuresindex theme={theme} settheme={settheme} />
 

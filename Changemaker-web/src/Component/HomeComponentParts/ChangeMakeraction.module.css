@@ -1,64 +1,66 @@
-.change_maker_action_container {
-  width: 100vw;
-  height: 100vh;
-  background-color: cornflowerblue;
-  position: relative;
+.section {
+  width: 100%;
+  background-color: var(--bg);
+  padding: clamp(3rem, 6vw, 5rem) 0;
 }
 
-.image_fit_cover {
+.inner {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: calc(var(--content) + var(--page-pad) * 2);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
+  box-sizing: border-box;
 }
 
-.see_chnagemaker_index {
-  width: 100%;
-  height: 20vh;
-  /* background-color: red; */
-  position: absolute;
-  top: 0;
+.head {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1.4rem;
-  gap: 1rem;
-}
-
-.title_see_changemaker {
-  font-weight: 500;
-  font-size: 28px;
-  color: #000000;
-}
-
-.title_discription_index {
-  font-weight: 400;
-  font-size: 20px;
-  color: #444444;
+  gap: 0.75rem;
   text-align: center;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
-@media (max-width: 880px) {
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--text);
 }
 
-@media (max-width: 680px) {
-  .change_maker_action_container {
-    display: none;
-  }
-}
-@media (max-width: 560px) {
-  .change_maker_action_container {
-    display: none;
-  }
+.subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text-muted);
 }
 
-@media (max-width: 460px) {
-  .change_maker_action_container {
-    display: none;
-  }
+.embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background-color: var(--bg-elevated);
 }
 
-@media (max-width: 375px) {
-  .change_maker_action_container {
-    display: none;
+.embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 720px) {
+  .embed {
+    aspect-ratio: 4 / 5;
   }
 }

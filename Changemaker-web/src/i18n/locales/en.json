@@ -120,12 +120,18 @@
   },
   "home": {
     "hero": {
+      "kicker": "RealLives ChangeMaker Index",
       "titleLine1": "Beyond Traditional Testing,",
-      "titleLine2": "Measure What Really Matters",
+      "titleLine2": "Measure What Truly Matters",
       "description": "Life simulation–based assessment that tracks 18 critical competencies through authentic decision-making, not surveys.",
       "beginJourney": "Begin Your Journey of Change",
       "howThisWorks": "How this works?",
-      "ethCaption": "Changemaker workshop at ETH Zurich, Switzerland"
+      "ethCaption": "Changemaker workshop at ETH Zurich, Switzerland",
+      "stats": [
+        { "value": "18", "label": "Competencies" },
+        { "value": "Live", "label": "Simulation" },
+        { "value": "No", "label": "Surveys" }
+      ]
     }
   },
   "features": {

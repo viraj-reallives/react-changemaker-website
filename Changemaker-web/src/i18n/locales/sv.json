@@ -120,12 +120,18 @@
   },
   "home": {
     "hero": {
+      "kicker": "RealLives ChangeMaker Index",
       "titleLine1": "Bortom traditionella tester,",
       "titleLine2": "Mät det som verkligen betyder något",
       "description": "Livssimuleringsbaserad bedömning som spårar 18 kritiska kompetenser genom autentiskt beslutsfattande, inte enkäter.",
       "beginJourney": "Påbörja din förändringsresa",
       "howThisWorks": "Hur fungerar det här?",
-      "ethCaption": "ChangeMaker-workshop vid ETH Zürich, Schweiz"
+      "ethCaption": "ChangeMaker-workshop vid ETH Zürich, Schweiz",
+      "stats": [
+        { "value": "18", "label": "Kompetenser" },
+        { "value": "Live", "label": "Simulering" },
+        { "value": "Inga", "label": "Enkäter" }
+      ]
     }
   },
   "features": {

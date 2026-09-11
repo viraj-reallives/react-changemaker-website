@@ -1,52 +1,54 @@
 .footer {
   width: 100%;
-  background-color: white;
+  background-color: var(--bg);
+  color: var(--text);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8rem;
-  padding: 2rem 6rem;
+  padding: 2.5rem var(--page-pad);
+  border-top: 1px solid var(--line);
 }
 
 /* ===== DARK MODE ===== */
 .footer.dark {
-  background-color: var(--dm-bg-elevated);
+  background-color: var(--bg);
 }
 
 .footer.dark .changemaker-text {
-  color: white;
+  color: var(--text);
 }
 
 .footer.dark .footer-descritpion-text {
-  color: white;
+  color: var(--text-muted);
 }
 
 .footer.dark .text-footer-label {
-  color: #c5d0e4;
+  color: var(--text);
 }
 
 .footer.dark .footer-ankar-style {
-  color: white;
+  color: var(--text-muted);
 }
 
 /* ===== LIGHT MODE ===== */
 .footer.light {
-  background-color: #f7f7f7;
+  background-color: var(--bg);
 }
 
 .footer.light .changemaker-text {
-  color: black;
+  color: var(--text);
 }
 
 .footer.light .footer-descritpion-text {
-  color: #4d4d4d;
+  color: var(--text-muted);
 }
 
 .footer.light .text-footer-label {
-  color: #000;
+  color: var(--text);
 }
 
 .footer.light .footer-ankar-style {
-  color: #333;
+  color: var(--text-muted);
 }
 
 /* ===== COMMON STYLES ===== */
@@ -82,7 +84,7 @@
 .border-right-index {
   padding-left: 1rem;
   padding: 10px;
-  border-left: 2px solid #ffb44d;
+  border-left: 1px solid var(--line);
 }
 
 .changemaker-text {
@@ -123,7 +125,11 @@
 .footer-ankar-style {
   text-decoration: none;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.9375rem;
+}
+
+.footer-ankar-style:hover {
+  color: var(--text);
 }
 
 .iframe_container {

@@ -120,12 +120,18 @@
   },
   "home": {
     "hero": {
+      "kicker": "RealLives ChangeMaker Index",
       "titleLine1": "Über traditionelle Tests hinaus",
       "titleLine2": "Messen Sie, was wirklich wichtig ist",
       "description": "Auf einer Lebenssimulation basierende Bewertung, die 18 kritische Kompetenzen durch authentische Entscheidungsfindung und nicht durch Umfragen verfolgt.",
       "beginJourney": "Beginnen Sie Ihre Reise der Veränderung",
       "howThisWorks": "Wie funktioniert das?",
-      "ethCaption": "ChangeMaker-Workshop an der ETH Zürich, Schweiz"
+      "ethCaption": "ChangeMaker-Workshop an der ETH Zürich, Schweiz",
+      "stats": [
+        { "value": "18", "label": "Kompetenzen" },
+        { "value": "Live", "label": "Simulation" },
+        { "value": "Keine", "label": "Umfragen" }
+      ]
     }
   },
   "features": {

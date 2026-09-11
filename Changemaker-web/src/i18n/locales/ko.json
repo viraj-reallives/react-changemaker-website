@@ -120,12 +120,18 @@
   },
   "home": {
     "hero": {
+      "kicker": "RealLives ChangeMaker Index",
       "titleLine1": "전통적인 시험을 넘어,",
       "titleLine2": "정말 중요한 것을 측정하세요",
       "description": "설문조사가 아닌 실제 의사결정을 통해 18가지 핵심 역량을 추적하는 삶 시뮬레이션 기반 평가입니다.",
       "beginJourney": "변화의 여정을 시작하세요",
       "howThisWorks": "어떻게 작동하나요?",
-      "ethCaption": "스위스 ETH Zurich 체인지메이커 워크숍"
+      "ethCaption": "스위스 ETH Zurich 체인지메이커 워크숍",
+      "stats": [
+        { "value": "18", "label": "역량" },
+        { "value": "실시간", "label": "시뮬레이션" },
+        { "value": "없음", "label": "설문조사" }
+      ]
     }
   },
   "features": {
