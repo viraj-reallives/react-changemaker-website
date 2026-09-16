@@ -57,6 +57,18 @@ const Navbar = () => {
           {t("common.nav.howRcmiWorks")}
         </NavLink>
 
+        <NavLink
+          to={localePath("/get-rcmi-report")}
+          className={({ isActive }) =>
+            isActive
+              ? "button-view-rcmi-report active"
+              : "button-view-rcmi-report"
+          }
+          onClick={() => setShowMenu(false)}
+        >
+          {t("common.nav.viewRcmiReport")}
+        </NavLink>
+
         <button
           type="button"
           className="button-rcmi-report"

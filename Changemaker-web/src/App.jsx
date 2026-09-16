@@ -37,7 +37,7 @@ const Chulalongkorn_University = lazy(() =>
 );
 
 const PageFallback = () => (
-  <div className="simple_loader light" aria-hidden="true">
+          <div className="simple_loader" aria-hidden="true">
     <div className="loading" />
   </div>
 );
@@ -85,17 +85,8 @@ const App = () => {
     };
   }, [triggerAlert]);
 
-  const [theme, settheme] = useState(
-    () => localStorage.getItem("user-theme") || "light",
-  );
-
-  useEffect(() => {
-    localStorage.setItem("user-theme", theme);
-    document.body.className = theme;
-  }, [theme]);
-
   return (
-    <div className={`container ${theme}`}>
+    <div className="container">
       {showAlert && (
         <div className="custom-protection-alert">
           <div className="alert-content">
@@ -111,96 +102,70 @@ const App = () => {
           <Route path="/" element={<RootLocaleRedirect />} />
 
           {/* Current format: language code last — /certified-institutes/en */}
-          <Route element={<Layout theme={theme} settheme={settheme} />}>
+          <Route element={<Layout />}>
             <Route path="home/:locale" element={<LocaleGate />}>
-              <Route
-                index
-                element={<Home theme={theme} settheme={settheme} />}
-              />
+              <Route index element={<Home />} />
             </Route>
 
             <Route path="certified-institutes/:locale" element={<LocaleGate />}>
-              <Route
-                index
-                element={
-                  <Certifiedinstitutes theme={theme} settheme={settheme} />
-                }
-              />
+              <Route index element={<Certifiedinstitutes />} />
             </Route>
 
             <Route
               path="our-impact/eth-university/:locale"
               element={<LocaleGate />}
             >
-              <Route index element={<University theme={theme} />} />
+              <Route index element={<University />} />
             </Route>
 
             <Route
               path="our-impact/navamindradhiraj-university/:locale"
               element={<LocaleGate />}
             >
-              <Route
-                index
-                element={<Navamindradhiraj_University theme={theme} />}
-              />
+              <Route index element={<Navamindradhiraj_University />} />
             </Route>
 
             <Route
               path="our-impact/kyunghee-university/:locale"
               element={<LocaleGate />}
             >
-              <Route index element={<KyungHee_University theme={theme} />} />
+              <Route index element={<KyungHee_University />} />
             </Route>
 
             <Route
               path="our-impact/iit-bombay/:locale"
               element={<LocaleGate />}
             >
-              <Route index element={<IIT_Bombay theme={theme} />} />
+              <Route index element={<IIT_Bombay />} />
             </Route>
 
             <Route
               path="our-impact/chulalongkorn-university/:locale"
               element={<LocaleGate />}
             >
-              <Route
-                index
-                element={<Chulalongkorn_University theme={theme} />}
-              />
+              <Route index element={<Chulalongkorn_University />} />
             </Route>
 
             <Route path="our-impact/:locale" element={<LocaleGate />}>
-              <Route
-                index
-                element={<Ourimpact theme={theme} settheme={settheme} />}
-              />
+              <Route index element={<Ourimpact />} />
             </Route>
 
             <Route path="how-rcmi-works/:locale" element={<LocaleGate />}>
-              <Route index element={<Rcmiworks theme={theme} />} />
+              <Route index element={<Rcmiworks />} />
             </Route>
 
             <Route path="contact/:locale" element={<LocaleGate />}>
-              <Route
-                index
-                element={<Contact theme={theme} settheme={settheme} />}
-              />
+              <Route index element={<Contact />} />
             </Route>
 
             <Route path="get-rcmi-report/:locale" element={<LocaleGate />}>
-              <Route
-                index
-                element={<GetRcmiReport theme={theme} settheme={settheme} />}
-              />
+              <Route index element={<GetRcmiReport />} />
             </Route>
           </Route>
 
           {/* Portal: /en */}
           <Route path="/:locale" element={<LocaleGate />}>
-            <Route
-              index
-              element={<Starter theme={theme} settheme={settheme} />}
-            />
+            <Route index element={<Starter />} />
           </Route>
 
           {/* Legacy prefix: /en/certified-institutes → /certified-institutes/en */}
@@ -217,18 +182,35 @@ const App = () => {
             path="/Certified-Institutes"
             element={<LegacyLocaleRedirect />}
           />
-          <Route path="/our-impact/*" element={<LegacyLocaleRedirect />} />
+          <Route path="/our-impact" element={<LegacyLocaleRedirect />} />
+          <Route
+            path="/our-impact/eth-university"
+            element={<LegacyLocaleRedirect />}
+          />
+          <Route
+            path="/our-impact/navamindradhiraj-university"
+            element={<LegacyLocaleRedirect />}
+          />
+          <Route
+            path="/our-impact/kyunghee-university"
+            element={<LegacyLocaleRedirect />}
+          />
+          <Route
+            path="/our-impact/iit-bombay"
+            element={<LegacyLocaleRedirect />}
+          />
+          <Route
+            path="/our-impact/chulalongkorn-university"
+            element={<LegacyLocaleRedirect />}
+          />
           <Route path="/how-rcmi-works" element={<LegacyLocaleRedirect />} />
           <Route path="/How-RCMI-Works" element={<LegacyLocaleRedirect />} />
           <Route path="/contact" element={<LegacyLocaleRedirect />} />
           <Route path="/Contact" element={<LegacyLocaleRedirect />} />
           <Route path="/get-rcmi-report" element={<LegacyLocaleRedirect />} />
 
-          <Route element={<Layout theme={theme} settheme={settheme} />}>
-            <Route
-              path="*"
-              element={<NotFound theme={theme} settheme={settheme} />}
-            />
+          <Route element={<Layout />}>
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Suspense>

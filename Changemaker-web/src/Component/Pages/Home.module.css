@@ -162,10 +162,6 @@
   background-color: var(--bg-elevated);
 }
 
-.dark .btnSecondary:hover {
-  background-color: var(--bg-muted);
-}
-
 .btnPrimary:focus-visible,
 .btnSecondary:focus-visible {
   outline: 2px solid var(--accent);

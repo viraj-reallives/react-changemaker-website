@@ -58,7 +58,7 @@ const TYPE_IMAGES = {
   ],
 };
 
-const SignupTypeModal = ({ theme = "light" }) => {
+const SignupTypeModal = () => {
   const { isOpen, closeSignupModal } = useSignupModal();
   const { locale, getMessage, t } = useMarketingTranslation();
   const copy = getMessage("common.signupModal") ?? {};
@@ -126,7 +126,7 @@ const SignupTypeModal = ({ theme = "light" }) => {
 
   return (
     <div
-      className={`${styles.overlay} ${theme === "dark" ? styles.dark : ""}`}
+      className={styles.overlay}
       onClick={closeSignupModal}
     >
       <div

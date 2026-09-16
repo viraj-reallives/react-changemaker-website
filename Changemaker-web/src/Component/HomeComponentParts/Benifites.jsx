@@ -7,12 +7,12 @@ import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
 const BENEFIT_ICONS = [userduotone, targetduotone, userthreeduotone, arrowup];
 
-const Benifites = ({ theme }) => {
+const Benifites = () => {
   const { t, getMessage } = useMarketingTranslation();
   const benefitCards = getMessage("benefits.cards") ?? [];
 
   return (
-    <section className={`${Style.section} ${Style[theme]}`}>
+    <section className={Style.section}>
       <div className={Style.inner}>
         <header className={Style.head}>
           <h2 className={Style.title}>{t("benefits.title")}</h2>

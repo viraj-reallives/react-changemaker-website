@@ -53,6 +53,7 @@
       "certifiedInstitutes": "認定機関",
       "ourImpact": "私たちのインパクト",
       "howRcmiWorks": "RCMIの仕組み",
+      "viewRcmiReport": "RCMIレポートを見る",
       "getRcmiReport": "あなたのRCMIレポートを取得する"
     },
     "signupModal": {
@@ -180,10 +181,6 @@
     },
     "logo": {
       "title": "RealLives チェンジメーカーインデックス (RCMI)"
-    },
-    "theme": {
-      "switchToDark": "ダークモードに切り替える",
-      "switchToLight": "ライトモードに切り替える"
     },
     "footer": {
       "changeMakerIndex": "RealLives チェンジメーカーインデックス (RCMI)",

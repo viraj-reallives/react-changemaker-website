@@ -47,15 +47,12 @@ const LanguageSwitcher = () => {
       <button
         type="button"
         className={`lang-switcher-trigger ${isOpen ? "lang-switcher-trigger-open" : ""}`}
-        aria-label="Select language"
+        aria-label={`Select language, current ${getLanguageNativeLabel(locale)}`}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
         onClick={() => setIsOpen((open) => !open)}
       >
         <MdLanguage className="lang-switcher-icon" aria-hidden="true" />
-        <span className="lang-switcher-label">
-          {getLanguageNativeLabel(locale)}
-        </span>
         <span className="lang-switcher-code">{locale.toUpperCase()}</span>
         <MdExpandMore
           className={`lang-switcher-chevron ${isOpen ? "lang-switcher-chevron-open" : ""}`}
@@ -79,7 +76,9 @@ const LanguageSwitcher = () => {
                   onClick={() => handleSelect(code)}
                 >
                   <span className="lang-switcher-option-label">{label}</span>
-                  <span className="lang-switcher-option-code">{code.toUpperCase()}</span>
+                  <span className="lang-switcher-option-code">
+                    {code.toUpperCase()}
+                  </span>
                   {isSelected && (
                     <MdCheck className="lang-switcher-option-check" aria-hidden="true" />
                   )}

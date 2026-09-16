@@ -1,31 +1,9 @@
 import "./Navbar.css";
-import { useEffect } from "react";
-import { MdLightMode, MdDarkMode } from "react-icons/md";
-import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import Path from "./Path";
 import Logo from "./Logo";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const Navbar = ({ theme, settheme }) => {
-  const { t } = useMarketingTranslation();
-  useEffect(() => {
-    let metaThemeColor = document.querySelector('meta[name="theme-color"]');
-
-    if (!metaThemeColor) {
-      metaThemeColor = document.createElement("meta");
-      metaThemeColor.name = "theme-color";
-      document.head.appendChild(metaThemeColor);
-    }
-    metaThemeColor.setAttribute(
-      "content",
-      theme === "light" ? "#F6F5F1" : "#111110",
-    );
-  }, [theme]);
-
-  const togglebtn = () => {
-    theme === "light" ? settheme("dark") : settheme("light");
-  };
-
+const Navbar = () => {
   return (
     <div className="header-fixed">
       <Logo />
@@ -35,25 +13,6 @@ const Navbar = ({ theme, settheme }) => {
 
         <div className="navbar-utilities">
           <LanguageSwitcher />
-
-          <span className="navbar-utilities-divider" aria-hidden="true" />
-
-          <button
-            type="button"
-            className="theme-toggle-btn"
-            onClick={togglebtn}
-            aria-label={
-              theme === "light"
-                ? t("common.theme.switchToDark")
-                : t("common.theme.switchToLight")
-            }
-          >
-            {theme === "light" ? (
-              <MdDarkMode className="theme-toggle-icon" />
-            ) : (
-              <MdLightMode className="theme-toggle-icon" />
-            )}
-          </button>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../../Component/HomeComponentParts/KyungHee_University.module.css";
+import Styles from "./WorkshopDetail.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,37 +11,29 @@ import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
 import sdg_logo_3 from "../../assets/Home-image/E-WEB-Goal-04.svg";
 import { FaArrowRight } from "react-icons/fa6";
-import { FaAngleRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useSignupModal } from "../../context/SignupModalContext";
+import WorkshopIdentity from "./WorkshopIdentity";
 
-const KyungHee_University = ({ theme }) => {
+const KyungHee_University = () => {
   const { t, getMessage } = useMarketingTranslation();
   const uni = getMessage("universities.kyunghee") ?? {};
   const skills = uni.skills ?? [];
 
   const localePath = useLocalePath();
-
-  const goToExternal = () => {
-    window.open(
-      "https://reallivesworld.com/reallives/university/pricing",
-      "_blank",
-      "noopener,noreferrer",
-    );
-  };
+  const { openSignupModal } = useSignupModal();
 
   return (
-    <div className={`${Styles.first_university_container} ${Styles[theme]}`}>
-      <span className={Styles.section_flex_button}>
+    <div className={Styles.first_university_container}>
+      <nav className={Styles.section_flex_button} aria-label="Breadcrumb">
         <Link className={Styles.btn_top_slider} to={localePath("/our-impact")}>
           {t("common.impact.impactHome")}
         </Link>
-
-        <FaAngleRight />
-
-        <button className={`${Styles.btn_top_slider} ${Styles.active_color}`}>
-          {uni.breadcrumb}
-        </button>
-      </span>
+        <span className={Styles.crumbSep} aria-hidden="true">
+          /
+        </span>
+        <span className={Styles.crumbCurrent}>{uni.breadcrumb}</span>
+      </nav>
 
       <div className={Styles.slider_wrapper}>
         <Swiper
@@ -94,11 +86,11 @@ const KyungHee_University = ({ theme }) => {
         </Swiper>
       </div>
 
-      <div className={Styles.content_tab_container_imapct}>
-        <div className={Styles.container_logo_box_impact}>
-          <img src={therd_logo_slide} alt="" />
-        </div>
-      </div>
+        <WorkshopIdentity
+          partnerLogo={therd_logo_slide}
+          cropClass="logoCropKh"
+          university={uni.breadcrumb}
+        />
 
       <div className={Styles.sdg_container_imapct_tab}>
         <p className={Styles.student_testimonials_title}>
@@ -186,7 +178,7 @@ const KyungHee_University = ({ theme }) => {
           <p className={Styles.global_student_title}>
             {t("common.impact.empowerStudents")}
           </p>
-          <button onClick={goToExternal} className={Styles.larne_more_btn}>
+          <button onClick={openSignupModal} className={Styles.larne_more_btn}>
             {t("common.impact.beginChangeMakingJourney")}
             <FaArrowRight />
           </button>

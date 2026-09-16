@@ -27,6 +27,7 @@
   --content: 1120px;
   --page-pad: clamp(1.25rem, 4.5vw, 3.5rem);
   --nav-h: 4.5rem;
+  color-scheme: light;
 }
 
 body {
@@ -40,46 +41,6 @@ body {
   overflow-x: hidden;
   background-color: var(--bg);
   color: var(--text);
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-body.light,
-.light.container {
-  color-scheme: light;
-}
-
-body.dark,
-.dark.container {
-  --bg: #111110;
-  --bg-elevated: #1c1c1a;
-  --bg-muted: #242422;
-  --text: #f2f1ec;
-  --text-muted: #a8a79f;
-  --text-faint: #7c7b74;
-  --line: rgba(242, 241, 236, 0.1);
-  --accent: #ffc067;
-  --brand: #ffc067;
-  --brand-hover: #ffb347;
-  --ink: #f2f1ec;
-  --on-ink: #111110;
-  --on-brand: #161615;
-  --dm-bg: var(--bg);
-  --dm-bg-elevated: var(--bg-elevated);
-  --dm-bg-surface: var(--bg-muted);
-  --dm-bg-muted: #2c2c28;
-  --dm-bg-hover: #363632;
-  --dm-border: var(--line);
-  --dm-nav: var(--bg);
-  --dm-nav-text: var(--text);
-  color-scheme: dark;
-}
-
-body.dark {
-  background-color: var(--bg);
-}
-
-.dark.container {
-  background-color: var(--bg);
 }
 
 /* lodaer css */

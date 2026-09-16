@@ -121,24 +121,6 @@
   font-weight: 500;
 }
 
-.dark .contact-container {
-  background-color: var(--dm-bg);
-}
-
-.dark .form-group label {
-  color: white;
-}
-.dark .contact-box {
-  background-color: var(--dm-bg-muted);
-}
-
-.dark .contact-box h2 {
-  color: white;
-}
-
-@media (max-width: 700px) {
-}
-
 @media (max-width: 630px) {
   .contact-container {
     padding: 1rem;

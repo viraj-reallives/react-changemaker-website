@@ -2,69 +2,79 @@ import "../Footer/Footer.css";
 import { Link } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
+import { useSignupModal } from "../../context/SignupModalContext";
 import logoreallives from "../../assets/logo-white.svg";
 
-const Footer = ({ theme }) => {
+const Footer = () => {
   const { t } = useMarketingTranslation();
   const localePath = useLocalePath();
+  const { openSignupModal } = useSignupModal();
 
   return (
-    <div className={`footer ${theme}`}>
-      <div className="footer-section-1">
-        <div className="left-side-bar">
-          <Link className="flex-style" to={localePath("/")}>
-            <div className="logo-change">
+    <footer className="site-footer">
+      <div className="site-footer-inner">
+        <div className="site-footer-top">
+          <div className="site-footer-brand">
+            <Link className="site-footer-logo" to={localePath("/")}>
               <img
-                className="image-fit-cover"
+                className="site-footer-mark"
                 src={logoreallives}
-                alt={t("common.alt.logo")}
+                alt=""
               />
+              <span className="site-footer-name">
+                {t("common.logo.title")}
+              </span>
+            </Link>
+            <p className="site-footer-lede">{t("common.footer.description")}</p>
+          </div>
+
+          <nav className="site-footer-nav" aria-label="Footer">
+            <div className="site-footer-col">
+              <p className="site-footer-kicker">{t("common.footer.getToKnow")}</p>
+              <Link className="site-footer-link" to={localePath("/how-rcmi-works")}>
+                {t("common.footer.aboutRcmi")}
+              </Link>
+              <Link
+                className="site-footer-link"
+                to={localePath("/certified-institutes")}
+              >
+                {t("common.footer.certifiedInstitutes")}
+              </Link>
+              <Link className="site-footer-link" to={localePath("/our-impact")}>
+                {t("common.footer.ourImpact")}
+              </Link>
+              <Link
+                className="site-footer-link"
+                to={localePath("/get-rcmi-report")}
+              >
+                {t("common.nav.viewRcmiReport")}
+              </Link>
             </div>
-          </Link>
 
-          <span className="border-right-index">
-            <p className="changemaker-text">
-              {t("common.footer.changeMakerIndex")}
-            </p>
-          </span>
+            <div className="site-footer-col">
+              <p className="site-footer-kicker">{t("common.footer.support")}</p>
+              <Link className="site-footer-link" to={localePath("/contact")}>
+                {t("common.footer.contactUs")}
+              </Link>
+              <Link className="site-footer-link" to={localePath("/home")}>
+                {t("common.nav.home")}
+              </Link>
+            </div>
+          </nav>
         </div>
 
-        <div className="footer-descritpion-text">
-          {t("common.footer.description")}
-        </div>
-      </div>
-
-      <div className="footer-section-2">
-        <div className="label-footer-button-box">
-          <p className="text-footer-label">{t("common.footer.getToKnow")}</p>
-          <span className="footer-child-container">
-            <Link className="footer-ankar-style" to={localePath("/how-rcmi-works")}>
-              {t("common.footer.aboutRcmi")}
-            </Link>
-
-            <Link
-              className="footer-ankar-style"
-              to={localePath("/certified-institutes")}
-            >
-              {t("common.footer.certifiedInstitutes")}
-            </Link>
-
-            <Link className="footer-ankar-style" to={localePath("/our-impact")}>
-              {t("common.footer.ourImpact")}
-            </Link>
-          </span>
-        </div>
-
-        <div className="label-footer-button-box">
-          <p className="text-footer-label">{t("common.footer.support")}</p>
-          <span className="footer-child-container">
-            <Link className="footer-ankar-style" to={localePath("/contact")}>
-              {t("common.footer.contactUs")}
-            </Link>
-          </span>
+        <div className="site-footer-bottom">
+          <p className="site-footer-copy">{t("portal.copyright")}</p>
+          <button
+            type="button"
+            className="site-footer-cta"
+            onClick={openSignupModal}
+          >
+            {t("common.nav.getRcmiReport")}
+          </button>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

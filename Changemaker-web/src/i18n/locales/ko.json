@@ -53,6 +53,7 @@
       "certifiedInstitutes": "인증 기관",
       "ourImpact": "우리의 영향력",
       "howRcmiWorks": "RCMI 작동 방식",
+      "viewRcmiReport": "RCMI 보고서 보기",
       "getRcmiReport": "내 RCMI 보고서 받기"
     },
     "signupModal": {
@@ -180,10 +181,6 @@
     },
     "logo": {
       "title": "리얼라이브즈 체인지메이커 지수 (RCMI)"
-    },
-    "theme": {
-      "switchToDark": "다크 모드로 전환",
-      "switchToLight": "라이트 모드로 전환"
     },
     "footer": {
       "changeMakerIndex": "리얼라이브즈 체인지메이커 지수 (RCMI)",

@@ -8,6 +8,7 @@ import Styles from "./Ourimpact.module.css";
 import { FaArrowRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
+import { useSignupModal } from "../../context/SignupModalContext";
 import chulaWorkshopCardImg from "../../assets/chula-workshop/fifth-work-shop-4.png";
 
 const GlobalMap = lazy(() =>
@@ -18,49 +19,32 @@ const IMPACT_CARD_META = [
   {
     imgURL:
       "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
-    teamwork_bg: "#f9c1a5",
-    intergrity_bg: "#caecf1",
   },
   {
     imgURL:
       "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/second-workshop_vmxhhq.png",
-    teamwork_bg: "#d4e8eb",
-    intergrity_bg: "#dff6c2",
   },
   {
     imgURL:
       "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/3-rd-workshop-first-image_y34mx3.jpg",
-    teamwork_bg: "#f7b4b4",
-    intergrity_bg: "#ffef9f ",
   },
   {
     imgURL:
       "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
-    teamwork_bg: "#f7b4b4 ",
-    intergrity_bg: "#c4c1ff",
   },
   {
     imgURL: chulaWorkshopCardImg,
-    teamwork_bg: "#d4e8eb",
-    intergrity_bg: "#caecf1",
   },
 ];
 
-const Ourimpact = ({ theme }) => {
+const Ourimpact = () => {
   const { t, getMessage } = useMarketingTranslation();
   const localePath = useLocalePath();
+  const { openSignupModal } = useSignupModal();
   const impactCards = getMessage("pages.ourImpact.cards") ?? [];
 
-  const become_change_btn = () => {
-    window.open(
-      "https://reallivesworld.com/reallives/university/pricing",
-      "_blank",
-      "noopener,noreferrer",
-    );
-  };
-
   return (
-    <div className={`${Styles.ourimpactmaincontainer} ${Styles[theme]}`}>
+    <div className={Styles.ourimpactmaincontainer}>
       <div className={Styles.slider_componet}>
         <div className={Styles.slider_wrapper}>
           <div className={Styles.top_slider_imapct_container}>
@@ -311,123 +295,113 @@ const Ourimpact = ({ theme }) => {
 
           return (
             <React.Fragment key={card.link ?? idx}>
-              <div className={Styles.card_box_impact}>
-                <span className={Styles.span_imapct_colume}>
-                  <p className={Styles.cards_title_imapct_text}>
-                    {card.card_title}
-                  </p>
+              <Link
+                to={localePath(card.link)}
+                className={Styles.card_box_impact}
+              >
+                <header className={Styles.span_imapct_colume}>
                   <p className={Styles.date_of_start_title}>{card.card_date}</p>
-                </span>
+                  <h3 className={Styles.cards_title_imapct_text}>
+                    {card.card_title}
+                  </h3>
+                </header>
 
                 <div className={Styles.bottom_card_imapct_section}>
                   <div className={Styles.impact_image_card}>
-                    <img
-                      src={meta.imgURL}
-                      alt={card.card_title}
-                    />
+                    <img src={meta.imgURL} alt="" />
                   </div>
 
                   <div className={Styles.impact_card_data}>
-                    <span className={Styles.span_imapct_colume}>
+                    <div className={Styles.span_imapct_colume}>
                       <p className={Styles.university_text_title}>
                         {card.university_text}
                       </p>
                       <p className={Styles.participants_title_text}>
                         {card.particepent_title}
                       </p>
-                    </span>
+                    </div>
 
-                    <span className={Styles.flex_align_start}>
+                    <div className={Styles.flex_align_start}>
                       <p className={Styles.participants_title_text}>
                         {card.collaboration_text}
                       </p>
-                      <p className={Styles.university_text_title}>
-                        {card.name_card}
-                      </p>
-                    </span>
+                      <p className={Styles.metaValue}>{card.name_card}</p>
+                    </div>
 
-                    <span className={Styles.flex_align_start}>
+                    <div className={Styles.flex_align_start}>
                       <p className={Styles.participants_title_text}>
                         {t("common.impact.participants")}
                       </p>
                       <p className={Styles.numbers_font}>
                         {card.number_title}
                       </p>
-                    </span>
+                    </div>
 
                     {card.Used_Tools && (
-                      <p>
+                      <p className={Styles.usedTools}>
                         {t("common.impact.usedTool")}{" "}
                         <strong>{card.Used_Tools}</strong>
                       </p>
                     )}
 
-                    <span className={Styles.span_imapct_colume}>
+                    <div className={Styles.span_imapct_colume}>
                       <p className={Styles.participants_title_text}>
                         {card.skill_devloped}
                       </p>
-                    </span>
-
-                    <div className={Styles.wapper_show_btn}>
-                      <button
-                        className={Styles.team_work_btn}
-                        style={{ backgroundColor: meta.teamwork_bg }}
-                      >
-                        {card.teamwork_title}
-                      </button>
-
-                      <button
-                        className={Styles.integrity_work_btn}
-                        style={{ backgroundColor: meta.intergrity_bg }}
-                      >
-                        {card.intergrity_title}
-                      </button>
+                      <div className={Styles.wapper_show_btn}>
+                        <span className={Styles.team_work_btn}>
+                          {card.teamwork_title}
+                        </span>
+                        <span className={Styles.integrity_work_btn}>
+                          {card.intergrity_title}
+                        </span>
+                      </div>
                     </div>
 
-                    <Link
-                      to={localePath(card.link)}
-                      className={Styles.text_decoration_none}
-                    >
-                      <button className={Styles.larne_more_btn}>
-                        {t("common.learnMore")} <FaArrowRight />
-                      </button>
-                    </Link>
+                    <span className={Styles.cardCta}>
+                      {t("common.learnMore")} <FaArrowRight />
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {idx === 1 && (
-                <div className={Styles.wrapper_descision_skills_2}>
+                <section className={Styles.wrapper_descision_skills_2}>
                   <div className={Styles.decision_skills_container}>
                     <p className={Styles.global_student_title}>
                       {t("pages.ourImpact.midSection.title")}
                     </p>
 
                     <button
-                      className={Styles.larne_more_btn}
-                      onClick={become_change_btn}
+                      type="button"
+                      className={Styles.ctaBtn}
+                      onClick={openSignupModal}
                     >
                       {t("pages.ourImpact.midSection.cta")} <FaArrowRight />
                     </button>
                   </div>
-                </div>
+                </section>
               )}
             </React.Fragment>
           );
         })}
       </div>
 
-      <div className={Styles.wrapper_descision_skills}>
+      <section className={Styles.wrapper_descision_skills}>
         <div className={Styles.decision_skills_container}>
           <p className={Styles.global_student_title}>
             {t("pages.ourImpact.bottomCta.title")}
           </p>
 
-          <button className={Styles.larne_more_btn} onClick={become_change_btn}>
+          <button
+            type="button"
+            className={Styles.ctaBtn}
+            onClick={openSignupModal}
+          >
             {t("pages.ourImpact.bottomCta.cta")} <FaArrowRight />
           </button>
         </div>
-      </div>
+      </section>
 
       <Outlet />
     </div>

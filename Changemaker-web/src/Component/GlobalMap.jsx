@@ -53,18 +53,13 @@ const impactSites = [
   { id: 9, countryKey: "japan", coordinates: [138.2, 36.2] },
 ];
 
-export const GlobalMap = ({ name = "" }) => {
+export const GlobalMap = () => {
   const navigate = useNavigate();
   const localePath = useLocalePath();
   const { t } = useMarketingTranslation();
 
   return (
     <div className="map-container">
-      <h1 className="map-title">
-        {t("common.globalMap.title")}
-        {name}
-      </h1>
-
       <div className="map-wrapper">
         <ComposableMap
           projectionConfig={{

@@ -65,6 +65,7 @@ const en = {
       certifiedInstitutes: "Certified Institutes",
       ourImpact: "Our Impact",
       howRcmiWorks: "How RCMI Works",
+      viewRcmiReport: "View RCMI Report",
       getRcmiReport: "Get Your RCMI Report",
     },
     signupModal: {
@@ -192,10 +193,6 @@ const en = {
     },
     logo: {
       title: "RealLives ChangeMaker Index (RCMI)",
-    },
-    theme: {
-      switchToDark: "Switch to dark mode",
-      switchToLight: "Switch to light mode",
     },
     footer: {
       changeMakerIndex: "RealLives ChangeMaker Index (RCMI)",

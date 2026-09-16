@@ -2,7 +2,7 @@ import Styles from "../HomeComponentParts/ChangeMakeraction.module.css";
 import Benifits from "../HomeComponentParts/Benifites";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 
-const ChangeMakeraction = ({ theme, settheme }) => {
+const ChangeMakeraction = () => {
   const { t } = useMarketingTranslation();
 
   return (
@@ -25,7 +25,7 @@ const ChangeMakeraction = ({ theme, settheme }) => {
         </div>
       </section>
 
-      <Benifits theme={theme} settheme={settheme} />
+      <Benifits />
     </div>
   );
 };

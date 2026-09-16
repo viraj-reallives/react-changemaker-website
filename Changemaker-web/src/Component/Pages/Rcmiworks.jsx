@@ -1,16 +1,13 @@
+import { FaArrowRight } from "react-icons/fa6";
 import Styles from "./Rcmiworks.module.css";
 import chartpolar from "../../assets/Home-image/chart-polar-duotone 1.svg";
 import key_icon from "../../assets/Home-image/key-duotone 2.svg";
 import image_behind_rcmi from "../../assets/Home-image/atom-duotone 2.svg";
+import howRcmiWorksImage from "../../assets/how-rcmi-works.png";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useSignupModal } from "../../context/SignupModalContext";
 
-const STAGE_BG_COLORS = [
-  "#e6f1da",
-  "#daeac8",
-  "#cde2b6",
-  "#c1dba3",
-  "#a8cd7f",
-];
+const STAGE_ACCENTS = ["#b7d48a", "#9ec96e", "#86be55", "#6eaa3f", "#5a9332"];
 
 const HOW_IT_WORKS_IMAGES = [
   "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/RealLives_ChangeMaker_Index-1_by1edh.svg",
@@ -35,7 +32,7 @@ function renderParagraphs(paragraphs, className, labelClassName) {
     if (para && typeof para === "object") {
       return (
         <p key={idx} className={className}>
-          <span className={labelClassName}>{para.label}</span>
+          <span className={labelClassName}>{para.label} </span>
           {para.text}
         </p>
       );
@@ -45,8 +42,10 @@ function renderParagraphs(paragraphs, className, labelClassName) {
   });
 }
 
-const Rcmiworks = ({ theme }) => {
+const Rcmiworks = () => {
   const { t, getMessage } = useMarketingTranslation();
+  const { openSignupModal } = useSignupModal();
+  const hero = getMessage("pages.rcmiWorks.hero") ?? {};
   const whatIsRcmi = getMessage("pages.rcmiWorks.whatIsRcmi") ?? {};
   const keyFeatures = getMessage("pages.rcmiWorks.keyFeatures") ?? {};
   const science = getMessage("pages.rcmiWorks.science") ?? {};
@@ -55,209 +54,197 @@ const Rcmiworks = ({ theme }) => {
   const stages = journey.stages ?? [];
   const howSteps = howItWorks.steps ?? [];
 
-  const become_change_btn = () => {
-    window.open(
-      "https://reallivesworld.com/reallives/university/pricing",
-      "_blank",
-      "noopener,noreferrer",
-    );
-  };
-
   return (
-    <div className={`${Styles.rcmimaincontainer} ${Styles[theme]}`}>
-      <div className={Styles.competencies_Style_image}>
-        <img
-          loading="eager"
-          decoding="async"
-          src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653470/competencies-background-image_alcaka.svg"
-          alt={t("common.alt.changemakerIndexImage")}
-        />
-      </div>
-
-      <div className={Styles.data_container_rcmi_main}>
-        <div className={Styles.rcmi_data_left_bar}>
-          <div className={Styles.tow_box_rcmi}>
-            <div className={Styles.top_benfit_header}>
-              <div className={Styles.icon_card}>
-                <img
-                  className={Styles.image_fit_content}
-                  src={chartpolar}
-                  alt=""
-                />
-              </div>
-              <p className={Styles.header_title_side_text}>
-                {whatIsRcmi.title}
-              </p>
-            </div>
-            <div
-              className={`${Styles.bottom_data_benifit} ${Styles.flex_colume_what_rcmi}`}
-            >
-              {(whatIsRcmi.paragraphs ?? []).map((paragraph) => (
-                <p key={paragraph} className={Styles.rcmi_info_data_text}>
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-          </div>
-
-          <div className={Styles.tow_box_rcmi}>
-            <div className={Styles.top_benfit_header}>
-              <div className={Styles.icon_card}>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className={Styles.image_fit_content}
-                  src={key_icon}
-                  alt=""
-                />
-              </div>
-              <p className={Styles.header_title_side_text}>
-                {keyFeatures.title}
-              </p>
-            </div>
-
-            <div
-              className={`${Styles.bottom_data_benifit} ${Styles.flex_colume_what_rcmi}`}
-            >
-              {(keyFeatures.items ?? []).map((item) => (
-                <p key={item.label} className={Styles.rcmi_info_data_text}>
-                  <span className={Styles.title_description_mid}>
-                    {item.label}
-                  </span>
-                  {item.text}
-                </p>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className={Styles.rcmi_data_right_bar}>
-          <div className={Styles.top_benfit_header}>
-            <div className={Styles.icon_card}>
-              <img
-                loading="lazy"
-                decoding="async"
-                className={Styles.image_fit_content}
-                src={image_behind_rcmi}
-                alt=""
-              />
-            </div>
-            <p className={Styles.header_title_side_text}>{science.title}</p>
-          </div>
-
-          <div
-            className={`${Styles.bottom_data_benifit} ${Styles.flex_colume_what_rcmi}`}
-          >
-            <p className={Styles.rcmi_info_data_text}>{science.intro}</p>
-
-            {(science.items ?? []).map((item) => (
-              <p key={item.label} className={Styles.rcmi_info_data_text}>
-                <span className={Styles.title_description_mid}>
-                  {item.label}
-                </span>
-                {item.text}
-              </p>
-            ))}
-
-            <p className={Styles.rcmi_info_data_text}>{science.closing}</p>
-          </div>
-        </div>
-      </div>
-
-      <div className={Styles.changemaker_how_works}>
-        <div className={Styles.how_to_works_rcmi_container_inner}>
-          <p className={Styles.first_title_how_to_work}>{howItWorks.title}</p>
-
-          {howSteps.map((step, idx) => (
-            <div key={step.title} className={Styles.container_event_main}>
-              <div className={Styles.container_inner_child_left}>
-                <p className={Styles.title_game_event}>{step.title}</p>
-                {renderParagraphs(
-                  step.paragraphs,
-                  Styles.description_game_title,
-                  Styles.title_description_mid,
-                )}
-              </div>
-
-              <div
-                className={`${Styles.container_inner_child_right} ${
-                  idx >= 3 ? Styles.background_white : ""
-                }`}
-              >
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className={Styles.image_fit_content}
-                  src={HOW_IT_WORKS_IMAGES[idx]}
-                  alt=""
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className={Styles.the_ChangeMaker_Journey_container}>
-        <div className={Styles.top_child_changemaker}>
-          <p className={Styles.text_changemaker_journey}>{journey.title}</p>
-          <p className={Styles.changemaker_devlopement_text}>
-            {journey.subtitle}
+    <div className={Styles.page}>
+      <section className={Styles.hero}>
+        <div className={Styles.heroCopy}>
+          <p className={Styles.kicker}>
+            {hero.kicker ?? t("common.nav.howRcmiWorks")}
           </p>
-          <p className={Styles.changemaker_devlopment_text}>
-            {journey.description}
+          <h1 className={Styles.heroTitle}>
+            {hero.title ?? t("common.nav.howRcmiWorks")}
+          </h1>
+          <p className={Styles.lede}>
+            {hero.subtitle ?? whatIsRcmi.paragraphs?.[0]}
           </p>
         </div>
 
-        <div className={Styles.changemaker_journey_background_image}>
+        <figure className={Styles.heroMedia}>
           <img
-            className={Styles.image_fit_content}
-            src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653478/changemaker-journey-image_bdfof9.svg"
-            alt=""
+            loading="eager"
+            decoding="async"
+            src={howRcmiWorksImage}
+            alt={t("common.alt.changemakerIndexImage")}
           />
-        </div>
+        </figure>
+      </section>
 
-        <div className={Styles.point_cards_container}>
-          {stages.slice(0, 3).map((stage, idx) => (
-            <div
-              className={Styles.point_cards_inner}
-              style={{ backgroundColor: STAGE_BG_COLORS[idx] }}
-              key={stage.head}
-            >
-              <p className={Styles.stage_title_text}>{stage.head}</p>
-              <p className={Styles.stage_title_2}>{stage.quote}</p>
-              <p className={Styles.stage_description_text}>
-                {stage.description}
-              </p>
+      <section className={`${Styles.band} ${Styles.bandMuted}`}>
+        <div className={Styles.inner}>
+          <div className={Styles.overviewGrid}>
+            <article className={Styles.infoCard}>
+              <header className={Styles.cardHead}>
+                <span className={Styles.iconWell}>
+                  <img src={chartpolar} alt="" />
+                </span>
+                <h2 className={Styles.cardTitle}>{whatIsRcmi.title}</h2>
+              </header>
+              <div className={Styles.cardBody}>
+                {(whatIsRcmi.paragraphs ?? []).map((paragraph) => (
+                  <p key={paragraph} className={Styles.bodyText}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </article>
+
+            <article className={Styles.infoCard}>
+              <header className={Styles.cardHead}>
+                <span className={Styles.iconWell}>
+                  <img loading="lazy" decoding="async" src={key_icon} alt="" />
+                </span>
+                <h2 className={Styles.cardTitle}>{keyFeatures.title}</h2>
+              </header>
+              <ul className={Styles.featureList}>
+                {(keyFeatures.items ?? []).map((item) => (
+                  <li key={item.label} className={Styles.featureItem}>
+                    <p className={Styles.itemLabel}>{item.label}</p>
+                    <p className={Styles.bodyText}>{item.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </article>
+
+            <article className={`${Styles.infoCard} ${Styles.scienceCard}`}>
+              <header className={Styles.cardHead}>
+                <span className={Styles.iconWell}>
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src={image_behind_rcmi}
+                    alt=""
+                  />
+                </span>
+                <h2 className={Styles.cardTitle}>{science.title}</h2>
+              </header>
+              <div className={Styles.cardBody}>
+                <p className={Styles.bodyText}>{science.intro}</p>
+                <div className={Styles.scienceGrid}>
+                  {(science.items ?? []).map((item) => (
+                    <div key={`${item.label}-${item.text}`} className={Styles.scienceItem}>
+                      <p className={Styles.itemLabel}>{item.label}</p>
+                      <p className={Styles.bodyText}>{item.text}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className={Styles.bodyText}>{science.closing}</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className={Styles.band}>
+        <div className={Styles.inner}>
+          <header className={Styles.sectionHead}>
+            <h2 className={Styles.sectionTitle}>{howItWorks.title}</h2>
+          </header>
+
+          <ol className={Styles.steps}>
+            {howSteps.map((step, idx) => (
+              <li
+                key={step.title}
+                className={`${Styles.step} ${idx % 2 === 1 ? Styles.stepReverse : ""}`}
+              >
+                <div className={Styles.stepCopy}>
+                  <span className={Styles.stepIndex}>
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className={Styles.stepTitle}>{step.title}</h3>
+                  {renderParagraphs(
+                    step.paragraphs,
+                    Styles.bodyText,
+                    Styles.itemLabel,
+                  )}
+                </div>
+
+                <div className={Styles.stepMedia}>
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src={HOW_IT_WORKS_IMAGES[idx]}
+                    alt=""
+                  />
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className={`${Styles.band} ${Styles.bandMuted}`}>
+        <div className={Styles.inner}>
+          <header className={Styles.sectionHead}>
+            <h2 className={Styles.sectionTitle}>{journey.title}</h2>
+            <p className={Styles.sectionLead}>{journey.subtitle}</p>
+            <p className={Styles.sectionCopy}>{journey.description}</p>
+          </header>
+
+          <figure className={Styles.journeyFigure}>
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653478/changemaker-journey-image_bdfof9.svg"
+              alt=""
+            />
+          </figure>
+
+          <div className={Styles.stagesGrid}>
+            <div className={Styles.stagesRow}>
+              {stages.slice(0, 3).map((stage, idx) => (
+                <article
+                  key={stage.head}
+                  className={Styles.stageCard}
+                  style={{ "--stage-accent": STAGE_ACCENTS[idx] }}
+                >
+                  <p className={Styles.stageKicker}>{stage.head}</p>
+                  <p className={Styles.stageQuote}>{stage.quote}</p>
+                  <p className={Styles.stageCopy}>{stage.description}</p>
+                </article>
+              ))}
             </div>
-          ))}
-        </div>
 
-        <div className={Styles.point_cards_container_2}>
-          {stages.slice(3).map((stage, idx) => (
-            <div
-              className={Styles.point_cards_inner}
-              style={{ backgroundColor: STAGE_BG_COLORS[idx + 3] }}
-              key={stage.head}
-            >
-              <p className={Styles.stage_title_text}>{stage.head}</p>
-              <p className={Styles.stage_title_2}>{stage.quote}</p>
-              <p className={Styles.stage_description_text}>
-                {stage.description}
-              </p>
+            <div className={`${Styles.stagesRow} ${Styles.stagesRowCenter}`}>
+              {stages.slice(3).map((stage, idx) => (
+                <article
+                  key={stage.head}
+                  className={Styles.stageCard}
+                  style={{ "--stage-accent": STAGE_ACCENTS[idx + 3] }}
+                >
+                  <p className={Styles.stageKicker}>{stage.head}</p>
+                  <p className={Styles.stageQuote}>{stage.quote}</p>
+                  <p className={Styles.stageCopy}>{stage.description}</p>
+                </article>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className={Styles.make_decision_container}>
-        <p className={Styles.make_decision_skill_text}>
-          {t("pages.rcmiWorks.cta.text")}
-        </p>
-
-        <div className={Styles.becomechanage_maker} onClick={become_change_btn}>
-          {t("pages.rcmiWorks.cta.button")}
+      <section className={Styles.band}>
+        <div className={Styles.inner}>
+          <div className={Styles.ctaBox}>
+            <p className={Styles.ctaText}>{t("pages.rcmiWorks.cta.text")}</p>
+            <button
+              type="button"
+              className={Styles.ctaBtn}
+              onClick={openSignupModal}
+            >
+              {t("pages.rcmiWorks.cta.button")} <FaArrowRight />
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

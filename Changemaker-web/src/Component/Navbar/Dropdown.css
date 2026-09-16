@@ -15,20 +15,6 @@
   cursor: pointer;
 }
 
-.dark .dropdown-trigger {
-  background: var(--dm-bg-elevated);
-}
-
-.dark .dropdown-menu {
-  background-color: var(--dm-bg-elevated);
-  color: white;
-}
-
-.dark .dropdown-option:hover {
-  background-color: var(--dm-bg-muted);
-  color: white;
-}
-
 .dropdown-arrow {
   font-size: 12px;
   color: #666;

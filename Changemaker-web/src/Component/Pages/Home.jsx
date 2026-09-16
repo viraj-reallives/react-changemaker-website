@@ -7,14 +7,14 @@ import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
 
-const Home = ({ theme, settheme }) => {
+const Home = () => {
   const { t, getMessage } = useMarketingTranslation();
   const { openSignupModal } = useSignupModal();
   const localePath = useLocalePath();
   const stats = getMessage("home.hero.stats") ?? [];
 
   return (
-    <div className={`${Styles.page} ${Styles[theme]}`}>
+    <div className={Styles.page}>
       <section className={Styles.hero}>
         <div className={Styles.heroCopy}>
           <p className={Styles.kicker}>{t("home.hero.kicker")}</p>
@@ -65,9 +65,9 @@ const Home = ({ theme, settheme }) => {
         </figure>
       </section>
 
-      <Featuresindex theme={theme} settheme={settheme} />
+      <Featuresindex />
 
-      <ChangeMakeraction theme={theme} settheme={settheme} />
+      <ChangeMakeraction />
     </div>
   );
 };

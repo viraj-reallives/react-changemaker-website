@@ -6,18 +6,18 @@ import { SignupModalProvider } from "../context/SignupModalContext";
 import SignupTypeModal from "./SignupTypeModal/SignupTypeModal";
 import "../Component/Layout.css";
 
-const Layout = ({ theme, settheme }) => {
+const Layout = () => {
   const location = useLocation();
   const hideSiteFooter = location.pathname.includes("get-rcmi-report");
 
   return (
     <SignupModalProvider>
-      <Navbar theme={theme} settheme={settheme} />
+      <Navbar />
 
       <Outlet />
 
-      {!hideSiteFooter && <Footer theme={theme} settheme={settheme} />}
-      <SignupTypeModal theme={theme} />
+      {!hideSiteFooter && <Footer />}
+      <SignupTypeModal />
     </SignupModalProvider>
   );
 };

@@ -19,14 +19,14 @@ const FEATURE_IMAGES = [
   "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/Personal_Growth_lele2n.png",
 ];
 
-const Featuresindex = ({ theme }) => {
+const Featuresindex = () => {
   const { t, getMessage } = useMarketingTranslation();
   const localePath = useLocalePath();
   const impactCards = getMessage("features.impactCards") ?? [];
   const featureCards = getMessage("features.featureCards") ?? [];
 
   return (
-    <div className={`${Styles.root} ${Styles[theme]}`}>
+    <div className={Styles.root}>
       <section className={Styles.band}>
         <div className={Styles.inner}>
           <header className={Styles.head}>

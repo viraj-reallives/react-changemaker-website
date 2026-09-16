@@ -49,7 +49,7 @@ const CLUSTER_META = {
   contextual: { icon: MdPublic, accent: "#66bb6a", accentSoft: "#e8f5e9" },
 };
 
-const GetRcmiReport = ({ theme }) => {
+const GetRcmiReport = () => {
   const navigate = useNavigate();
   const localePath = useLocalePath();
   const { t, getMessage } = useMarketingTranslation();
@@ -184,7 +184,7 @@ const GetRcmiReport = ({ theme }) => {
   }, []);
 
   return (
-    <div ref={pageRef} className={`${styles.page} ${styles[theme]}`}>
+    <div ref={pageRef} className={styles.page}>
       <button
         type="button"
         className={styles.backBtn}

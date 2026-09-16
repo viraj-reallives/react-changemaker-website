@@ -4,38 +4,6 @@
   padding-top: 5rem;
 }
 
-.dark .first_university_container {
-  background-color: var(--dm-bg);
-}
-
-.dark .btn_top_slider {
-  color: white;
-}
-
-.dark .text_data_content_1,
-.dark .text_data_content_1 > p {
-  color: white;
-}
-
-.dark .participants_title_text {
-  color: white;
-}
-
-.dark .color_btn_font {
-  color: black;
-}
-
-.dark .global_student_title {
-  color: #222222;
-}
-
-.dark .larne_more_btn {
-  background-color: white !important;
-}
-
-.dark .impact_description_slide {
-  color: #d7cdcd;
-}
 .slider_wrapper {
   width: 100%;
 }
@@ -279,8 +247,6 @@
 .right_impact_image_box {
   background-color: red;
 }
-
-
 
 @media (max-width: 1368px) {
   .content_tab_container_imapct {

@@ -1,0 +1,522 @@
+.first_university_container {
+  width: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+  padding: calc(var(--nav-h) + 1.25rem) var(--page-pad) 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  box-sizing: border-box;
+}
+
+.section_flex_button,
+.slider_wrapper,
+.content_tab_container_imapct,
+.sdg_container_imapct_tab,
+.first_tab_style,
+.span_imapct_colume,
+.wrapper_footer_tab_padding,
+.wrapper_professior_data,
+.container_student_impact_data,
+.identityGrid {
+  width: 100%;
+  max-width: var(--content);
+  margin-inline: auto;
+}
+
+.section_flex_button {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.55rem;
+  color: var(--text-faint);
+  font-size: 1rem;
+}
+
+.btn_top_slider {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+.btn_top_slider:hover {
+  color: var(--text);
+}
+
+.btn_top_slider:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.crumbSep {
+  color: var(--text-faint);
+  font-size: 0.7rem;
+  line-height: 1;
+  user-select: none;
+}
+
+.crumbCurrent {
+  color: var(--text);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.active_color {
+  color: var(--text) !important;
+  cursor: default;
+}
+
+.slider_wrapper {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background-color: var(--bg-muted);
+}
+
+.mySwiper {
+  width: 100%;
+  height: clamp(26rem, 62vh, 40rem);
+}
+
+.swiperSlide {
+  width: 100%;
+  height: 100%;
+}
+
+.slider_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mySwiper :global(.swiper-button-next),
+.mySwiper :global(.swiper-button-prev) {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  margin-top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 999px;
+  background-color: rgba(246, 245, 241, 0.94);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.85rem;
+  box-shadow: 0 1px 2px rgba(22, 22, 21, 0.06), 0 6px 16px rgba(22, 22, 21, 0.12);
+  backdrop-filter: blur(10px);
+  color: transparent;
+  opacity: 1;
+  pointer-events: auto;
+  transition: background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.mySwiper :global(.swiper-button-prev) {
+  left: 0.9rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath d='M10 3.2 5.7 8 10 12.8' stroke='%23161615' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: 46% 50%;
+}
+
+.mySwiper :global(.swiper-button-next) {
+  right: 0.9rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath d='M6 3.2 10.3 8 6 12.8' stroke='%23161615' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: 54% 50%;
+}
+
+.mySwiper :global(.swiper-button-next:hover),
+.mySwiper :global(.swiper-button-prev:hover) {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(22, 22, 21, 0.16);
+}
+
+.mySwiper :global(.swiper-button-next:focus-visible),
+.mySwiper :global(.swiper-button-prev:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.mySwiper :global(.swiper-button-disabled) {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.mySwiper :global(.swiper-button-next::after),
+.mySwiper :global(.swiper-button-prev::after) {
+  content: none;
+  display: none;
+}
+
+.content_tab_container_imapct {
+  padding: 0;
+}
+
+.identityGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.identityCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.65rem;
+  min-width: 0;
+  padding: 1.2rem 1.25rem;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-sizing: border-box;
+}
+
+.logoCrop {
+  height: 3.25rem;
+  width: var(--crop-width, auto);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.logoCrop img {
+  display: block;
+  height: 3.25rem;
+  width: auto;
+  max-width: none;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.logoCropEth {
+  --crop-width: 10.9rem;
+}
+
+.logoCropNav {
+  --crop-width: 2.9rem;
+}
+
+.logoCropKh {
+  --crop-width: 4.2rem;
+}
+
+.logoCropIit {
+  --crop-width: 3.4rem;
+}
+
+.rlMark {
+  display: block;
+  height: 3.25rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.wrapper_professior_data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1.15rem 1.25rem;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-sizing: border-box;
+  text-align: start;
+}
+
+.span_imapct_colume_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.university_text_title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  text-align: start;
+}
+
+.flex_align_start {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.45rem;
+}
+
+.sdg_container_imapct_tab {
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.student_testimonials_title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-align: start;
+}
+
+.grid_sdg_card_imapct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.7rem;
+}
+
+.sdg_imapct {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background-color: var(--bg-elevated);
+}
+
+.sdg_imapct img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.first_tab_style {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.impact_left_data_box {
+  padding: 1.35rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.first_tab_style > .impact_left_data_box:first-child {
+  padding-top: 0;
+}
+
+.first_tab_style > .impact_left_data_box:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.text_data_content_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  color: var(--text-muted);
+  text-align: justify;
+}
+
+.text_data_content_1 > p {
+  margin: 0;
+  max-width: none;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  text-align: justify;
+  hyphens: auto;
+}
+
+.span_imapct_colume {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.participants_title_text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: -0.01em;
+  color: var(--text-muted);
+  text-align: start;
+}
+
+.wapper_show_btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.color_btn_font,
+.empathy_btn_color,
+.critical_thinking_btn_color {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  background-color: var(--bg-muted);
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  outline: none;
+  padding: 0.35rem 0.75rem;
+}
+
+.container_student_impact_data {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.container_student_impact_data .impact_left_data_box {
+  width: 100%;
+  border-bottom: none;
+  padding: 0;
+}
+
+.testimonial_video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background-color: var(--bg-muted);
+}
+
+.testimonial_video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.empathy_canvas_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.empathy_canvas_image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background-color: var(--bg-elevated);
+}
+
+.wrapper_footer_tab_padding {
+  padding: 0;
+}
+
+.first_tab_margin {
+  margin-top: 0.5rem;
+}
+
+.card_reallives_campus_box {
+  background-color: color-mix(in srgb, var(--brand) 16%, var(--bg-elevated));
+  border: 1px solid color-mix(in srgb, var(--brand) 32%, var(--line));
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+}
+
+.global_student_title {
+  margin: 0;
+  max-width: 38rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.larne_more_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  width: max-content;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: var(--on-brand);
+  background-color: var(--brand);
+  border: 1px solid var(--brand);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.larne_more_btn:hover {
+  background-color: var(--brand-hover);
+  border-color: var(--brand-hover);
+}
+
+.larne_more_btn svg {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 720px) {
+  .first_university_container {
+    padding: calc(var(--nav-h) + 0.85rem) var(--page-pad) 2.5rem;
+    gap: 1.35rem;
+  }
+
+  .mySwiper {
+    height: clamp(20rem, 52vh, 28rem);
+  }
+
+  .student_testimonials_title {
+    font-size: 1.125rem;
+  }
+
+  .text_data_content_1 > p {
+    font-size: 1rem;
+  }
+
+  .sdg_imapct {
+    width: 3.85rem;
+    height: 3.85rem;
+  }
+
+  .identityGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .card_reallives_campus_box {
+    padding: 1.5rem 1.15rem;
+  }
+}

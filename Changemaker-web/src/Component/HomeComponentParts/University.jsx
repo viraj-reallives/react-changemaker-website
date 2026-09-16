@@ -1,4 +1,4 @@
-import Styles from "../HomeComponentParts/University.module.css";
+import Styles from "./WorkshopDetail.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,38 +10,30 @@ import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
 import sdg_logo_2 from "../../assets/Home-image/E-WEB-Goal-02.svg";
 import sdg_logo_3 from "../../assets/Home-image/E-WEB-Goal-04.svg";
 import { FaArrowRight } from "react-icons/fa6";
-import { FaAngleRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useSignupModal } from "../../context/SignupModalContext";
+import WorkshopIdentity from "./WorkshopIdentity";
 
-const University = ({ theme }) => {
+const University = () => {
   const { t, getMessage } = useMarketingTranslation();
   const uni = getMessage("universities.eth") ?? {};
   const skills = uni.skills ?? [];
 
   const localePath = useLocalePath();
-
-  const goToExternal = () => {
-    window.open(
-      "https://reallivesworld.com/reallives/university/pricing",
-      "_blank",
-      "noopener,noreferrer",
-    );
-  };
+  const { openSignupModal } = useSignupModal();
 
   return (
     <>
-      <div className={`${Styles.first_university_container} ${Styles[theme]}`}>
-        <span className={Styles.section_flex_button}>
+      <div className={Styles.first_university_container}>
+        <nav className={Styles.section_flex_button} aria-label="Breadcrumb">
           <Link className={Styles.btn_top_slider} to={localePath("/our-impact")}>
             {t("common.impact.impactHome")}
           </Link>
-
-          <FaAngleRight />
-
-          <button className={`${Styles.btn_top_slider} ${Styles.active_color}`}>
-            {uni.breadcrumb}
-          </button>
-        </span>
+          <span className={Styles.crumbSep} aria-hidden="true">
+            /
+          </span>
+          <span className={Styles.crumbCurrent}>{uni.breadcrumb}</span>
+        </nav>
 
         <div className={Styles.slider_wrapper}>
           <Swiper
@@ -78,25 +70,13 @@ const University = ({ theme }) => {
           </Swiper>
         </div>
 
-        <div className={Styles.content_tab_container_imapct}>
-          <div className={Styles.container_logo_box_impact}>
-            <img src={first_logo_slide} alt="" />
-          </div>
-        </div>
-
-        <div className={Styles.wrapper_professior_data}>
-          <span className={Styles.span_imapct_colume_2}>
-            <p className={Styles.university_text_title}>{uni.university}</p>
-            <p className={Styles.participants_title_text}>{uni.department}</p>
-          </span>
-
-          <span className={Styles.flex_align_start}>
-            <p className={Styles.participants_title_text}>
-              {t("common.impact.inCollaborationWith")}
-            </p>
-            <p className={Styles.university_text_title}>{uni.collaborator}</p>
-          </span>
-        </div>
+        <WorkshopIdentity
+          partnerLogo={first_logo_slide}
+          cropClass="logoCropEth"
+          university={uni.university}
+          department={uni.department}
+          collaborator={uni.collaborator}
+        />
 
         <div className={Styles.sdg_container_imapct_tab}>
           <p className={Styles.student_testimonials_title}>
@@ -184,7 +164,7 @@ const University = ({ theme }) => {
             <p className={Styles.global_student_title}>
               {t("common.impact.empowerStudents")}
             </p>
-            <button onClick={goToExternal} className={Styles.larne_more_btn}>
+            <button onClick={openSignupModal} className={Styles.larne_more_btn}>
               {t("common.impact.beginChangeMakingJourney")}
               <FaArrowRight />
             </button>

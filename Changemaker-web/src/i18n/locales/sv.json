@@ -53,6 +53,7 @@
       "certifiedInstitutes": "Certifierade institut",
       "ourImpact": "Vår påverkan",
       "howRcmiWorks": "Så fungerar RCMI",
+      "viewRcmiReport": "Visa RCMI-rapport",
       "getRcmiReport": "Hämta din RCMI-rapport"
     },
     "signupModal": {
@@ -180,10 +181,6 @@
     },
     "logo": {
       "title": "RealLives ChangeMaker Index (RCMI)"
-    },
-    "theme": {
-      "switchToDark": "Byt till mörkt läge",
-      "switchToLight": "Byt till ljust läge"
     },
     "footer": {
       "changeMakerIndex": "RealLives ChangeMaker Index (RCMI)",

@@ -53,6 +53,7 @@
       "certifiedInstitutes": "Institutos Certificados",
       "ourImpact": "Nuestro Impacto",
       "howRcmiWorks": "Cómo Funciona RCMI",
+      "viewRcmiReport": "Ver informe RCMI",
       "getRcmiReport": "Obtener tu Informe RCMI"
     },
     "signupModal": {
@@ -180,10 +181,6 @@
     },
     "logo": {
       "title": "Índice ChangeMaker de RealLives (RCMI)"
-    },
-    "theme": {
-      "switchToDark": "Cambiar al modo oscuro",
-      "switchToLight": "Cambiar al modo claro"
     },
     "footer": {
       "changeMakerIndex": "Índice ChangeMaker de RealLives (RCMI)",
