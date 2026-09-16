@@ -17,11 +17,10 @@ import {
 import foundationLogo from "../../assets/Home-image/Changemaker-Foundation-logo.svg";
 import styles from "./GetRcmiReport.module.css";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useSignupModal } from "../../context/SignupModalContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
 
 gsap.registerPlugin(ScrollTrigger);
-
-const REGISTER_URL = "https://reallivesworld.com/signup/gamer";
 
 const SAMPLE_REPORT_URL =
   "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/bilime5710-changemaker-report.pdf";
@@ -54,6 +53,7 @@ const GetRcmiReport = ({ theme }) => {
   const navigate = useNavigate();
   const localePath = useLocalePath();
   const { t, getMessage } = useMarketingTranslation();
+  const { openSignupModal } = useSignupModal();
   const page = getMessage("pages.getRcmiReport") ?? {};
   const timelineSteps = page.timeline?.steps ?? [];
   const journeyParts = page.journey?.parts ?? [];
@@ -79,7 +79,7 @@ const GetRcmiReport = ({ theme }) => {
   };
 
   const handleGetReport = () => {
-    window.open(REGISTER_URL, "_blank", "noopener,noreferrer");
+    openSignupModal();
   };
 
   const handleViewSampleReport = () => {

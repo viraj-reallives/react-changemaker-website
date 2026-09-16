@@ -465,7 +465,7 @@
 }
 
 .button-rcmi-report {
-  padding: 10px 20px;
+  padding: 9px 18px;
   background-color: var(--brand);
   color: var(--on-brand);
   border: none;
@@ -477,9 +477,11 @@
   justify-content: center;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9375rem;
+  font-size: 0.84375rem;
   letter-spacing: -0.01em;
   white-space: nowrap;
+  font-family: inherit;
+  appearance: none;
   transition: background-color 0.18s ease, color 0.18s ease;
   box-shadow: none;
 }
@@ -677,7 +679,7 @@
 
   .button-rcmi-report {
     width: 100%;
-    max-width: 280px;
+    max-width: 252px;
     margin: 0 auto;
   }
 
@@ -757,8 +759,8 @@
   }
 
   .button-rcmi-report {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 12.6px;
+    padding: 7.2px 14.4px;
   }
 
   .bar {

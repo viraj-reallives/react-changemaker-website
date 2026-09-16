@@ -4,20 +4,14 @@ import ethStudentsPhoto from "../../assets/ETH-Sudents2.png";
 import ChangeMakeraction from "../HomeComponentParts/ChangeMakeraction";
 import { Link } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useSignupModal } from "../../context/SignupModalContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
 
 const Home = ({ theme, settheme }) => {
   const { t, getMessage } = useMarketingTranslation();
+  const { openSignupModal } = useSignupModal();
   const localePath = useLocalePath();
   const stats = getMessage("home.hero.stats") ?? [];
-
-  const become_change_btn = () => {
-    window.open(
-      "https://reallivesworld.com/reallives/university/pricing",
-      "_blank",
-      "noopener,noreferrer",
-    );
-  };
 
   return (
     <div className={`${Styles.page} ${Styles[theme]}`}>
@@ -44,7 +38,11 @@ const Home = ({ theme, settheme }) => {
           )}
 
           <div className={Styles.actions}>
-            <button className={Styles.btnPrimary} onClick={become_change_btn}>
+            <button
+              type="button"
+              className={Styles.btnPrimary}
+              onClick={openSignupModal}
+            >
               {t("home.hero.beginJourney")}
             </button>
 

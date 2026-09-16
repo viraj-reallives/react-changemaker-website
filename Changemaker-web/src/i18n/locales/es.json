@@ -41,7 +41,7 @@
     "goBack": "Volver",
     "home": "Inicio",
     "alt": {
-      "changemakerIndexImage": "Imagen del Índice Changemaker",
+      "changemakerIndexImage": "Imagen del Índice ChangeMaker",
       "logo": "logotipo",
       "img": "img",
       "rcmi": "RCMI",
@@ -53,18 +53,141 @@
       "certifiedInstitutes": "Institutos Certificados",
       "ourImpact": "Nuestro Impacto",
       "howRcmiWorks": "Cómo Funciona RCMI",
-      "getRcmiReport": "Obtener Informe RCMI"
+      "getRcmiReport": "Obtener tu Informe RCMI"
+    },
+    "signupModal": {
+      "chooseTitle": "¿Para quién es este informe?",
+      "chooseSubtitle": "Elige tu camino para ver cómo RCMI está diseñado para ti.",
+      "close": "Cerrar",
+      "back": "Atrás",
+      "cta": "Obtener tu Informe RCMI",
+      "types": {
+        "school": {
+          "title": "Escuela",
+          "short": "Para aulas y líderes escolares",
+          "benefitsTitle": "Cómo RCMI ayuda a las escuelas",
+          "headline": "Haz visible el crecimiento del carácter en toda la escuela.",
+          "photoCaption": "Taller ChangeMaker en Orchid School",
+          "benefits": [
+            {
+              "title": "Ver cómo va cada clase",
+              "text": "Un mapa de las 18 competencias y cuatro clústeres de un curso o grupo, para planificar SEL con evidencia, no con intuición."
+            },
+            {
+              "title": "Mostrar que un taller sí ayudó",
+              "text": "Las puntuaciones antes y después muestran si un taller, club o periodo de valores realmente movió al alumnado."
+            },
+            {
+              "title": "Texto listo para boletines NEP 2020",
+              "text": "Da al profesorado un vocabulario claro de competencias para las partes no académicas de las tarjetas de progreso holístico."
+            },
+            {
+              "title": "Encontrar a quien necesita apoyo",
+              "text": "Los patrones de Blind Spot ayudan a ver quién se sobrevalora en empatía o resiliencia."
+            },
+            {
+              "title": "Decir a las familias que mides el carácter",
+              "text": "“Medimos el carácter, no solo las notas” se vuelve un diferenciador concreto en admisiones."
+            }
+          ]
+        },
+        "university": {
+          "title": "Departamento universitario",
+          "short": "Para facultades, programas y cohortes",
+          "benefitsTitle": "Cómo RCMI ayuda a los departamentos universitarios",
+          "headline": "Demuestra las habilidades que empleadores y financiadores siguen pidiendo.",
+          "photoCaption": "Talleres RealLives con universidades socias",
+          "benefits": [
+            {
+              "title": "Listo para papers, tesis y convocatorias",
+              "text": "36 ítems situacionales, un modelo de puntuación claro y un diseño pre/post para tesis, papers y propuestas."
+            },
+            {
+              "title": "Prueba para NAAC, NIRF y acreditación",
+              "text": "Competencias como el pensamiento estratégico se alinean con los atributos de egreso que los departamentos deben demostrar."
+            },
+            {
+              "title": "Un perfil para llevar a entrevistas",
+              "text": "El alumnado sale con un resumen de competencias para entrevistas; colocación ve las fortalezas de la cohorte."
+            },
+            {
+              "title": "Ver qué cursos sí ayudaron",
+              "text": "Compara promociones año a año para ver qué cursos o prácticas mueven qué clústeres."
+            },
+            {
+              "title": "Investigar junto con RealLives",
+              "text": "Codiseña estudios con RealLives, incluidas comparaciones entre instituciones o países."
+            }
+          ]
+        },
+        "homeschooler": {
+          "title": "Educación en casa",
+          "short": "Para familias que aprenden en casa",
+          "benefitsTitle": "Cómo RCMI ayuda a quienes estudian en casa",
+          "headline": "Ver las habilidades de vida que el aprendizaje en casa quiere construir.",
+          "benefits": [
+            {
+              "title": "Crecimiento que se puede mostrar, no solo notas",
+              "text": "Un informe que muestra cómo crece tu hijo o hija como persona: empatía, resiliencia y buenas decisiones, no solo lo académico."
+            },
+            {
+              "title": "Saber en qué trabajar ahora",
+              "text": "Ver qué habilidades practicar después, como trabajar con otras personas o pensar problemas grandes, en vez de adivinar."
+            },
+            {
+              "title": "Una respuesta cuando preguntan por las habilidades sociales",
+              "text": "Cuando la familia pregunta si aprender en casa aísla demasiado, tienes una imagen clara de cómo se relaciona tu hijo o hija con los demás."
+            },
+            {
+              "title": "Un informe para adjuntar a solicitudes",
+              "text": "Un documento formal para universidad, educación abierta y programas que piden más que un expediente."
+            },
+            {
+              "title": "Algo de lo que hablar en familia",
+              "text": "Ver dónde tu hijo o hija es más fuerte de lo que cree, y dónde puede estar demasiado seguro. Luego hablarlo juntos."
+            }
+          ]
+        },
+        "gamer": {
+          "title": "Joven creativo",
+          "short": "Para aprendices independientes y gamers",
+          "benefitsTitle": "Cómo RCMI ayuda a las personas jóvenes creativas",
+          "headline": "Ver tus fortalezas ocultas y ponerlas a trabajar.",
+          "benefits": [
+            {
+              "title": "Encuentra tus Hidden Strengths",
+              "text": "RCMI muestra habilidades como el pensamiento estratégico o la influencia que ya tienes y quizá no ves."
+            },
+            {
+              "title": "Ver qué frena tus ideas",
+              "text": "Los Blind Spots indican qué construir para que un proyecto o campaña llegue de verdad a la gente."
+            },
+            {
+              "title": "Una credencial más allá del portafolio",
+              "text": "Muestra a financiadores, fellowships y concursos cómo trabajas, no solo qué creas."
+            },
+            {
+              "title": "Crece a tu manera",
+              "text": "No hace falta un aula. Usa el perfil como guía personal y vuelve a medirlo para ver el progreso."
+            },
+            {
+              "title": "Únete a la comunidad ChangeMaker",
+              "text": "Un camino hacia talleres RealLives donde estas competencias se aplican a problemas reales."
+            }
+          ]
+        }
+      }
     },
     "logo": {
-      "title": "Índice ChangeMaker de RealLives"
+      "title": "Índice ChangeMaker de RealLives (RCMI)"
     },
     "theme": {
       "switchToDark": "Cambiar al modo oscuro",
       "switchToLight": "Cambiar al modo claro"
     },
     "footer": {
-      "changeMakerIndex": "Índice ChangeMaker",
-      "description": "RCMI empodera a los estudiantes de todo el mundo para desarrollar empatía, pensamiento ético y responsabilidad social a través de simulaciones de vida inmersivas. Al navegar por escenarios realistas y reflexionar sobre sus decisiones, los estudiantes desarrollan las habilidades y la mentalidad para crear un impacto positivo y significativo en sus comunidades y más allá.",
+      "changeMakerIndex": "Índice ChangeMaker de RealLives (RCMI)",
+      "description": "RCMI empodera a las personas de todo el mundo para desarrollar empatía, pensamiento ético y responsabilidad social a través de simulaciones de vida inmersivas. Al navegar por escenarios realistas y reflexionar sobre sus decisiones, desarrollan las habilidades y la mentalidad para crear un impacto positivo y significativo en sus comunidades y más allá.",
       "getToKnow": "Conócenos",
       "aboutRcmi": "Acerca de RCMI",
       "certifiedInstitutes": "Institutos certificados",
@@ -483,7 +606,7 @@
       "footer": {
         "title": "¿Listo para tu Informe RCMI?",
         "subtitle": "Regístrate, juega tres vidas y descubre tu puntuación, etapa y camino personalizado de ChangeMaker.",
-        "cta": "Obtener Informe RCMI"
+        "cta": "Obtener tu Informe RCMI"
       }
     },
     "rcmiWorks": {
@@ -684,7 +807,7 @@
       "workshop": {
         "button": "Fotos del Taller",
         "paragraphs": [
-          "Después de la exitosa finalización del Programa Changemaker en The Orchid School, Pune, RealLives se enorgullece de certificar a la escuela como una Escuela Changemaker oficial. Este año, el programa involucró a 75 estudiantes, lo que resultó en 10 propuestas de negocios sociales y movimientos únicos, junto con 75 Informes Changemaker individuales que muestran ideas reflexivas e impulsadas por el impacto.",
+          "Después de la exitosa finalización del Programa ChangeMaker en The Orchid School, Pune, RealLives se enorgullece de certificar a la escuela como una Escuela ChangeMaker oficial. Este año, el programa involucró a 75 estudiantes, lo que resultó en 10 propuestas de negocios sociales y movimientos únicos, junto con 75 Informes ChangeMaker individuales que muestran ideas reflexivas e impulsadas por el impacto.",
           "Este logro refleja el compromiso de la escuela de fomentar el liderazgo, la empatía y la responsabilidad social en las mentes jóvenes."
         ]
       },
@@ -869,8 +992,8 @@
       "skills": ["Empathy", "SDG Awareness", "Critical Thinking"],
       "objective": "To develop empathy and global awareness among university students by immersing them in real-life poverty scenarios through simulation-based learning. The workshop aimed to deepen understanding of SDG 1 (No Poverty), enabling students to experience systemic inequalities, reflect on privilege, and build critical thinking and changemaking skills through experiential learning and structured reflection.",
       "programOverview": "RealLives conducted an immersive SDG-focused workshop at Chulalongkorn University (Thailand) for students in the BAScii program. The session centered on SDG 1: No Poverty, where students simulated lives in poverty-affected countries such as Burundi, experiencing challenges like limited access to healthcare, education, and income. The workshop combined simulation gameplay, guided reflection, and collaborative discussion to help students understand poverty beyond statistics. By integrating real-world data and AI-driven life scenarios, the program enabled students to connect emotionally with global issues while developing a deeper awareness of inequality and global citizenship.",
-      "implementation": "The workshop followed a structured experiential learning approach combining simulation, reflection, and collaborative analysis. It began with an introduction to SDG 1: No Poverty and the global context of inequality, followed by an immersive RealLives simulation where students experienced full life journeys shaped by real-world data. Participants made critical decisions around education, healthcare, and livelihood while navigating systemic constraints faced in poverty-affected regions. This was followed by a reflective exercise in which students wrote personal letters from the perspective of their simulated character, fostering emotional connection and deeper empathy. The session then transitioned into a group-based Empathy Canvas activity, where students analyzed their character's experiences across dimensions such as environment, behavior, influences, and emotions. The workshop concluded with group presentations and a facilitated discussion linking individual experiences to broader global challenges and the role of students as changemakers.",
-      "outcomes": "The workshop resulted in a significant shift in students' understanding of global poverty, transforming it from an abstract concept into a deeply personal and emotional experience. Participants demonstrated heightened empathy, with many expressing strong emotional reactions to the difficult life choices encountered during the simulation. The gamified and interactive nature of the platform drove high engagement, enabling students to connect more meaningfully with global issues compared to traditional learning methods. Students also developed a stronger awareness of their own privilege and the structural inequalities that shape life outcomes across different regions. The experience encouraged critical thinking and reflection, with many participants recognizing their potential role as changemakers in addressing global challenges. While students expressed a desire for more time to explore the simulation further, the overall impact highlighted the effectiveness of experiential, data-driven learning in fostering global citizenship, empathy, and action-oriented mindsets."
+      "implementation": "The workshop followed a structured experiential learning approach combining simulation, reflection, and collaborative analysis. It began with an introduction to SDG 1: No Poverty and the global context of inequality, followed by an immersive RealLives simulation where students experienced full life journeys shaped by real-world data. Participants made critical decisions around education, healthcare, and livelihood while navigating systemic constraints faced in poverty-affected regions. This was followed by a reflective exercise in which students wrote personal letters from the perspective of their simulated character, fostering emotional connection and deeper empathy. The session then transitioned into a group-based Empathy Canvas activity, where students analyzed their character's experiences across dimensions such as environment, behavior, influences, and emotions. The workshop concluded with group presentations and a facilitated discussion linking individual experiences to broader global challenges and the role of students as ChangeMakers.",
+      "outcomes": "The workshop resulted in a significant shift in students' understanding of global poverty, transforming it from an abstract concept into a deeply personal and emotional experience. Participants demonstrated heightened empathy, with many expressing strong emotional reactions to the difficult life choices encountered during the simulation. The gamified and interactive nature of the platform drove high engagement, enabling students to connect more meaningfully with global issues compared to traditional learning methods. Students also developed a stronger awareness of their own privilege and the structural inequalities that shape life outcomes across different regions. The experience encouraged critical thinking and reflection, with many participants recognizing their potential role as ChangeMakers in addressing global challenges. While students expressed a desire for more time to explore the simulation further, the overall impact highlighted the effectiveness of experiential, data-driven learning in fostering global citizenship, empathy, and action-oriented mindsets."
     }
   }
 }

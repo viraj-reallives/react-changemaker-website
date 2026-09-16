@@ -45,7 +45,7 @@ export function MarketingLocaleProvider({ children }) {
     return () => {
       cancelled = true;
     };
-  }, [locale]);
+  }, [locale, defaultMessages]);
 
   const setLocale = (nextLocale) => {
     const code = String(nextLocale || DEFAULT_LOCALE).toLowerCase();

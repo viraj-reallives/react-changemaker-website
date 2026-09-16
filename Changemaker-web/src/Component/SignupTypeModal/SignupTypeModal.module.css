@@ -1,0 +1,392 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(22, 22, 21, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.dialog {
+  width: min(720px, 100%);
+  max-height: min(90vh, 860px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  color: #161615;
+  border-radius: 20px;
+  padding: 1.25rem 1.5rem 1.75rem;
+  box-shadow: 0 24px 64px rgba(22, 22, 21, 0.22);
+}
+
+.dialogWide {
+  width: min(1080px, 100%);
+  max-height: min(92vh, 980px);
+  overflow: hidden;
+}
+
+.dark .dialog {
+  background: #1c1c1a;
+  color: #f6f5f1;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.toolbarSpacer {
+  width: 38px;
+  height: 38px;
+}
+
+.iconBtn {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e3e1da;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #161615;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.dark .iconBtn {
+  background: #2a2a27;
+  border-color: #3a3a36;
+  color: #f6f5f1;
+}
+
+.iconBtn:hover,
+.iconBtn:focus-visible {
+  border-color: #d4923a;
+  outline: none;
+}
+
+.title {
+  font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  text-align: center;
+  margin: 0.15rem 0 0.5rem;
+}
+
+.titleSelected {
+  text-align: left;
+  max-width: none;
+  margin: 0 0 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #5e5d58;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  max-width: 36rem;
+  margin: 0 auto 1.25rem;
+}
+
+.dark .subtitle {
+  color: #c4c3bd;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  text-align: left;
+  padding: 1.15rem 1.1rem 1.2rem;
+  border: 1px solid #e3e1da;
+  border-radius: 16px;
+  background: #f6f5f1;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.dark .card {
+  background: #252522;
+  border-color: #3a3a36;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-2px);
+  border-color: #ffc067;
+  box-shadow: 0 10px 24px rgba(255, 192, 103, 0.22);
+  outline: none;
+}
+
+.cardIcon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #ffc067;
+  color: #161615;
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.cardTitle {
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.cardShort {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: #5e5d58;
+}
+
+.dark .cardShort {
+  color: #c4c3bd;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefitsSplit {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: 1.5rem;
+  align-items: stretch;
+  min-height: 0;
+}
+
+.benefitsCopy {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+}
+
+.benefitList {
+  width: 100%;
+  max-width: 38rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.benefitsSplit .benefitList {
+  max-width: none;
+  margin-bottom: 1.15rem;
+}
+
+.benefitList li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.8rem 1rem 0.8rem 2.25rem;
+  background: #f6f5f1;
+  border-radius: 12px;
+  line-height: 1.45;
+}
+
+.dark .benefitList li {
+  background: #252522;
+}
+
+.benefitList li::before {
+  content: "";
+  position: absolute;
+  left: 0.95rem;
+  top: 1.15rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffc067;
+}
+
+.benefitTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.benefitText {
+  font-size: 0.88rem;
+  color: #5e5d58;
+}
+
+.dark .benefitText {
+  color: #c4c3bd;
+}
+
+.photoCol {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 0;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.photoGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  gap: 0.55rem;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: #d4d2cb transparent;
+}
+
+.photoGrid::-webkit-scrollbar {
+  width: 4px;
+}
+
+.photoGrid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.photoGrid::-webkit-scrollbar-thumb {
+  background: #d4d2cb;
+  border-radius: 999px;
+}
+
+.dark .photoGrid {
+  scrollbar-color: #5a5a54 transparent;
+}
+
+.dark .photoGrid::-webkit-scrollbar-thumb {
+  background: #5a5a54;
+}
+
+.photo {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 14px;
+  background: #f6f5f1;
+  flex-shrink: 0;
+}
+
+.photoCaption {
+  margin: 0.55rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: #5e5d58;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.dark .photoCaption {
+  color: #c4c3bd;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 0.85rem 1.6rem;
+  background: linear-gradient(135deg, #ffc067 0%, #ffb347 100%);
+  color: #111111;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(255, 192, 103, 0.45);
+}
+
+.benefits:not(.benefitsSplit) .benefitsCopy {
+  width: 100%;
+  max-width: 40rem;
+  align-items: stretch;
+}
+
+.benefits:not(.benefitsSplit) .titleSelected {
+  text-align: center;
+}
+
+.benefits:not(.benefitsSplit) .cta {
+  align-self: center;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  transform: translateY(-1px);
+  outline: none;
+}
+
+@media (max-width: 860px) {
+  .benefitsSplit {
+    grid-template-columns: 1fr;
+    overflow: visible;
+  }
+
+  .dialogWide {
+    overflow: auto;
+  }
+
+  .benefitsCopy {
+    overflow: visible;
+  }
+
+  .photoCol {
+    height: auto;
+    min-height: 0;
+    max-height: 280px;
+  }
+
+  .photo {
+    height: 170px;
+  }
+}
+
+@media (max-width: 640px) {
+  .dialog {
+    padding: 1rem 1rem 1.35rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    align-items: center;
+    text-align: center;
+  }
+
+  .titleSelected {
+    font-size: 1.2rem;
+  }
+
+  .cta {
+    width: 100%;
+  }
+}

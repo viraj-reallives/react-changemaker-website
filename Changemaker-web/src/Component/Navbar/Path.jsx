@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import { useSignupModal } from "../../context/SignupModalContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
 import "./Navbar.css";
 
 const Navbar = () => {
   const { t } = useMarketingTranslation();
+  const { openSignupModal } = useSignupModal();
   const localePath = useLocalePath();
   const [showMenu, setShowMenu] = useState(false);
 
@@ -55,13 +57,16 @@ const Navbar = () => {
           {t("common.nav.howRcmiWorks")}
         </NavLink>
 
-        <NavLink
-          to={localePath("/get-rcmi-report")}
+        <button
+          type="button"
           className="button-rcmi-report"
-          onClick={() => setShowMenu(false)}
+          onClick={() => {
+            setShowMenu(false);
+            openSignupModal();
+          }}
         >
           {t("common.nav.getRcmiReport")}
-        </NavLink>
+        </button>
       </div>
     </nav>
   );
