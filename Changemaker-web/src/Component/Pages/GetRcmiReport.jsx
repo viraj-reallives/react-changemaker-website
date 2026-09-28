@@ -14,7 +14,7 @@ import {
   MdLightbulb,
   MdPublic,
 } from "react-icons/md";
-import foundationLogo from "../../assets/Home-image/Changemaker-Foundation-logo.svg";
+import realLivesLogo from "../../assets/logo-white.svg";
 import styles from "./GetRcmiReport.module.css";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
@@ -339,13 +339,11 @@ const GetRcmiReport = () => {
             <p className={styles.aboutText}>{page.about?.rcmiText}</p>
           </article>
           <article className={`${styles.aboutCard} ${styles.aboutFoundation}`}>
-            <div className={styles.foundationLogoWrap}>
-              <img
-                src={foundationLogo}
-                alt={t("common.alt.realLivesFoundation")}
-                className={styles.foundationLogo}
-              />
-            </div>
+            <img
+              src={realLivesLogo}
+              alt={t("common.alt.realLivesFoundation")}
+              className={styles.aboutLogo}
+            />
             <h3 className={styles.aboutTitle}>{page.about?.foundationTitle}</h3>
             <p className={styles.aboutText}>{page.about?.foundationText}</p>
           </article>
