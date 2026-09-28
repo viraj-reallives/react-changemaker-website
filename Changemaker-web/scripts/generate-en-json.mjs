@@ -162,9 +162,9 @@ const en = {
           ],
         },
         gamer: {
-          title: "Creative Young Person",
+          title: "Creative Young Thinker",
           short: "For independent learners and gamers",
-          benefitsTitle: "How RCMI helps creative young people",
+          benefitsTitle: "How RCMI helps creative young thinkers",
           headline: "See your hidden strengths and put them to work.",
           benefits: [
             {
@@ -867,8 +867,9 @@ const en = {
           name_card: "Prof. Dr. Ernst Hafen",
           number_title: 120,
           skill_devloped: "Skills Developed",
-          teamwork_title: "Teamwork",
-          intergrity_title: "Integrity and Work Ethics",
+          teamwork_title: "SDG's",
+          intergrity_title: "Social Business Acumen",
+          extra_skill: "Empathy",
           link: "/our-impact/eth-university",
         },
         {
@@ -934,7 +935,7 @@ const en = {
       university: "ETH University Zurich, Switzerland",
       department: "Department - Institute of Molecular Systems Biology",
       collaborator: "Prof. Dr. Ernst Hafen",
-      skills: ["Teamwork", "Integrity and Work Ethics"],
+      skills: ["SDG's", "Social Business Acumen", "Empathy"],
       objective:
         "To develop cross-cultural empathy and global awareness among students from high-income countries by enabling them to experience life circumstances in developing nations through RealLives simulation. The program aimed to bridge the perspective gap between students from privileged backgrounds and global development challenges while fostering meaningful intercultural dialogue and understanding of the United Nations' Sustainable Development Goals through experiential learning and structured peer-to-peer exchanges.",
       programOverview:

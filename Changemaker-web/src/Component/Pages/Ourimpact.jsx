@@ -349,12 +349,17 @@ const Ourimpact = () => {
                         {card.skill_devloped}
                       </p>
                       <div className={Styles.wapper_show_btn}>
-                        <span className={Styles.team_work_btn}>
-                          {card.teamwork_title}
-                        </span>
-                        <span className={Styles.integrity_work_btn}>
-                          {card.intergrity_title}
-                        </span>
+                        {[
+                          card.teamwork_title,
+                          card.intergrity_title,
+                          card.extra_skill,
+                        ]
+                          .filter(Boolean)
+                          .map((skill) => (
+                            <span key={skill} className={Styles.team_work_btn}>
+                              {skill}
+                            </span>
+                          ))}
                       </div>
                     </div>
 

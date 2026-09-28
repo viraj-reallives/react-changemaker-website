@@ -150,9 +150,9 @@
           ]
         },
         "gamer": {
-          "title": "Kreativ ung person",
+          "title": "Kreativ ung tänkare",
           "short": "För självständiga lärande och gamers",
-          "benefitsTitle": "Hur RCMI hjälper kreativa unga",
+          "benefitsTitle": "Hur RCMI hjälper kreativa unga tänkare",
           "headline": "Se dina dolda styrkor och använd dem.",
           "benefits": [
             {
@@ -857,8 +857,9 @@
           "name_card": "Prof. Dr. Ernst Hafen",
           "number_title": 120,
           "skill_devloped": "Utvecklade färdigheter",
-          "teamwork_title": "Lagarbete",
-          "intergrity_title": "Integritet och arbetsmoral",
+          "teamwork_title": "SDG:er",
+          "intergrity_title": "Social affärsförmåga",
+          "extra_skill": "Empati",
           "link": "/our-impact/eth-university"
         },
         {
@@ -924,8 +925,9 @@
       "department": "Avdelning - Institute of Molecular Systems Biology",
       "collaborator": "Prof. Dr. Ernst Hafen",
       "skills": [
-        "Lagarbete",
-        "Integritet och arbetsmoral"
+        "SDG:er",
+        "Social affärsförmåga",
+        "Empati"
       ],
       "objective": "Att utveckla tvärkulturell empati och global medvetenhet bland studenter från höginkomstländer genom att göra det möjligt för dem att uppleva livsomständigheter i utvecklingsländer genom RealLives-simulering. Programmet syftade till att överbrygga perspektivklyftan mellan studenter från privilegierade bakgrunder och globala utvecklingsutmaningar samtidigt som det främjade meningsfull interkulturell dialog och förståelse för FN:s globala mål för hållbar utveckling genom erfarenhetsbaserat lärande och strukturerade utbyten mellan kamrater.",
       "programOverview": "RealLives Foundation samarbetade med ETH Zürich för att genomföra ett innovativt tvärkulturellt empatiprogram som gav studenter djupa insikter i FN:s sjutton globala mål för hållbar utveckling (SDG). Genom att engagera sig i den textbaserade RealLives-simuleringen lärde sig schweiziska studenter att känna empati med människor från andra delar av världen och fick nya perspektiv på globala utvecklingsutmaningar. Programmet underlättade praktisk erfarenhet av att diskutera SDG:er och deras verkliga konsekvenser genom direkt samarbete med studenter från utvecklingsländer, vilket skapade autentiska interkulturella lärandeupplevelser.",

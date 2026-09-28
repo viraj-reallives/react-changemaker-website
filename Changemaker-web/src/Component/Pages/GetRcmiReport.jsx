@@ -22,8 +22,7 @@ import { useLocalePath } from "../../hooks/useLocalePath";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const SAMPLE_REPORT_URL =
-  "https://d2jn82ki4w4ftn.cloudfront.net/changemaker-website/bilime5710-changemaker-report.pdf";
+const SAMPLE_REPORT_URL = "/pdf/viraj-kabbur-changemaker-report.pdf";
 
 const REPORT_PREVIEW_SRCS = [
   "/report-pages/page-01.png",

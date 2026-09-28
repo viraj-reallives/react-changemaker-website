@@ -150,9 +150,9 @@
           ]
         },
         "gamer": {
-          "title": "Kreativer junger Mensch",
+          "title": "Kreativer junger Denker",
           "short": "Für selbstständige Lernende und Gamer",
-          "benefitsTitle": "Wie RCMI kreative junge Menschen unterstützt",
+          "benefitsTitle": "Wie RCMI kreative junge Denker unterstützt",
           "headline": "Versteckte Stärken sehen und einsetzen.",
           "benefits": [
             {
@@ -857,8 +857,9 @@
           "name_card": "Prof. Dr. Ernst Hafen",
           "number_title": 120,
           "skill_devloped": "Fähigkeiten entwickelt",
-          "teamwork_title": "Teamarbeit",
-          "intergrity_title": "Integrität und Arbeitsethik",
+          "teamwork_title": "SDG's",
+          "intergrity_title": "Soziale Geschäftskompetenz",
+          "extra_skill": "Empathie",
           "link": "/our-impact/eth-university"
         },
         {
@@ -924,8 +925,9 @@
       "department": "Abteilung - Institut für Molekulare Systembiologie",
       "collaborator": "Prof. Dr. Ernst Hafen",
       "skills": [
-        "Teamarbeit",
-        "Integrität und Arbeitsethik"
+        "SDG's",
+        "Soziale Geschäftskompetenz",
+        "Empathie"
       ],
       "objective": "Entwicklung von interkultureller Empathie und globalem Bewusstsein bei Schülern aus Ländern mit hohem Einkommen, indem ihnen ermöglicht wird, die Lebensumstände in Entwicklungsländern durch RealLives-Simulation zu erleben. Das Programm zielte darauf ab, die perspektivische Kluft zwischen Studierenden aus privilegierten Verhältnissen und globalen Entwicklungsherausforderungen zu überbrücken und gleichzeitig einen sinnvollen interkulturellen Dialog und das Verständnis für die Ziele der Vereinten Nationen für nachhaltige Entwicklung durch erfahrungsorientiertes Lernen und strukturierten Peer-to-Peer-Austausch zu fördern.",
       "programOverview": "Die RealLives Foundation hat sich mit der ETH Zürich zusammengetan, um ein innovatives interkulturelles Empathieprogramm durchzuführen, das Studierenden tiefe Einblicke in die siebzehn Ziele für nachhaltige Entwicklung (SDGs) der Vereinten Nationen verschafft. Durch die Auseinandersetzung mit der textbasierten RealLives-Simulation lernten Schweizer Studierende, sich in Menschen aus anderen Teilen der Welt hineinzuversetzen und gewannen neue Perspektiven auf globale Entwicklungsherausforderungen. Das Programm ermöglichte praktische Erfahrungen bei der Diskussion von SDGs und ihren Auswirkungen auf die reale Welt durch die direkte Zusammenarbeit mit Studierenden aus Entwicklungsländern und schuf so authentische interkulturelle Lernerfahrungen.",
