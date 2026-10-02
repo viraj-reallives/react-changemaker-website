@@ -1,78 +1,37 @@
-import { useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import {
+  FormSubmissionError,
+  submitFormSubmission,
+} from "../../api/formSubmissions";
+import GoogleRecaptcha from "../../components/auth/GoogleRecaptcha";
 import "./Contact.css";
 
+const FORM_TYPE = "changemaker_contact";
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY || "";
+
 const Contact = () => {
-  const { t } = useMarketingTranslation();
+  const { t, locale } = useMarketingTranslation();
+  const recaptchaRef = useRef(null);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     message: "",
   });
-
-  const [captchaQuestion, setCaptchaQuestion] = useState("");
-  const [captchaAnswer, setCaptchaAnswer] = useState(0);
-  const [userCaptchaInput, setUserCaptchaInput] = useState("");
-  const [captchaError, setCaptchaError] = useState("");
+  const [recaptchaToken, setRecaptchaToken] = useState("");
+  const [formError, setFormError] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [isSending, setIsSending] = useState(false);
 
-  useEffect(() => {
-    generateCaptcha();
-  }, []);
-
-  const generateCaptcha = () => {
-    const num1 = Math.floor(Math.random() * 10) + 1;
-    const num2 = Math.floor(Math.random() * 10) + 1;
-    setCaptchaQuestion(`${num1} + ${num2} = ?`);
-    setCaptchaAnswer(num1 + num2);
-    setUserCaptchaInput("");
-    setCaptchaError("");
+  const resetRecaptcha = () => {
+    recaptchaRef.current?.reset();
+    setRecaptchaToken("");
   };
 
   const handleChange = (e) => {
     const { id, value } = e.target;
-    setFormData({ ...formData, [id]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (parseInt(userCaptchaInput, 10) !== captchaAnswer) {
-      setCaptchaError(t("pages.contact.errors.captchaIncorrect"));
-      generateCaptcha();
-      return;
-    }
-
-    setIsSending(true);
-
-    const submissionData = new FormData();
-    submissionData.append("access_key", "66469d30-3566-42fe-a853-2d5a0404a9b5");
-    submissionData.append("name", `${formData.firstName} ${formData.lastName}`);
-    submissionData.append("email", formData.email);
-    submissionData.append("message", formData.message);
-    submissionData.append("subject", t("pages.contact.emailSubject"));
-
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: submissionData,
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setSubmitted(true);
-        setFormData({ firstName: "", lastName: "", email: "", message: "" });
-      } else {
-        setCaptchaError(t("pages.contact.errors.submissionFailed"));
-      }
-    } catch {
-      setCaptchaError(t("pages.contact.errors.networkError"));
-    } finally {
-      setIsSending(false);
-    }
+    setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
   const isFormValid =
@@ -80,7 +39,51 @@ const Contact = () => {
     formData.lastName.trim() !== "" &&
     formData.email.trim() !== "" &&
     formData.message.trim() !== "" &&
-    userCaptchaInput !== "";
+    Boolean(recaptchaToken);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!isFormValid || isSending) return;
+
+    if (!recaptchaToken) {
+      setFormError(
+        t("pages.contact.errors.securityCheckRequired") ||
+          "Please complete the security check.",
+      );
+      return;
+    }
+
+    setIsSending(true);
+    setFormError("");
+
+    try {
+      await submitFormSubmission({
+        formType: FORM_TYPE,
+        email: formData.email.trim(),
+        firstName: formData.firstName.trim(),
+        lastName: formData.lastName.trim(),
+        locale: locale || "en",
+        source: "website",
+        payload: {
+          message: formData.message.trim(),
+        },
+        recaptchaToken,
+      });
+
+      setSubmitted(true);
+      setFormData({ firstName: "", lastName: "", email: "", message: "" });
+      resetRecaptcha();
+    } catch (err) {
+      setFormError(
+        (err instanceof FormSubmissionError && err.message) ||
+          err?.message ||
+          t("pages.contact.errors.networkError"),
+      );
+      resetRecaptcha();
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   return (
     <div className="contact-container">
@@ -94,9 +97,10 @@ const Contact = () => {
             </h3>
             <p>{t("pages.contact.success.message")}</p>
             <button
+              type="button"
               onClick={() => {
                 setSubmitted(false);
-                generateCaptcha();
+                setFormError("");
               }}
               className="submit-btn"
               style={{
@@ -109,7 +113,7 @@ const Contact = () => {
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} noValidate>
             <div className="form-group">
               <label htmlFor="firstName">{t("pages.contact.form.firstName")}</label>
               <input
@@ -151,33 +155,20 @@ const Contact = () => {
                 onChange={handleChange}
                 rows="5"
                 required
-              ></textarea>
+              />
             </div>
 
             <div className="form-group">
-              <label>
-                {t("pages.contact.form.securityCheck")}{" "}
-                <strong>{captchaQuestion}</strong>
-              </label>
-              <div className="captcha-input-container">
-                <input
-                  type="number"
-                  value={userCaptchaInput}
-                  onChange={(e) => setUserCaptchaInput(e.target.value)}
-                  placeholder={t("pages.contact.form.answerPlaceholder")}
-                  required
-                />
-                <button
-                  type="button"
-                  onClick={generateCaptcha}
-                  className="refresh-btn"
-                >
-                  ↻
-                </button>
-              </div>
-              {captchaError && (
+              <label>{t("pages.contact.form.securityCheck")}</label>
+              <GoogleRecaptcha
+                ref={recaptchaRef}
+                siteKey={RECAPTCHA_SITE_KEY}
+                onChange={setRecaptchaToken}
+                onExpired={() => setRecaptchaToken("")}
+              />
+              {formError && (
                 <p className="error-text" style={{ color: "red" }}>
-                  {captchaError}
+                  {formError}
                 </p>
               )}
             </div>

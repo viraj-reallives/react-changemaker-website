@@ -248,9 +248,18 @@
       "howThisWorks": "¿Cómo funciona esto?",
       "ethCaption": "Taller ChangeMaker en ETH Zúrich, Suiza",
       "stats": [
-        { "value": "18", "label": "Competencias" },
-        { "value": "En vivo", "label": "Simulación" },
-        { "value": "Sin", "label": "Encuestas" }
+        {
+          "value": "18",
+          "label": "Competencias"
+        },
+        {
+          "value": "En vivo",
+          "label": "Simulación"
+        },
+        {
+          "value": "Sin",
+          "label": "Encuestas"
+        }
       ]
     }
   },
@@ -756,15 +765,14 @@
         "lastName": "Apellido",
         "email": "Dirección de Correo Electrónico",
         "message": "Mensaje",
-        "securityCheck": "Control de Seguridad:",
-        "answerPlaceholder": "Respuesta",
+        "securityCheck": "Verificación de seguridad",
         "sendMessage": "Enviar Mensaje",
         "sending": "Enviando..."
       },
       "errors": {
-        "captchaIncorrect": "CAPTCHA incorrecto, inténtalo de nuevo.",
         "submissionFailed": "El envío falló. Por favor, inténtalo de nuevo.",
-        "networkError": "Error de red. Verifica tu conexión."
+        "networkError": "Error de red. Verifica tu conexión.",
+        "securityCheckRequired": "Completa la verificación de seguridad."
       },
       "emailSubject": "RCMI Website Form Submission"
     },
@@ -988,7 +996,11 @@
       "collaborator": "Dr. Sawaros Thanapornsangsuth",
       "professorSectionTitle": "A Note from the Professor",
       "empathyCanvasSectionTitle": "Empathy Canvas Insights & Reflections",
-      "skills": ["Empathy", "SDG Awareness", "Critical Thinking"],
+      "skills": [
+        "Empathy",
+        "SDG Awareness",
+        "Critical Thinking"
+      ],
       "objective": "To develop empathy and global awareness among university students by immersing them in real-life poverty scenarios through simulation-based learning. The workshop aimed to deepen understanding of SDG 1 (No Poverty), enabling students to experience systemic inequalities, reflect on privilege, and build critical thinking and changemaking skills through experiential learning and structured reflection.",
       "programOverview": "RealLives conducted an immersive SDG-focused workshop at Chulalongkorn University (Thailand) for students in the BAScii program. The session centered on SDG 1: No Poverty, where students simulated lives in poverty-affected countries such as Burundi, experiencing challenges like limited access to healthcare, education, and income. The workshop combined simulation gameplay, guided reflection, and collaborative discussion to help students understand poverty beyond statistics. By integrating real-world data and AI-driven life scenarios, the program enabled students to connect emotionally with global issues while developing a deeper awareness of inequality and global citizenship.",
       "implementation": "The workshop followed a structured experiential learning approach combining simulation, reflection, and collaborative analysis. It began with an introduction to SDG 1: No Poverty and the global context of inequality, followed by an immersive RealLives simulation where students experienced full life journeys shaped by real-world data. Participants made critical decisions around education, healthcare, and livelihood while navigating systemic constraints faced in poverty-affected regions. This was followed by a reflective exercise in which students wrote personal letters from the perspective of their simulated character, fostering emotional connection and deeper empathy. The session then transitioned into a group-based Empathy Canvas activity, where students analyzed their character's experiences across dimensions such as environment, behavior, influences, and emotions. The workshop concluded with group presentations and a facilitated discussion linking individual experiences to broader global challenges and the role of students as ChangeMakers.",

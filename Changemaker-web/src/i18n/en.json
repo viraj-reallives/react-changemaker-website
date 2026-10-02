@@ -765,15 +765,14 @@
         "lastName": "Last Name",
         "email": "Email Address",
         "message": "Message",
-        "securityCheck": "Security Check:",
-        "answerPlaceholder": "Answer",
+        "securityCheck": "Security check",
         "sendMessage": "Send Message",
         "sending": "Sending..."
       },
       "errors": {
-        "captchaIncorrect": "Incorrect CAPTCHA, please try again.",
         "submissionFailed": "Submission failed. Please try again.",
-        "networkError": "Network error. Check your connection."
+        "networkError": "Network error. Check your connection.",
+        "securityCheckRequired": "Please complete the security check."
       },
       "emailSubject": "RCMI Website Form Submission"
     },
