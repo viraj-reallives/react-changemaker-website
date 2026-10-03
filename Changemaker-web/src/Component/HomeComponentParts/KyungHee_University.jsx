@@ -14,6 +14,8 @@ import { FaArrowRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
 import WorkshopIdentity from "./WorkshopIdentity";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { media } from "../../assets/optimizedMedia";
 
 const KyungHee_University = () => {
   const { t, getMessage } = useMarketingTranslation();
@@ -61,8 +63,10 @@ const KyungHee_University = () => {
           </SwiperSlide>
 
           <SwiperSlide className={Styles.swiperSlide}>
-            <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png"
+            <ResponsiveImg
+              src={media.thirdWorkshop2.src}
+              src900={media.thirdWorkshop2.src900}
+              sizes="100vw"
               className={Styles.slider_img}
               alt={t("common.alt.img")}
             />

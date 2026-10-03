@@ -3,11 +3,13 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { media } from "../../assets/optimizedMedia";
 
 const IMPACT_IMAGES = [
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png",
+  media.finalBusiness,
+  media.fourthWorkshop1,
+  media.secondWorkshop4,
 ];
 
 const FEATURE_IMAGES = [
@@ -42,10 +44,10 @@ const Featuresindex = () => {
                 className={Styles.impactCard}
               >
                 <div className={Styles.impactImage}>
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    src={IMPACT_IMAGES[idx]}
+                  <ResponsiveImg
+                    src={IMPACT_IMAGES[idx].src}
+                    src900={IMPACT_IMAGES[idx].src900}
+                    sizes="(max-width: 720px) 100vw, 33vw"
                     alt={t("common.alt.changemakerIndexImage")}
                   />
                 </div>

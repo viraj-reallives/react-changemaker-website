@@ -9,7 +9,8 @@ import {
 import portalCustom from "./components/costom_css/portal_custom.module.css";
 import styles from "./Portal.module.css";
 import reallivesLogo from "./assets/logo-white.svg";
-import backgroundImg from "./assets/landing page/starting-background-img.png";
+import ResponsiveImg from "./components/media/ResponsiveImg";
+import { publicHero } from "./assets/optimizedMedia";
 
 const rcmiLogo = "/rcmi-logo.png";
 const REAL_LIVES_URL = "https://reallivesworld.com/";
@@ -189,11 +190,15 @@ function PortalContent() {
 export default function Starter() {
   return (
     <main className={`${styles.page} ${portalCustom.background_black}`}>
-      <img
+      <ResponsiveImg
         className={`${styles.bgImage} ${portalCustom.portalPage}`}
-        src={backgroundImg}
+        src={publicHero.portalBackground.src}
+        src900={publicHero.portalBackground.src900}
+        sizes={publicHero.portalBackground.sizes}
+        width={publicHero.portalBackground.width}
+        height={publicHero.portalBackground.height}
         alt=""
-        fetchPriority="high"
+        priority
       />
 
       <div className={styles.pageInner}>

@@ -13,6 +13,10 @@ import { FaArrowRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
 import WorkshopIdentity from "./WorkshopIdentity";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { media } from "../../assets/optimizedMedia";
+
+const SLIDER_IMAGES = [media.school1, media.school2, media.school3];
 
 const University = () => {
   const { t, getMessage } = useMarketingTranslation();
@@ -44,29 +48,18 @@ const University = () => {
             speed={600}
             className={`${Styles.mySwiper} universitySlider`}
           >
-            <SwiperSlide className={Styles.swiperSlide}>
-              <img
-                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png"
-                className={Styles.slider_img}
-                alt={t("common.alt.img")}
-              />
-            </SwiperSlide>
-
-            <SwiperSlide className={Styles.swiperSlide}>
-              <img
-                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653481/school-2-image-slider_opj1vb.png"
-                className={Styles.slider_img}
-                alt={t("common.alt.img")}
-              />
-            </SwiperSlide>
-
-            <SwiperSlide className={Styles.swiperSlide}>
-              <img
-                src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/school-3-image-slider_troncd.png"
-                className={Styles.slider_img}
-                alt={t("common.alt.img")}
-              />
-            </SwiperSlide>
+            {SLIDER_IMAGES.map((img, idx) => (
+              <SwiperSlide key={img.src} className={Styles.swiperSlide}>
+                <ResponsiveImg
+                  src={img.src}
+                  src900={img.src900}
+                  sizes="100vw"
+                  className={Styles.slider_img}
+                  alt={t("common.alt.img")}
+                  priority={idx === 0}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
 

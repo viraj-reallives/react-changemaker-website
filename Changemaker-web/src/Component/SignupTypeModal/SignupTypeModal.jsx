@@ -10,22 +10,13 @@ import {
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
 import { getSignupUrl, SIGNUP_USER_TYPES } from "../../lib/signupUrls";
-import orchidWorkshop1 from "../../assets/Home-image/orchid-1.jpeg";
-import orchidWorkshop2 from "../../assets/Home-image/orchid-2.jpeg";
 import orchidWorkshop3 from "../../assets/Home-image/orchid-3.jpeg";
 import orchidWorkshop4 from "../../assets/Home-image/orchid-4.jpg";
-import orchidWorkshop5 from "../../assets/Home-image/orchid-5.png";
 import orchidWorkshop6 from "../../assets/Home-image/orchid-6.jpg";
-import chulaWorkshop1 from "../../assets/chula-workshop/fifth-work-shop-4.png";
-import chulaWorkshop2 from "../../assets/chula-workshop/fifth-work-shop-2.png";
-import chulaWorkshop3 from "../../assets/chula-workshop/fifth-work-shop-3.png";
-import chulaWorkshop4 from "../../assets/chula-workshop/fifth-work-shop-5.png";
-import iitWorkshop1 from "../../assets/Home-image/fourth_workshop-1-min.jpg";
-import iitWorkshop2 from "../../assets/Home-image/fourth_workshop-2-min.jpg";
-import iitWorkshop3 from "../../assets/Home-image/fourth_workshop-3-min.jpg";
-import ethWorkshop from "../../assets/ETH-Sudents2.png";
 import kyungHeeWorkshop from "../../assets/Home-image/3-rd-workshop-image.png";
 import navamindradhirajWorkshop from "../../assets/Home-image/second-workshop.png";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { media } from "../../assets/optimizedMedia";
 import styles from "./SignupTypeModal.module.css";
 
 const TYPE_ICONS = {
@@ -37,24 +28,24 @@ const TYPE_ICONS = {
 
 const TYPE_IMAGES = {
   school: [
-    orchidWorkshop1,
-    orchidWorkshop2,
-    orchidWorkshop3,
-    orchidWorkshop4,
-    orchidWorkshop5,
-    orchidWorkshop6,
+    media.orchid1,
+    media.orchid2,
+    { src: orchidWorkshop3 },
+    { src: orchidWorkshop4 },
+    media.orchid5,
+    { src: orchidWorkshop6 },
   ],
   university: [
-    chulaWorkshop1,
-    iitWorkshop1,
-    ethWorkshop,
-    chulaWorkshop2,
-    iitWorkshop2,
-    kyungHeeWorkshop,
-    chulaWorkshop3,
-    iitWorkshop3,
-    navamindradhirajWorkshop,
-    chulaWorkshop4,
+    media.chula1,
+    media.fourthWorkshop1,
+    media.ethWorkshop,
+    media.chula2,
+    media.fourthWorkshop2,
+    { src: kyungHeeWorkshop },
+    media.chula3,
+    media.fourthWorkshop3,
+    { src: navamindradhirajWorkshop },
+    media.chula4,
   ],
 };
 
@@ -233,10 +224,12 @@ const SignupTypeModal = () => {
             {photos && (
               <aside className={styles.photoCol}>
                 <div key={selectedType} className={styles.photoGrid}>
-                  {photos.map((src, index) => (
-                    <img
+                  {photos.map((img, index) => (
+                    <ResponsiveImg
                       key={`${selectedType}-${index}`}
-                      src={src}
+                      src={img.src}
+                      src900={img.src900}
+                      sizes="(max-width: 720px) 45vw, 180px"
                       alt=""
                       className={styles.photo}
                     />

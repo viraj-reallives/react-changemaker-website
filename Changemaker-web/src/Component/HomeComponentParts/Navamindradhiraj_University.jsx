@@ -14,6 +14,14 @@ import { FaArrowRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
 import WorkshopIdentity from "./WorkshopIdentity";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { media } from "../../assets/optimizedMedia";
+
+const OPTIMIZED_SLIDES = [
+  media.secondWorkshop2,
+  media.secondWorkshop3,
+  media.secondWorkshop4,
+];
 
 const Navamindradhiraj_University = () => {
   const { t, getMessage } = useMarketingTranslation();
@@ -53,29 +61,17 @@ const Navamindradhiraj_University = () => {
             />
           </SwiperSlide>
 
-          <SwiperSlide className={Styles.swiperSlide}>
-            <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-2_ikloth.png"
-              className={Styles.slider_img}
-              alt={t("common.alt.img")}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className={Styles.swiperSlide}>
-            <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-3_ycah0h.png"
-              className={Styles.slider_img}
-              alt={t("common.alt.img")}
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className={Styles.swiperSlide}>
-            <img
-              src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png"
-              className={Styles.slider_img}
-              alt={t("common.alt.img")}
-            />
-          </SwiperSlide>
+          {OPTIMIZED_SLIDES.map((img) => (
+            <SwiperSlide key={img.src} className={Styles.swiperSlide}>
+              <ResponsiveImg
+                src={img.src}
+                src900={img.src900}
+                sizes="100vw"
+                className={Styles.slider_img}
+                alt={t("common.alt.img")}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
 

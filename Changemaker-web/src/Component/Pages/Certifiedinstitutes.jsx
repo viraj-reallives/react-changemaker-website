@@ -5,17 +5,21 @@ import goal3 from "../../assets/Home-image/E-WEB-Goal-04.svg";
 import sustinablegoal from "../../assets/Home-image/Sustinable-goal-img.svg";
 import national_image from "../../assets/Home-image/National-education.svg";
 import orchid_school_logo from "../../assets/Home-image/orchid-reallives-logo.svg";
-import changemaker_certificate from "../../assets/Home-image/changemaker-certificate.png";
 import logowhite from "../../assets/logo-white.svg";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { media, publicHero } from "../../assets/optimizedMedia";
+import orchidWorkshop3 from "../../assets/Home-image/orchid-3.jpeg";
+import orchidWorkshop4 from "../../assets/Home-image/orchid-4.jpg";
+import orchidWorkshop6 from "../../assets/Home-image/orchid-6.jpg";
 
 const WORKSHOP_IMAGES = [
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-5_kwmesy.png",
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-2_hgvd1d.jpg",
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653480/orchid-3_zmamzk.jpg",
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/orchid-4_tnp54i.jpg",
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653468/orchid-1_ipbgc7.jpg",
-  "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/orchid-6_filvzp.jpg",
+  media.orchid5,
+  media.orchid2,
+  { src: orchidWorkshop3 },
+  { src: orchidWorkshop4 },
+  media.orchid1,
+  { src: orchidWorkshop6 },
 ];
 
 const SDG_ICONS = [goal1, goal2, goal3];
@@ -45,11 +49,14 @@ const Certifiedinstitutes = () => {
         </div>
 
         <figure className={Styles.heroMedia}>
-          <img
-            loading="eager"
-            decoding="async"
-            src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-background-img-2.jpeg_off002.png"
+          <ResponsiveImg
+            src={publicHero.orchidWorkshop.src}
+            src900={publicHero.orchidWorkshop.src900}
+            sizes={publicHero.orchidWorkshop.sizes}
+            width={publicHero.orchidWorkshop.width}
+            height={publicHero.orchidWorkshop.height}
             alt={t("common.alt.changemakerIndexImage")}
+            priority
           />
         </figure>
       </section>
@@ -146,11 +153,11 @@ const Certifiedinstitutes = () => {
 
           <div className={Styles.photoGrid}>
             {WORKSHOP_IMAGES.map((img) => (
-              <figure key={img} className={Styles.photoCard}>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src={img}
+              <figure key={img.src} className={Styles.photoCard}>
+                <ResponsiveImg
+                  src={img.src}
+                  src900={img.src900}
+                  sizes="(max-width: 720px) 100vw, 33vw"
                   alt={t("common.alt.changemakerIndexImage")}
                 />
               </figure>
@@ -186,10 +193,12 @@ const Certifiedinstitutes = () => {
           </header>
 
           <figure className={Styles.certificateFrame}>
-            <img
-              loading="lazy"
-              decoding="async"
-              src={changemaker_certificate}
+            <ResponsiveImg
+              src={publicHero.certificate.src}
+              src900={publicHero.certificate.src900}
+              sizes={publicHero.certificate.sizes}
+              width={publicHero.certificate.width}
+              height={publicHero.certificate.height}
               alt={t("common.alt.changemakerIndexImage")}
             />
           </figure>

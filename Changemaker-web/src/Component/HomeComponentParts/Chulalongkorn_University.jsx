@@ -8,21 +8,26 @@ import { Link } from "react-router-dom";
 import { useLocalePath } from "../../hooks/useLocalePath";
 import chulaLogo from "../../assets/chula-workshop/logo-Chula-1.webp";
 import sdg_logo_1 from "../../assets/Home-image/E-WEB-Goal-01.svg";
-import slide1 from "../../assets/chula-workshop/fifth-work-shop-4.png";
-import slide2 from "../../assets/chula-workshop/fifth-work-shop-2.png";
-import slide3 from "../../assets/chula-workshop/fifth-work-shop-3.png";
-import slide4 from "../../assets/chula-workshop/fifth-work-shop-5.png";
 import slide5 from "../../assets/chula-workshop/fifth-work-shop.png";
-import empathyCanvas1 from "../../assets/chula-workshop/first-goal-img-1.png";
-import empathyCanvas2 from "../../assets/chula-workshop/second-goal-img-2.png";
-import empathyCanvas3 from "../../assets/chula-workshop/therd-goal-img-3.png";
 import { FaArrowRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
 import WorkshopIdentity from "./WorkshopIdentity";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { media } from "../../assets/optimizedMedia";
 
-const SLIDER_IMAGES = [slide1, slide2, slide3, slide4, slide5];
-const EMPATHY_CANVAS_IMAGES = [empathyCanvas1, empathyCanvas2, empathyCanvas3];
+const SLIDER_IMAGES = [
+  media.chula1,
+  media.chula2,
+  media.chula3,
+  media.chula4,
+  { src: slide5 },
+];
+const EMPATHY_CANVAS_IMAGES = [
+  media.empathy1,
+  media.empathy2,
+  media.empathy3,
+];
 
 const Chulalongkorn_University = () => {
   const { t, getMessage } = useMarketingTranslation();
@@ -53,12 +58,15 @@ const Chulalongkorn_University = () => {
           speed={600}
           className={`${Styles.mySwiper} universitySlider`}
         >
-          {SLIDER_IMAGES.map((src) => (
-            <SwiperSlide key={src} className={Styles.swiperSlide}>
-              <img
-                src={src}
+          {SLIDER_IMAGES.map((img) => (
+            <SwiperSlide key={img.src} className={Styles.swiperSlide}>
+              <ResponsiveImg
+                src={img.src}
+                src900={img.src900}
+                sizes="100vw"
                 className={Styles.slider_img}
                 alt={t("common.alt.img")}
+                priority={img === SLIDER_IMAGES[0]}
               />
             </SwiperSlide>
           ))}
@@ -151,10 +159,12 @@ const Chulalongkorn_University = () => {
           </p>
 
           <div className={Styles.empathy_canvas_grid}>
-            {EMPATHY_CANVAS_IMAGES.map((src) => (
-              <img
-                key={src}
-                src={src}
+            {EMPATHY_CANVAS_IMAGES.map((img) => (
+              <ResponsiveImg
+                key={img.src}
+                src={img.src}
+                src900={img.src900}
+                sizes="(max-width: 720px) 100vw, 33vw"
                 className={Styles.empathy_canvas_image}
                 alt={t("common.alt.img")}
               />

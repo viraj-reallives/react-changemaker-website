@@ -9,32 +9,27 @@ import { FaArrowRight } from "react-icons/fa6";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
 import { useSignupModal } from "../../context/SignupModalContext";
-import chulaWorkshopCardImg from "../../assets/chula-workshop/fifth-work-shop-4.png";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { media } from "../../assets/optimizedMedia";
 
 const GlobalMap = lazy(() =>
   import("../GlobalMap").then((m) => ({ default: m.GlobalMap })),
 );
 
 const IMPACT_CARD_META = [
+  { img: media.finalBusiness },
   {
-    imgURL:
-      "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png",
+    img: {
+      src: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/second-workshop_vmxhhq.png",
+    },
   },
   {
-    imgURL:
-      "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653464/second-workshop_vmxhhq.png",
+    img: {
+      src: "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/3-rd-workshop-first-image_y34mx3.jpg",
+    },
   },
-  {
-    imgURL:
-      "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/3-rd-workshop-first-image_y34mx3.jpg",
-  },
-  {
-    imgURL:
-      "https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg",
-  },
-  {
-    imgURL: chulaWorkshopCardImg,
-  },
+  { img: media.fourthWorkshop1 },
+  { img: media.chula1 },
 ];
 
 const Ourimpact = () => {
@@ -66,40 +61,40 @@ const Ourimpact = () => {
               speed={1000}
             >
               <SwiperSlide>
-                <img
-                  loading="eager"
-                  decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653482/Final_Business_with_Purpose_1_qhhlwu.png"
+                <ResponsiveImg
+                  src={media.finalBusiness.src}
+                  src900={media.finalBusiness.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
                   alt={t("common.alt.changemakerIndexImage")}
-                />
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  loading="eager"
-                  decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-2_ikloth.png"
+                <ResponsiveImg
+                  src={media.secondWorkshop2.src}
+                  src900={media.secondWorkshop2.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
                   alt={t("common.alt.changemakerIndexImage")}
-                />
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  loading="eager"
-                  decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653474/second-workshop-3_ycah0h.png"
+                <ResponsiveImg
+                  src={media.secondWorkshop3.src}
+                  src900={media.secondWorkshop3.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
                   alt={t("common.alt.changemakerIndexImage")}
-                />
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  loading="eager"
-                  decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653472/second-workshop-4_ew4261.png"
+                <ResponsiveImg
+                  src={media.secondWorkshop4.src}
+                  src900={media.secondWorkshop4.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
                   alt={t("common.alt.changemakerIndexImage")}
-                />
+                  />
               </SwiperSlide>
             </Swiper>
 
@@ -112,22 +107,22 @@ const Ourimpact = () => {
               speed={1000}
             >
               <SwiperSlide>
-                <img
-                  loading="eager"
-                  decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png"
+                <ResponsiveImg
+                  src={media.school1.src}
+                  src900={media.school1.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
                   alt={t("common.alt.changemakerIndexImage")}
-                />
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  loading="eager"
-                  decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653481/school-2-image-slider_opj1vb.png"
+                <ResponsiveImg
+                  src={media.school2.src}
+                  src900={media.school2.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
                   alt={t("common.alt.changemakerIndexImage")}
-                />
+                  />
               </SwiperSlide>
               <SwiperSlide>
                 <img
@@ -139,13 +134,13 @@ const Ourimpact = () => {
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  loading="eager"
-                  decoding="async"
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653475/school-3-image-slider_troncd.png"
+                <ResponsiveImg
+                  src={media.school3.src}
+                  src900={media.school3.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
                   alt={t("common.alt.changemakerIndexImage")}
-                />
+                  />
               </SwiperSlide>
             </Swiper>
 
@@ -165,18 +160,22 @@ const Ourimpact = () => {
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png"
+                <ResponsiveImg
+                  src={media.thirdWorkshop2.src}
+                  src900={media.thirdWorkshop2.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-5_kwmesy.png"
+                <ResponsiveImg
+                  src={media.orchid5.src}
+                  src900={media.orchid5.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
               <SwiperSlide>
                 <img
@@ -198,32 +197,40 @@ const Ourimpact = () => {
               speed={1000}
             >
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-background-img-2.jpeg_off002.png"
+                <ResponsiveImg
+                  src={media.orchidBackground.src}
+                  src900={media.orchidBackground.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653467/fourth_workshop-1-min_j7e4y0.jpg"
+                <ResponsiveImg
+                  src={media.fourthWorkshop1.src}
+                  src900={media.fourthWorkshop1.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653471/fourth_workshop-2-min_umblqv.jpg"
+                <ResponsiveImg
+                  src={media.fourthWorkshop2.src}
+                  src900={media.fourthWorkshop2.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653470/fourth_workshop-3-min_dqej4n.jpg"
+                <ResponsiveImg
+                  src={media.fourthWorkshop3.src}
+                  src900={media.fourthWorkshop3.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
             </Swiper>
 
@@ -236,25 +243,31 @@ const Ourimpact = () => {
               speed={1000}
             >
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653477/orchid-2_hgvd1d.jpg"
+                <ResponsiveImg
+                  src={media.orchid2.src}
+                  src900={media.orchid2.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653466/school-1-image-slider_bsn9za.png"
+                <ResponsiveImg
+                  src={media.school1.src}
+                  src900={media.school1.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dexw6sglh/image/upload/v1771653465/3-rd-workshop-2_ktwj7o.png"
+                <ResponsiveImg
+                  src={media.thirdWorkshop2.src}
+                  src900={media.thirdWorkshop2.src900}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                   className={Styles.slider_img}
-                  alt=""
-                />
+                  alt={""}
+                  />
               </SwiperSlide>
               <SwiperSlide>
                 <img
@@ -308,7 +321,12 @@ const Ourimpact = () => {
 
                 <div className={Styles.bottom_card_imapct_section}>
                   <div className={Styles.impact_image_card}>
-                    <img src={meta.imgURL} alt="" />
+                    <ResponsiveImg
+                      src={meta.img?.src}
+                      src900={meta.img?.src900}
+                      sizes="(max-width: 720px) 100vw, 280px"
+                      alt=""
+                    />
                   </div>
 
                   <div className={Styles.impact_card_data}>

@@ -1,17 +1,19 @@
 import Styles from "./Home.module.css";
 import Featuresindex from "../HomeComponentParts/Featuresindex";
-import ethStudentsPhoto from "../../assets/ETH-Sudents2.png";
 import ChangeMakeraction from "../HomeComponentParts/ChangeMakeraction";
 import { Link } from "react-router-dom";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
 import { useLocalePath } from "../../hooks/useLocalePath";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { publicHero } from "../../assets/optimizedMedia";
 
 const Home = () => {
   const { t, getMessage } = useMarketingTranslation();
   const { openSignupModal } = useSignupModal();
   const localePath = useLocalePath();
   const stats = getMessage("home.hero.stats") ?? [];
+  const hero = publicHero.ethWorkshop;
 
   return (
     <div className={Styles.page}>
@@ -53,11 +55,16 @@ const Home = () => {
         </div>
 
         <figure className={Styles.heroMedia}>
-          <img
-            loading="eager"
-            decoding="async"
-            src={ethStudentsPhoto}
+          <ResponsiveImg
+            src={hero.src}
+            src900={hero.src900}
+            sizes={hero.sizes}
+            width={hero.width}
+            height={hero.height}
+            src900Width={hero.src900Width}
+            srcWidth={hero.srcWidth}
             alt={t("home.hero.ethCaption")}
+            priority
           />
           <figcaption className={Styles.photoChip}>
             {t("home.hero.ethCaption")}

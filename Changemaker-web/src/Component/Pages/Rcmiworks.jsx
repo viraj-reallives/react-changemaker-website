@@ -3,9 +3,10 @@ import Styles from "./Rcmiworks.module.css";
 import chartpolar from "../../assets/Home-image/chart-polar-duotone 1.svg";
 import key_icon from "../../assets/Home-image/key-duotone 2.svg";
 import image_behind_rcmi from "../../assets/Home-image/atom-duotone 2.svg";
-import howRcmiWorksImage from "../../assets/how-rcmi-works.png";
 import { useMarketingTranslation } from "../../context/MarketingLocaleContext";
 import { useSignupModal } from "../../context/SignupModalContext";
+import ResponsiveImg from "../../components/media/ResponsiveImg";
+import { publicHero } from "../../assets/optimizedMedia";
 
 const STAGE_ACCENTS = ["#b7d48a", "#9ec96e", "#86be55", "#6eaa3f", "#5a9332"];
 
@@ -70,11 +71,14 @@ const Rcmiworks = () => {
         </div>
 
         <figure className={Styles.heroMedia}>
-          <img
-            loading="eager"
-            decoding="async"
-            src={howRcmiWorksImage}
+          <ResponsiveImg
+            src={publicHero.howRcmiWorks.src}
+            src900={publicHero.howRcmiWorks.src900}
+            sizes={publicHero.howRcmiWorks.sizes}
+            width={publicHero.howRcmiWorks.width}
+            height={publicHero.howRcmiWorks.height}
             alt={t("common.alt.changemakerIndexImage")}
+            priority
           />
         </figure>
       </section>
