@@ -1,0 +1,2988 @@
+{
+ "updatedAt": "2026-11-06T07:16:22.560Z",
+ "expectedParticipants": 800,
+ "surveys": {
+  "pre": {
+   "title": "Walking in Their Shoes – PRE-workshop survey / แบบสอบถามก่อนกิจกรรม",
+   "responses": 704,
+   "sections": [
+    {
+     "title": "1 · Your passport / 1 · พาสปอร์ตของคุณ",
+     "items": [
+      {
+       "type": "choice",
+       "title": "Which session are you in? / คุณเข้าร่วมรอบใด?",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Mon 9 Nov 2026, 09.00–12.00, TWP-304 / จันทร์ 9 พ.ย. 2569 เวลา 09.00–12.00 น. ห้อง TWP-304",
+         "count": 142
+        },
+        {
+         "label": "Mon 9 Nov 2026, 13.00–16.00, KSS-801 / จันทร์ 9 พ.ย. 2569 เวลา 13.00–16.00 น. ห้อง KSS-801",
+         "count": 138
+        },
+        {
+         "label": "Tue 10 Nov 2026, 09.00–12.00, KSS-801 / อังคาร 10 พ.ย. 2569 เวลา 09.00–12.00 น. ห้อง KSS-801",
+         "count": 147
+        },
+        {
+         "label": "Wed 11 Nov 2026, 09.00–12.00, TWP-304 / พุธ 11 พ.ย. 2569 เวลา 09.00–12.00 น. ห้อง TWP-304",
+         "count": 150
+        },
+        {
+         "label": "Wed 11 Nov 2026, 13.00–16.00, TWP-304 / พุธ 11 พ.ย. 2569 เวลา 13.00–16.00 น. ห้อง TWP-304",
+         "count": 127
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Gender / เพศ",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Female / หญิง",
+         "count": 451
+        },
+        {
+         "label": "Male / ชาย",
+         "count": 225
+        },
+        {
+         "label": "Non-binary / other / อื่น ๆ",
+         "count": 15
+        },
+        {
+         "label": "Prefer not to say / ไม่ประสงค์ระบุ",
+         "count": 13
+        }
+       ]
+      },
+      {
+       "type": "number",
+       "title": "Age (years) / อายุ (ปี)",
+       "answered": 704,
+       "average": 20.6,
+       "median": 21,
+       "buckets": [
+        {
+         "label": "16–18",
+         "count": 113
+        },
+        {
+         "label": "19–20",
+         "count": 222
+        },
+        {
+         "label": "21–22",
+         "count": 234
+        },
+        {
+         "label": "23–25",
+         "count": 135
+        },
+        {
+         "label": "26+",
+         "count": 0
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Nationality / สัญชาติ",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Thai / ไทย",
+         "count": 680
+        },
+        {
+         "label": "__other__",
+         "count": 24
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Faculty / คณะ",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Faculty of Medicine / คณะแพทยศาสตร์วชิรพยาบาล",
+         "count": 138
+        },
+        {
+         "label": "Faculty of Nursing / คณะพยาบาลศาสตร์เกื้อการุณย์",
+         "count": 269
+        },
+        {
+         "label": "Faculty of Sciences and Health Technology / คณะวิทยาศาสตร์และเทคโนโลยีสุขภาพ",
+         "count": 196
+        },
+        {
+         "label": "Institute of Metropolitan Development / สถาบันพัฒนามหานคร",
+         "count": 72
+        },
+        {
+         "label": "__other__",
+         "count": 29
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Year of study / ชั้นปี",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Year 1 / ปี 1",
+         "count": 125
+        },
+        {
+         "label": "Year 2 / ปี 2",
+         "count": 142
+        },
+        {
+         "label": "Year 3 / ปี 3",
+         "count": 139
+        },
+        {
+         "label": "Year 4 / ปี 4",
+         "count": 162
+        },
+        {
+         "label": "Year 5 or above / ปี 5 ขึ้นไป",
+         "count": 136
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Have you travelled outside Thailand? / คุณเคยเดินทางไปต่างประเทศหรือไม่?",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Never / ไม่เคย",
+         "count": 241
+        },
+        {
+         "label": "Only within Asia / เฉพาะในเอเชีย",
+         "count": 230
+        },
+        {
+         "label": "Outside Asia / นอกทวีปเอเชีย",
+         "count": 233
+        }
+       ]
+      },
+      {
+       "type": "multi",
+       "title": "Your connection to Africa (tick all that apply) / ความเชื่อมโยงของคุณกับทวีปแอฟริกา (เลือกได้มากกว่า 1 ข้อ)",
+       "answered": 704,
+       "options": [
+        {
+         "label": "I have visited Africa / เคยไปแอฟริกา",
+         "count": 378
+        },
+        {
+         "label": "I know someone from Africa / รู้จักคนจากแอฟริกา",
+         "count": 261
+        },
+        {
+         "label": "I have studied about Africa / เคยเรียนเรื่องแอฟริกา",
+         "count": 274
+        },
+        {
+         "label": "None of these / ไม่มีข้อใดเลย",
+         "count": 239
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Have you done volunteer or community work? / คุณเคยทำงานอาสาสมัครหรืองานชุมชนหรือไม่?",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Never / ไม่เคย",
+         "count": 220
+        },
+        {
+         "label": "Once or twice / 1–2 ครั้ง",
+         "count": 251
+        },
+        {
+         "label": "Regularly / ทำเป็นประจำ",
+         "count": 233
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Have you played a simulation or serious game for learning before? / คุณเคยเล่นเกมจำลองสถานการณ์เพื่อการเรียนรู้มาก่อนหรือไม่?",
+       "answered": 704,
+       "options": [
+        {
+         "label": "No / ไม่เคย",
+         "count": 217
+        },
+        {
+         "label": "Yes, once / เคย 1 ครั้ง",
+         "count": 264
+        },
+        {
+         "label": "Yes, several times / เคยหลายครั้ง",
+         "count": 223
+        }
+       ]
+      },
+      {
+       "type": "multi",
+       "title": "Have you used any of these before? (tick all that apply) / คุณเคยใช้เครื่องมือต่อไปนี้มาก่อนหรือไม่? (เลือกได้มากกว่า 1 ข้อ)",
+       "answered": 704,
+       "options": [
+        {
+         "label": "A life-simulation game such as RealLives / เกมจำลองชีวิต เช่น RealLives",
+         "count": 369
+        },
+        {
+         "label": "An empathy map or empathy canvas / แผนผังความเข้าอกเข้าใจ (Empathy Map / Empathy Canvas)",
+         "count": 290
+        },
+        {
+         "label": "A Business Model Canvas or Social Business Canvas / Business Model Canvas หรือ Social Business Canvas",
+         "count": 224
+        },
+        {
+         "label": "None of these / ไม่เคยใช้เลย",
+         "count": 261
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "How familiar are you with the UN Sustainable Development Goals (SDGs)? / คุณรู้จักเป้าหมายการพัฒนาที่ยั่งยืนของสหประชาชาติ (SDGs) มากน้อยเพียงใด?",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Never heard of them / ไม่เคยได้ยิน",
+         "count": 48
+        },
+        {
+         "label": "Heard the name only / เคยได้ยินแต่ชื่อ",
+         "count": 203
+        },
+        {
+         "label": "Know a few goals / รู้จักบางเป้าหมาย",
+         "count": 354
+        },
+        {
+         "label": "Know them well / รู้จักเป็นอย่างดี",
+         "count": 99
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Which device will you use to play RealLives? / คุณจะใช้อุปกรณ์ใดเล่น RealLives?",
+       "answered": 704,
+       "options": [
+        {
+         "label": "Laptop / โน้ตบุ๊ก",
+         "count": 205
+        },
+        {
+         "label": "Tablet / แท็บเล็ต",
+         "count": 232
+        },
+        {
+         "label": "Phone / โทรศัพท์มือถือ",
+         "count": 267
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2 · Quick quiz: what do you already know? / 2 · แบบทดสอบสั้น: คุณรู้อะไรอยู่แล้วบ้าง?",
+     "items": [
+      {
+       "type": "quiz",
+       "questions": [
+        {
+         "title": "How many Sustainable Development Goals did UN member states adopt in 2015? / ประเทศสมาชิกสหประชาชาติรับรองเป้าหมายการพัฒนาที่ยั่งยืน (SDGs) ในปี 2015 กี่เป้าหมาย?",
+         "answered": 704,
+         "correctAnswer": "17",
+         "correctPct": 44
+        },
+        {
+         "title": "SDG 2 “Zero Hunger” aims to… / SDG 2 “ขจัดความหิวโหย” มีเป้าหมายเพื่อ…",
+         "answered": 704,
+         "correctAnswer": "End hunger, improve nutrition and promote sustainable agriculture / ขจัดความหิวโหย ส่งเสริมโภชนาการ และเกษตรกรรมที่ยั่งยืน",
+         "correctPct": 41
+        },
+        {
+         "title": "Which SDG focuses on inclusive and equitable quality education? / SDG ข้อใดมุ่งเน้นการศึกษาที่มีคุณภาพอย่างทั่วถึงและเท่าเทียม?",
+         "answered": 704,
+         "correctAnswer": "SDG 4",
+         "correctPct": 41
+        },
+        {
+         "title": "In the UN SDG Index 2026, which of these countries ranks lowest? / ในดัชนี SDG ของสหประชาชาติ ปี 2026 ประเทศใดต่อไปนี้อยู่อันดับต่ำที่สุด?",
+         "answered": 704,
+         "correctAnswer": "Chad / ชาด",
+         "correctPct": 40
+        },
+        {
+         "title": "Where does Thailand rank in the UN SDG Index 2026 (out of 169 countries)? / ประเทศไทยอยู่อันดับใดในดัชนี SDG ของสหประชาชาติ ปี 2026 (จาก 169 ประเทศ)?",
+         "answered": 704,
+         "correctAnswer": "Around 40–50 / ประมาณอันดับ 40–50",
+         "correctPct": 44
+        },
+        {
+         "title": "Which country has the largest number of out-of-school children in the world? / ประเทศใดมีจำนวนเด็กที่ไม่ได้เข้าเรียนมากที่สุดในโลก?",
+         "answered": 704,
+         "correctAnswer": "Nigeria / ไนจีเรีย",
+         "correctPct": 40
+        },
+        {
+         "title": "Roughly how many people live in Nigeria? / ประเทศไนจีเรียมีประชากรประมาณเท่าใด?",
+         "answered": 704,
+         "correctAnswer": "About 230 million / ประมาณ 230 ล้านคน",
+         "correctPct": 41
+        },
+        {
+         "title": "Which of these is a “social determinant of health”? / ข้อใดเป็น “ปัจจัยทางสังคมที่กำหนดสุขภาพ”?",
+         "answered": 704,
+         "correctAnswer": "Access to safe water and sanitation / การเข้าถึงน้ำสะอาดและสุขาภิบาล",
+         "correctPct": 43
+        },
+        {
+         "title": "Long-term undernutrition in early childhood most commonly leads to… / การขาดสารอาหารเรื้อรังในวัยเด็กเล็กมักนำไปสู่ภาวะใด?",
+         "answered": 704,
+         "correctAnswer": "Stunting (low height for age) / ภาวะเตี้ยแคระแกร็น (ส่วนสูงต่ำกว่าเกณฑ์อายุ)",
+         "correctPct": 45
+        },
+        {
+         "title": "Which best describes a social business? / ข้อใดอธิบาย “ธุรกิจเพื่อสังคม” ได้ดีที่สุด?",
+         "answered": 704,
+         "correctAnswer": "A business that solves a social problem and reinvests profits in its mission / ธุรกิจที่แก้ปัญหาสังคม และนำกำไรกลับไปลงทุนเพื่อพันธกิจ",
+         "correctPct": 40
+        },
+        {
+         "title": "In a social business, the beneficiary and the paying customer… / ในธุรกิจเพื่อสังคม ผู้รับประโยชน์และลูกค้าผู้จ่ายเงิน…",
+         "answered": 704,
+         "correctAnswer": "Can be different people or organisations / อาจเป็นคนหรือองค์กรที่ต่างกันได้",
+         "correctPct": 43
+        },
+        {
+         "title": "Which statement best describes empathy? / ข้อใดอธิบาย “ความเข้าอกเข้าใจผู้อื่น (empathy)” ได้ดีที่สุด?",
+         "answered": 704,
+         "correctAnswer": "Understanding and sharing another person’s feelings from their point of view / เข้าใจและรับรู้ความรู้สึกของผู้อื่นจากมุมมองของเขา",
+         "correctPct": 45
+        }
+       ],
+       "answered": 704,
+       "maxScore": 12,
+       "averageScore": 5.07,
+       "scoreDistribution": [
+        {
+         "score": 0,
+         "count": 0
+        },
+        {
+         "score": 1,
+         "count": 5
+        },
+        {
+         "score": 2,
+         "count": 40
+        },
+        {
+         "score": 3,
+         "count": 89
+        },
+        {
+         "score": 4,
+         "count": 121
+        },
+        {
+         "score": 5,
+         "count": 165
+        },
+        {
+         "score": 6,
+         "count": 137
+        },
+        {
+         "score": 7,
+         "count": 105
+        },
+        {
+         "score": 8,
+         "count": 30
+        },
+        {
+         "score": 9,
+         "count": 10
+        },
+        {
+         "score": 10,
+         "count": 1
+        },
+        {
+         "score": 11,
+         "count": 1
+        },
+        {
+         "score": 12,
+         "count": 0
+        }
+       ]
+      },
+      {
+       "type": "grid",
+       "title": "How much do you know about each of these right now? / ตอนนี้คุณมีความรู้ในแต่ละเรื่องต่อไปนี้มากน้อยเพียงใด?",
+       "help": "1 = Very little / น้อยมาก · 5 = A lot / มาก",
+       "min": 1,
+       "max": 5,
+       "answered": 704,
+       "rows": [
+        {
+         "label": "The 17 SDGs / เป้าหมาย SDGs ทั้ง 17 ข้อ",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.03,
+         "distribution": [
+          11,
+          160,
+          353,
+          156,
+          24
+         ]
+        },
+        {
+         "label": "Daily life in Sub-Saharan Africa / ชีวิตประจำวันในแอฟริกาใต้สะฮารา",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.01,
+         "distribution": [
+          12,
+          156,
+          362,
+          159,
+          15
+         ]
+        },
+        {
+         "label": "How poverty, hunger and education affect health / ผลของความยากจน ความหิวโหย และการศึกษาต่อสุขภาพ",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.02,
+         "distribution": [
+          13,
+          165,
+          339,
+          168,
+          19
+         ]
+        },
+        {
+         "label": "How to design a social business / วิธีออกแบบธุรกิจเพื่อสังคม",
+         "reverse": false,
+         "answered": 704,
+         "average": 3,
+         "distribution": [
+          15,
+          161,
+          355,
+          153,
+          20
+         ]
+        },
+        {
+         "label": "Inequality in Bangkok / ความเหลื่อมล้ำในกรุงเทพฯ",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.03,
+         "distribution": [
+          15,
+          155,
+          344,
+          176,
+          14
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3 · How you see the world / 3 · มุมมองของคุณต่อโลก",
+     "items": [
+      {
+       "type": "grid",
+       "title": "How much do you agree with each statement? / คุณเห็นด้วยกับแต่ละข้อความต่อไปนี้มากน้อยเพียงใด?",
+       "help": "1 = Strongly disagree / ไม่เห็นด้วยอย่างยิ่ง · 3 = Not sure / ไม่แน่ใจ · 5 = Strongly agree / เห็นด้วยอย่างยิ่ง",
+       "min": 1,
+       "max": 5,
+       "answered": 704,
+       "rows": [
+        {
+         "label": "E1. I can imagine what daily life is like for a poor family in another country. / E1. ฉันสามารถจินตนาการชีวิตประจำวันของครอบครัวยากจนในอีกประเทศหนึ่งได้",
+         "reverse": false,
+         "answered": 704,
+         "average": 2.98,
+         "distribution": [
+          19,
+          159,
+          361,
+          144,
+          21
+         ]
+        },
+        {
+         "label": "E2. When I see news about hunger in other countries, I feel concerned for the people affected. / E2. เมื่อเห็นข่าวความหิวโหยในประเทศอื่น ฉันรู้สึกเป็นห่วงผู้ที่ได้รับผลกระทบ",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.01,
+         "distribution": [
+          16,
+          138,
+          387,
+          149,
+          14
+         ]
+        },
+        {
+         "label": "E3. Before judging someone, I try to see the situation from their point of view. / E3. ก่อนตัดสินใคร ฉันพยายามมองสถานการณ์จากมุมมองของเขา",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.03,
+         "distribution": [
+          17,
+          161,
+          336,
+          167,
+          23
+         ]
+        },
+        {
+         "label": "E4. Poverty is mostly the result of people not working hard enough. / E4. ความยากจนส่วนใหญ่เกิดจากการที่คนไม่ขยันพอ",
+         "reverse": true,
+         "answered": 704,
+         "average": 3.15,
+         "distribution": [
+          10,
+          113,
+          366,
+          190,
+          25
+         ]
+        },
+        {
+         "label": "E5. Where a person is born strongly affects the opportunities they have in life. / E5. สถานที่ที่คนเกิดมีผลอย่างมากต่อโอกาสในชีวิต",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.04,
+         "distribution": [
+          12,
+          151,
+          354,
+          168,
+          19
+         ]
+        },
+        {
+         "label": "E6. Problems in countries like Burundi, Chad or Nigeria have little to do with my life. / E6. ปัญหาในประเทศอย่างบุรุนดี ชาด หรือไนจีเรีย แทบไม่เกี่ยวข้องกับชีวิตของฉัน",
+         "reverse": true,
+         "answered": 704,
+         "average": 3.07,
+         "distribution": [
+          17,
+          137,
+          349,
+          181,
+          20
+         ]
+        },
+        {
+         "label": "E7. I notice people in Bangkok whose lives are very different from mine, such as migrant workers or street vendors. / E7. ฉันสังเกตเห็นผู้คนในกรุงเทพฯ ที่มีชีวิตแตกต่างจากฉันมาก เช่น แรงงานข้ามชาติหรือหาบเร่แผงลอย",
+         "reverse": false,
+         "answered": 704,
+         "average": 2.94,
+         "distribution": [
+          14,
+          177,
+          362,
+          140,
+          11
+         ]
+        },
+        {
+         "label": "E8. I find it hard to feel connected to people from very different backgrounds. / E8. ฉันรู้สึกเชื่อมโยงกับคนที่มีภูมิหลังต่างจากฉันมากได้ยาก",
+         "reverse": true,
+         "answered": 704,
+         "average": 3.07,
+         "distribution": [
+          15,
+          147,
+          348,
+          164,
+          30
+         ]
+        },
+        {
+         "label": "E9. Health problems are often caused by conditions such as poverty, water and education, not only by personal choices. / E9. ปัญหาสุขภาพมักเกิดจากสภาพแวดล้อม เช่น ความยากจน น้ำ และการศึกษา ไม่ใช่เพียงการเลือกของแต่ละคน",
+         "reverse": false,
+         "answered": 704,
+         "average": 2.97,
+         "distribution": [
+          21,
+          177,
+          325,
+          161,
+          20
+         ]
+        },
+        {
+         "label": "E10. I feel responsible to do something about inequality, even something small. / E10. ฉันรู้สึกว่าตนเองมีหน้าที่ต้องทำบางอย่างเกี่ยวกับความเหลื่อมล้ำ แม้เป็นเรื่องเล็ก ๆ",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.02,
+         "distribution": [
+          11,
+          159,
+          356,
+          162,
+          16
+         ]
+        },
+        {
+         "label": "E11. I believe students like me can create solutions to social problems. / E11. ฉันเชื่อว่านักศึกษาอย่างฉันสามารถสร้างทางออกให้ปัญหาสังคมได้",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.01,
+         "distribution": [
+          19,
+          140,
+          373,
+          160,
+          12
+         ]
+        },
+        {
+         "label": "E12. I would consider starting or joining a social enterprise or community project. / E12. ฉันสนใจที่จะเริ่มหรือเข้าร่วมกิจการเพื่อสังคมหรือโครงการชุมชน",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.02,
+         "distribution": [
+          14,
+          149,
+          368,
+          154,
+          19
+         ]
+        }
+       ]
+      },
+      {
+       "type": "grid",
+       "title": "How confident are you that you can… / คุณมั่นใจเพียงใดว่าคุณสามารถ…",
+       "help": "1 = Not at all confident / ไม่มั่นใจเลย · 5 = Very confident / มั่นใจมาก",
+       "min": 1,
+       "max": 5,
+       "answered": 704,
+       "rows": [
+        {
+         "label": "C1. Identify the root causes of a social problem / C1. ระบุรากของปัญหาสังคม",
+         "reverse": false,
+         "answered": 704,
+         "average": 2.96,
+         "distribution": [
+          26,
+          164,
+          338,
+          163,
+          13
+         ]
+        },
+        {
+         "label": "C2. Design a practical solution to a social problem / C2. ออกแบบทางออกที่ทำได้จริงสำหรับปัญหาสังคม",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.01,
+         "distribution": [
+          15,
+          161,
+          345,
+          170,
+          13
+         ]
+        },
+        {
+         "label": "C3. Explain who pays for a solution and how it can last / C3. อธิบายได้ว่าใครเป็นผู้จ่าย และทางออกจะยั่งยืนได้อย่างไร",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.03,
+         "distribution": [
+          17,
+          162,
+          338,
+          159,
+          28
+         ]
+        },
+        {
+         "label": "C4. Work well in a team with different ideas / C4. ทำงานร่วมกับทีมที่มีความคิดหลากหลายได้ดี",
+         "reverse": false,
+         "answered": 704,
+         "average": 2.95,
+         "distribution": [
+          21,
+          162,
+          362,
+          151,
+          8
+         ]
+        },
+        {
+         "label": "C5. Present an idea persuasively to an audience / C5. นำเสนอความคิดให้ผู้ฟังคล้อยตามได้",
+         "reverse": false,
+         "answered": 704,
+         "average": 2.98,
+         "distribution": [
+          16,
+          170,
+          350,
+          149,
+          19
+         ]
+        },
+        {
+         "label": "C6. Measure whether a solution is making a difference / C6. วัดผลได้ว่าทางออกนั้นสร้างความเปลี่ยนแปลงจริงหรือไม่",
+         "reverse": false,
+         "answered": 704,
+         "average": 3.03,
+         "distribution": [
+          12,
+          160,
+          347,
+          166,
+          19
+         ]
+        }
+       ]
+      },
+      {
+       "type": "scale",
+       "title": "Right now, how interested are you in understanding lives very different from your own? / ตอนนี้คุณสนใจที่จะเข้าใจชีวิตที่แตกต่างจากคุณมากเพียงใด?",
+       "answered": 704,
+       "min": 1,
+       "max": 5,
+       "lowLabel": "Not interested / ไม่สนใจ",
+       "highLabel": "Very interested / สนใจมาก",
+       "average": 3.3,
+       "distribution": [
+        {
+         "value": 1,
+         "count": 3
+        },
+        {
+         "value": 2,
+         "count": 99
+        },
+        {
+         "value": 3,
+         "count": 333
+        },
+        {
+         "value": 4,
+         "count": 223
+        },
+        {
+         "value": 5,
+         "count": 46
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4 · Picture a life / 4 · ลองจินตนาการชีวิตหนึ่ง",
+     "items": [
+      {
+       "type": "words",
+       "title": "Write 3 words that come to mind when you think of “Africa”. / เขียนคำ 3 คำที่นึกถึงเมื่อได้ยินคำว่า “แอฟริกา”",
+       "answered": 704,
+       "words": [
+        {
+         "word": "poverty",
+         "count": 404
+        },
+        {
+         "word": "hot",
+         "count": 292
+        },
+        {
+         "word": "desert",
+         "count": 195
+        },
+        {
+         "word": "safari",
+         "count": 171
+        },
+        {
+         "word": "hunger",
+         "count": 144
+        },
+        {
+         "word": "ยากจน",
+         "count": 123
+        },
+        {
+         "word": "ร้อน",
+         "count": 104
+        },
+        {
+         "word": "สัตว์ป่า",
+         "count": 99
+        },
+        {
+         "word": "drought",
+         "count": 75
+        },
+        {
+         "word": "lions",
+         "count": 72
+        },
+        {
+         "word": "war",
+         "count": 66
+        },
+        {
+         "word": "music",
+         "count": 57
+        },
+        {
+         "word": "tribe",
+         "count": 50
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "post": {
+   "title": "Walking in Their Shoes – POST-workshop survey / แบบสอบถามหลังกิจกรรม",
+   "responses": 645,
+   "sections": [
+    {
+     "title": "1 · Passport check / 1 · ตรวจพาสปอร์ต",
+     "items": [
+      {
+       "type": "choice",
+       "title": "Which session are you in? / คุณเข้าร่วมรอบใด?",
+       "answered": 645,
+       "options": [
+        {
+         "label": "Mon 9 Nov 2026, 09.00–12.00, TWP-304 / จันทร์ 9 พ.ย. 2569 เวลา 09.00–12.00 น. ห้อง TWP-304",
+         "count": 125
+        },
+        {
+         "label": "Mon 9 Nov 2026, 13.00–16.00, KSS-801 / จันทร์ 9 พ.ย. 2569 เวลา 13.00–16.00 น. ห้อง KSS-801",
+         "count": 132
+        },
+        {
+         "label": "Tue 10 Nov 2026, 09.00–12.00, KSS-801 / อังคาร 10 พ.ย. 2569 เวลา 09.00–12.00 น. ห้อง KSS-801",
+         "count": 136
+        },
+        {
+         "label": "Wed 11 Nov 2026, 09.00–12.00, TWP-304 / พุธ 11 พ.ย. 2569 เวลา 09.00–12.00 น. ห้อง TWP-304",
+         "count": 137
+        },
+        {
+         "label": "Wed 11 Nov 2026, 13.00–16.00, TWP-304 / พุธ 11 พ.ย. 2569 เวลา 13.00–16.00 น. ห้อง TWP-304",
+         "count": 115
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2 · The life you lived / 2 · ชีวิตที่คุณได้ใช้",
+     "items": [
+      {
+       "type": "choice",
+       "title": "Which country was your main character born in? / ตัวละครหลักของคุณเกิดในประเทศใด?",
+       "answered": 645,
+       "options": [
+        {
+         "label": "Burundi (SDG 1) / บุรุนดี (SDG 1)",
+         "count": 187
+        },
+        {
+         "label": "Chad (SDG 2) / ชาด (SDG 2)",
+         "count": 218
+        },
+        {
+         "label": "Nigeria (SDG 4) / ไนจีเรีย (SDG 4)",
+         "count": 204
+        },
+        {
+         "label": "__other__",
+         "count": 36
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "How many lives did you start during the session? / ระหว่างกิจกรรม คุณเริ่มชีวิตใหม่กี่ครั้ง?",
+       "answered": 645,
+       "options": [
+        {
+         "label": "1",
+         "count": 167
+        },
+        {
+         "label": "2",
+         "count": 155
+        },
+        {
+         "label": "3",
+         "count": 168
+        },
+        {
+         "label": "4 or more / 4 ครั้งขึ้นไป",
+         "count": 155
+        }
+       ]
+      },
+      {
+       "type": "number",
+       "title": "What age did your main character reach? / ตัวละครหลักของคุณมีชีวิตถึงอายุเท่าไร?",
+       "answered": 645,
+       "average": 34.3,
+       "median": 34,
+       "buckets": [
+        {
+         "label": "0",
+         "count": 59
+        },
+        {
+         "label": "1–17",
+         "count": 132
+        },
+        {
+         "label": "18–39",
+         "count": 176
+        },
+        {
+         "label": "40–59",
+         "count": 151
+        },
+        {
+         "label": "60+",
+         "count": 127
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "How did your main character’s life end? / ชีวิตของตัวละครหลักของคุณจบลงอย่างไร?",
+       "answered": 645,
+       "options": [
+        {
+         "label": "Still alive when the session ended / ยังมีชีวิตอยู่เมื่อหมดเวลา",
+         "count": 170
+        },
+        {
+         "label": "Stillborn / เสียชีวิตตั้งแต่แรกเกิด",
+         "count": 141
+        },
+        {
+         "label": "Died in childhood (under 18) / เสียชีวิตในวัยเด็ก (ต่ำกว่า 18 ปี)",
+         "count": 172
+        },
+        {
+         "label": "Died as an adult / เสียชีวิตในวัยผู้ใหญ่",
+         "count": 162
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "Describe the moment in that life that affected you most. What happened, and how did you feel? / เล่าช่วงเวลาในชีวิตนั้นที่ส่งผลต่อคุณมากที่สุด เกิดอะไรขึ้น และคุณรู้สึกอย่างไร?",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "My character had to leave school at 11 to help her mother fetch water. I felt angry and helpless.",
+         "th": "ตัวละครของฉันต้องออกจากโรงเรียนตอนอายุ 11 ปีเพื่อไปช่วยแม่ตักน้ำ ฉันรู้สึกโกรธและไร้ทางสู้"
+        },
+        {
+         "en": "Being married at 15 without any choice made me understand how hard it is to be born a girl in Chad.",
+         "th": "ตอนที่ได้แต่งงานตอนอายุ 15 ปีโดยไม่ได้เลือกเอง ทำให้ฉันเข้าใจว่าการเกิดเป็นผู้หญิงในชาดยากแค่ไหน"
+        },
+        {
+         "en": "When my character’s little sister died of diarrhoea at a young age, I was shocked, because in Thailand this disease is easy to treat.",
+         "th": "ตอนที่น้องสาวของตัวละครเสียชีวิตเพราะท้องร่วงตั้งแต่ยังเล็ก ฉันรู้สึกช็อกมากเพราะในไทยโรคนี้รักษาได้ง่าย"
+        }
+       ]
+      },
+      {
+       "type": "multi",
+       "title": "Which feelings did you have while living that life? (tick all that apply) / คุณรู้สึกอย่างไรบ้างระหว่างใช้ชีวิตนั้น? (เลือกได้มากกว่า 1 ข้อ)",
+       "answered": 645,
+       "options": [
+        {
+         "label": "Afraid / กลัว",
+         "count": 231
+        },
+        {
+         "label": "Helpless / ไร้ทางสู้",
+         "count": 242
+        },
+        {
+         "label": "Angry / โกรธ",
+         "count": 239
+        },
+        {
+         "label": "Ashamed / อับอาย",
+         "count": 235
+        },
+        {
+         "label": "Lonely / โดดเดี่ยว",
+         "count": 241
+        },
+        {
+         "label": "Invisible / ไร้ตัวตน",
+         "count": 239
+        },
+        {
+         "label": "Guilty / รู้สึกผิด",
+         "count": 217
+        },
+        {
+         "label": "Numb / ชาชิน",
+         "count": 269
+        },
+        {
+         "label": "Treated unfairly / ไม่ได้รับความเป็นธรรม",
+         "count": 249
+        },
+        {
+         "label": "Hopeful / มีความหวัง",
+         "count": 224
+        },
+        {
+         "label": "Loved / เป็นที่รัก",
+         "count": 264
+        },
+        {
+         "label": "Proud / ภูมิใจ",
+         "count": 238
+        },
+        {
+         "label": "Grateful / ซาบซึ้งใจ",
+         "count": 253
+        },
+        {
+         "label": "Determined / มุ่งมั่น",
+         "count": 234
+        },
+        {
+         "label": "Relieved / โล่งใจ",
+         "count": 268
+        },
+        {
+         "label": "__other__",
+         "count": 31
+        }
+       ]
+      },
+      {
+       "type": "scale",
+       "title": "How close did you feel to your character at the START of the life? / คุณรู้สึกใกล้ชิดกับตัวละครแค่ไหนใน “ช่วงเริ่มต้น” ของชีวิต?",
+       "answered": 645,
+       "min": 1,
+       "max": 5,
+       "lowLabel": "A stranger / เหมือนคนแปลกหน้า",
+       "highLabel": "Like my own life / เหมือนชีวิตของฉันเอง",
+       "average": 2.37,
+       "distribution": [
+        {
+         "value": 1,
+         "count": 81
+        },
+        {
+         "value": 2,
+         "count": 292
+        },
+        {
+         "value": 3,
+         "count": 227
+        },
+        {
+         "value": 4,
+         "count": 44
+        },
+        {
+         "value": 5,
+         "count": 1
+        }
+       ]
+      },
+      {
+       "type": "scale",
+       "title": "How close did you feel to your character at the END? / คุณรู้สึกใกล้ชิดกับตัวละครแค่ไหนใน “ช่วงท้าย”?",
+       "answered": 645,
+       "min": 1,
+       "max": 5,
+       "lowLabel": "A stranger / เหมือนคนแปลกหน้า",
+       "highLabel": "Like my own life / เหมือนชีวิตของฉันเอง",
+       "average": 3.86,
+       "distribution": [
+        {
+         "value": 1,
+         "count": 1
+        },
+        {
+         "value": 2,
+         "count": 13
+        },
+        {
+         "value": 3,
+         "count": 178
+        },
+        {
+         "value": 4,
+         "count": 339
+        },
+        {
+         "value": 5,
+         "count": 114
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3 · The same quick quiz / 3 · แบบทดสอบเดิมอีกครั้ง",
+     "items": [
+      {
+       "type": "quiz",
+       "questions": [
+        {
+         "title": "How many Sustainable Development Goals did UN member states adopt in 2015? / ประเทศสมาชิกสหประชาชาติรับรองเป้าหมายการพัฒนาที่ยั่งยืน (SDGs) ในปี 2015 กี่เป้าหมาย?",
+         "answered": 645,
+         "correctAnswer": "17",
+         "correctPct": 73
+        },
+        {
+         "title": "SDG 2 “Zero Hunger” aims to… / SDG 2 “ขจัดความหิวโหย” มีเป้าหมายเพื่อ…",
+         "answered": 645,
+         "correctAnswer": "End hunger, improve nutrition and promote sustainable agriculture / ขจัดความหิวโหย ส่งเสริมโภชนาการ และเกษตรกรรมที่ยั่งยืน",
+         "correctPct": 75
+        },
+        {
+         "title": "Which SDG focuses on inclusive and equitable quality education? / SDG ข้อใดมุ่งเน้นการศึกษาที่มีคุณภาพอย่างทั่วถึงและเท่าเทียม?",
+         "answered": 645,
+         "correctAnswer": "SDG 4",
+         "correctPct": 72
+        },
+        {
+         "title": "In the UN SDG Index 2026, which of these countries ranks lowest? / ในดัชนี SDG ของสหประชาชาติ ปี 2026 ประเทศใดต่อไปนี้อยู่อันดับต่ำที่สุด?",
+         "answered": 645,
+         "correctAnswer": "Chad / ชาด",
+         "correctPct": 74
+        },
+        {
+         "title": "Where does Thailand rank in the UN SDG Index 2026 (out of 169 countries)? / ประเทศไทยอยู่อันดับใดในดัชนี SDG ของสหประชาชาติ ปี 2026 (จาก 169 ประเทศ)?",
+         "answered": 645,
+         "correctAnswer": "Around 40–50 / ประมาณอันดับ 40–50",
+         "correctPct": 77
+        },
+        {
+         "title": "Which country has the largest number of out-of-school children in the world? / ประเทศใดมีจำนวนเด็กที่ไม่ได้เข้าเรียนมากที่สุดในโลก?",
+         "answered": 645,
+         "correctAnswer": "Nigeria / ไนจีเรีย",
+         "correctPct": 75
+        },
+        {
+         "title": "Roughly how many people live in Nigeria? / ประเทศไนจีเรียมีประชากรประมาณเท่าใด?",
+         "answered": 645,
+         "correctAnswer": "About 230 million / ประมาณ 230 ล้านคน",
+         "correctPct": 74
+        },
+        {
+         "title": "Which of these is a “social determinant of health”? / ข้อใดเป็น “ปัจจัยทางสังคมที่กำหนดสุขภาพ”?",
+         "answered": 645,
+         "correctAnswer": "Access to safe water and sanitation / การเข้าถึงน้ำสะอาดและสุขาภิบาล",
+         "correctPct": 74
+        },
+        {
+         "title": "Long-term undernutrition in early childhood most commonly leads to… / การขาดสารอาหารเรื้อรังในวัยเด็กเล็กมักนำไปสู่ภาวะใด?",
+         "answered": 645,
+         "correctAnswer": "Stunting (low height for age) / ภาวะเตี้ยแคระแกร็น (ส่วนสูงต่ำกว่าเกณฑ์อายุ)",
+         "correctPct": 76
+        },
+        {
+         "title": "Which best describes a social business? / ข้อใดอธิบาย “ธุรกิจเพื่อสังคม” ได้ดีที่สุด?",
+         "answered": 645,
+         "correctAnswer": "A business that solves a social problem and reinvests profits in its mission / ธุรกิจที่แก้ปัญหาสังคม และนำกำไรกลับไปลงทุนเพื่อพันธกิจ",
+         "correctPct": 76
+        },
+        {
+         "title": "In a social business, the beneficiary and the paying customer… / ในธุรกิจเพื่อสังคม ผู้รับประโยชน์และลูกค้าผู้จ่ายเงิน…",
+         "answered": 645,
+         "correctAnswer": "Can be different people or organisations / อาจเป็นคนหรือองค์กรที่ต่างกันได้",
+         "correctPct": 76
+        },
+        {
+         "title": "Which statement best describes empathy? / ข้อใดอธิบาย “ความเข้าอกเข้าใจผู้อื่น (empathy)” ได้ดีที่สุด?",
+         "answered": 645,
+         "correctAnswer": "Understanding and sharing another person’s feelings from their point of view / เข้าใจและรับรู้ความรู้สึกของผู้อื่นจากมุมมองของเขา",
+         "correctPct": 73
+        }
+       ],
+       "answered": 645,
+       "maxScore": 12,
+       "averageScore": 8.94,
+       "scoreDistribution": [
+        {
+         "score": 0,
+         "count": 0
+        },
+        {
+         "score": 1,
+         "count": 0
+        },
+        {
+         "score": 2,
+         "count": 0
+        },
+        {
+         "score": 3,
+         "count": 0
+        },
+        {
+         "score": 4,
+         "count": 3
+        },
+        {
+         "score": 5,
+         "count": 6
+        },
+        {
+         "score": 6,
+         "count": 30
+        },
+        {
+         "score": 7,
+         "count": 65
+        },
+        {
+         "score": 8,
+         "count": 135
+        },
+        {
+         "score": 9,
+         "count": 167
+        },
+        {
+         "score": 10,
+         "count": 141
+        },
+        {
+         "score": 11,
+         "count": 79
+        },
+        {
+         "score": 12,
+         "count": 19
+        }
+       ]
+      },
+      {
+       "type": "grid",
+       "title": "How much do you know about each of these right now? / ตอนนี้คุณมีความรู้ในแต่ละเรื่องต่อไปนี้มากน้อยเพียงใด?",
+       "help": "1 = Very little / น้อยมาก · 5 = A lot / มาก",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "The 17 SDGs / เป้าหมาย SDGs ทั้ง 17 ข้อ",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.86,
+         "distribution": [
+          0,
+          18,
+          164,
+          354,
+          109
+         ]
+        },
+        {
+         "label": "Daily life in Sub-Saharan Africa / ชีวิตประจำวันในแอฟริกาใต้สะฮารา",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.87,
+         "distribution": [
+          0,
+          24,
+          173,
+          311,
+          137
+         ]
+        },
+        {
+         "label": "How poverty, hunger and education affect health / ผลของความยากจน ความหิวโหย และการศึกษาต่อสุขภาพ",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.89,
+         "distribution": [
+          1,
+          10,
+          179,
+          325,
+          130
+         ]
+        },
+        {
+         "label": "How to design a social business / วิธีออกแบบธุรกิจเพื่อสังคม",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.9,
+         "distribution": [
+          0,
+          15,
+          173,
+          320,
+          137
+         ]
+        },
+        {
+         "label": "Inequality in Bangkok / ความเหลื่อมล้ำในกรุงเทพฯ",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.87,
+         "distribution": [
+          1,
+          22,
+          167,
+          323,
+          132
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4 · How you see the world now / 4 · มุมมองของคุณต่อโลกในตอนนี้",
+     "items": [
+      {
+       "type": "grid",
+       "title": "How much do you agree with each statement? / คุณเห็นด้วยกับแต่ละข้อความต่อไปนี้มากน้อยเพียงใด?",
+       "help": "1 = Strongly disagree / ไม่เห็นด้วยอย่างยิ่ง · 3 = Not sure / ไม่แน่ใจ · 5 = Strongly agree / เห็นด้วยอย่างยิ่ง",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "E1. I can imagine what daily life is like for a poor family in another country. / E1. ฉันสามารถจินตนาการชีวิตประจำวันของครอบครัวยากจนในอีกประเทศหนึ่งได้",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.84,
+         "distribution": [
+          0,
+          15,
+          184,
+          337,
+          109
+         ]
+        },
+        {
+         "label": "E2. When I see news about hunger in other countries, I feel concerned for the people affected. / E2. เมื่อเห็นข่าวความหิวโหยในประเทศอื่น ฉันรู้สึกเป็นห่วงผู้ที่ได้รับผลกระทบ",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.82,
+         "distribution": [
+          0,
+          21,
+          188,
+          319,
+          117
+         ]
+        },
+        {
+         "label": "E3. Before judging someone, I try to see the situation from their point of view. / E3. ก่อนตัดสินใคร ฉันพยายามมองสถานการณ์จากมุมมองของเขา",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.85,
+         "distribution": [
+          1,
+          22,
+          168,
+          334,
+          120
+         ]
+        },
+        {
+         "label": "E4. Poverty is mostly the result of people not working hard enough. / E4. ความยากจนส่วนใหญ่เกิดจากการที่คนไม่ขยันพอ",
+         "reverse": true,
+         "answered": 645,
+         "average": 2.38,
+         "distribution": [
+          74,
+          291,
+          246,
+          32,
+          2
+         ]
+        },
+        {
+         "label": "E5. Where a person is born strongly affects the opportunities they have in life. / E5. สถานที่ที่คนเกิดมีผลอย่างมากต่อโอกาสในชีวิต",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.88,
+         "distribution": [
+          2,
+          19,
+          163,
+          329,
+          132
+         ]
+        },
+        {
+         "label": "E6. Problems in countries like Burundi, Chad or Nigeria have little to do with my life. / E6. ปัญหาในประเทศอย่างบุรุนดี ชาด หรือไนจีเรีย แทบไม่เกี่ยวข้องกับชีวิตของฉัน",
+         "reverse": true,
+         "answered": 645,
+         "average": 2.29,
+         "distribution": [
+          91,
+          307,
+          218,
+          27,
+          2
+         ]
+        },
+        {
+         "label": "E7. I notice people in Bangkok whose lives are very different from mine, such as migrant workers or street vendors. / E7. ฉันสังเกตเห็นผู้คนในกรุงเทพฯ ที่มีชีวิตแตกต่างจากฉันมาก เช่น แรงงานข้ามชาติหรือหาบเร่แผงลอย",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.87,
+         "distribution": [
+          3,
+          16,
+          179,
+          309,
+          138
+         ]
+        },
+        {
+         "label": "E8. I find it hard to feel connected to people from very different backgrounds. / E8. ฉันรู้สึกเชื่อมโยงกับคนที่มีภูมิหลังต่างจากฉันมากได้ยาก",
+         "reverse": true,
+         "answered": 645,
+         "average": 2.31,
+         "distribution": [
+          85,
+          306,
+          221,
+          32,
+          1
+         ]
+        },
+        {
+         "label": "E9. Health problems are often caused by conditions such as poverty, water and education, not only by personal choices. / E9. ปัญหาสุขภาพมักเกิดจากสภาพแวดล้อม เช่น ความยากจน น้ำ และการศึกษา ไม่ใช่เพียงการเลือกของแต่ละคน",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.93,
+         "distribution": [
+          0,
+          18,
+          145,
+          344,
+          138
+         ]
+        },
+        {
+         "label": "E10. I feel responsible to do something about inequality, even something small. / E10. ฉันรู้สึกว่าตนเองมีหน้าที่ต้องทำบางอย่างเกี่ยวกับความเหลื่อมล้ำ แม้เป็นเรื่องเล็ก ๆ",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.88,
+         "distribution": [
+          0,
+          17,
+          173,
+          324,
+          131
+         ]
+        },
+        {
+         "label": "E11. I believe students like me can create solutions to social problems. / E11. ฉันเชื่อว่านักศึกษาอย่างฉันสามารถสร้างทางออกให้ปัญหาสังคมได้",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.8,
+         "distribution": [
+          1,
+          20,
+          196,
+          318,
+          110
+         ]
+        },
+        {
+         "label": "E12. I would consider starting or joining a social enterprise or community project. / E12. ฉันสนใจที่จะเริ่มหรือเข้าร่วมกิจการเพื่อสังคมหรือโครงการชุมชน",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.94,
+         "distribution": [
+          0,
+          20,
+          148,
+          325,
+          152
+         ]
+        }
+       ]
+      },
+      {
+       "type": "grid",
+       "title": "How confident are you that you can… / คุณมั่นใจเพียงใดว่าคุณสามารถ…",
+       "help": "1 = Not at all confident / ไม่มั่นใจเลย · 5 = Very confident / มั่นใจมาก",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "C1. Identify the root causes of a social problem / C1. ระบุรากของปัญหาสังคม",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.83,
+         "distribution": [
+          0,
+          24,
+          178,
+          327,
+          116
+         ]
+        },
+        {
+         "label": "C2. Design a practical solution to a social problem / C2. ออกแบบทางออกที่ทำได้จริงสำหรับปัญหาสังคม",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.84,
+         "distribution": [
+          2,
+          13,
+          194,
+          314,
+          122
+         ]
+        },
+        {
+         "label": "C3. Explain who pays for a solution and how it can last / C3. อธิบายได้ว่าใครเป็นผู้จ่าย และทางออกจะยั่งยืนได้อย่างไร",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.82,
+         "distribution": [
+          0,
+          26,
+          185,
+          313,
+          121
+         ]
+        },
+        {
+         "label": "C4. Work well in a team with different ideas / C4. ทำงานร่วมกับทีมที่มีความคิดหลากหลายได้ดี",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.84,
+         "distribution": [
+          1,
+          25,
+          176,
+          318,
+          125
+         ]
+        },
+        {
+         "label": "C5. Present an idea persuasively to an audience / C5. นำเสนอความคิดให้ผู้ฟังคล้อยตามได้",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.9,
+         "distribution": [
+          0,
+          22,
+          159,
+          324,
+          140
+         ]
+        },
+        {
+         "label": "C6. Measure whether a solution is making a difference / C6. วัดผลได้ว่าทางออกนั้นสร้างความเปลี่ยนแปลงจริงหรือไม่",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.87,
+         "distribution": [
+          0,
+          22,
+          184,
+          297,
+          142
+         ]
+        }
+       ]
+      },
+      {
+       "type": "scale",
+       "title": "Right now, how interested are you in understanding lives very different from your own? / ตอนนี้คุณสนใจที่จะเข้าใจชีวิตที่แตกต่างจากคุณมากเพียงใด?",
+       "answered": 645,
+       "min": 1,
+       "max": 5,
+       "lowLabel": "Not interested / ไม่สนใจ",
+       "highLabel": "Very interested / สนใจมาก",
+       "average": 4.1,
+       "distribution": [
+        {
+         "value": 1,
+         "count": 0
+        },
+        {
+         "value": 2,
+         "count": 9
+        },
+        {
+         "value": 3,
+         "count": 114
+        },
+        {
+         "value": 4,
+         "count": 327
+        },
+        {
+         "value": 5,
+         "count": 195
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5 · Picture a life, again / 5 · จินตนาการชีวิตหนึ่งอีกครั้ง",
+     "items": [
+      {
+       "type": "text",
+       "title": "Picture a life: a girl is born today in a rural village in Chad. In 3–5 sentences, describe what you think her life will be like, from childhood to adulthood. / ลองจินตนาการ: เด็กหญิงคนหนึ่งเกิดวันนี้ในหมู่บ้านชนบทของประเทศชาด เขียน 3–5 ประโยคว่าคุณคิดว่าชีวิตของเธอจะเป็นอย่างไร ตั้งแต่วัยเด็กจนเป็นผู้ใหญ่",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "She may not go to school because she has to help at home, but she is strong and her family loves each other very much.",
+         "th": "เธออาจไม่ได้เรียนหนังสือเพราะต้องช่วยงานบ้าน แต่เธอเข้มแข็งและครอบครัวของเธอรักกันมาก"
+        },
+        {
+         "en": "Her life depends on water, food and access to education, not only on how hard she works.",
+         "th": "ชีวิตของเธอขึ้นอยู่กับน้ำ อาหาร และโอกาสทางการศึกษา ไม่ใช่ความขยันเพียงอย่างเดียว"
+        }
+       ]
+      },
+      {
+       "type": "words",
+       "title": "Write 3 words that come to mind when you think of “Africa”. / เขียนคำ 3 คำที่นึกถึงเมื่อได้ยินคำว่า “แอฟริกา”",
+       "answered": 645,
+       "words": [
+        {
+         "word": "resilience",
+         "count": 357
+        },
+        {
+         "word": "inequality",
+         "count": 266
+        },
+        {
+         "word": "family",
+         "count": 206
+        },
+        {
+         "word": "education",
+         "count": 135
+        },
+        {
+         "word": "hope",
+         "count": 127
+        },
+        {
+         "word": "water",
+         "count": 112
+        },
+        {
+         "word": "ความเหลื่อมล้ำ",
+         "count": 103
+        },
+        {
+         "word": "poverty",
+         "count": 89
+        },
+        {
+         "word": "ครอบครัว",
+         "count": 72
+        },
+        {
+         "word": "community",
+         "count": 72
+        },
+        {
+         "word": "opportunity",
+         "count": 67
+        },
+        {
+         "word": "strength",
+         "count": 65
+        },
+        {
+         "word": "ความหวัง",
+         "count": 48
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "Complete: “Before this workshop I thought… Now I understand…” / เติมประโยค: “ก่อนกิจกรรมนี้ ฉันคิดว่า… ตอนนี้ฉันเข้าใจว่า…”",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "Before this workshop I thought Africa was just desert and wild animals. Now I understand it is full of people, dreams and diverse cultures.",
+         "th": "ก่อนกิจกรรมนี้ ฉันคิดว่าแอฟริกาเป็นแค่ทะเลทรายและสัตว์ป่า ตอนนี้ฉันเข้าใจว่ามีผู้คน ความฝัน และวัฒนธรรมที่หลากหลาย"
+        },
+        {
+         "en": "Before this workshop I thought people were poor because they were lazy. Now I understand that where you are born decides almost all of your opportunities.",
+         "th": "ก่อนกิจกรรมนี้ ฉันคิดว่าคนจนเพราะไม่ขยัน ตอนนี้ฉันเข้าใจว่าสถานที่เกิดกำหนดโอกาสเกือบทั้งหมด"
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "Has this experience changed how you see anyone in Bangkok or Thailand? Who, and how? / ประสบการณ์นี้เปลี่ยนมุมมองที่คุณมีต่อใครในกรุงเทพฯ หรือประเทศไทยหรือไม่? ใคร และเปลี่ยนอย่างไร?",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "The street vendor in front of the university. I want to know more about her story.",
+         "th": "แม่ค้าหาบเร่หน้ามหาวิทยาลัย ฉันอยากรู้จักเรื่องราวของเธอมากขึ้น"
+        },
+        {
+         "en": "I see the migrant construction workers near my home differently. They may come from lives much harder than I imagined.",
+         "th": "ฉันมองแรงงานข้ามชาติที่ทำงานก่อสร้างใกล้บ้านต่างไป พวกเขาอาจมาจากชีวิตที่ยากกว่าที่ฉันคิดมาก"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6 · Then and now / 6 · ก่อนและหลัง",
+     "items": [
+      {
+       "type": "grid",
+       "title": "Looking back: how would you rate yourself BEFORE the workshop? / มองย้อนกลับไป: คุณให้คะแนนตัวเอง “ก่อน” เข้าร่วมกิจกรรมเท่าใด?",
+       "help": "1 = Very low / ต่ำมาก · 5 = Very high / สูงมาก",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "Understanding of the SDGs / ความเข้าใจเรื่อง SDGs",
+         "reverse": false,
+         "answered": 645,
+         "average": 2.62,
+         "distribution": [
+          49,
+          244,
+          261,
+          88,
+          3
+         ]
+        },
+        {
+         "label": "Understanding of daily life in Burundi, Chad or Nigeria / ความเข้าใจชีวิตประจำวันในบุรุนดี ชาด หรือไนจีเรีย",
+         "reverse": false,
+         "answered": 645,
+         "average": 2.63,
+         "distribution": [
+          46,
+          243,
+          267,
+          84,
+          5
+         ]
+        },
+        {
+         "label": "Empathy for people whose lives are very different from mine / ความเข้าอกเข้าใจคนที่มีชีวิตต่างจากฉันมาก",
+         "reverse": false,
+         "answered": 645,
+         "average": 2.64,
+         "distribution": [
+          39,
+          230,
+          303,
+          68,
+          5
+         ]
+        },
+        {
+         "label": "Confidence to design a solution to a social problem / ความมั่นใจในการออกแบบทางออกให้ปัญหาสังคม",
+         "reverse": false,
+         "answered": 645,
+         "average": 2.63,
+         "distribution": [
+          38,
+          249,
+          277,
+          77,
+          4
+         ]
+        }
+       ]
+      },
+      {
+       "type": "grid",
+       "title": "And how would you rate yourself NOW? / แล้ว “ตอนนี้” คุณให้คะแนนตัวเองเท่าใด?",
+       "help": "1 = Very low / ต่ำมาก · 5 = Very high / สูงมาก",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "Understanding of the SDGs / ความเข้าใจเรื่อง SDGs",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.01,
+         "distribution": [
+          0,
+          15,
+          141,
+          311,
+          178
+         ]
+        },
+        {
+         "label": "Understanding of daily life in Burundi, Chad or Nigeria / ความเข้าใจชีวิตประจำวันในบุรุนดี ชาด หรือไนจีเรีย",
+         "reverse": false,
+         "answered": 645,
+         "average": 3.97,
+         "distribution": [
+          0,
+          5,
+          152,
+          343,
+          145
+         ]
+        },
+        {
+         "label": "Empathy for people whose lives are very different from mine / ความเข้าอกเข้าใจคนที่มีชีวิตต่างจากฉันมาก",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.05,
+         "distribution": [
+          0,
+          11,
+          132,
+          313,
+          189
+         ]
+        },
+        {
+         "label": "Confidence to design a solution to a social problem / ความมั่นใจในการออกแบบทางออกให้ปัญหาสังคม",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.02,
+         "distribution": [
+          0,
+          19,
+          122,
+          330,
+          174
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7 · Your group’s solution / 7 · ทางออกของกลุ่มคุณ",
+     "items": [
+      {
+       "type": "text",
+       "title": "Your solution in one sentence: “We help … to … by …” / ทางออกของกลุ่มในหนึ่งประโยค: “เราช่วย … ให้ … โดย …”",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "We help mothers in the community look after their children’s nutrition through an SMS learning app.",
+         "th": "เราช่วยแม่ในชุมชนให้ดูแลโภชนาการลูกได้ โดยใช้แอปให้ความรู้ผ่าน SMS"
+        },
+        {
+         "en": "We help rural girls stay in school by building water points close to schools.",
+         "th": "เราช่วยเด็กผู้หญิงในชนบทให้ได้เรียนต่อ โดยสร้างจุดเก็บน้ำใกล้โรงเรียน"
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Type of solution / รูปแบบของทางออก",
+       "answered": 645,
+       "options": [
+        {
+         "label": "Product / ผลิตภัณฑ์",
+         "count": 158
+        },
+        {
+         "label": "Service / บริการ",
+         "count": 151
+        },
+        {
+         "label": "Organisation / องค์กร",
+         "count": 154
+        },
+        {
+         "label": "App / แอปพลิเคชัน",
+         "count": 153
+        },
+        {
+         "label": "__other__",
+         "count": 29
+        }
+       ]
+      },
+      {
+       "type": "multi",
+       "title": "Your role(s) in the group / บทบาทของคุณในกลุ่ม",
+       "answered": 645,
+       "options": [
+        {
+         "label": "Idea generator / ผู้เสนอไอเดีย",
+         "count": 304
+        },
+        {
+         "label": "Writer on the canvas / ผู้เขียนลงแผนผัง",
+         "count": 238
+        },
+        {
+         "label": "Researcher / fact checker / ผู้ค้นข้อมูล",
+         "count": 270
+        },
+        {
+         "label": "Organiser / timekeeper / ผู้จัดการ / คุมเวลา",
+         "count": 250
+        },
+        {
+         "label": "Presenter / ผู้นำเสนอ",
+         "count": 252
+        },
+        {
+         "label": "__other__",
+         "count": 36
+        }
+       ]
+      },
+      {
+       "type": "scale",
+       "title": "How well did your group work together? / กลุ่มของคุณทำงานร่วมกันได้ดีเพียงใด?",
+       "answered": 645,
+       "min": 1,
+       "max": 5,
+       "lowLabel": "Poorly / ไม่ดี",
+       "highLabel": "Excellently / ดีมาก",
+       "average": 4.15,
+       "distribution": [
+        {
+         "value": 1,
+         "count": 0
+        },
+        {
+         "value": 2,
+         "count": 7
+        },
+        {
+         "value": 3,
+         "count": 107
+        },
+        {
+         "value": 4,
+         "count": 313
+        },
+        {
+         "value": 5,
+         "count": 218
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "8 · From workshop to real life / 8 · จากกิจกรรมสู่ชีวิตจริง",
+     "items": [
+      {
+       "type": "multi",
+       "title": "Where could you use what you learned? (tick all that apply) / คุณสามารถนำสิ่งที่เรียนรู้ไปใช้ที่ใดบ้าง? (เลือกได้มากกว่า 1 ข้อ)",
+       "answered": 645,
+       "options": [
+        {
+         "label": "Courses in my major / รายวิชาในสาขาของฉัน",
+         "count": 264
+        },
+        {
+         "label": "Clinical or field practice / การฝึกปฏิบัติทางคลินิกหรือภาคสนาม",
+         "count": 253
+        },
+        {
+         "label": "A research project / โครงการวิจัย",
+         "count": 252
+        },
+        {
+         "label": "Volunteering or community work / งานอาสาหรืองานชุมชน",
+         "count": 236
+        },
+        {
+         "label": "Starting a business or social enterprise / การเริ่มธุรกิจหรือกิจการเพื่อสังคม",
+         "count": 231
+        },
+        {
+         "label": "My daily life and relationships / ชีวิตประจำวันและความสัมพันธ์",
+         "count": 264
+        },
+        {
+         "label": "__other__",
+         "count": 37
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "How will you use this experience in your studies or future career at NMU and beyond? / คุณจะนำประสบการณ์นี้ไปใช้ในการเรียนหรืออาชีพในอนาคตอย่างไร ทั้งที่ มนท. และหลังจากนั้น?",
+       "answered": 645,
+       "quotes": []
+      },
+      {
+       "type": "text",
+       "title": "One action I will take in the next 30 days: / สิ่งหนึ่งที่ฉันจะลงมือทำภายใน 30 วันข้างหน้า:",
+       "answered": 389,
+       "quotes": []
+      }
+     ]
+    },
+    {
+     "title": "9 · Your three tools / 9 · เครื่องมือทั้งสามของคุณ",
+     "items": [
+      {
+       "type": "grid",
+       "title": "RealLives Simulation / RealLives Simulation (เกมจำลองชีวิต)",
+       "help": "1 = Strongly disagree / ไม่เห็นด้วยอย่างยิ่ง · 5 = Strongly agree / เห็นด้วยอย่างยิ่ง",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "It was engaging and kept my attention / น่าสนใจและดึงดูดความสนใจของฉัน",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.02,
+         "distribution": [
+          0,
+          19,
+          128,
+          317,
+          181
+         ]
+        },
+        {
+         "label": "It was easy to use / ใช้งานง่าย",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.08,
+         "distribution": [
+          0,
+          13,
+          110,
+          332,
+          190
+         ]
+        },
+        {
+         "label": "The life felt realistic and believable / ชีวิตในเกมรู้สึกสมจริงและน่าเชื่อถือ",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.06,
+         "distribution": [
+          0,
+          7,
+          131,
+          325,
+          182
+         ]
+        },
+        {
+         "label": "It showed me how where you are born shapes a whole life / ทำให้ฉันเห็นว่าสถานที่เกิดกำหนดชีวิตทั้งชีวิตอย่างไร",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.06,
+         "distribution": [
+          0,
+          9,
+          127,
+          325,
+          184
+         ]
+        },
+        {
+         "label": "I would like to play it again or in other courses / ฉันอยากเล่นอีก หรือใช้ในรายวิชาอื่น",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.06,
+         "distribution": [
+          0,
+          10,
+          133,
+          312,
+          190
+         ]
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "In one or two sentences: what did RealLives show you that a textbook or lecture could not? / เขียน 1–2 ประโยค: RealLives ทำให้คุณเห็นอะไรที่ตำราหรือการบรรยายทำไม่ได้?",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "RealLives let me feel the effects of poverty myself, not just as numbers in a textbook.",
+         "th": "RealLives ทำให้ฉันรู้สึกถึงผลของความยากจนกับตัวเอง ไม่ใช่แค่ตัวเลขในตำรา"
+        },
+        {
+         "en": "I saw how small decisions, like getting vaccinated, can change a whole life.",
+         "th": "ฉันได้เห็นว่าการตัดสินใจเล็ก ๆ เช่น การฉีดวัคซีน เปลี่ยนชีวิตทั้งชีวิตได้"
+        }
+       ]
+      },
+      {
+       "type": "grid",
+       "title": "Empathy Canvas (individual, on paper) / Empathy Canvas (ทำรายบุคคล บนกระดาษ)",
+       "help": "1 = Strongly disagree / ไม่เห็นด้วยอย่างยิ่ง · 5 = Strongly agree / เห็นด้วยอย่างยิ่ง",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "The questions were clear / คำถามชัดเจน",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.04,
+         "distribution": [
+          0,
+          11,
+          130,
+          328,
+          176
+         ]
+        },
+        {
+         "label": "It helped me put my feelings into words / ช่วยให้ฉันถ่ายทอดความรู้สึกออกมาเป็นคำพูดได้",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.01,
+         "distribution": [
+          2,
+          11,
+          144,
+          307,
+          181
+         ]
+        },
+        {
+         "label": "It helped me notice things about my character’s life I had missed / ช่วยให้ฉันสังเกตเห็นสิ่งที่มองข้ามไปในชีวิตของตัวละคร",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.05,
+         "distribution": [
+          0,
+          1,
+          136,
+          338,
+          170
+         ]
+        },
+        {
+         "label": "Writing as “I” made me feel closer to my character / การเขียนในฐานะ “ฉัน” ทำให้รู้สึกใกล้ชิดกับตัวละครมากขึ้น",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.04,
+         "distribution": [
+          0,
+          15,
+          121,
+          331,
+          178
+         ]
+        },
+        {
+         "label": "I would use it again for reflection / ฉันจะใช้อีกเพื่อการสะท้อนคิด",
+         "reverse": false,
+         "answered": 645,
+         "average": 4,
+         "distribution": [
+          1,
+          11,
+          137,
+          335,
+          161
+         ]
+        }
+       ]
+      },
+      {
+       "type": "grid",
+       "title": "Social Business Canvas (group of 4–6) / Social Business Canvas (กลุ่ม 4–6 คน)",
+       "help": "1 = Strongly disagree / ไม่เห็นด้วยอย่างยิ่ง · 5 = Strongly agree / เห็นด้วยอย่างยิ่ง",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "It was easy to follow / เข้าใจและทำตามได้ง่าย",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.05,
+         "distribution": [
+          0,
+          12,
+          114,
+          347,
+          172
+         ]
+        },
+        {
+         "label": "It helped my group turn our experience into a practical solution / ช่วยให้กลุ่มเปลี่ยนประสบการณ์เป็นทางออกที่ทำได้จริง",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.07,
+         "distribution": [
+          0,
+          5,
+          133,
+          317,
+          190
+         ]
+        },
+        {
+         "label": "It made us think about who pays and how the solution lasts / ทำให้เราคิดว่าใครเป็นผู้จ่าย และทางออกจะยั่งยืนอย่างไร",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.07,
+         "distribution": [
+          0,
+          9,
+          118,
+          336,
+          182
+         ]
+        },
+        {
+         "label": "Everyone in my group could contribute / ทุกคนในกลุ่มมีส่วนร่วมได้",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.03,
+         "distribution": [
+          0,
+          10,
+          129,
+          337,
+          169
+         ]
+        },
+        {
+         "label": "I would use it again for projects or startups / ฉันจะใช้อีกสำหรับโครงงานหรือการเริ่มธุรกิจ",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.06,
+         "distribution": [
+          0,
+          8,
+          130,
+          320,
+          187
+         ]
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Which tool had the biggest impact on you? / เครื่องมือใดส่งผลต่อคุณมากที่สุด?",
+       "answered": 645,
+       "options": [
+        {
+         "label": "RealLives Simulation",
+         "count": 382
+        },
+        {
+         "label": "Empathy Canvas",
+         "count": 103
+        },
+        {
+         "label": "Social Business Canvas",
+         "count": 97
+        },
+        {
+         "label": "All three equally / ทั้งสามอย่างเท่ากัน",
+         "count": 63
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "Why that one? / เพราะอะไร?",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "Because I actually lived as someone else, and it made me feel far more than reading does.",
+         "th": "เพราะได้ใช้ชีวิตเป็นคนอื่นจริง ๆ มันทำให้ฉันรู้สึกมากกว่าการอ่าน"
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "How could we improve any of the three tools? / เราจะปรับปรุงเครื่องมือทั้งสามได้อย่างไร?",
+       "answered": 645,
+       "quotes": []
+      }
+     ]
+    },
+    {
+     "title": "10 · Rate the workshop / 10 · ประเมินกิจกรรม",
+     "items": [
+      {
+       "type": "grid",
+       "title": "Rate the workshop / ให้คะแนนกิจกรรม",
+       "help": "1 = Poor / ควรปรับปรุง · 5 = Excellent / ดีมาก",
+       "min": 1,
+       "max": 5,
+       "answered": 645,
+       "rows": [
+        {
+         "label": "Instructions were clear / คำอธิบายชัดเจน",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.03,
+         "distribution": [
+          0,
+          11,
+          124,
+          343,
+          167
+         ]
+        },
+        {
+         "label": "Logins and technology worked smoothly / การเข้าสู่ระบบและเทคโนโลยีใช้งานได้ราบรื่น",
+         "reverse": false,
+         "answered": 645,
+         "average": 4,
+         "distribution": [
+          0,
+          10,
+          142,
+          328,
+          165
+         ]
+        },
+        {
+         "label": "There was enough time for each activity / มีเวลาเพียงพอสำหรับแต่ละกิจกรรม",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.02,
+         "distribution": [
+          0,
+          13,
+          123,
+          350,
+          159
+         ]
+        },
+        {
+         "label": "Pitching and feedback were useful / การนำเสนอและข้อเสนอแนะมีประโยชน์",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.06,
+         "distribution": [
+          0,
+          11,
+          124,
+          328,
+          182
+         ]
+        },
+        {
+         "label": "Facilitators were helpful / ผู้สอนให้ความช่วยเหลือดี",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.04,
+         "distribution": [
+          0,
+          7,
+          139,
+          319,
+          180
+         ]
+        },
+        {
+         "label": "The room setup supported group work / การจัดห้องเอื้อต่อการทำงานกลุ่ม",
+         "reverse": false,
+         "answered": 645,
+         "average": 4.07,
+         "distribution": [
+          1,
+          11,
+          109,
+          347,
+          177
+         ]
+        }
+       ]
+      },
+      {
+       "type": "nps",
+       "title": "How likely are you to recommend this workshop to a friend? / คุณมีแนวโน้มจะแนะนำกิจกรรมนี้ให้เพื่อนมากน้อยเพียงใด?",
+       "answered": 645,
+       "min": 0,
+       "max": 10,
+       "lowLabel": "Not at all likely / ไม่แนะนำเลย",
+       "highLabel": "Extremely likely / แนะนำอย่างยิ่ง",
+       "average": 8.16,
+       "distribution": [
+        {
+         "value": 0,
+         "count": 0
+        },
+        {
+         "value": 1,
+         "count": 0
+        },
+        {
+         "value": 2,
+         "count": 0
+        },
+        {
+         "value": 3,
+         "count": 0
+        },
+        {
+         "value": 4,
+         "count": 0
+        },
+        {
+         "value": 5,
+         "count": 0
+        },
+        {
+         "value": 6,
+         "count": 100
+        },
+        {
+         "value": 7,
+         "count": 134
+        },
+        {
+         "value": 8,
+         "count": 124
+        },
+        {
+         "value": 9,
+         "count": 136
+        },
+        {
+         "value": 10,
+         "count": 151
+        }
+       ],
+       "promoters": 44,
+       "detractors": 16,
+       "passives": 40,
+       "nps": 29
+      },
+      {
+       "type": "choice",
+       "title": "Which language would you prefer for future workshop materials? / คุณต้องการเอกสารกิจกรรมครั้งต่อไปเป็นภาษาใด?",
+       "answered": 645,
+       "options": [
+        {
+         "label": "English / อังกฤษ",
+         "count": 195
+        },
+        {
+         "label": "Thai / ไทย",
+         "count": 227
+        },
+        {
+         "label": "Both / ทั้งสองภาษา",
+         "count": 223
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "The best part of the workshop was… / ส่วนที่ดีที่สุดของกิจกรรมคือ…",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "Pitching our social business idea. It was fun and I learned a lot.",
+         "th": "การนำเสนอไอเดียธุรกิจเพื่อสังคม สนุกและได้ความรู้มาก"
+        },
+        {
+         "en": "Practising thinking like a social entrepreneur for the first time.",
+         "th": "ได้ฝึกคิดแบบผู้ประกอบการเพื่อสังคมเป็นครั้งแรก"
+        },
+        {
+         "en": "When everyone in the group shared the life story of their character.",
+         "th": "ตอนที่ทุกคนในกลุ่มเล่าเรื่องชีวิตตัวละครของตัวเองให้กันฟัง"
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "title": "One thing we should improve is… / สิ่งหนึ่งที่ควรปรับปรุงคือ…",
+       "answered": 645,
+       "quotes": [
+        {
+         "en": "The internet in the room was slow at the start, which made logging in difficult.",
+         "th": "อินเทอร์เน็ตในห้องช้าในช่วงแรก ทำให้เข้าสู่ระบบยาก"
+        },
+        {
+         "en": "I wish there was more time to play RealLives. It felt too short.",
+         "th": "อยากให้มีเวลาเล่น RealLives มากกว่านี้ รู้สึกว่าสั้นไป"
+        }
+       ]
+      },
+      {
+       "type": "choice",
+       "title": "Would you like to join future RealLives ChangeMaker activities? / คุณต้องการเข้าร่วมกิจกรรม RealLives ChangeMaker ครั้งต่อไปหรือไม่?",
+       "answered": 645,
+       "options": [
+        {
+         "label": "Yes / ต้องการ",
+         "count": 208
+        },
+        {
+         "label": "Maybe / อาจจะ",
+         "count": 221
+        },
+        {
+         "label": "No / ไม่ต้องการ",
+         "count": 216
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "comparison": {
+  "preResponses": 704,
+  "postResponses": 645,
+  "matchedStudents": 627,
+  "quiz": {
+   "max": 12,
+   "pre": 5.07,
+   "post": 8.94,
+   "questions": [
+    {
+     "title": "How many Sustainable Development Goals did UN member states adopt in 2015? / ประเทศสมาชิกสหประชาชาติรับรองเป้าหมายการพัฒนาที่ยั่งยืน (SDGs) ในปี 2015 กี่เป้าหมาย?",
+     "pre": 44,
+     "post": 73
+    },
+    {
+     "title": "SDG 2 “Zero Hunger” aims to… / SDG 2 “ขจัดความหิวโหย” มีเป้าหมายเพื่อ…",
+     "pre": 41,
+     "post": 75
+    },
+    {
+     "title": "Which SDG focuses on inclusive and equitable quality education? / SDG ข้อใดมุ่งเน้นการศึกษาที่มีคุณภาพอย่างทั่วถึงและเท่าเทียม?",
+     "pre": 41,
+     "post": 72
+    },
+    {
+     "title": "In the UN SDG Index 2026, which of these countries ranks lowest? / ในดัชนี SDG ของสหประชาชาติ ปี 2026 ประเทศใดต่อไปนี้อยู่อันดับต่ำที่สุด?",
+     "pre": 40,
+     "post": 74
+    },
+    {
+     "title": "Where does Thailand rank in the UN SDG Index 2026 (out of 169 countries)? / ประเทศไทยอยู่อันดับใดในดัชนี SDG ของสหประชาชาติ ปี 2026 (จาก 169 ประเทศ)?",
+     "pre": 44,
+     "post": 77
+    },
+    {
+     "title": "Which country has the largest number of out-of-school children in the world? / ประเทศใดมีจำนวนเด็กที่ไม่ได้เข้าเรียนมากที่สุดในโลก?",
+     "pre": 40,
+     "post": 75
+    },
+    {
+     "title": "Roughly how many people live in Nigeria? / ประเทศไนจีเรียมีประชากรประมาณเท่าใด?",
+     "pre": 41,
+     "post": 74
+    },
+    {
+     "title": "Which of these is a “social determinant of health”? / ข้อใดเป็น “ปัจจัยทางสังคมที่กำหนดสุขภาพ”?",
+     "pre": 43,
+     "post": 74
+    },
+    {
+     "title": "Long-term undernutrition in early childhood most commonly leads to… / การขาดสารอาหารเรื้อรังในวัยเด็กเล็กมักนำไปสู่ภาวะใด?",
+     "pre": 45,
+     "post": 76
+    },
+    {
+     "title": "Which best describes a social business? / ข้อใดอธิบาย “ธุรกิจเพื่อสังคม” ได้ดีที่สุด?",
+     "pre": 40,
+     "post": 76
+    },
+    {
+     "title": "In a social business, the beneficiary and the paying customer… / ในธุรกิจเพื่อสังคม ผู้รับประโยชน์และลูกค้าผู้จ่ายเงิน…",
+     "pre": 43,
+     "post": 76
+    },
+    {
+     "title": "Which statement best describes empathy? / ข้อใดอธิบาย “ความเข้าอกเข้าใจผู้อื่น (empathy)” ได้ดีที่สุด?",
+     "pre": 45,
+     "post": 73
+    }
+   ]
+  },
+  "items": [
+   {
+    "type": "grid",
+    "title": "How much do you know about each of these right now? / ตอนนี้คุณมีความรู้ในแต่ละเรื่องต่อไปนี้มากน้อยเพียงใด?",
+    "name": "Self-rated knowledge / ความรู้ (ประเมินตนเอง)",
+    "min": 1,
+    "max": 5,
+    "pre": 3.02,
+    "post": 3.88,
+    "rows": [
+     {
+      "label": "The 17 SDGs / เป้าหมาย SDGs ทั้ง 17 ข้อ",
+      "reverse": false,
+      "pre": 3.03,
+      "post": 3.86
+     },
+     {
+      "label": "Daily life in Sub-Saharan Africa / ชีวิตประจำวันในแอฟริกาใต้สะฮารา",
+      "reverse": false,
+      "pre": 3.01,
+      "post": 3.87
+     },
+     {
+      "label": "How poverty, hunger and education affect health / ผลของความยากจน ความหิวโหย และการศึกษาต่อสุขภาพ",
+      "reverse": false,
+      "pre": 3.02,
+      "post": 3.89
+     },
+     {
+      "label": "How to design a social business / วิธีออกแบบธุรกิจเพื่อสังคม",
+      "reverse": false,
+      "pre": 3,
+      "post": 3.9
+     },
+     {
+      "label": "Inequality in Bangkok / ความเหลื่อมล้ำในกรุงเทพฯ",
+      "reverse": false,
+      "pre": 3.03,
+      "post": 3.87
+     }
+    ]
+   },
+   {
+    "type": "grid",
+    "title": "How much do you agree with each statement? / คุณเห็นด้วยกับแต่ละข้อความต่อไปนี้มากน้อยเพียงใด?",
+    "name": "Empathy and global outlook / ความเข้าอกเข้าใจและมุมมองต่อโลก",
+    "min": 1,
+    "max": 5,
+    "pre": 2.98,
+    "post": 3.82,
+    "rows": [
+     {
+      "label": "E1. I can imagine what daily life is like for a poor family in another country. / E1. ฉันสามารถจินตนาการชีวิตประจำวันของครอบครัวยากจนในอีกประเทศหนึ่งได้",
+      "reverse": false,
+      "pre": 2.98,
+      "post": 3.84
+     },
+     {
+      "label": "E2. When I see news about hunger in other countries, I feel concerned for the people affected. / E2. เมื่อเห็นข่าวความหิวโหยในประเทศอื่น ฉันรู้สึกเป็นห่วงผู้ที่ได้รับผลกระทบ",
+      "reverse": false,
+      "pre": 3.01,
+      "post": 3.82
+     },
+     {
+      "label": "E3. Before judging someone, I try to see the situation from their point of view. / E3. ก่อนตัดสินใคร ฉันพยายามมองสถานการณ์จากมุมมองของเขา",
+      "reverse": false,
+      "pre": 3.03,
+      "post": 3.85
+     },
+     {
+      "label": "E4. Poverty is mostly the result of people not working hard enough. / E4. ความยากจนส่วนใหญ่เกิดจากการที่คนไม่ขยันพอ",
+      "reverse": true,
+      "pre": 3.15,
+      "post": 2.38
+     },
+     {
+      "label": "E5. Where a person is born strongly affects the opportunities they have in life. / E5. สถานที่ที่คนเกิดมีผลอย่างมากต่อโอกาสในชีวิต",
+      "reverse": false,
+      "pre": 3.04,
+      "post": 3.88
+     },
+     {
+      "label": "E6. Problems in countries like Burundi, Chad or Nigeria have little to do with my life. / E6. ปัญหาในประเทศอย่างบุรุนดี ชาด หรือไนจีเรีย แทบไม่เกี่ยวข้องกับชีวิตของฉัน",
+      "reverse": true,
+      "pre": 3.07,
+      "post": 2.29
+     },
+     {
+      "label": "E7. I notice people in Bangkok whose lives are very different from mine, such as migrant workers or street vendors. / E7. ฉันสังเกตเห็นผู้คนในกรุงเทพฯ ที่มีชีวิตแตกต่างจากฉันมาก เช่น แรงงานข้ามชาติหรือหาบเร่แผงลอย",
+      "reverse": false,
+      "pre": 2.94,
+      "post": 3.87
+     },
+     {
+      "label": "E8. I find it hard to feel connected to people from very different backgrounds. / E8. ฉันรู้สึกเชื่อมโยงกับคนที่มีภูมิหลังต่างจากฉันมากได้ยาก",
+      "reverse": true,
+      "pre": 3.07,
+      "post": 2.31
+     },
+     {
+      "label": "E9. Health problems are often caused by conditions such as poverty, water and education, not only by personal choices. / E9. ปัญหาสุขภาพมักเกิดจากสภาพแวดล้อม เช่น ความยากจน น้ำ และการศึกษา ไม่ใช่เพียงการเลือกของแต่ละคน",
+      "reverse": false,
+      "pre": 2.97,
+      "post": 3.93
+     },
+     {
+      "label": "E10. I feel responsible to do something about inequality, even something small. / E10. ฉันรู้สึกว่าตนเองมีหน้าที่ต้องทำบางอย่างเกี่ยวกับความเหลื่อมล้ำ แม้เป็นเรื่องเล็ก ๆ",
+      "reverse": false,
+      "pre": 3.02,
+      "post": 3.88
+     },
+     {
+      "label": "E11. I believe students like me can create solutions to social problems. / E11. ฉันเชื่อว่านักศึกษาอย่างฉันสามารถสร้างทางออกให้ปัญหาสังคมได้",
+      "reverse": false,
+      "pre": 3.01,
+      "post": 3.8
+     },
+     {
+      "label": "E12. I would consider starting or joining a social enterprise or community project. / E12. ฉันสนใจที่จะเริ่มหรือเข้าร่วมกิจการเพื่อสังคมหรือโครงการชุมชน",
+      "reverse": false,
+      "pre": 3.02,
+      "post": 3.94
+     }
+    ]
+   },
+   {
+    "type": "grid",
+    "title": "How confident are you that you can… / คุณมั่นใจเพียงใดว่าคุณสามารถ…",
+    "name": "ChangeMaker confidence / ความมั่นใจในการสร้างการเปลี่ยนแปลง",
+    "min": 1,
+    "max": 5,
+    "pre": 2.99,
+    "post": 3.85,
+    "rows": [
+     {
+      "label": "C1. Identify the root causes of a social problem / C1. ระบุรากของปัญหาสังคม",
+      "reverse": false,
+      "pre": 2.96,
+      "post": 3.83
+     },
+     {
+      "label": "C2. Design a practical solution to a social problem / C2. ออกแบบทางออกที่ทำได้จริงสำหรับปัญหาสังคม",
+      "reverse": false,
+      "pre": 3.01,
+      "post": 3.84
+     },
+     {
+      "label": "C3. Explain who pays for a solution and how it can last / C3. อธิบายได้ว่าใครเป็นผู้จ่าย และทางออกจะยั่งยืนได้อย่างไร",
+      "reverse": false,
+      "pre": 3.03,
+      "post": 3.82
+     },
+     {
+      "label": "C4. Work well in a team with different ideas / C4. ทำงานร่วมกับทีมที่มีความคิดหลากหลายได้ดี",
+      "reverse": false,
+      "pre": 2.95,
+      "post": 3.84
+     },
+     {
+      "label": "C5. Present an idea persuasively to an audience / C5. นำเสนอความคิดให้ผู้ฟังคล้อยตามได้",
+      "reverse": false,
+      "pre": 2.98,
+      "post": 3.9
+     },
+     {
+      "label": "C6. Measure whether a solution is making a difference / C6. วัดผลได้ว่าทางออกนั้นสร้างความเปลี่ยนแปลงจริงหรือไม่",
+      "reverse": false,
+      "pre": 3.03,
+      "post": 3.87
+     }
+    ]
+   },
+   {
+    "type": "scale",
+    "title": "Right now, how interested are you in understanding lives very different from your own? / ตอนนี้คุณสนใจที่จะเข้าใจชีวิตที่แตกต่างจากคุณมากเพียงใด?",
+    "name": "Interest in lives different from their own / ความสนใจในชีวิตที่แตกต่าง",
+    "min": 1,
+    "max": 5,
+    "pre": 3.3,
+    "post": 4.1
+   },
+   {
+    "type": "words",
+    "title": "Write 3 words that come to mind when you think of “Africa”. / เขียนคำ 3 คำที่นึกถึงเมื่อได้ยินคำว่า “แอฟริกา”",
+    "name": "Words students associate with Africa / คำที่นักศึกษานึกถึงเมื่อพูดถึงแอฟริกา",
+    "pre": [
+     {
+      "word": "poverty",
+      "count": 404
+     },
+     {
+      "word": "hot",
+      "count": 292
+     },
+     {
+      "word": "desert",
+      "count": 195
+     },
+     {
+      "word": "safari",
+      "count": 171
+     },
+     {
+      "word": "hunger",
+      "count": 144
+     },
+     {
+      "word": "ยากจน",
+      "count": 123
+     },
+     {
+      "word": "ร้อน",
+      "count": 104
+     },
+     {
+      "word": "สัตว์ป่า",
+      "count": 99
+     },
+     {
+      "word": "drought",
+      "count": 75
+     },
+     {
+      "word": "lions",
+      "count": 72
+     },
+     {
+      "word": "war",
+      "count": 66
+     },
+     {
+      "word": "music",
+      "count": 57
+     },
+     {
+      "word": "tribe",
+      "count": 50
+     }
+    ],
+    "post": [
+     {
+      "word": "resilience",
+      "count": 357
+     },
+     {
+      "word": "inequality",
+      "count": 266
+     },
+     {
+      "word": "family",
+      "count": 206
+     },
+     {
+      "word": "education",
+      "count": 135
+     },
+     {
+      "word": "hope",
+      "count": 127
+     },
+     {
+      "word": "water",
+      "count": 112
+     },
+     {
+      "word": "ความเหลื่อมล้ำ",
+      "count": 103
+     },
+     {
+      "word": "poverty",
+      "count": 89
+     },
+     {
+      "word": "ครอบครัว",
+      "count": 72
+     },
+     {
+      "word": "community",
+      "count": 72
+     },
+     {
+      "word": "opportunity",
+      "count": 67
+     },
+     {
+      "word": "strength",
+      "count": 65
+     },
+     {
+      "word": "ความหวัง",
+      "count": 48
+     }
+    ]
+   },
+   {
+    "type": "retro",
+    "title": "And how would you rate yourself NOW? / แล้ว “ตอนนี้” คุณให้คะแนนตัวเองเท่าใด?",
+    "name": "Then and now: students rate themselves / ก่อนและหลัง: นักศึกษาประเมินตนเอง",
+    "min": 1,
+    "max": 5,
+    "pre": 2.63,
+    "post": 4.01,
+    "rows": [
+     {
+      "label": "Understanding of the SDGs / ความเข้าใจเรื่อง SDGs",
+      "pre": 2.62,
+      "post": 4.01
+     },
+     {
+      "label": "Understanding of daily life in Burundi, Chad or Nigeria / ความเข้าใจชีวิตประจำวันในบุรุนดี ชาด หรือไนจีเรีย",
+      "pre": 2.63,
+      "post": 3.97
+     },
+     {
+      "label": "Empathy for people whose lives are very different from mine / ความเข้าอกเข้าใจคนที่มีชีวิตต่างจากฉันมาก",
+      "pre": 2.64,
+      "post": 4.05
+     },
+     {
+      "label": "Confidence to design a solution to a social problem / ความมั่นใจในการออกแบบทางออกให้ปัญหาสังคม",
+      "pre": 2.63,
+      "post": 4.02
+     }
+    ]
+   }
+  ]
+ },
+ "sample": true
+}

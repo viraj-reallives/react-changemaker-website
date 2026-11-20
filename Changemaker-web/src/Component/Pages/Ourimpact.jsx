@@ -11,12 +11,14 @@ import { useLocalePath } from "../../hooks/useLocalePath";
 import { useSignupModal } from "../../context/SignupModalContext";
 import ResponsiveImg from "../../components/media/ResponsiveImg";
 import { media } from "../../assets/optimizedMedia";
+import sessionClassroom from "../../assets/nmu-workshop-2026/session-classroom.jpg";
 
 const GlobalMap = lazy(() =>
   import("../GlobalMap").then((m) => ({ default: m.GlobalMap })),
 );
 
 const IMPACT_CARD_META = [
+  { img: { src: sessionClassroom } },
   { img: media.finalBusiness },
   {
     img: {
@@ -381,9 +383,40 @@ const Ourimpact = () => {
                       </div>
                     </div>
 
-                    <span className={Styles.cardCta}>
-                      {t("common.learnMore")} <FaArrowRight />
-                    </span>
+                    <div className={Styles.cardActions}>
+                      <span className={Styles.cardCta}>
+                        {t("common.learnMore")} <FaArrowRight />
+                      </span>
+                      {card.resultsLink && card.resultsLinkText ? (
+                        <span
+                          className={Styles.resultsLink}
+                          role="button"
+                          tabIndex={0}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            window.open(
+                              localePath(card.resultsLink),
+                              "_blank",
+                              "noopener,noreferrer",
+                            );
+                          }}
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                              event.preventDefault();
+                              event.stopPropagation();
+                              window.open(
+                                localePath(card.resultsLink),
+                                "_blank",
+                                "noopener,noreferrer",
+                              );
+                            }
+                          }}
+                        >
+                          {card.resultsLinkText} <FaArrowRight />
+                        </span>
+                      ) : null}
+                    </div>
                   </div>
                 </div>
               </Link>

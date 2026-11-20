@@ -18,7 +18,8 @@
 .wrapper_footer_tab_padding,
 .wrapper_professior_data,
 .container_student_impact_data,
-.identityGrid {
+.identityGrid,
+.resultsBanner {
   width: 100%;
   max-width: var(--content);
   margin-inline: auto;
@@ -165,6 +166,29 @@
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   gap: 1.25rem;
+}
+
+.resultsBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.2rem 1.25rem;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-sizing: border-box;
+}
+
+.resultsBannerText {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  text-wrap: balance;
 }
 
 .identityCard {

@@ -243,11 +243,19 @@
   text-decoration: none;
 }
 
-.cardCta {
+.cardActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.cardCta,
+.resultsLink {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  margin-top: auto;
   width: max-content;
   padding: 0.6rem 0.95rem;
   font-size: 0.875rem;
@@ -261,6 +269,18 @@
   transition: border-color 0.18s ease, background-color 0.18s ease;
 }
 
+.resultsLink {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: var(--on-brand);
+  cursor: pointer;
+}
+
+.resultsLink:hover {
+  background-color: color-mix(in srgb, var(--brand) 82%, #000);
+  border-color: color-mix(in srgb, var(--brand) 82%, #000);
+}
+
 .cardCta:hover {
   background-color: color-mix(in srgb, var(--brand) 34%, var(--bg-elevated));
   border-color: color-mix(in srgb, var(--brand) 58%, var(--line));
@@ -271,7 +291,8 @@
   outline-offset: 2px;
 }
 
-.cardCta svg {
+.cardCta svg,
+.resultsLink svg {
   font-size: 0.75rem;
 }
 

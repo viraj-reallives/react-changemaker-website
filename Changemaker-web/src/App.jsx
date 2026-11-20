@@ -26,6 +26,9 @@ const University = lazy(() =>
 const Navamindradhiraj_University = lazy(() =>
   import("./Component/HomeComponentParts/Navamindradhiraj_University"),
 );
+const Navamindradhiraj_University_2026 = lazy(() =>
+  import("./Component/HomeComponentParts/Navamindradhiraj_University_2026"),
+);
 const KyungHee_University = lazy(() =>
   import("./Component/HomeComponentParts/KyungHee_University"),
 );
@@ -34,6 +37,9 @@ const IIT_Bombay = lazy(() =>
 );
 const Chulalongkorn_University = lazy(() =>
   import("./Component/HomeComponentParts/Chulalongkorn_University"),
+);
+const NmuWorkshop2026 = lazy(() =>
+  import("./Component/Pages/nmu-workshop-2026/NmuWorkshop2026"),
 );
 
 const PageFallback = () => (
@@ -126,6 +132,13 @@ const App = () => {
             </Route>
 
             <Route
+              path="our-impact/navamindradhiraj-university-2026/:locale"
+              element={<LocaleGate />}
+            >
+              <Route index element={<Navamindradhiraj_University_2026 />} />
+            </Route>
+
+            <Route
               path="our-impact/kyunghee-university/:locale"
               element={<LocaleGate />}
             >
@@ -163,6 +176,10 @@ const App = () => {
             </Route>
           </Route>
 
+          <Route path="nmu-workshop-2026/:locale" element={<LocaleGate />}>
+            <Route index element={<NmuWorkshop2026 />} />
+          </Route>
+
           {/* Portal: /en */}
           <Route path="/:locale" element={<LocaleGate />}>
             <Route index element={<Starter />} />
@@ -192,6 +209,10 @@ const App = () => {
             element={<LegacyLocaleRedirect />}
           />
           <Route
+            path="/our-impact/navamindradhiraj-university-2026"
+            element={<LegacyLocaleRedirect />}
+          />
+          <Route
             path="/our-impact/kyunghee-university"
             element={<LegacyLocaleRedirect />}
           />
@@ -208,6 +229,7 @@ const App = () => {
           <Route path="/contact" element={<LegacyLocaleRedirect />} />
           <Route path="/Contact" element={<LegacyLocaleRedirect />} />
           <Route path="/get-rcmi-report" element={<LegacyLocaleRedirect />} />
+          <Route path="/nmu-workshop-2026" element={<LegacyLocaleRedirect />} />
 
           <Route element={<Layout />}>
             <Route path="*" element={<NotFound />} />

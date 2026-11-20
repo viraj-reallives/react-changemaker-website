@@ -229,7 +229,9 @@
       "studentTestimonial": "Erfahrungsbericht von Studenten",
       "empowerStudents": "Geben Sie Ihren Schülern globale Perspektiven",
       "beginChangeMakingJourney": "Beginnen Sie Ihre Reise zur Veränderung",
-      "videoUnsupported": "Ihr Browser unterstützt das Video-Tag nicht."
+      "videoUnsupported": "Ihr Browser unterstützt das Video-Tag nicht.",
+      "resultsBannerText": "Sehen Sie sich die in diesem Workshop entstandenen Daten an",
+      "resultsLinkText": "Workshop-Daten ansehen"
     },
     "cta": {
       "beginYourJourneyOfChange": "Beginnen Sie Ihre Reise der Veränderung",
@@ -857,6 +859,23 @@
       },
       "cards": [
         {
+          "card_title": "Navamindradhiraj-Universität Workshop 2026",
+          "card_date": "09.11.2026 – 11.11.2026",
+          "university_text": "Navamindradhiraj-Universität, Bangkok",
+          "particepent_title": "Abteilung - Allgemeinbildung",
+          "collaboration_text": "In Zusammenarbeit mit:",
+          "name_card": "Dozent Krittanan Pensirisomboon",
+          "number_title": "800",
+          "skill_devloped": "Fähigkeiten entwickelt",
+          "teamwork_title": "Empathie",
+          "intergrity_title": "Fähigkeiten des 21. Jahrhunderts",
+          "Used_Tools": "RealLives Simulation, Empathy Canvas and Social Business Canvas",
+          "link": "/our-impact/navamindradhiraj-university-2026",
+          "extra_skill": "Geschäftssinn",
+          "resultsLinkText": "Workshop-Daten ansehen",
+          "resultsLink": "/nmu-workshop-2026"
+        },
+        {
           "card_title": "Workshop der ETH Zürich",
           "card_date": "27 / 06 / 2018",
           "university_text": "ETH University Zurich, Switzerland",
@@ -1005,6 +1024,25 @@
       "programOverview": "RealLives conducted an immersive SDG-focused workshop at Chulalongkorn University (Thailand) for students in the BAScii program. The session centered on SDG 1: No Poverty, where students simulated lives in poverty-affected countries such as Burundi, experiencing challenges like limited access to healthcare, education, and income. The workshop combined simulation gameplay, guided reflection, and collaborative discussion to help students understand poverty beyond statistics. By integrating real-world data and AI-driven life scenarios, the program enabled students to connect emotionally with global issues while developing a deeper awareness of inequality and global citizenship.",
       "implementation": "The workshop followed a structured experiential learning approach combining simulation, reflection, and collaborative analysis. It began with an introduction to SDG 1: No Poverty and the global context of inequality, followed by an immersive RealLives simulation where students experienced full life journeys shaped by real-world data. Participants made critical decisions around education, healthcare, and livelihood while navigating systemic constraints faced in poverty-affected regions. This was followed by a reflective exercise in which students wrote personal letters from the perspective of their simulated character, fostering emotional connection and deeper empathy. The session then transitioned into a group-based Empathy Canvas activity, where students analyzed their character's experiences across dimensions such as environment, behavior, influences, and emotions. The workshop concluded with group presentations and a facilitated discussion linking individual experiences to broader global challenges and the role of students as ChangeMakers.",
       "outcomes": "The workshop resulted in a significant shift in students' understanding of global poverty, transforming it from an abstract concept into a deeply personal and emotional experience. Participants demonstrated heightened empathy, with many expressing strong emotional reactions to the difficult life choices encountered during the simulation. The gamified and interactive nature of the platform drove high engagement, enabling students to connect more meaningfully with global issues compared to traditional learning methods. Students also developed a stronger awareness of their own privilege and the structural inequalities that shape life outcomes across different regions. The experience encouraged critical thinking and reflection, with many participants recognizing their potential role as ChangeMakers in addressing global challenges. While students expressed a desire for more time to explore the simulation further, the overall impact highlighted the effectiveness of experiential, data-driven learning in fostering global citizenship, empathy, and action-oriented mindsets."
+    },
+    "navamindradhiraj2026": {
+      "breadcrumb": "Navamindradhiraj-Universität Workshop 2026",
+      "university": "Navamindradhiraj-Universität, Bangkok",
+      "department": "Abteilung - Allgemeinbildung",
+      "collaborator": "Dozent Krittanan Pensirisomboon",
+      "skills": [
+        "Empathie",
+        "Fähigkeiten des 21. Jahrhunderts",
+        "Geschäftssinn"
+      ],
+      "objective": "Entwicklung empathischer Weltbürger durch erfahrungsbasiertes Lernen, indem Studierende der Navamindradhiraj-Universität durch die RealLives-Simulation vielfältige Lebensumstände erfahren, ihre emotionalen Reaktionen durch strukturierte Reflexion verarbeiten und ihre neu gewonnene Empathie in umsetzbare Social-Business-Lösungen kanalisieren können. Das umfassende ChangeMaker-Programm zielte darauf ab, die Lücke zwischen Bewusstsein und Handeln zu schließen und gleichzeitig kritisches Denken über Ziele für nachhaltige Entwicklung und globale Herausforderungen zu fördern.",
+      "programOverview": "Die RealLives Foundation führte an der Navamindradhiraj-Universität in Bangkok erfolgreich ein umfassendes ChangeMaker-Programm durch, das sich auf Ziele für nachhaltige Entwicklung und empathiegesteuertes Changemaking konzentrierte. Der Workshop bezog Universitätsstudenten in eine immersive Bildungsreise ein, die Lebenssimulationserfahrungen mit strukturierter Reflexion und unternehmerischem Denken kombinierte. Die Teilnehmer navigierten durch das gesamte RealLives-Ökosystem, erlebten weltweit Leben in verschiedenen sozioökonomischen Hintergründen und entwickelten durch unsere proprietären Bewertungstools messbare Empathie- und Changemaking-Kompetenzen.",
+      "implementation": "Das Programm nutzte unsere integrierte vierstufige Methodik: Die Studierenden erlebten zunächst durch die RealLives-Simulation vielfältige globale Leben, verarbeiteten dann ihre emotionalen Reaktionen mithilfe des Empathy Canvas-Frameworks und erstellten anschließend personalisierte ChangeMaker Index-Berichte, die ihre Entwicklung über 18 Kompetenzen hinweg analysierten. Der Workshop schloss damit ab, dass die Studierenden mithilfe unseres Social Business Canvas tragfähige Social-Business-Lösungen entwickelten, die direkt auf Herausforderungen eingingen, denen sie während ihrer simulierten Lebenserfahrungen begegnet waren. Dieser erfahrungsbasierte Lernansatz ermöglichte es den Teilnehmern, über ein theoretisches Verständnis globaler Probleme hinauszugehen und praktische, empathiegesteuerte Lösungen zu entwickeln.",
+      "crossCultural": "Der Workshop zeigte signifikante messbare Ergebnisse beim Engagement der Studierenden und bei der Entwicklung von Empathie. Die Teilnehmer zeigten ein verbessertes Verständnis globaler Ungleichheiten, verbessertes kritisches Denken über Herausforderungen der nachhaltigen Entwicklung und eine erhöhte Motivation, Initiativen mit sozialer Wirkung zu verfolgen. Die Studierenden erstellten innovative Social-Business-Vorschläge, die auf Probleme von Bildungsungleichheit bis hin zu nachhaltigem Ressourcenmanagement abzielten und ihr vertieftes Bewusstsein für miteinander verbundene globale Herausforderungen widerspiegelten. Der Erfolg an der Navamindradhiraj-Universität unterstreicht die Wirksamkeit von RealLives bei der Umwandlung akademischen Lernens in umsetzbare Changemaking-Fähigkeiten in verschiedenen kulturellen und pädagogischen Kontexten.",
+      "programOverviewHighlightLabel": "Institutionelle Skalierung und Integration -",
+      "programOverviewHighlight": "Dieser Workshop war nicht nur eine außerschulische Aktivität; er wurde offiziell in den obligatorischen Lehrplan \"Metropolitan Studies\" der Navamindradhiraj-Universität integriert. Durch die Einbettung der RealLives-Simulation in das Kernmodul der Allgemeinbildung erreichte das Programm erfolgreich über 600 Erstsemester und operierte in einem massiven institutionellen Maßstab.",
+      "crossCulturalHighlightLabel": "Förderung bürgerschaftlicher Empathie -",
+      "crossCulturalHighlight": "Für diese thailändischen Studierenden diente die Simulation als wichtige Brücke zwischen lokalen städtischen Realitäten in Bangkok und globalen sozioökonomischen Herausforderungen. Indem sie in das Leben von Menschen mit völlig unterschiedlichen Hintergründen schlüpften, entwickelten die Studierenden entscheidende bürgerschaftliche Kompetenzen des 21. Jahrhunderts und verlagerten ihre Perspektive von passiver Beobachtung zu aktiver, empathiegesteuerter Problemlösung."
     }
   }
 }

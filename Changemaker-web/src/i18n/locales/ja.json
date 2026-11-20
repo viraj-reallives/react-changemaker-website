@@ -229,7 +229,9 @@
       "studentTestimonial": "学生の声",
       "empowerStudents": "グローバルな視点で学生をエンパワーする",
       "beginChangeMakingJourney": "チェンジメーカーの旅を始める",
-      "videoUnsupported": "お使いのブラウザは動画タグをサポートしていません。"
+      "videoUnsupported": "お使いのブラウザは動画タグをサポートしていません。",
+      "resultsBannerText": "このワークショップで生成されたデータを見る",
+      "resultsLinkText": "ワークショップのデータを見る"
     },
     "cta": {
       "beginYourJourneyOfChange": "変革の旅を始める",
@@ -857,6 +859,23 @@
       },
       "cards": [
         {
+          "card_title": "ナワミンドラディラージ大学 ワークショップ 2026",
+          "card_date": "2026/11/09 – 2026/11/11",
+          "university_text": "ナワミンドラディラージ大学（バンコク）",
+          "particepent_title": "学部 - 一般教養",
+          "collaboration_text": "協力：",
+          "name_card": "クリッタナン・ペンシリソンブーン講師",
+          "number_title": "800",
+          "skill_devloped": "開発されたスキル",
+          "teamwork_title": "共感",
+          "intergrity_title": "21世紀型スキル",
+          "Used_Tools": "RealLives Simulation, Empathy Canvas and Social Business Canvas",
+          "link": "/our-impact/navamindradhiraj-university-2026",
+          "extra_skill": "ビジネスの洞察力",
+          "resultsLinkText": "ワークショップのデータを見る",
+          "resultsLink": "/nmu-workshop-2026"
+        },
+        {
           "card_title": "チューリッヒ工科大学ワークショップ",
           "card_date": "2018 / 06 / 27",
           "university_text": "チューリッヒ工科大学、スイス",
@@ -1005,6 +1024,25 @@
       "programOverview": "RealLives conducted an immersive SDG-focused workshop at Chulalongkorn University (Thailand) for students in the BAScii program. The session centered on SDG 1: No Poverty, where students simulated lives in poverty-affected countries such as Burundi, experiencing challenges like limited access to healthcare, education, and income. The workshop combined simulation gameplay, guided reflection, and collaborative discussion to help students understand poverty beyond statistics. By integrating real-world data and AI-driven life scenarios, the program enabled students to connect emotionally with global issues while developing a deeper awareness of inequality and global citizenship.",
       "implementation": "The workshop followed a structured experiential learning approach combining simulation, reflection, and collaborative analysis. It began with an introduction to SDG 1: No Poverty and the global context of inequality, followed by an immersive RealLives simulation where students experienced full life journeys shaped by real-world data. Participants made critical decisions around education, healthcare, and livelihood while navigating systemic constraints faced in poverty-affected regions. This was followed by a reflective exercise in which students wrote personal letters from the perspective of their simulated character, fostering emotional connection and deeper empathy. The session then transitioned into a group-based Empathy Canvas activity, where students analyzed their character's experiences across dimensions such as environment, behavior, influences, and emotions. The workshop concluded with group presentations and a facilitated discussion linking individual experiences to broader global challenges and the role of students as ChangeMakers.",
       "outcomes": "The workshop resulted in a significant shift in students' understanding of global poverty, transforming it from an abstract concept into a deeply personal and emotional experience. Participants demonstrated heightened empathy, with many expressing strong emotional reactions to the difficult life choices encountered during the simulation. The gamified and interactive nature of the platform drove high engagement, enabling students to connect more meaningfully with global issues compared to traditional learning methods. Students also developed a stronger awareness of their own privilege and the structural inequalities that shape life outcomes across different regions. The experience encouraged critical thinking and reflection, with many participants recognizing their potential role as ChangeMakers in addressing global challenges. While students expressed a desire for more time to explore the simulation further, the overall impact highlighted the effectiveness of experiential, data-driven learning in fostering global citizenship, empathy, and action-oriented mindsets."
+    },
+    "navamindradhiraj2026": {
+      "breadcrumb": "ナワミンドラディラージ大学 ワークショップ 2026",
+      "university": "ナワミンドラディラート大学（バンコク）",
+      "department": "学部 - 一般教養",
+      "collaborator": "クリッタナン・ペンシリソンブーン講師",
+      "skills": [
+        "共感",
+        "21世紀型スキル",
+        "ビジネスの洞察力"
+      ],
+      "objective": "ナワミンドラディラート大学の学生がRealLivesシミュレーションを通じて多様な生活状況を体験し、構造化された振り返りを通じて感情的な反応を処理し、新たに見出した共感を実行可能なソーシャルビジネスソリューションに向けることができるようにすることで、体験学習を通じて共感的な地球市民を育成すること。包括的なチェンジメーカープログラムは、持続可能な開発目標と世界的な課題についての批判的思考を促進しながら、認識と行動の間のギャップを埋めることを目的としていました。",
+      "programOverview": "RealLives財団は、バンコクのナワミンドラディラート大学で、持続可能な開発目標と共感主導のチェンジメイキングに焦点を当てた包括的なチェンジメーカープログラムを成功裏に実施しました。このワークショップでは、人生シミュレーション体験と構造化された振り返り、および起業家精神を組み合わせた没入型の教育の旅に大学生を参加させました。参加者はRealLivesのエコシステム全体をナビゲートし、世界中のさまざまな社会経済的背景の生活を体験しながら、独自の評価ツールを通じて測定可能な共感とチェンジメイキングの能力を開発しました。",
+      "implementation": "このプログラムは、統合された4ステップの方法論を活用しました。学生はまずRealLivesシミュレーションを通じて多様なグローバルな生活を体験し、次にエンパシーキャンバスフレームワークを使用して感情的な反応を処理し、続いて18のコンピテンシーにわたる発達を分析するパーソナライズされたチェンジメーカーインデックスレポートを作成しました。ワークショップの最後には、学生がソーシャルビジネスキャンバスを使用して実行可能なソーシャルビジネスソリューションを作成し、シミュレーションされた人生経験の中で遭遇した課題に直接対処しました。この体験学習アプローチにより、参加者は地球規模の課題の理論的理解を超えて、実践的で共感主導のソリューションの開発へと進むことができました。",
+      "crossCultural": "このワークショップは、学生のエンゲージメントと共感の発達において、測定可能な大きな成果を示しました。参加者は、世界的な格差に対する理解を深め、持続可能な開発の課題に対する批判的思考を向上させ、社会的インパクトの取り組みを追求する意欲を高めました。学生は、相互に関連する世界的な課題に対する認識の深まりを反映して、教育の不平等から持続可能な資源管理に至るまでの問題に対処する革新的なソーシャルビジネスの提案を作成しました。ナワミンドラディラート大学での成功は、多様な文化的および教育的文脈において、学術的学習を実行可能なチェンジメイキング能力に変換する上でのRealLivesの有効性を強化するものです。",
+      "programOverviewHighlightLabel": "組織的規模と統合 -",
+      "programOverviewHighlight": "このワークショップは単なる課外活動ではなく、ナワミンドラディラート大学の必須カリキュラムである「大都市研究」に正式に統合されました。RealLivesシミュレーションを中核となる一般教養モジュールに組み込むことで、このプログラムは600人以上の1年生に到達することに成功し、大規模な組織的規模で運営されました。",
+      "crossCulturalHighlightLabel": "市民的共感の育成 -",
+      "crossCulturalHighlight": "これらのタイの学生にとって、シミュレーションはバンコクの地元の都市の現実と世界的な社会経済的課題との間の重要な架け橋として機能しました。大きく異なる背景を持つ個人の生活に足を踏み入れることで、学生は重要な21世紀の市民としての能力を開発し、受動的な観察から積極的で共感主導の問題解決へと視点を移しました。"
     }
   }
 }
